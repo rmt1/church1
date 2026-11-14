@@ -1,9 +1,9 @@
 ---
 name: St George's Church, South Moor
-century: XIX
+built: 1897
 place: South Moor, Stanley
 region: County Durham
-country: England and Wales
+country: England
 price: £95,000
 currency: £
 agent: Sanderson Weatherall

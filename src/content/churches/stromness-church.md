@@ -1,6 +1,6 @@
 ---
 name: Stromness Church
-century: XIX
+built: 1862
 place: 115 Victoria Street, Stromness
 region: Orkney
 country: Scotland

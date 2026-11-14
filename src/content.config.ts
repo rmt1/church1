@@ -16,10 +16,11 @@ const churches = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/churches' }),
   schema: z.object({
     name: z.string(),
-    century: z.string().optional(), // roman numerals, e.g. "XIV"; leave out if unknown
+    built: z.number().int().optional(), // year the standing building dates from; leave out if unknown
+    builtNote: z.string().optional(), // 'about', 'at least', 'tower about'
     place: z.string(),
     region: z.string(),
-    country: z.enum(['France', 'England and Wales', 'England', 'Scotland', 'Wales', 'Italy', 'Ireland']),
+    country: z.enum(['France', 'England', 'Scotland', 'Wales', 'Italy', 'Ireland']),
     price: z.string(),
     currency: z.enum(['€', '£']).default('€'),
     agent: z.string(),

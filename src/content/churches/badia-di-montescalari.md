@@ -1,6 +1,7 @@
 ---
 name: Badia di Montescalari
-century: XI
+built: 1040
+builtNote: at least
 place: Monte Scalari, between Greve in Chianti and Figline Valdarno
 region: Florence, Tuscany
 country: Italy

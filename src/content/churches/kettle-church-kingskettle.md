@@ -1,6 +1,6 @@
 ---
 name: Kettle Church
-century: XIX
+built: 1832
 place: Kingskettle, by Cupar
 region: Fife
 country: Scotland

@@ -1,5 +1,7 @@
 ---
 name: San Libertino
+built: 1625
+builtNote: about
 place: Old town, Agrigento
 region: Agrigento, Sicily
 country: Italy
@@ -170,7 +172,6 @@ seen:
 - The floor is covered in rubble, fallen plaster and broken timber.
 - Wall plaster is stained to head height and missing in patches. A painted grey dado survives on one side.
 - An iron tie rod crosses the hall under the roof.
-century: XVII
 ---
 Thirty-two thousand euros, slightly negotiable, for the church Agrigento built on the spot where its first bishop was stoned. It was a cinema for seventy years and still has the stage.
 

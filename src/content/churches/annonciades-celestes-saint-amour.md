@@ -1,6 +1,6 @@
 ---
 name: Convent of the Annonciades Célestes
-century: XVII
+built: 1621
 place: Saint-Amour
 region: Jura, Bourgogne-Franche-Comté
 country: France

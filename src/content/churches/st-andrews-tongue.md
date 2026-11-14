@@ -1,6 +1,6 @@
 ---
 name: St Andrew's Church, Tongue
-century: XVII
+built: 1680
 place: Tongue, by Lairg
 region: Sutherland, Highland
 country: Scotland

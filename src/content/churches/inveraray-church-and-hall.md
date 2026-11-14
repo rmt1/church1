@@ -1,5 +1,7 @@
 ---
 name: Inveraray Church and Hall
+built: 1800
+builtNote: about
 place: Church Square, Inveraray
 region: Argyll and Bute
 country: Scotland

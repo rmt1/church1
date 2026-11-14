@@ -1,9 +1,10 @@
 ---
 name: St Michael's Church, Honiton
-century: XV
+built: 1480
+builtNote: about
 place: Church Hill, Honiton
 region: East Devon
-country: England and Wales
+country: England
 price: Guide £100,000
 currency: £
 agent: Stags

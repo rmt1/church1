@@ -1,6 +1,6 @@
 ---
 name: Chapelle du Carmel
-century: XIX
+built: 1868
 place: 159 rue de Strasbourg, Niort
 region: Deux-Sèvres, Nouvelle-Aquitaine
 country: France

@@ -1,6 +1,6 @@
 ---
 name: Bourtie Kirk
-century: XIX
+built: 1806
 place: Kirkton of Bourtie, by Inverurie
 region: Aberdeenshire
 country: Scotland

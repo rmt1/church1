@@ -1,9 +1,9 @@
 ---
 name: Holy Trinity, Tunstead
-century: XIX
+built: 1840
 place: Newchurch Road, Stacksteads, Bacup
 region: Rossendale, Lancashire
-country: England and Wales
+country: England
 price: Offers around £95,000
 currency: £
 agent: MBRE

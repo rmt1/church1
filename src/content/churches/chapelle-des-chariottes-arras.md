@@ -1,6 +1,6 @@
 ---
 name: Chapelle des Chariottes
-century: XVIII
+built: 1775
 place: 11 rue des Chariottes, Arras
 region: Pas-de-Calais, Hauts-de-France
 country: France

@@ -1,9 +1,9 @@
 ---
 name: St George's Church, Burrington
-century: XIII
+built: 1855
 place: Burrington, near Ludlow
 region: Herefordshire
-country: England and Wales
+country: England
 price: Offers around £160,000
 currency: £
 agent: McCartneys

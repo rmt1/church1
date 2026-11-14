@@ -1,7 +1,8 @@
 ---
 name: Chapelle Saint-Exemple
 specimen: true
-century: XIV
+built: 1380
+builtNote: about
 place: Village-sur-Rivière
 region: Burgundy
 country: France

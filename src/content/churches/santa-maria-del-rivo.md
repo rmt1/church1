@@ -1,6 +1,6 @@
 ---
 name: Santa Maria del Rivo
-century: XVIII
+built: 1799
 place: Santa Maria del Rivo, Ponte dell'Olio
 region: Piacenza, Emilia-Romagna
 country: Italy

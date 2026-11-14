@@ -1,6 +1,7 @@
 ---
 name: Pieve di Santo Stefano
-century: XI
+built: 1055
+builtNote: at least
 place: Monteaguzzo, above Cesena
 region: Forlì-Cesena, Emilia-Romagna
 country: Italy

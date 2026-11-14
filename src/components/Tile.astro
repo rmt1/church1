@@ -1,6 +1,8 @@
 ---
+import { ageText } from '../lib/age';
 const { church } = Astro.props;
 const d = church.data;
+const age = ageText(d.built, d.builtNote);
 ---
 
 <a class="tile" href={`/shortlist/${church.id}/`}>
@@ -8,13 +10,13 @@ const d = church.data;
     {d.photos[0] ? (
       <img src={d.photos[0].src} alt={d.photos[0].alt} loading="lazy" style={d.photos[0].focus ? `object-position: ${d.photos[0].focus}` : undefined} />
     ) : (
-      <span class="numeral" aria-hidden="true">{d.century ?? ''}</span>
+      <span class="numeral" aria-hidden="true"></span>
     )}
     {d.specimen && <span class="flag">Specimen</span>}
     {d.status === 'saved' && <span class="flag saved">Saved</span>}
     {d.status === 'under offer' && <span class="flag">Under offer</span>}
   </div>
-  <p class="meta">{d.country}{d.century ? `, ${d.century} century` : ''}</p>
+  <p class="meta">{d.country}{age ? `, ${age}` : ''}</p>
   <h3>{d.name}</h3>
   <p class="where">{d.place}, {d.region}</p>
   <p class="price">{d.price}</p>

@@ -1,6 +1,6 @@
 ---
 name: Protestant temple of Crèvecœur-le-Grand
-century: XIX
+built: 1884
 place: Crèvecœur-le-Grand
 region: Oise, Hauts-de-France
 country: France

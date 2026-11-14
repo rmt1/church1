@@ -1,9 +1,9 @@
 ---
 name: St Mark's Church, Witton
-century: XIX
+built: 1838
 place: Buncer Lane, Witton, Blackburn
 region: Lancashire
-country: England and Wales
+country: England
 price: Offers invited
 currency: £
 agent: Proctors

@@ -1,6 +1,7 @@
 ---
 name: Church and convent above the Niccone valley
-century: XV
+built: 1450
+builtNote: about
 place: Near Umbertide
 region: Perugia, Umbria
 country: Italy

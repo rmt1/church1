@@ -1,6 +1,6 @@
 ---
 name: Kirkmichael Church
-century: XVIII
+built: 1791
 place: Kirkmichael, by Blairgowrie
 region: Perth and Kinross
 country: Scotland

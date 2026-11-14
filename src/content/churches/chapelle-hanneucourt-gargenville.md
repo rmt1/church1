@@ -1,6 +1,6 @@
 ---
 name: Chapel of the Château d'Hanneucourt
-century: XVIII
+built: 1727
 place: Gargenville
 region: Yvelines, Île-de-France
 country: France

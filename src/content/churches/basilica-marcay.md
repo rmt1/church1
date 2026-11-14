@@ -1,6 +1,6 @@
 ---
 name: Basilica of Saint Benoît-Joseph Labre
-century: XIX
+built: 1884
 place: Marçay
 region: Vienne, Nouvelle-Aquitaine
 country: France

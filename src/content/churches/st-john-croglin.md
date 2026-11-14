@@ -1,9 +1,9 @@
 ---
 name: St John the Baptist, Croglin
-century: XIX
+built: 1878
 place: Croglin, Eden Valley
 region: Cumbria
-country: England and Wales
+country: England
 price: Guide £100,000, cash
 currency: £
 agent: PFK

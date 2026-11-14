@@ -1,6 +1,6 @@
 ---
 name: Minto Church
-century: XIX
+built: 1831
 place: Minto, by Hawick
 region: Scottish Borders
 country: Scotland
