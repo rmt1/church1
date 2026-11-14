@@ -19,7 +19,7 @@ const churches = defineCollection({
     century: z.string().optional(), // roman numerals, e.g. "XIV"; leave out if unknown
     place: z.string(),
     region: z.string(),
-    country: z.enum(['France', 'England', 'Scotland', 'Wales', 'Italy', 'Ireland']),
+    country: z.enum(['France', 'England and Wales', 'England', 'Scotland', 'Wales', 'Italy', 'Ireland']),
     price: z.string(),
     currency: z.enum(['€', '£']).default('€'),
     agent: z.string(),
