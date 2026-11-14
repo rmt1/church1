@@ -85,14 +85,6 @@ sections:
   - label: Burials
     value: None mentioned.
     status: unknown
-- title: Work and money
-  items:
-  - label: Cost to make safe and dry
-    value: No estimate yet. The agent says general renovation and drainage are required.
-    status: unknown
-  - label: Yearly upkeep
-    value: Not stated.
-    status: unknown
 - title: Getting there
   items:
   - label: Road
@@ -123,6 +115,53 @@ storyNote: This is all we have, and all of it comes from the listing. We found n
 storySources:
 - title: Patrice Besse listing 354518
   url: https://www.patrice-besse.com/annonces/edifices-religieux-a-vendre-Dans-le-departement-de-l-Oise--pb354518
+works:
+- phase: Now
+  item: Visit and written report by a heritage architect
+  basis: assumed
+  low: 2000
+  high: 4000
+- phase: Now
+  item: Drainage around the building and a waste-water connection. The listing says drainage works are required.
+  basis: listing
+  low: 8000
+  high: 20000
+- phase: Now
+  item: Slate roof, about 95 square metres. The low figure is an overhaul, the high figure a full re-slate with scaffolding. The listing does not describe its condition.
+  basis: assumed
+  low: 5000
+  high: 38000
+- phase: Next
+  item: Repair and repoint the stone front, buttresses and pinnacles
+  basis: assumed
+  low: 8000
+  high: 25000
+- phase: Next
+  item: 'Six painted windows and the rose, about 22 square metres: inspect, clean, re-lead where needed and fit outside protection'
+  basis: assumed
+  low: 6000
+  high: 40000
+- phase: Next
+  item: Repair the timber floor and its joists, 65 square metres
+  basis: assumed
+  low: 5000
+  high: 13000
+- phase: Later
+  item: Replaster the interior and conserve the painted Bible verses
+  basis: assumed
+  low: 6000
+  high: 20000
+- phase: Later
+  item: Electrics, lighting and background heating
+  basis: assumed
+  low: 6000
+  high: 15000
+upkeep:
+  low: 2000
+  high: 4000
+  covers: Insurance, property tax, a yearly gutter clearance and roof check, garden upkeep for 720 square metres, and a reserve for the slate.
+estimateNote: The listing says general renovation is needed and gives no detail. The roof and the glass decide where in the range this lands.
+grantNote: The temple is not protected, so no State heritage grant applies. A Fondation du Patrimoine label is possible for unprotected buildings and brings a tax deduction for French taxpayers.
 ---
 A complete Protestant interior for the price of a car. The pulpit with its double stair is still there, the painted verses are still on the walls, and six windows of painted glass are signed by Georges Roussel.
 

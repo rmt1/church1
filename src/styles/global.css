@@ -219,3 +219,11 @@ th { color: var(--ink-soft); border-bottom-color: var(--ink); white-space: nowra
 .story .when { font-family: var(--sans); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em; padding-top: 0.3rem; }
 @media (max-width: 36rem) { .story li { grid-template-columns: 1fr; } .story .when { padding: 0 0 0.2rem; } }
 .story-note { color: var(--ink-soft); font-style: italic; }
+
+/* cost estimate */
+.figures { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 1rem 2rem; margin: 0 0 1.5rem; padding: 1.25rem 0; border-block: 1px solid var(--ink); }
+.figures dt { font-family: var(--sans); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 0.2rem; }
+.figures dd { margin: 0; font-size: 1.45rem; line-height: 1.2; }
+.ledger.works td:first-child { width: auto; font-weight: 400; }
+.ledger.works td:nth-child(2) { width: 11.5rem; font-weight: 600; white-space: nowrap; }
+.ledger.works th:first-child { color: var(--ink); }

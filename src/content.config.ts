@@ -40,6 +40,20 @@ const churches = defineCollection({
     story: z.array(z.object({ when: z.string(), what: z.string() })).default([]),
     storyNote: z.string().optional(),
     storySources: z.array(z.object({ title: z.string(), url: z.string().url() })).default([]),
+    works: z
+      .array(
+        z.object({
+          phase: z.enum(['Now', 'Next', 'Later']),
+          item: z.string(),
+          basis: z.enum(['listing', 'record', 'assumed']),
+          low: z.number().optional(), // euros; leave both out if not costed
+          high: z.number().optional(),
+        }),
+      )
+      .default([]),
+    upkeep: z.object({ low: z.number(), high: z.number(), covers: z.string() }).optional(),
+    estimateNote: z.string().optional(),
+    grantNote: z.string().optional(),
     faults: z.array(z.string()).default([]),
     costs: z
       .array(z.object({ label: z.string(), amount: z.string(), basis: z.string() }))

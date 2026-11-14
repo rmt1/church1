@@ -97,14 +97,6 @@ sections:
   - label: Burials
     value: None mentioned. A convent of this age may hold burials in the chapel or cloister.
     status: unknown
-- title: Work and money
-  items:
-  - label: Cost to make safe and dry
-    value: No estimate yet. The agent says the whole property is to be rehabilitated.
-    status: unknown
-  - label: Yearly upkeep
-    value: Not stated.
-    status: unknown
 - title: Getting there
   items:
   - label: Train
@@ -150,6 +142,43 @@ storySources:
   url: https://archives39.fr/ark:/36595/z9sm4c2xq0f3
 - title: Patrice Besse listing 363625
   url: https://www.patrice-besse.com/annonces/ismh-au-coeur-du-Jura--pb363625
+works:
+- phase: Now
+  item: Diagnostic study by a heritage architect and an archaeological assessment. The State record says the orchard may hide remains.
+  basis: record
+  low: 20000
+  high: 50000
+- phase: Now
+  item: Overhaul or re-cover the tile roofs of both ranges, about 550 square metres. One attic frame is described as solid.
+  basis: listing
+  low: 100000
+  high: 190000
+- phase: Now
+  item: Demolish the 1960s parish hall, 164 square metres, including asbestos removal from its fibre-cement roof
+  basis: listing
+  low: 25000
+  high: 60000
+- phase: Next
+  item: 'Conserve the chapel choir, 104 square metres: vaults, panelling, floor and glass'
+  basis: listing
+  low: 60000
+  high: 180000
+- phase: Next
+  item: Repair the stonework of the two seven-arch cloister galleries
+  basis: assumed
+  low: 40000
+  high: 120000
+- phase: Later
+  item: Rehabilitate the two ranges to a usable standard, about 1,026 square metres at 1,200 to 2,200 euros a square metre, roofs excluded
+  basis: listing
+  low: 1230000
+  high: 2260000
+upkeep:
+  low: 8000
+  high: 18000
+  covers: Insurance, property tax, securing an empty site, a yearly roof and gutter check on two long ranges, and grounds of nearly 6,000 square metres. This is the cost while the wings stand empty.
+estimateNote: 'A custodian can stop after the first two phases: the roofs sound, the hall gone, the choir and the arcades conserved, and the wings mothballed. That is 245,000 to 600,000 euros. Finishing the wings is a development project and needs a use that pays for it.'
+grantNote: As an inscrit building it can receive a State grant, typically around 20% of approved works. The listing says French taxpayers can deduct 50% of certain costs.
 ---
 A convent founded in 1621 for the price of a studio flat, and every square metre of it needs work. The chapel was mostly pulled down. Its choir survives, 104 square metres under rib vaults, between two wings with seven-arch arcades onto the cloister court.
 

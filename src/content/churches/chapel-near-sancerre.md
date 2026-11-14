@@ -84,14 +84,6 @@ sections:
   - label: Burials
     value: Not mentioned.
     status: unknown
-- title: Work and money
-  items:
-  - label: Cost to make safe and dry
-    value: No estimate yet. The agent describes the building as ready to fit out.
-    status: unknown
-  - label: Yearly upkeep
-    value: Not stated.
-    status: unknown
 - title: Getting there
   items:
   - label: Train
@@ -116,6 +108,48 @@ storyNote: 'We have no history for this chapel yet. The listing does not name th
 storySources:
 - title: Patrice Besse listing 716301
   url: https://www.patrice-besse.com/edifices-religieux-a-vendre/centre-val-de-loire/edifice-religieux-a-vendre-a-cote-de-sancerre-en-france/
+works:
+- phase: Now
+  item: Visit and written report by a heritage architect
+  basis: assumed
+  low: 1500
+  high: 3000
+- phase: Now
+  item: Check the roof covering, replace slipped tiles, clear and repair gutters and downpipes. The listing says the frame is sound and is silent on the covering, about 50 square metres.
+  basis: listing
+  low: 3000
+  high: 8000
+- phase: Next
+  item: Take up the cement screed and lay a breathable lime or stone floor, 30 square metres
+  basis: listing
+  low: 4000
+  high: 9000
+- phase: Next
+  item: Repoint the rubble and brick walls in lime where needed. We assume half of about 200 square metres.
+  basis: assumed
+  low: 6000
+  high: 12000
+- phase: Next
+  item: Repair the arched street doors and the side door
+  basis: assumed
+  low: 2000
+  high: 5000
+- phase: Later
+  item: Reopen and glaze the two blocked trefoil openings over the door
+  basis: listing
+  low: 3000
+  high: 8000
+- phase: Later
+  item: Lighting and a basic electrical installation from the existing supply
+  basis: listing
+  low: 3000
+  high: 6000
+upkeep:
+  low: 1200
+  high: 2500
+  covers: Insurance, property tax, a yearly gutter clearance and roof check, and a small reserve.
+estimateNote: A small, dry building with services already in. The spread comes from the walls, which the listing does not describe.
+grantNote: No protection is stated, so no State heritage grant should be assumed.
 ---
 Thirty thousand euros buys eleven metres of height over thirty square metres of floor, in a wine village with a station five minutes away. The roof frame is sound and the water and electricity are already in.
 

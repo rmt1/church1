@@ -11,6 +11,14 @@ const { church } = Astro.props;
 const d = church.data;
 const { Content } = await render(church);
 const checked = d.lastChecked.toLocaleDateString('en-GB', { timeZone: 'UTC', day: 'numeric', month: 'long', year: 'numeric' });
+const eur = (n: number) => '€' + n.toLocaleString('en-GB');
+const range = (lo: number, hi: number) => (hi === 0 ? 'Nothing' : lo === hi ? eur(lo) : `${eur(lo)} to ${eur(hi)}`);
+const phases = ['Now', 'Next', 'Later'] as const;
+const phaseText = { Now: 'Now: safe and dry', Next: 'Next: fabric and glass', Later: 'Later: interior and services' };
+const basisText = { listing: 'From the listing', record: 'From a public record', assumed: 'Our assumption' };
+const sum = (ws: typeof d.works, k: 'low' | 'high') => ws.reduce((t, w) => t + (w[k] ?? 0), 0);
+const nowWorks = d.works.filter((w) => w.phase === 'Now');
+const hasWorks = d.works.length > 0;
 const marks = { listing: 'From the listing', checked: 'Checked by us', unknown: 'Unknown' };
 ---
 
@@ -89,16 +97,43 @@ const marks = { listing: 'From the listing', checked: 'Checked by us', unknown: 
           </>
         )}
 
-        {d.costs.length > 0 && (
+        {hasWorks && (
           <>
-            <h2>Work and money</h2>
-            <table class="ledger">
-              <tbody>
-                {d.costs.map((c) => (
-                  <tr><td>{c.label}</td><td>{c.amount}</td><td class="mark-listing">{c.basis}</td></tr>
-                ))}
-              </tbody>
-            </table>
+            <h2>What it needs, and what it might cost</h2>
+            <dl class="figures">
+              <div><dt>Safe and dry</dt><dd>{range(sum(nowWorks, 'low'), sum(nowWorks, 'high'))}</dd></div>
+              <div><dt>Everything on the list</dt><dd>{range(sum(d.works, 'low'), sum(d.works, 'high'))}</dd></div>
+              {d.upkeep && <div><dt>Each year after that</dt><dd>{range(d.upkeep.low, d.upkeep.high)}</dd></div>}
+            </dl>
+            {d.estimateNote && <p>{d.estimateNote}</p>}
+            {phases.map((ph) => {
+              const ws = d.works.filter((w) => w.phase === ph);
+              return ws.length === 0 ? null : (
+                <table class="ledger works">
+                  <thead>
+                    <tr><th>{phaseText[ph]}</th><th>Rough cost</th><th>Based on</th></tr>
+                  </thead>
+                  <tbody>
+                    {ws.map((w) => (
+                      <tr>
+                        <td>{w.item}</td>
+                        <td>{w.low === undefined ? 'Not costed' : range(w.low, w.high ?? w.low)}</td>
+                        <td class={w.basis === 'assumed' ? 'mark-unknown' : 'mark-listing'}>{basisText[w.basis]}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              );
+            })}
+            {d.upkeep && <p><b>Yearly upkeep, {range(d.upkeep.low, d.upkeep.high)}.</b> {d.upkeep.covers}</p>}
+            {d.grantNote && <p><b>Grants.</b> {d.grantNote}</p>}
+            <p class="key">
+              These are our rough estimates and not quotes. Nobody from this site has been inside the
+              building. We measured from the listing, applied published French rates for 2025 and 2026,
+              and raised them for scaffolding, height and heritage rules. Figures are for works only,
+              before architect's fees of 10 to 15% and VAT. Rot, structural movement and asbestos do not
+              show in a listing. <a href="/before-you-buy/#how-we-estimate">How we estimate</a>.
+            </p>
           </>
         )}
 
@@ -157,6 +192,10 @@ const marks = { listing: 'From the listing', checked: 'Checked by us', unknown: 
           <div><dt>Status</dt><dd style="text-transform: capitalize">{d.status}</dd></div>
           <div><dt>Heritage status</dt><dd>{d.heritageClass}</dd></div>
           <div><dt>What you may do</dt><dd>{d.verdict}</dd></div>
+          {hasWorks && (
+            <div><dt>Rough cost of works</dt><dd>{range(sum(d.works, 'low'), sum(d.works, 'high'))}</dd></div>
+          )}
+          {d.upkeep && <div><dt>Each year</dt><dd>{range(d.upkeep.low, d.upkeep.high)}</dd></div>}
           <div>
             <dt>Difficulty</dt>
             <dd>

@@ -100,14 +100,6 @@ sections:
   - label: Burials
     value: None mentioned.
     status: unknown
-- title: Work and money
-  items:
-  - label: Cost to make safe and dry
-    value: No estimate yet. No works are described as needed, and none as done.
-    status: unknown
-  - label: Yearly upkeep
-    value: Not stated.
-    status: unknown
 - title: Getting there
   items:
   - label: Train
@@ -165,6 +157,58 @@ storySources:
   url: https://fr.wikipedia.org/wiki/Chapelle_des_Chariottes
 - title: Patrice Besse listing 199325
   url: https://www.patrice-besse.com/annonces/edifices-religieux-a-vendre-a-1-h-de-Paris-en-centre-ville-d-Arras--pb199325
+works:
+- phase: Now
+  item: Diagnostic study by a qualified heritage architect, required before any work on a classé building
+  basis: assumed
+  low: 10000
+  high: 25000
+- phase: Now
+  item: Roof of nave and choir, about 430 square metres, and the spire. The low figure is an overhaul, the high figure a large re-slating campaign. A public record says maintenance is needed.
+  basis: record
+  low: 20000
+  high: 150000
+- phase: Now
+  item: Gutters, rainwater pipes and bird-proofing
+  basis: assumed
+  low: 5000
+  high: 15000
+- phase: Next
+  item: Clean and repair the white stone front. The shrapnel scars stay.
+  basis: assumed
+  low: 30000
+  high: 90000
+- phase: Next
+  item: Make good the missing parts of the marble floor, assumed at 40 square metres
+  basis: listing
+  low: 12000
+  high: 28000
+- phase: Next
+  item: 'Overhaul the five nave windows: ironwork, leading and clear glass'
+  basis: listing
+  low: 10000
+  high: 35000
+- phase: Next
+  item: Repair interior plaster and limewash
+  basis: assumed
+  low: 32000
+  high: 80000
+- phase: Later
+  item: Conserve the stalls, the wrought-iron grilles and the gilded altar
+  basis: listing
+  low: 20000
+  high: 70000
+- phase: Later
+  item: Electrics, lighting and heating
+  basis: assumed
+  low: 25000
+  high: 60000
+upkeep:
+  low: 6000
+  high: 12000
+  covers: Insurance for a classé building of 300 square metres, property tax, twice-yearly gutter clearance, a yearly inspection, and a reserve for the roof.
+estimateNote: The listing describes no works at all, so almost every line here is an assumption about a 250-year-old building that was half rebuilt in 1923. The roof is the unknown that matters.
+grantNote: As a classé building it can receive a State grant of up to about 40% of approved works, and more in urgent cases.
 ---
 Louis Posteau built this for Franciscan nuns between 1769 and 1775, with a front borrowed from the Gesù in Rome. It was shelled twice in the First World War and rebuilt. The shrapnel scars are still in the stone.
 

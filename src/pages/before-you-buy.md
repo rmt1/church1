@@ -39,6 +39,20 @@ Every church on the shortlist carries one of three verdicts.
 - **Light use.** The building must stay one open space, but concerts, exhibitions and occasional worship are welcome.
 - **Convertible.** The authorities would accept a new use, within limits. We list few of these.
 
+<h2 id="how-we-estimate">How we estimate repair costs</h2>
+
+Every profile carries a rough cost of works and a yearly upkeep figure. They are estimates made from a desk. Treat them as a way to tell a 50,000 euro problem from a 500,000 euro one, and commission a survey before you offer.
+
+1. **We measure from the listing.** Floor area and height give an approximate roof and wall area.
+2. **We apply published French rates.** In 2026 natural slate costs about 90 to 140 euros a square metre supplied and laid on an ordinary house, plus about 40 to strip the old roof. Lime repointing runs at 30 to 65 euros a square metre. A complete renovation of a historic house is quoted at 1,500 to 2,000 euros a square metre and up.
+3. **We raise them for churches.** Scaffolding, height, heritage-approved materials and specialist trades roughly double house rates. Where we have no published rate, as with stained glass and painted decoration, the figure is our own assumption and is marked as one.
+4. **We check against real projects.** A typical church roof is reported at around 200,000 euros. The restoration of the small Saint-Roch chapel at Plounévez-Quintin in Brittany is estimated at over 200,000.
+5. **Upkeep** covers insurance, property tax, gutter clearance, a yearly inspection and a reserve for the next roof.
+
+State grants for approved works run at around 20% for inscrit buildings and up to about 40% for classé ones. The State budget for monuments it does not own was cut by 29% for 2026.
+
+Sources for the rates: [Ootravaux, slate roofing](https://www.ootravaux.fr/construction-renovation/toiture/couverture/toiture-ardoise/devis-couverture-ardoise.html); [Habitatpresto, stone walls](https://www.habitatpresto.com/mag/maconnerie/prix-renovation-mur-pierre); [Ma Propriété, restoring a listed château](https://www.ma-propriete.fr/en/blog/renover-un-chateau-ou-manoir-classe-un-projet-denvergure); [Sud Radio on church repairs](https://www.sudradio.fr/societe/eglises-vetustes-refection-cout-financement-communes-france); [Resonans, June 2026](https://resonans.dmjx.dk/artikler/frances-forgotten-heritage-who-pays-to-save-the-past/211796).
+
 ## A glossary
 
 - **Désaffectation.** The French legal act that removes a church from worship, by prefectoral order with the bishop's consent.

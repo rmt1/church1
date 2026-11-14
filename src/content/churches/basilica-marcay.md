@@ -97,14 +97,6 @@ sections:
   - label: Burials
     value: None mentioned.
     status: unknown
-- title: Work and money
-  items:
-  - label: Cost to make safe and dry
-    value: None expected. The agent describes the building as entirely renovated.
-    status: listing
-  - label: Yearly upkeep
-    value: Not stated. Budget for organ tuning, insurance and heating a nave of this size.
-    status: unknown
 - title: Getting there
   items:
   - label: Train
@@ -174,6 +166,21 @@ storySources:
   url: https://www.caracterres.fr/la-basilique-de-marcay-se-livre
 - title: Patrice Besse listing 856306
   url: https://www.patrice-besse.com/annonces/edifice-religieux-a-vendre-a-15-min-de-Poitiers--pb856306
+works:
+- phase: Now
+  item: Nothing. The listing says the roof frame, roofs, joinery and electrics have been fully renovated.
+  basis: listing
+  low: 0
+  high: 0
+- phase: Later
+  item: Open and glaze the great west arch, bricked up since the 1890s. The present owner announced this as a future project.
+  basis: record
+upkeep:
+  low: 17000
+  high: 38000
+  covers: Insurance for 610 square metres, property tax, heating the galleries and the sacristy rooms, tuning the organ, a yearly roof and gutter inspection, half a hectare of garden, and a reserve of 5,000 to 10,000 euros.
+estimateNote: The cost here is the running cost. A restored church of this size is cheap to own compared with restoring one, and it still wants a five-figure sum every year.
+grantNote: As an inscrit building it can receive State grants for future approved works, typically around 20%.
 ---
 Somebody has already done the custodian's work here. In 2002 this church was a roofless shell with a tree in the nave and an owner who wanted to sell the stone. The roof frame, the roofs and the joinery are new, the wiring is new, the organ plays, and the glass has protective glazing outside.
 

@@ -90,14 +90,6 @@ sections:
   - label: Burials
     value: None mentioned.
     status: unknown
-- title: Work and money
-  items:
-  - label: Cost to make safe and dry
-    value: No estimate yet. The agent says the whole building needs putting back in order.
-    status: unknown
-  - label: Yearly upkeep
-    value: Not stated.
-    status: unknown
 - title: Getting there
   items:
   - label: Train
@@ -144,6 +136,58 @@ storySources:
   url: https://www.bortolussi.fr/gargenville-chteau-dhanneucourt
 - title: Patrice Besse listing 992238
   url: https://www.patrice-besse.com/annonces/edifices-religieux-a-vendre-au-coeur-du-Parc-naturel-regional-du-Vexin-francais--pb992238
+works:
+- phase: Now
+  item: Condition survey by a heritage architect, required to get a permit on an inscrit building
+  basis: assumed
+  low: 4000
+  high: 8000
+- phase: Now
+  item: Re-cover the hipped roof in slate and zinc, about 100 square metres, and repair the bell lantern. Assumed after years of abandonment.
+  basis: assumed
+  low: 30000
+  high: 60000
+- phase: Now
+  item: Gutters, downpipes and drainage away from the walls
+  basis: assumed
+  low: 4000
+  high: 10000
+- phase: Next
+  item: Repair the lime render on about 200 square metres of wall
+  basis: assumed
+  low: 16000
+  high: 32000
+- phase: Next
+  item: Two traceried windows, the rose and the round-headed bay, about 10 square metres of glass and stonework
+  basis: listing
+  low: 10000
+  high: 30000
+- phase: Next
+  item: Lift, repair and relay the black-and-white floor, 71 square metres
+  basis: listing
+  low: 7000
+  high: 18000
+- phase: Later
+  item: Conserve the choir panelling and the painted decoration
+  basis: listing
+  low: 15000
+  high: 60000
+- phase: Later
+  item: Bring in electricity and lighting. No services are mentioned.
+  basis: assumed
+  low: 8000
+  high: 20000
+- phase: Later
+  item: Lay out the forecourt and approach
+  basis: listing
+  low: 5000
+  high: 15000
+upkeep:
+  low: 2500
+  high: 5000
+  covers: Insurance, property tax, a yearly roof and gutter check, and a reserve for the slate and zinc.
+estimateNote: The listing says the whole chapel needs putting back in order. We have assumed a new roof covering; if the slate proves sound, the first phase halves.
+grantNote: As an inscrit building it can receive a State grant, typically around 20% of approved works.
 ---
 This chapel never belonged to the Church. It was built for the owners of a château, and it is being sold on its own now that the estate is being divided.
 
