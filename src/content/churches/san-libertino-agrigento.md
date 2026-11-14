@@ -1,7 +1,7 @@
 ---
 name: San Libertino
 built: 1625
-builtNote: about
+builtNote: '~'
 place: Old town, Agrigento
 region: Agrigento, Sicily
 country: Italy

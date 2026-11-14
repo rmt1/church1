@@ -1,7 +1,11 @@
-// "346 years old", "about 550 years old", "at least 986 years old"
-export function ageText(built?: number, note?: string): string {
+// "346 years old", "~550 years old", "at least 986 years old", "tower ~580 years old"
+export function ageText(built?: number, note?: string, round = 10): string {
   if (!built) return '';
   let n = new Date().getFullYear() - built;
-  if (note && note.includes('about')) n = Math.round(n / 10) * 10;
-  return `${note ? note + ' ' : ''}${n.toLocaleString('en-GB')} years old`;
+  const rough = !!note && note.includes('~');
+  if (rough) n = Math.round(n / round) * round;
+  const num = n.toLocaleString('en-GB');
+  if (!note) return `${num} years old`;
+  if (rough) return `${note}${num} years old`;
+  return `${note} ${num} years old`;
 }

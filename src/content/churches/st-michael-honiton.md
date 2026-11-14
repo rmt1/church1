@@ -1,7 +1,7 @@
 ---
 name: St Michael's Church, Honiton
 built: 1480
-builtNote: about
+builtNote: '~'
 place: Church Hill, Honiton
 region: East Devon
 country: England

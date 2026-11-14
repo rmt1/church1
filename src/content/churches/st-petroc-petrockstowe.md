@@ -1,7 +1,7 @@
 ---
 name: St Petroc's Church, Petrockstowe
 built: 1450
-builtNote: tower about
+builtNote: tower ~
 place: Petrockstowe, near Okehampton
 region: North Devon
 country: England

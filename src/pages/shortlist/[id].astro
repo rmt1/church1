@@ -11,7 +11,7 @@ export async function getStaticPaths() {
 const { church } = Astro.props;
 const d = church.data;
 const { Content } = await render(church);
-const age = ageText(d.built, d.builtNote);
+const age = ageText(d.built, d.builtNote, d.builtRound);
 const checked = d.lastChecked.toLocaleDateString('en-GB', { timeZone: 'UTC', day: 'numeric', month: 'long', year: 'numeric' });
 
 const eur = (n: number) => d.currency + n.toLocaleString('en-GB');

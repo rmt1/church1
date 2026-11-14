@@ -5,7 +5,6 @@ import { getCollection } from 'astro:content';
 
 const all = (await getCollection('churches')).sort((a, b) => a.data.difficulty - b.data.difficulty);
 const countries = [...new Set(all.map((c) => c.data.country))].sort();
-const verdicts = ['Preserve as found', 'Light use', 'Convertible'];
 const real = all.filter((c) => !c.data.specimen);
 ---
 
@@ -34,13 +33,6 @@ const real = all.filter((c) => !c.data.specimen);
         <select name="country">
           <option value="">All countries</option>
           {countries.map((c) => <option>{c}</option>)}
-        </select>
-      </label>
-      <label>
-        What you may do
-        <select name="verdict">
-          <option value="">Any</option>
-          {verdicts.map((v) => <option>{v}</option>)}
         </select>
       </label>
       <label>
@@ -80,12 +72,11 @@ const real = all.filter((c) => !c.data.specimen);
     const none = document.getElementById('none')!;
     function apply() {
       const f = new FormData(form);
-      const country = f.get('country'), verdict = f.get('verdict'), max = Number(f.get('difficulty')) || 5;
+      const country = f.get('country'), max = Number(f.get('difficulty')) || 5;
       let shown = 0;
       for (const li of items) {
         const ok =
           (!country || li.dataset.country === country) &&
-          (!verdict || li.dataset.verdict === verdict) &&
           Number(li.dataset.difficulty) <= max;
         li.hidden = !ok;
         if (ok) shown++;

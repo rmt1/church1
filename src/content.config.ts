@@ -17,7 +17,8 @@ const churches = defineCollection({
   schema: z.object({
     name: z.string(),
     built: z.number().int().optional(), // year the standing building dates from; leave out if unknown
-    builtNote: z.string().optional(), // 'about', 'at least', 'tower about'
+    builtNote: z.string().optional(), // '~' for roughly, 'at least', 'tower ~'
+    builtRound: z.number().int().default(10), // rough ages round to this many years
     place: z.string(),
     region: z.string(),
     country: z.enum(['France', 'England', 'Scotland', 'Wales', 'Italy', 'Ireland']),

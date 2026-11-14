@@ -2,7 +2,7 @@
 import { ageText } from '../lib/age';
 const { church } = Astro.props;
 const d = church.data;
-const age = ageText(d.built, d.builtNote);
+const age = ageText(d.built, d.builtNote, d.builtRound);
 ---
 
 <a class="tile" href={`/shortlist/${church.id}/`}>
@@ -20,5 +20,5 @@ const age = ageText(d.built, d.builtNote);
   <h3>{d.name}</h3>
   <p class="where">{d.place}, {d.region}</p>
   <p class="price">{d.price}</p>
-  <p class="sub">{d.heritageClass} / {d.verdict} / Difficulty {d.difficulty} of 5</p>
+  <p class="sub">Difficulty {d.difficulty} of 5</p>
 </a>
