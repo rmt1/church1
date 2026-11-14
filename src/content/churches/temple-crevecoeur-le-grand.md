@@ -9,7 +9,7 @@ agent: Patrice Besse
 listingUrl: https://www.patrice-besse.com/annonces/edifices-religieux-a-vendre-Dans-le-departement-de-l-Oise--pb354518
 lastChecked: 2026-11-14
 status: for sale
-summary: A neo-Gothic Protestant temple of 1884 in the centre of a small Picard town, with its pulpit, altar, painted Bible verses and six painted-glass windows in place, and a walled garden of 720 square metres.
+summary: A neo-Gothic Protestant temple of 1884, in red brick with stone dressings, in the centre of a small Picard town, with its pulpit, altar, painted Bible verses and six painted-glass windows in place, and a walled garden of 720 square metres.
 seller: Not stated
 moneyGoes: The listing does not name the owner. A Protestant temple of 1884 would have belonged to its congregation; ask the agent who holds it now.
 heritageClass: Not protected
@@ -94,8 +94,9 @@ sections:
     value: About 1 hour by road from Paris-Charles-de-Gaulle.
     status: listing
 faults:
-- Needs general renovation and drainage works.
-- Roof condition is not described.
+- Damp has stained the plaster of the walls and vault, and the paint has failed on the lower walls.
+- Drainage works are required, per the listing.
+- The iron bars across the windows are rusting.
 - The pulpit, glass and painted inscriptions have no legal protection.
 - The glass is dated 1880 and the building 1884; the listing does not explain the gap.
 contacts:
@@ -122,35 +123,35 @@ works:
   low: 2000
   high: 4000
 - phase: Now
-  item: Drainage around the building and a waste-water connection. The listing says drainage works are required.
-  basis: listing
+  item: Drainage around the building and a waste-water connection. The listing says drainage works are required, and the damp band on the inside walls agrees.
+  basis: photos
   low: 8000
   high: 20000
 - phase: Now
-  item: Slate roof, about 95 square metres. The low figure is an overhaul, the high figure a full re-slate with scaffolding. The listing does not describe its condition.
-  basis: assumed
-  low: 5000
+  item: Slate roof, about 95 square metres. The staining on the vault points to past leaks. The low figure is an overhaul, the high figure a full re-slate.
+  basis: photos
+  low: 8000
   high: 38000
 - phase: Next
-  item: Repair and repoint the stone front, buttresses and pinnacles
-  basis: assumed
-  low: 8000
-  high: 25000
+  item: Repoint brick and stone where needed, and remove the canopy over the door
+  basis: photos
+  low: 4000
+  high: 12000
 - phase: Next
-  item: 'Six painted windows and the rose, about 22 square metres: inspect, clean, re-lead where needed and fit outside protection'
-  basis: assumed
-  low: 6000
-  high: 40000
-- phase: Next
-  item: Repair the timber floor and its joists, 65 square metres
-  basis: assumed
+  item: 'Painted windows and rose, about 22 square metres: clean, treat the rusting bars, fit outside protection. The glass itself looks complete.'
+  basis: photos
   low: 5000
-  high: 13000
-- phase: Later
-  item: Replaster the interior and conserve the painted Bible verses
-  basis: assumed
-  low: 6000
   high: 20000
+- phase: Next
+  item: Local repairs to the timber floor, which looks sound
+  basis: photos
+  low: 2000
+  high: 8000
+- phase: Later
+  item: Strip failed plaster from the lower walls, replaster in lime, and conserve the painted verses
+  basis: photos
+  low: 12000
+  high: 30000
 - phase: Later
   item: Electrics, lighting and background heating
   basis: assumed
@@ -160,8 +161,16 @@ upkeep:
   low: 2000
   high: 4000
   covers: Insurance, property tax, a yearly gutter clearance and roof check, garden upkeep for 720 square metres, and a reserve for the slate.
-estimateNote: The listing says general renovation is needed and gives no detail. The roof and the glass decide where in the range this lands.
+estimateNote: The photographs show a dry-looking shell with a damp problem at ground level and intact fittings. Drainage and the roof come first; the glass needs less than we feared.
 grantNote: The temple is not protected, so no State heritage grant applies. A Fondation du Patrimoine label is possible for unprotected buildings and brings a tax deduction for French taxpayers.
+seen:
+- The temple is red brick with stone dressings. The brickwork and the stone portal look sound.
+- A makeshift corrugated canopy has been fixed over the west door. It should come off.
+- Inside, the plaster of the walls and the pointed vault is stained by damp throughout, and the paint has failed on the bottom metre and a half of every wall.
+- The painted glass is complete and bright. One panel is signed by Roussel. The iron bars across the windows are rusting.
+- The pulpit with its double stair, the altar table and the timber floor look intact.
+- A stone memorial tablet with a cross and a list of names is fixed to one wall. It belongs to the building.
+- The painted verse over the apse is legible.
 ---
 A complete Protestant interior for the price of a car. The pulpit with its double stair is still there, the painted verses are still on the walls, and six windows of painted glass are signed by Georges Roussel.
 

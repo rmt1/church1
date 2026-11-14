@@ -181,6 +181,12 @@ upkeep:
   covers: Insurance for 610 square metres, property tax, heating the galleries and the sacristy rooms, tuning the organ, a yearly roof and gutter inspection, half a hectare of garden, and a reserve of 5,000 to 10,000 euros.
 estimateNote: The cost here is the running cost. A restored church of this size is cheap to own compared with restoring one, and it still wants a five-figure sum every year.
 grantNote: As an inscrit building it can receive State grants for future approved works, typically around 20%.
+seen:
+- The stonework outside is clean and repaired. The west front is rough masonry where the tower was never built.
+- The nave is white and whole, with rib vaults in perfect order, and is laid out with tables of books.
+- The side galleries are glazed and in use as reading rooms.
+- The side chapel altars and their carving are clean and complete.
+- The garden is mown grass with mature trees.
 ---
 Somebody has already done the custodian's work here. In 2002 this church was a roofless shell with a tree in the nave and an owner who wanted to sell the stone. The roof frame, the roofs and the joinery are new, the wiring is new, the organ plays, and the glass has protective glazing outside.
 

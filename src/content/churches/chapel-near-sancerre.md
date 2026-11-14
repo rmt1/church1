@@ -93,10 +93,12 @@ sections:
     value: About 180 km from Paris, 160 of them on the A77 motorway.
     status: listing
 faults:
+- The walls are jacketed in cement render, which traps damp.
 - The floor is a modern cement screed.
+- A half-height floor of bare joists has been inserted.
+- The medieval twin window is blocked.
+- No fittings, glass or furnishings survive.
 - No date, dedication or history is given.
-- No fittings, glass or furnishings are mentioned.
-- At 30 square metres it is a single small room.
 contacts:
 - role: Selling agent
   name: Patrice Besse, Paris (reference 716301)
@@ -104,7 +106,7 @@ contacts:
 - role: Heritage officer
   name: The departmental heritage architect (UDAP) for the département
 story: []
-storyNote: 'We have no history for this chapel yet. The listing does not name the village, the dedication or the date, and we could not identify the building from what it does say: a wine village on the Loire lateral canal near Sancerre, with a small marina and houses of the 11th to 16th centuries. One question to the agent would open it up.'
+storyNote: 'We have no written history for this chapel yet. The photographs show a blocked window of two trefoil-headed lights, a medieval form, so the building is older than the listing lets on. The listing does not name the village, the dedication or the date, and we could not identify the building from what it does say: a wine village on the Loire lateral canal near Sancerre, with a small marina and houses of the 11th to 16th centuries. One question to the agent would open it up.'
 storySources:
 - title: Patrice Besse listing 716301
   url: https://www.patrice-besse.com/edifices-religieux-a-vendre/centre-val-de-loire/edifice-religieux-a-vendre-a-cote-de-sancerre-en-france/
@@ -115,30 +117,40 @@ works:
   low: 1500
   high: 3000
 - phase: Now
-  item: Check the roof covering, replace slipped tiles, clear and repair gutters and downpipes. The listing says the frame is sound and is silent on the covering, about 50 square metres.
-  basis: listing
+  item: Have an engineer look at the tied street wall
+  basis: photos
+  low: 1000
+  high: 2500
+- phase: Now
+  item: Check the tile covering from outside, replace slipped tiles, clear and repair gutters. The frame looks sound from below.
+  basis: photos
   low: 3000
   high: 8000
+- phase: Next
+  item: Strip the cement render, which traps damp in old walls, and re-render in lime, about 100 square metres
+  basis: photos
+  low: 10000
+  high: 22000
 - phase: Next
   item: Take up the cement screed and lay a breathable lime or stone floor, 30 square metres
   basis: listing
   low: 4000
   high: 9000
 - phase: Next
-  item: Repoint the rubble and brick walls in lime where needed. We assume half of about 200 square metres.
-  basis: assumed
-  low: 6000
-  high: 12000
+  item: Board or remove the half-height floor of bare joists
+  basis: photos
+  low: 2000
+  high: 6000
 - phase: Next
   item: Repair the arched street doors and the side door
-  basis: assumed
+  basis: photos
   low: 2000
   high: 5000
 - phase: Later
-  item: Reopen and glaze the two blocked trefoil openings over the door
-  basis: listing
-  low: 3000
-  high: 8000
+  item: Reopen and glaze the blocked twin window and the two trefoil openings over the door
+  basis: photos
+  low: 4000
+  high: 10000
 - phase: Later
   item: Lighting and a basic electrical installation from the existing supply
   basis: listing
@@ -148,8 +160,16 @@ upkeep:
   low: 1200
   high: 2500
   covers: Insurance, property tax, a yearly gutter clearance and roof check, and a small reserve.
-estimateNote: A small, dry building with services already in. The spread comes from the walls, which the listing does not describe.
+estimateNote: The photographs show a medieval shell with a sound roof frame, a cement jacket and no fittings. The work is modest and mostly about letting the walls breathe again.
 grantNote: No protection is stated, so no State heritage grant should be assumed.
+seen:
+- The building is a shell in use as a store. An upper floor of bare joists sits at mid-height, reached by a ladder.
+- 'The roof is open to the underside: rafters and battens with the tiles laid straight on them, and no daylight showing.'
+- The outside walls carry a grey cement render, with green algae along the base of the side door.
+- An iron tie anchor is fixed to the street wall, which means the walls have been tied together at some point.
+- One wall has a blocked window of two trefoil-headed lights. That form is medieval, of the 13th or 14th century. Inside there is a small arched niche and a carved stone.
+- The upper part of one gable has been rebuilt in red brick.
+- Two of the nine photographs are views of the Saint-Satur viaduct and of Sancerre on its hill, so the village is close to both.
 ---
 Thirty thousand euros buys eleven metres of height over thirty square metres of floor, in a wine village with a station five minutes away. The roof frame is sound and the water and electricity are already in.
 

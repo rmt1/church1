@@ -11,15 +11,30 @@ const { church } = Astro.props;
 const d = church.data;
 const { Content } = await render(church);
 const checked = d.lastChecked.toLocaleDateString('en-GB', { timeZone: 'UTC', day: 'numeric', month: 'long', year: 'numeric' });
+
 const eur = (n: number) => '€' + n.toLocaleString('en-GB');
 const range = (lo: number, hi: number) => (hi === 0 ? 'Nothing' : lo === hi ? eur(lo) : `${eur(lo)} to ${eur(hi)}`);
 const phases = ['Now', 'Next', 'Later'] as const;
 const phaseText = { Now: 'Now: safe and dry', Next: 'Next: fabric and glass', Later: 'Later: interior and services' };
-const basisText = { listing: 'From the listing', record: 'From a public record', assumed: 'Our assumption' };
+const basisText = { listing: 'From the listing', photos: 'Seen in the photographs', record: 'From a public record', assumed: 'Our assumption' };
 const sum = (ws: typeof d.works, k: 'low' | 'high') => ws.reduce((t, w) => t + (w[k] ?? 0), 0);
 const nowWorks = d.works.filter((w) => w.phase === 'Now');
 const hasWorks = d.works.length > 0;
 const marks = { listing: 'From the listing', checked: 'Checked by us', unknown: 'Unknown' };
+
+// which fact tables go under which tab
+const inTab = (titles: string[]) => d.sections.filter((s) => titles.includes(s.title));
+const repairSections = inTab(['Condition']);
+const ruleSections = inTab(['Heritage status', 'Sacred status']);
+const practicalSections = d.sections.filter((s) => !['Condition', 'Heritage status', 'Sacred status'].includes(s.title));
+
+const tabs = [
+  { id: 'overview', label: 'Overview' },
+  { id: 'story', label: 'The story' },
+  { id: 'repairs', label: 'Repairs and cost' },
+  { id: 'rules', label: 'Rules and seller' },
+  { id: 'practical', label: 'Practical' },
+];
 ---
 
 <Base title={d.name} description={d.summary}>
@@ -36,7 +51,7 @@ const marks = { listing: 'From the listing', checked: 'Checked by us', unknown: 
     <div class="gallery">
       <div class="lead">
         {d.photos[0] ? (
-          <img src={d.photos[0].src} alt={d.photos[0].alt} />
+          <img id="lead-photo" src={d.photos[0].src} alt={d.photos[0].alt} />
         ) : (
           <div style="text-align:center">
             <span class="numeral" aria-hidden="true">{d.century ?? ''}</span>
@@ -44,17 +59,16 @@ const marks = { listing: 'From the listing', checked: 'Checked by us', unknown: 
           </div>
         )}
       </div>
-      {d.photos[0] && <p class="credit">{d.photos[0].credit}</p>}
       {d.photos.length > 1 && (
         <div class="strip">
-          {d.photos.slice(1).map((p) => (
-            <figure>
-              <a href={p.src}><img src={p.src} alt={p.alt} loading="lazy" /></a>
-              <figcaption>{p.credit}</figcaption>
-            </figure>
+          {d.photos.map((p, i) => (
+            <button type="button" class="thumb" data-src={p.src} data-alt={p.alt} aria-label={`Show photograph ${i + 1}`} aria-pressed={i === 0 ? 'true' : 'false'}>
+              <img src={p.src} alt="" loading="lazy" />
+            </button>
           ))}
         </div>
       )}
+      {d.photos[0] && <p class="credit">{d.photos[0].credit}</p>}
     </div>
 
     <div class="lot">
@@ -64,138 +78,194 @@ const marks = { listing: 'From the listing', checked: 'Checked by us', unknown: 
         <p class="where">{d.place}, {d.region}, {d.country}</p>
         <p class="standfirst">{d.summary}</p>
 
-        <h2>The story</h2>
-        {d.story.length > 0 && (
-          <ol class="story">
-            {d.story.map((e) => (
-              <li><span class="when">{e.when}</span><span>{e.what}</span></li>
-            ))}
-          </ol>
-        )}
-        {d.storyNote && <p class="story-note">{d.storyNote}</p>}
-        {d.storySources.length > 0 && (
-          <p class="key" style="margin-top: 1rem">
-            Sources: {d.storySources.map((r, i) => (
-              <>{i > 0 && '; '}<a href={r.url} rel="noopener">{r.title}</a></>
-            ))}
-          </p>
-        )}
+        <div class="tabs" role="tablist" aria-label="Sections of this profile">
+          {tabs.map((t, i) => (
+            <button type="button" role="tab" id={`tab-${t.id}`} aria-controls={`panel-${t.id}`} aria-selected={i === 0 ? 'true' : 'false'} tabindex={i === 0 ? 0 : -1}>
+              {t.label}
+            </button>
+          ))}
+        </div>
 
-        <h2>Our verdict</h2>
-        <Content />
+        <section class="panel-tab" role="tabpanel" id="panel-overview" aria-labelledby="tab-overview">
+          <h2>Our verdict</h2>
+          <Content />
+          {d.faults.length > 0 && (
+            <>
+              <h2>What is wrong with it</h2>
+              <ul>{d.faults.map((f) => <li>{f}</li>)}</ul>
+            </>
+          )}
+        </section>
 
-        <h2>The seller</h2>
-        <p><b>{d.seller}.</b> {d.moneyGoes}</p>
+        <section class="panel-tab" role="tabpanel" id="panel-story" aria-labelledby="tab-story">
+          <h2>The story</h2>
+          {d.story.length > 0 && (
+            <ol class="story">
+              {d.story.map((e) => (
+                <li><span class="when">{e.when}</span><span>{e.what}</span></li>
+              ))}
+            </ol>
+          )}
+          {d.storyNote && <p class="story-note">{d.storyNote}</p>}
+          {d.storySources.length > 0 && (
+            <p class="key" style="margin-top: 1rem">
+              Sources: {d.storySources.map((r, i) => (
+                <>{i > 0 && '; '}<a href={r.url} rel="noopener">{r.title}</a></>
+              ))}
+            </p>
+          )}
+        </section>
 
-        <h2>What you may do with it</h2>
-        <p><b>{d.verdict}.</b> {d.verdictReason}</p>
-
-        {d.faults.length > 0 && (
-          <>
-            <h2>What is wrong with it</h2>
-            <ul>{d.faults.map((f) => <li>{f}</li>)}</ul>
-          </>
-        )}
-
-        {hasWorks && (
-          <>
-            <h2>What it needs, and what it might cost</h2>
+        <section class="panel-tab" role="tabpanel" id="panel-repairs" aria-labelledby="tab-repairs">
+          <h2>What it needs, and what it might cost</h2>
+          {hasWorks && (
             <dl class="figures">
               <div><dt>Safe and dry</dt><dd>{range(sum(nowWorks, 'low'), sum(nowWorks, 'high'))}</dd></div>
               <div><dt>Everything on the list</dt><dd>{range(sum(d.works, 'low'), sum(d.works, 'high'))}</dd></div>
               {d.upkeep && <div><dt>Each year after that</dt><dd>{range(d.upkeep.low, d.upkeep.high)}</dd></div>}
             </dl>
-            {d.estimateNote && <p>{d.estimateNote}</p>}
-            {phases.map((ph) => {
-              const ws = d.works.filter((w) => w.phase === ph);
-              return ws.length === 0 ? null : (
-                <table class="ledger works">
-                  <thead>
-                    <tr><th>{phaseText[ph]}</th><th>Rough cost</th><th>Based on</th></tr>
-                  </thead>
-                  <tbody>
-                    {ws.map((w) => (
-                      <tr>
-                        <td>{w.item}</td>
-                        <td>{w.low === undefined ? 'Not costed' : range(w.low, w.high ?? w.low)}</td>
-                        <td class={w.basis === 'assumed' ? 'mark-unknown' : 'mark-listing'}>{basisText[w.basis]}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              );
-            })}
-            {d.upkeep && <p><b>Yearly upkeep, {range(d.upkeep.low, d.upkeep.high)}.</b> {d.upkeep.covers}</p>}
-            {d.grantNote && <p><b>Grants.</b> {d.grantNote}</p>}
-            <p class="key">
-              These are our rough estimates and not quotes. Nobody from this site has been inside the
-              building. We measured from the listing, applied published French rates for 2025 and 2026,
-              and raised them for scaffolding, height and heritage rules. Figures are for works only,
-              before architect's fees of 10 to 15% and VAT. Rot, structural movement and asbestos do not
-              show in a listing. <a href="/before-you-buy/#how-we-estimate">How we estimate</a>.
-            </p>
-          </>
-        )}
+          )}
+          {d.estimateNote && <p>{d.estimateNote}</p>}
 
-        {d.sections.map((s) => (
-          <>
-            <h2>{s.title}</h2>
-            <table class="ledger">
-              <tbody>
-                {s.items.map((i) => (
-                  <tr>
-                    <td>{i.label}</td>
-                    <td>{i.value}</td>
-                    <td class={`mark-${i.status}`}>
-                      {i.source ? <a href={i.source} rel="noopener">{marks[i.status]}</a> : marks[i.status]}
-                    </td>
-                  </tr>
+          {d.seen.length > 0 && (
+            <details class="fold">
+              <summary>What the photographs show</summary>
+              <ul>{d.seen.map((s) => <li>{s}</li>)}</ul>
+            </details>
+          )}
+
+          {hasWorks && (
+            <details class="fold" open>
+              <summary>The work, line by line</summary>
+              {phases.map((ph) => {
+                const ws = d.works.filter((w) => w.phase === ph);
+                return ws.length === 0 ? null : (
+                  <table class="ledger works">
+                    <thead>
+                      <tr><th>{phaseText[ph]}</th><th>Rough cost</th><th>Based on</th></tr>
+                    </thead>
+                    <tbody>
+                      {ws.map((w) => (
+                        <tr>
+                          <td>{w.item}</td>
+                          <td>{w.low === undefined ? 'Not costed' : range(w.low, w.high ?? w.low)}</td>
+                          <td class={w.basis === 'assumed' ? 'mark-unknown' : w.basis === 'photos' ? 'mark-checked' : 'mark-listing'}>{basisText[w.basis]}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                );
+              })}
+            </details>
+          )}
+
+          {d.upkeep && <p><b>Yearly upkeep, {range(d.upkeep.low, d.upkeep.high)}.</b> {d.upkeep.covers}</p>}
+          {d.grantNote && <p><b>Grants.</b> {d.grantNote}</p>}
+
+          {repairSections.map((s) => (
+            <details class="fold">
+              <summary>{s.title}, as the listing describes it</summary>
+              <table class="ledger">
+                <tbody>
+                  {s.items.map((i) => (
+                    <tr>
+                      <td>{i.label}</td>
+                      <td>{i.value}</td>
+                      <td class={`mark-${i.status}`}>{i.source ? <a href={i.source} rel="noopener">{marks[i.status]}</a> : marks[i.status]}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </details>
+          ))}
+
+          <p class="key">
+            These are our rough estimates and not quotes. Nobody from this site has been inside the
+            building. We measured from the listing, looked at its photographs, applied published
+            French rates for 2025 and 2026, and raised them for scaffolding, height and heritage
+            rules. Figures are for works only, before architect's fees of 10 to 15% and VAT. Rot,
+            structural movement and asbestos do not show in a photograph.
+            <a href="/before-you-buy/#how-we-estimate">How we estimate</a>.
+          </p>
+        </section>
+
+        <section class="panel-tab" role="tabpanel" id="panel-rules" aria-labelledby="tab-rules">
+          <h2>The seller</h2>
+          <p><b>{d.seller}.</b> {d.moneyGoes}</p>
+          <h2>What you may do with it</h2>
+          <p><b>{d.verdict}.</b> {d.verdictReason}</p>
+          {ruleSections.map((s) => (
+            <>
+              <h2>{s.title}</h2>
+              <table class="ledger">
+                <tbody>
+                  {s.items.map((i) => (
+                    <tr>
+                      <td>{i.label}</td>
+                      <td>{i.value}</td>
+                      <td class={`mark-${i.status}`}>{i.source ? <a href={i.source} rel="noopener">{marks[i.status]}</a> : marks[i.status]}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </>
+          ))}
+        </section>
+
+        <section class="panel-tab" role="tabpanel" id="panel-practical" aria-labelledby="tab-practical">
+          {practicalSections.map((s) => (
+            <>
+              <h2>{s.title}</h2>
+              <table class="ledger">
+                <tbody>
+                  {s.items.map((i) => (
+                    <tr>
+                      <td>{i.label}</td>
+                      <td>{i.value}</td>
+                      <td class={`mark-${i.status}`}>{i.source ? <a href={i.source} rel="noopener">{marks[i.status]}</a> : marks[i.status]}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </>
+          ))}
+          {d.nearby.length > 0 && (
+            <>
+              <h2>Restored nearby</h2>
+              <ul>
+                {d.nearby.map((n) => (
+                  <li><b>{n.url ? <a href={n.url} rel="noopener">{n.name}</a> : n.name}.</b> {n.note}</li>
                 ))}
-              </tbody>
-            </table>
-          </>
-        ))}
-
-        {d.nearby.length > 0 && (
-          <>
-            <h2>Restored nearby</h2>
-            <ul>
-              {d.nearby.map((n) => (
-                <li><b>{n.url ? <a href={n.url} rel="noopener">{n.name}</a> : n.name}.</b> {n.note}</li>
-              ))}
-            </ul>
-          </>
-        )}
-
-        {d.contacts.length > 0 && (
-          <>
-            <h2>People to call</h2>
-            <ul>
-              {d.contacts.map((c) => (
-                <li>{c.role}: {c.url ? <a href={c.url} rel="noopener">{c.name}</a> : c.name}</li>
-              ))}
-            </ul>
-          </>
-        )}
-
-        <p class="key">
-          "From the listing" means the seller's agent says so. "Checked by us" means we confirmed it
-          against a public record, linked where possible. "Unknown" is a question to put to the agent
-          before you visit. See <a href="/before-you-buy/">Before you buy</a> for what each heritage
-          class allows.
-        </p>
+              </ul>
+            </>
+          )}
+          {d.contacts.length > 0 && (
+            <>
+              <h2>People to call</h2>
+              <ul>
+                {d.contacts.map((c) => (
+                  <li>{c.role}: {c.url ? <a href={c.url} rel="noopener">{c.name}</a> : c.name}</li>
+                ))}
+              </ul>
+            </>
+          )}
+          <p class="key">
+            "From the listing" means the seller's agent says so. "Checked by us" means we confirmed it
+            against a public record, linked where possible. "Unknown" is a question to put to the
+            agent before you visit.
+          </p>
+        </section>
       </div>
 
       <aside class="panel" aria-label="Key facts">
         <dl>
           <div><dt>{d.status === 'saved' ? 'Sold at' : 'Asking price'}</dt><dd class="price">{d.price}</dd></div>
-          <div><dt>Status</dt><dd style="text-transform: capitalize">{d.status}</dd></div>
-          <div><dt>Heritage status</dt><dd>{d.heritageClass}</dd></div>
-          <div><dt>What you may do</dt><dd>{d.verdict}</dd></div>
           {hasWorks && (
             <div><dt>Rough cost of works</dt><dd>{range(sum(d.works, 'low'), sum(d.works, 'high'))}</dd></div>
           )}
           {d.upkeep && <div><dt>Each year</dt><dd>{range(d.upkeep.low, d.upkeep.high)}</dd></div>}
+          <div><dt>Heritage status</dt><dd>{d.heritageClass}</dd></div>
+          <div><dt>What you may do</dt><dd>{d.verdict}</dd></div>
           <div>
             <dt>Difficulty</dt>
             <dd>
@@ -214,4 +284,52 @@ const marks = { listing: 'From the listing', checked: 'Checked by us', unknown: 
       </aside>
     </div>
   </div>
+
+  <script>
+    // Tabs: one panel at a time, without leaving the page. With no JavaScript every panel shows.
+    const tabs = [...document.querySelectorAll<HTMLButtonElement>('[role="tab"]')];
+    const panels = [...document.querySelectorAll<HTMLElement>('[role="tabpanel"]')];
+    function select(id: string, focus = false) {
+      for (const t of tabs) {
+        const on = t.id === `tab-${id}`;
+        t.setAttribute('aria-selected', String(on));
+        t.tabIndex = on ? 0 : -1;
+        if (on && focus) t.focus();
+      }
+      for (const p of panels) p.hidden = p.id !== `panel-${id}`;
+    }
+    const fromHash = () => {
+      const id = location.hash.slice(1);
+      return tabs.some((t) => t.id === `tab-${id}`) ? id : 'overview';
+    };
+    document.documentElement.classList.add('tabs-on');
+    select(fromHash());
+    tabs.forEach((t, i) => {
+      const id = t.id.replace('tab-', '');
+      t.addEventListener('click', () => {
+        select(id);
+        history.replaceState(null, '', `#${id}`);
+      });
+      t.addEventListener('keydown', (e) => {
+        const step = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!step) return;
+        const next = tabs[(i + step + tabs.length) % tabs.length].id.replace('tab-', '');
+        select(next, true);
+        history.replaceState(null, '', `#${next}`);
+      });
+    });
+    window.addEventListener('hashchange', () => select(fromHash()));
+
+    // Gallery: click a small photo to show it large.
+    const lead = document.getElementById('lead-photo') as HTMLImageElement | null;
+    const thumbs = [...document.querySelectorAll<HTMLButtonElement>('.thumb')];
+    thumbs.forEach((b) =>
+      b.addEventListener('click', () => {
+        if (!lead) return;
+        lead.src = b.dataset.src!;
+        lead.alt = b.dataset.alt!;
+        thumbs.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      }),
+    );
+  </script>
 </Base>

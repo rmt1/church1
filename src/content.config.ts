@@ -45,12 +45,13 @@ const churches = defineCollection({
         z.object({
           phase: z.enum(['Now', 'Next', 'Later']),
           item: z.string(),
-          basis: z.enum(['listing', 'record', 'assumed']),
+          basis: z.enum(['listing', 'photos', 'record', 'assumed']),
           low: z.number().optional(), // euros; leave both out if not costed
           high: z.number().optional(),
         }),
       )
       .default([]),
+    seen: z.array(z.string()).default([]), // what the listing photographs show
     upkeep: z.object({ low: z.number(), high: z.number(), covers: z.string() }).optional(),
     estimateNote: z.string().optional(),
     grantNote: z.string().optional(),

@@ -108,9 +108,10 @@ sections:
 faults:
 - 'Everything needs work: the listing says the property is to be rehabilitated entirely.'
 - Most of the chapel and the south cloister wing have been demolished.
-- Over 1,000 square metres of former classrooms and dormitories to restore.
+- Graffiti in the choir shows the site is being entered.
+- Ceilings are failing in the former classrooms.
+- Render has gone from long stretches of wall.
 - A 1960s prefabricated hall to demolish, with a fibre-cement roof.
-- No cost estimate is given.
 contacts:
 - role: Selling agent
   name: Patrice Besse, Paris (reference 363625)
@@ -149,25 +150,35 @@ works:
   low: 20000
   high: 50000
 - phase: Now
-  item: Overhaul or re-cover the tile roofs of both ranges, about 550 square metres. One attic frame is described as solid.
-  basis: listing
-  low: 100000
-  high: 190000
+  item: Overhaul the tile roofs of both ranges, about 550 square metres. They look complete in the photographs.
+  basis: photos
+  low: 40000
+  high: 120000
+- phase: Now
+  item: Secure the site. The graffiti in the choir shows that people get in.
+  basis: photos
+  low: 5000
+  high: 15000
+- phase: Now
+  item: Strip the ivy and have an engineer check the tied walls
+  basis: photos
+  low: 5000
+  high: 15000
 - phase: Now
   item: Demolish the 1960s parish hall, 164 square metres, including asbestos removal from its fibre-cement roof
   basis: listing
   low: 25000
   high: 60000
 - phase: Next
-  item: 'Conserve the chapel choir, 104 square metres: vaults, panelling, floor and glass'
-  basis: listing
+  item: 'Conserve the chapel choir, 104 square metres: vaults, panelling, floor, and removal of graffiti'
+  basis: photos
   low: 60000
   high: 180000
 - phase: Next
-  item: Repair the stonework of the two seven-arch cloister galleries
-  basis: assumed
-  low: 40000
-  high: 120000
+  item: Replaster the vaults of the two seven-arch cloister galleries. The stone is sound.
+  basis: photos
+  low: 30000
+  high: 90000
 - phase: Later
   item: Rehabilitate the two ranges to a usable standard, about 1,026 square metres at 1,200 to 2,200 euros a square metre, roofs excluded
   basis: listing
@@ -177,8 +188,17 @@ upkeep:
   low: 8000
   high: 18000
   covers: Insurance, property tax, securing an empty site, a yearly roof and gutter check on two long ranges, and grounds of nearly 6,000 square metres. This is the cost while the wings stand empty.
-estimateNote: 'A custodian can stop after the first two phases: the roofs sound, the hall gone, the choir and the arcades conserved, and the wings mothballed. That is 245,000 to 600,000 euros. Finishing the wings is a development project and needs a use that pays for it.'
+estimateNote: 'A custodian can stop after the first two phases: the roofs overhauled, the site secure, the hall gone, the choir and the galleries conserved, and the wings mothballed. That is 185,000 to 530,000 euros. Finishing the wings is a development project and needs a use that pays for it.'
 grantNote: As an inscrit building it can receive a State grant, typically around 20% of approved works. The listing says French taxpayers can deduct 50% of certain costs.
+seen:
+- The tile roofs of both ranges look straight and complete, seen from above and from the court.
+- Render has gone from long stretches of the outside walls and the rubble stone is exposed. Ivy is climbing one wall.
+- The court front carries S-shaped iron tie anchors, so the walls have been tied in the past.
+- In the cloister galleries the stone piers and arches are sound. Plaster is flaking from the vaults and debris lies on the floor.
+- In the chapel choir the vaults keep their plaster ornament. Paint is peeling, there are damp patches, and there is graffiti on the walls. The windows are intact.
+- In the former classrooms the ceilings are failing, and a ceiling board has fallen in one corridor. The old radiators are still on the walls.
+- The vaulted refectory and its stone fireplace are intact. The stone staircase is sound.
+- A concrete-block lean-to has been built against one end.
 ---
 A convent founded in 1621 for the price of a studio flat, and every square metre of it needs work. The chapel was mostly pulled down. Its choir survives, 104 square metres under rib vaults, between two wings with seven-arch arcades onto the cloister court.
 

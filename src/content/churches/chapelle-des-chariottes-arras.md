@@ -109,10 +109,11 @@ sections:
     value: Lille 45 km, Paris 160 km.
     status: listing
 faults:
+- The stone front is black with pollution and has plants growing on it.
+- Shrubs have rooted in the side walls, and one opening is boarded up.
 - A public heritage record notes that the chapel needs maintenance.
 - The original stained glass is gone.
 - Part of the marble floor is missing.
-- Roof and services are not described.
 - No land beyond the building itself.
 contacts:
 - role: Selling agent
@@ -164,10 +165,10 @@ works:
   low: 10000
   high: 25000
 - phase: Now
-  item: Roof of nave and choir, about 430 square metres, and the spire. The low figure is an overhaul, the high figure a large re-slating campaign. A public record says maintenance is needed.
-  basis: record
+  item: Overhaul the slate roofs, about 430 square metres, and the spire. They look complete in the photographs; a public record says maintenance is needed.
+  basis: photos
   low: 20000
-  high: 150000
+  high: 70000
 - phase: Now
   item: Gutters, rainwater pipes and bird-proofing
   basis: assumed
@@ -175,29 +176,34 @@ works:
   high: 15000
 - phase: Next
   item: Clean and repair the white stone front. The shrapnel scars stay.
-  basis: assumed
+  basis: photos
   low: 30000
   high: 90000
+- phase: Next
+  item: Clear the plants from walls and ledges, repoint the brick, and reinstate the boarded opening
+  basis: photos
+  low: 8000
+  high: 25000
 - phase: Next
   item: Make good the missing parts of the marble floor, assumed at 40 square metres
   basis: listing
   low: 12000
   high: 28000
 - phase: Next
-  item: 'Overhaul the five nave windows: ironwork, leading and clear glass'
-  basis: listing
-  low: 10000
-  high: 35000
-- phase: Next
-  item: Repair interior plaster and limewash
-  basis: assumed
-  low: 32000
-  high: 80000
+  item: Service the tall leaded windows, which look intact
+  basis: photos
+  low: 5000
+  high: 20000
 - phase: Later
-  item: Conserve the stalls, the wrought-iron grilles and the gilded altar
-  basis: listing
-  low: 20000
-  high: 70000
+  item: Clean the interior stone and repair plaster where stained
+  basis: photos
+  low: 15000
+  high: 45000
+- phase: Later
+  item: Light conservation of the stalls, grilles and gilded altar, which look in good order
+  basis: photos
+  low: 5000
+  high: 20000
 - phase: Later
   item: Electrics, lighting and heating
   basis: assumed
@@ -207,8 +213,15 @@ upkeep:
   low: 6000
   high: 12000
   covers: Insurance for a classé building of 300 square metres, property tax, twice-yearly gutter clearance, a yearly inspection, and a reserve for the roof.
-estimateNote: The listing describes no works at all, so almost every line here is an assumption about a 250-year-old building that was half rebuilt in 1923. The roof is the unknown that matters.
+estimateNote: The photographs show a building in better order inside than out. The woodwork has plainly been restored. The outside wants cleaning, weeding and repointing, and the roof wants a proper inspection.
 grantNote: As a classé building it can receive a State grant of up to about 40% of approved works, and more in urgent cases.
+seen:
+- The stone front is black with pollution and pitted by shrapnel. Plants are growing on the cornices.
+- The side walls are brick with stone dressings. Shrubs have rooted at the foot of the wall and on ledges, and one ground-floor opening is boarded with plywood.
+- The slate roofs and the slate-hung spire look complete.
+- Inside, the plaster vault is clean and whole. The tall windows keep their clear leaded glass.
+- The oak panelling and stalls look freshly restored. The wrought-iron grilles have their gilding.
+- The stone of the walls below the windows carries grey staining.
 ---
 Louis Posteau built this for Franciscan nuns between 1769 and 1775, with a front borrowed from the Gesù in Rome. It was shelled twice in the First World War and rebuilt. The shrapnel scars are still in the stone.
 

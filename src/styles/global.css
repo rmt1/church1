@@ -227,3 +227,33 @@ th { color: var(--ink-soft); border-bottom-color: var(--ink); white-space: nowra
 .ledger.works td:first-child { width: auto; font-weight: 400; }
 .ledger.works td:nth-child(2) { width: 11.5rem; font-weight: 600; white-space: nowrap; }
 .ledger.works th:first-child { color: var(--ink); }
+
+/* profile tabs */
+.tabs { display: flex; gap: 0 1.9rem; margin-top: 2rem; border-bottom: 1px solid var(--rule); overflow-x: auto; scrollbar-width: none; position: sticky; top: 4rem; background: var(--paper); z-index: 5; }
+.tabs::-webkit-scrollbar { display: none; }
+@media (max-width: 40rem) { .tabs { top: 0; gap: 0 1.3rem; } }
+.tabs [role='tab'] { font-family: var(--sans); font-size: 0.74rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); background: none; border: 0; border-bottom: 2px solid transparent; margin-bottom: -1px; padding: 1rem 0 0.9rem; cursor: pointer; white-space: nowrap; }
+.tabs [role='tab']:hover { color: var(--ink); }
+.tabs [role='tab'][aria-selected='true'] { color: var(--ink); border-bottom-color: var(--ink); }
+.panel-tab { padding-top: 0.5rem; min-height: 22rem; }
+.panel-tab > h2:first-child { margin-top: 2rem; }
+.lot-body h2:first-of-type { margin-top: 2rem; }
+html:not(.tabs-on) .tabs { display: none; }
+
+/* fold-away detail inside a tab */
+.fold { border-top: 1px solid var(--rule); padding: 0; margin: 0; }
+.fold:last-of-type { border-bottom: 1px solid var(--rule); margin-bottom: 1.5rem; }
+.fold > summary { font-family: var(--sans); font-size: 0.74rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 1rem 0; cursor: pointer; list-style: none; display: flex; justify-content: space-between; }
+.fold > summary::-webkit-details-marker { display: none; }
+.fold > summary::after { content: '+'; font-size: 1rem; font-weight: 400; }
+.fold[open] > summary::after { content: '\2212'; }
+.fold > ul { margin-top: 0; }
+.fold .ledger { margin-top: 0; }
+
+/* gallery thumbnails switch the large photo */
+.gallery .lead { aspect-ratio: 3 / 2; max-height: 34rem; width: 100%; }
+.gallery .lead img { object-fit: contain; background: var(--panel); }
+.gallery .strip { grid-auto-columns: 6.5rem; justify-content: start; }
+.thumb { padding: 0; border: 2px solid transparent; background: none; cursor: pointer; display: block; }
+.thumb img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+.thumb[aria-pressed='true'] { border-color: var(--ink); }

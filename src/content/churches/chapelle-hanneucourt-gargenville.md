@@ -99,8 +99,10 @@ sections:
     value: About 40 km west of Paris by the A13 and A14.
     status: listing
 faults:
-- Years of abandonment. The whole building needs repair.
-- Roof condition is not described.
+- Broken panes in the side window, which is partly boarded.
+- Plaster is falling from the ceiling.
+- The bell lantern is weathered and has lost its louvres.
+- Render is cracked and has fallen from the annex cornice.
 - No plot size is given, so the amount of ground around the chapel is unclear.
 - The neighbouring château outbuildings are a building site.
 contacts:
@@ -143,35 +145,40 @@ works:
   low: 4000
   high: 8000
 - phase: Now
-  item: Re-cover the hipped roof in slate and zinc, about 100 square metres, and repair the bell lantern. Assumed after years of abandonment.
-  basis: assumed
-  low: 30000
-  high: 60000
+  item: Overhaul the slate and zinc roofs, about 100 square metres, and rebuild the bell lantern. The slate looks continuous; the lantern does not.
+  basis: photos
+  low: 15000
+  high: 45000
 - phase: Now
   item: Gutters, downpipes and drainage away from the walls
   basis: assumed
   low: 4000
   high: 10000
 - phase: Next
-  item: Repair the lime render on about 200 square metres of wall
-  basis: assumed
+  item: Repair the lime render on about 200 square metres of wall, including the annex cornice
+  basis: photos
   low: 16000
   high: 32000
 - phase: Next
-  item: Two traceried windows, the rose and the round-headed bay, about 10 square metres of glass and stonework
-  basis: listing
+  item: 'Windows: replace broken panes, re-lead, repair the sill and the stone of the rose, about 10 square metres of glass'
+  basis: photos
   low: 10000
   high: 30000
 - phase: Next
-  item: Lift, repair and relay the black-and-white floor, 71 square metres
-  basis: listing
-  low: 7000
-  high: 18000
+  item: Secure and repair the ceiling plaster that is falling
+  basis: photos
+  low: 8000
+  high: 20000
 - phase: Later
-  item: Conserve the choir panelling and the painted decoration
-  basis: listing
-  low: 15000
-  high: 60000
+  item: Clean and repair the black-and-white floor, which looks complete, 71 square metres
+  basis: photos
+  low: 3000
+  high: 10000
+- phase: Later
+  item: Conserve the panelling and the painted decoration, both in fair condition
+  basis: photos
+  low: 10000
+  high: 35000
 - phase: Later
   item: Bring in electricity and lighting. No services are mentioned.
   basis: assumed
@@ -186,8 +193,17 @@ upkeep:
   low: 2500
   high: 5000
   covers: Insurance, property tax, a yearly roof and gutter check, and a reserve for the slate and zinc.
-estimateNote: The listing says the whole chapel needs putting back in order. We have assumed a new roof covering; if the slate proves sound, the first phase halves.
+estimateNote: The photographs are kinder than the listing. The roof covering and the interior woodwork look sound. The lantern, the broken glass, the render and the falling ceiling plaster are where the money goes.
 grantNote: As an inscrit building it can receive a State grant, typically around 20% of approved works.
+seen:
+- The slate roof looks continuous from the ground. The timber bell lantern is weathered and has lost louvres.
+- The render is stained and cracked. It has fallen away from the cornice of the side annex and left the brick exposed.
+- The traceried side window has several broken panes and its lower part is boarded. The stone sill is decayed.
+- The rose over the door has its glass. The stone around it is eroded and the joints are open.
+- Inside, plaster has fallen from above and lies on the floor by the communion rail.
+- The oak panelling runs round the whole interior with carved medallions and looks sound. The wrought-iron communion rail is in place.
+- The painted cornice and ceiling corners, with a gilded monogram, are in fair condition.
+- Chairs, prayer desks, the altar and several statues are still in the chapel.
 ---
 This chapel never belonged to the Church. It was built for the owners of a château, and it is being sold on its own now that the estate is being divided.
 
