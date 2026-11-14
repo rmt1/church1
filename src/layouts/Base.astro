@@ -15,7 +15,7 @@ const nav = [
   { href: '/why/', label: 'Why save them' },
   { href: '/who-owns-the-churches/', label: 'Who owns them' },
   { href: '/before-you-buy/', label: 'Before you buy' },
-  { href: '/donate/', label: "Can't buy one?" },
+  { href: '/donate/', label: 'Donate' },
   { href: '/about/', label: 'About' },
 ];
 ---
@@ -30,25 +30,20 @@ const nav = [
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <!-- the pointed-arch shape every church picture sits in -->
-    <svg width="0" height="0" aria-hidden="true" style="position:absolute">
-      <clipPath id="lancet" clipPathUnits="objectBoundingBox">
-        <path d="M0,1 L0,0.44 C0,0.24 0.26,0.1 0.5,0 C0.74,0.1 1,0.24 1,0.44 L1,1 Z"></path>
-      </clipPath>
-    </svg>
-
     <header class="site-head">
-      <a class="site-name" href="/">{site}</a>
-      <nav class="site-nav" aria-label="Main">
-        {nav.map((n) => (
-          <a href={n.href} aria-current={path.startsWith(n.href) ? 'page' : undefined}>{n.label}</a>
-        ))}
-      </nav>
+      <div class="wrap">
+        <a class="site-name" href="/">{site}</a>
+        <nav class="site-nav" aria-label="Main">
+          {nav.map((n) => (
+            <a href={n.href} aria-current={path.startsWith(n.href) ? 'page' : undefined}>{n.label}</a>
+          ))}
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -56,10 +51,22 @@ const nav = [
     </main>
 
     <footer class="site-foot">
-      <p>
-        We publish; we do not broker. Every church links to the agent or owner selling it, and we take
-        no commission. Costs on this site are estimates. Commission a survey before you make an offer.
-      </p>
+      <div class="wrap">
+        <div>
+          <a class="site-name" href="/">{site}</a>
+          <p>
+            We publish; we do not broker. Every church links to the agent or owner selling it, and we
+            take no commission. Costs on this site are estimates. Commission a survey before you make
+            an offer.
+          </p>
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <ul>
+            {nav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

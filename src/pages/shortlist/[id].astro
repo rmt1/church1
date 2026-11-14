@@ -15,141 +15,147 @@ const marks = { listing: 'From the listing', checked: 'Checked by us', unknown: 
 ---
 
 <Base title={d.name} description={d.summary}>
-  {d.specimen && (
-    <p class="notice">
-      This is a specimen. The church is invented, to show what a profile contains. It is not for sale
-      because it does not exist.
-    </p>
-  )}
+  <div class="wrap">
+    <p class="crumbs"><a href="/shortlist/">The shortlist</a> / {d.country} / {d.name}</p>
 
-  <section class="profile-top">
-    <div>
-      <h1>
-        {d.name}
-        {d.status === 'saved' && <span class="stamp">Saved</span>}
-        {d.status === 'under offer' && <span class="stamp">Under offer</span>}
-      </h1>
-      <p class="where">{d.place}, {d.region}, {d.country}</p>
-      <p class="prose standfirst">{d.summary}</p>
-      {d.listingUrl && (
-        <div class="actions">
-          <a class="button" href={d.listingUrl} rel="noopener">See the listing at {d.agent}</a>
-        </div>
-      )}
-    </div>
-    <div class="lancet-col">
-      <div class="lancet">
+    {d.specimen && (
+      <p class="notice">
+        This is a specimen. The church is invented, to show what a profile contains. It is not for
+        sale because it does not exist.
+      </p>
+    )}
+
+    <div class="gallery">
+      <div class="lead">
         {d.photos[0] ? (
           <img src={d.photos[0].src} alt={d.photos[0].alt} />
         ) : (
-          <span class="numeral" aria-label={`Century ${d.century}`}>{d.century}</span>
+          <div style="text-align:center">
+            <span class="numeral" aria-hidden="true">{d.century}</span>
+            <p class="hint">Photographs to come</p>
+          </div>
         )}
       </div>
-    </div>
-  </section>
-
-  <dl class="glance">
-    <div><dt>Asking price</dt><dd>{d.price}</dd></div>
-    <div><dt>Heritage status</dt><dd>{d.heritageClass}</dd></div>
-    <div><dt>What you may do</dt><dd>{d.verdict}</dd></div>
-    <div>
-      <dt>Difficulty</dt>
-      <dd>
-        <span class="pips" aria-label={`${d.difficulty} of 5`}>
-          {[1, 2, 3, 4, 5].map((n) => <span class={n <= d.difficulty ? '' : 'off'}>&#9670;</span>)}
-        </span>
-      </dd>
-    </div>
-    <div><dt>Last checked</dt><dd>{checked}</dd></div>
-  </dl>
-
-  {d.photos.length > 1 && (
-    <div class="photo-row">
-      {d.photos.slice(1).map((p) => (
-        <figure>
-          <img src={p.src} alt={p.alt} loading="lazy" />
-          <figcaption>{p.credit}</figcaption>
-        </figure>
-      ))}
-    </div>
-  )}
-
-  <div class="profile-body">
-    <h2>Our verdict</h2>
-    <div class="prose"><Content /></div>
-
-    <h2>The seller</h2>
-    <p><b>{d.seller}.</b> {d.moneyGoes}</p>
-
-    <h2>What you may do with it</h2>
-    <p><b>{d.verdict}.</b> {d.verdictReason}</p>
-
-    {d.faults.length > 0 && (
-      <>
-        <h2>What is wrong with it</h2>
-        <ul>{d.faults.map((f) => <li>{f}</li>)}</ul>
-      </>
-    )}
-
-    {d.costs.length > 0 && (
-      <>
-        <h2>Work and money</h2>
-        <table class="ledger">
-          <tbody>
-            {d.costs.map((c) => (
-              <tr><td>{c.label}</td><td>{c.amount}</td><td class="mark-listing">{c.basis}</td></tr>
-            ))}
-          </tbody>
-        </table>
-      </>
-    )}
-
-    {d.sections.map((s) => (
-      <>
-        <h2>{s.title}</h2>
-        <table class="ledger">
-          <tbody>
-            {s.items.map((i) => (
-              <tr>
-                <td>{i.label}</td>
-                <td>{i.value}</td>
-                <td class={`mark-${i.status}`}>
-                  {i.source ? <a href={i.source} rel="noopener">{marks[i.status]}</a> : marks[i.status]}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </>
-    ))}
-
-    {d.nearby.length > 0 && (
-      <>
-        <h2>Restored nearby</h2>
-        <ul>
-          {d.nearby.map((n) => (
-            <li><b>{n.url ? <a href={n.url} rel="noopener">{n.name}</a> : n.name}.</b> {n.note}</li>
+      {d.photos[0] && <p class="credit">{d.photos[0].credit}</p>}
+      {d.photos.length > 1 && (
+        <div class="strip">
+          {d.photos.slice(1).map((p) => (
+            <figure>
+              <a href={p.src}><img src={p.src} alt={p.alt} loading="lazy" /></a>
+              <figcaption>{p.credit}</figcaption>
+            </figure>
           ))}
-        </ul>
-      </>
-    )}
+        </div>
+      )}
+    </div>
 
-    {d.contacts.length > 0 && (
-      <>
-        <h2>People to call</h2>
-        <ul>
-          {d.contacts.map((c) => (
-            <li>{c.role}: {c.url ? <a href={c.url} rel="noopener">{c.name}</a> : c.name}</li>
-          ))}
-        </ul>
-      </>
-    )}
+    <div class="lot">
+      <div class="lot-body">
+        <p class="label" style="color: var(--ink-soft); margin-bottom: 0.6rem">{d.century} century</p>
+        <h1>{d.name}</h1>
+        <p class="where">{d.place}, {d.region}, {d.country}</p>
+        <p class="standfirst">{d.summary}</p>
 
-    <p class="key">
-      "From the listing" means the seller's agent says so. "Checked by us" means we confirmed it
-      against a public record, linked where possible. "Unknown" is a question to put to the agent
-      before you visit. See <a href="/before-you-buy/">Before you buy</a> for what each heritage class
-      allows.
-    </p>
+        <h2>Our verdict</h2>
+        <Content />
+
+        <h2>The seller</h2>
+        <p><b>{d.seller}.</b> {d.moneyGoes}</p>
+
+        <h2>What you may do with it</h2>
+        <p><b>{d.verdict}.</b> {d.verdictReason}</p>
+
+        {d.faults.length > 0 && (
+          <>
+            <h2>What is wrong with it</h2>
+            <ul>{d.faults.map((f) => <li>{f}</li>)}</ul>
+          </>
+        )}
+
+        {d.costs.length > 0 && (
+          <>
+            <h2>Work and money</h2>
+            <table class="ledger">
+              <tbody>
+                {d.costs.map((c) => (
+                  <tr><td>{c.label}</td><td>{c.amount}</td><td class="mark-listing">{c.basis}</td></tr>
+                ))}
+              </tbody>
+            </table>
+          </>
+        )}
+
+        {d.sections.map((s) => (
+          <>
+            <h2>{s.title}</h2>
+            <table class="ledger">
+              <tbody>
+                {s.items.map((i) => (
+                  <tr>
+                    <td>{i.label}</td>
+                    <td>{i.value}</td>
+                    <td class={`mark-${i.status}`}>
+                      {i.source ? <a href={i.source} rel="noopener">{marks[i.status]}</a> : marks[i.status]}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </>
+        ))}
+
+        {d.nearby.length > 0 && (
+          <>
+            <h2>Restored nearby</h2>
+            <ul>
+              {d.nearby.map((n) => (
+                <li><b>{n.url ? <a href={n.url} rel="noopener">{n.name}</a> : n.name}.</b> {n.note}</li>
+              ))}
+            </ul>
+          </>
+        )}
+
+        {d.contacts.length > 0 && (
+          <>
+            <h2>People to call</h2>
+            <ul>
+              {d.contacts.map((c) => (
+                <li>{c.role}: {c.url ? <a href={c.url} rel="noopener">{c.name}</a> : c.name}</li>
+              ))}
+            </ul>
+          </>
+        )}
+
+        <p class="key">
+          "From the listing" means the seller's agent says so. "Checked by us" means we confirmed it
+          against a public record, linked where possible. "Unknown" is a question to put to the agent
+          before you visit. See <a href="/before-you-buy/">Before you buy</a> for what each heritage
+          class allows.
+        </p>
+      </div>
+
+      <aside class="panel" aria-label="Key facts">
+        <dl>
+          <div><dt>{d.status === 'saved' ? 'Sold at' : 'Asking price'}</dt><dd class="price">{d.price}</dd></div>
+          <div><dt>Status</dt><dd style="text-transform: capitalize">{d.status}</dd></div>
+          <div><dt>Heritage status</dt><dd>{d.heritageClass}</dd></div>
+          <div><dt>What you may do</dt><dd>{d.verdict}</dd></div>
+          <div>
+            <dt>Difficulty</dt>
+            <dd>
+              <span class="pips" aria-label={`${d.difficulty} of 5`}>
+                {[1, 2, 3, 4, 5].map((n) => <span class={n <= d.difficulty ? '' : 'off'}>&#9670;</span>)}
+              </span>
+            </dd>
+          </div>
+        </dl>
+        {d.listingUrl ? (
+          <a class="button" href={d.listingUrl} rel="noopener">View the listing</a>
+        ) : (
+          <span class="button ghost" aria-disabled="true">Listing link to come</span>
+        )}
+        <p class="small">Sold through {d.agent}. Last checked {checked}. We take no commission.</p>
+      </aside>
+    </div>
   </div>
 </Base>
