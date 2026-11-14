@@ -63,7 +63,7 @@ story:
 - when: '2010'
   what: The convent is sold. Its site is later marketed for housing.
 - when: '2021'
-  what: The Bessines community, down to nine sisters, closes. The Carmel of Niort ends after 373 years.
+  what: The Bessines community, down to nine sisters, closes. The Carmel of Niort ends, 373 years after its founding.
 - when: November 2023
   what: The chapel is put up for sale at 250,000 euros through Patrice Besse, on behalf of a La Rochelle property company.
 - when: April 2025
@@ -215,6 +215,6 @@ contacts:
   name: The town hall of Niort, urban planning department
 ---
 
-Three hundred and fifty square metres of dressed stone, a vault fourteen metres up and every window still in its glass, for less than a one-bedroom flat in Niort. The Carmelites built it in 1868 and prayed in it for 140 years. Since 2009 nobody has.
+Three hundred and fifty square metres of dressed stone, a vault fourteen metres up and every window still in its glass, for 190,000 euros. The Carmelites built it in 1868 and prayed in it for 140 years. Since 2009 nobody has.
 
 It has been on the market for three years and the price has dropped by a quarter. The agents keep suggesting a restaurant or a loft. Open the doors, dry it out and put music in it. Have the roof looked at before you sign anything.
