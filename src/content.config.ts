@@ -34,7 +34,7 @@ const churches = defineCollection({
     verdictReason: z.string(),
     difficulty: z.number().int().min(1).max(5),
     photos: z
-      .array(z.object({ src: z.string(), alt: z.string(), credit: z.string() }))
+      .array(z.object({ src: z.string(), alt: z.string(), credit: z.string(), focus: z.string().optional() }))
       .default([]),
     sections: z.array(z.object({ title: z.string(), items: z.array(fact) })).default([]),
     story: z.array(z.object({ when: z.string(), what: z.string() })).default([]),

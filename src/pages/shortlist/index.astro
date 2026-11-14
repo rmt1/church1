@@ -55,19 +55,27 @@ const real = all.filter((c) => !c.data.specimen);
       <span class="count" aria-live="polite"><span id="count">{all.length}</span> shown</span>
     </form>
 
-    <ul class="tiles" id="tiles" style="padding-bottom: 5rem">
-      {all.map((c) => (
-        <li data-country={c.data.country} data-verdict={c.data.verdict} data-difficulty={c.data.difficulty}>
-          <Tile church={c} />
-        </li>
+    <div id="tiles" style="padding-bottom: 5rem">
+      {countries.map((country) => (
+        <section class="country" data-country={country}>
+          <h2 class="country-head">{country} <span>{all.filter((c) => c.data.country === country).length}</span></h2>
+          <ul class="tiles">
+            {all.filter((c) => c.data.country === country).map((c) => (
+              <li data-country={c.data.country} data-verdict={c.data.verdict} data-difficulty={c.data.difficulty}>
+                <Tile church={c} />
+              </li>
+            ))}
+          </ul>
+        </section>
       ))}
-    </ul>
+    </div>
     <p class="empty" id="none" hidden>No church matches those filters. Loosen one.</p>
   </div>
 
   <script>
     const form = document.querySelector('.filters') as HTMLFormElement;
-    const items = [...document.querySelectorAll<HTMLLIElement>('#tiles > li')];
+    const items = [...document.querySelectorAll<HTMLLIElement>('#tiles li[data-country]')];
+    const groups = [...document.querySelectorAll<HTMLElement>('#tiles .country')];
     const count = document.getElementById('count')!;
     const none = document.getElementById('none')!;
     function apply() {
@@ -82,6 +90,7 @@ const real = all.filter((c) => !c.data.specimen);
         li.hidden = !ok;
         if (ok) shown++;
       }
+      for (const g of groups) g.hidden = !g.querySelector('li[data-country]:not([hidden])');
       count.textContent = String(shown);
       none.hidden = shown > 0;
     }

@@ -16,23 +16,24 @@ verdict: Convertible
 verdictReason: The listing mentions no protection and proposes a loft on two levels. The village is old, so the building may sit inside a protected perimeter where the State architect rules on exteriors.
 difficulty: 2
 photos:
-- src: https://medias4b.patrice-besse.com/photo-acquerir/9624/zoom/65956af3e9e1676abd86c7df56c563ad.jpg
-  alt: Chapel by the Loire canal, photograph 1 from the Patrice Besse listing
+- src: /photos/chapel-near-sancerre/3.jpg
+  focus: center 88%
+  alt: The arched street door in a cement-rendered wall, with an iron tie anchor
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/9624/zoom/a8a52fc62647ade38244de31cf34cc3b.jpg
-  alt: Chapel by the Loire canal, photograph 2 from the Patrice Besse listing
+- src: /photos/chapel-near-sancerre/5.jpg
+  alt: A blocked medieval window of two trefoil-headed lights
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/9624/zoom/dc6120b49728a0d606c742d03d9b24ac.jpg
-  alt: Chapel by the Loire canal, photograph 3 from the Patrice Besse listing
+- src: /photos/chapel-near-sancerre/4.jpg
+  alt: The side door, with stone jambs and a timber lintel
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/9624/zoom/09816047df3b3450e5b4c7dd6a69d37a.jpg
-  alt: Chapel by the Loire canal, photograph 4 from the Patrice Besse listing
+- src: /photos/chapel-near-sancerre/1.jpg
+  alt: The roof frame from below, with a half-height floor of bare joists
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/9624/zoom/9624-8-edifice-religieux-a-vendre-a-cote-de-sancerre-en-france.jpg
-  alt: Chapel by the Loire canal, photograph 5 from the Patrice Besse listing
+- src: /photos/chapel-near-sancerre/6.jpg
+  alt: A blocked brick arch in the stone wall
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/9624/zoom/6de41ae552e838be66d7b15d04fa5070.jpg
-  alt: Chapel by the Loire canal, photograph 6 from the Patrice Besse listing
+- src: /photos/chapel-near-sancerre/2.jpg
+  alt: Looking up through the joists to the roof
   credit: 'Photo: Patrice Besse'
 sections:
 - title: Sacred status

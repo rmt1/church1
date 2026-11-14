@@ -17,23 +17,23 @@ verdict: Light use
 verdictReason: The chapel is inscrit, and the agent expects a scrupulous restoration. Works need a permit agreed with the regional culture office.
 difficulty: 3
 photos:
-- src: https://medias4b.patrice-besse.com/photo-acquerir/35649/zoom/22b31d8374f59aca79ad9c0cc559da60.jpg
-  alt: Chapel of the Château d'Hanneucourt, photograph 1 from the Patrice Besse listing
+- src: /photos/chapelle-hanneucourt-gargenville/1.jpg
+  alt: The chapel and the dovecote across the courtyard
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/35649/zoom/1647732a260a48bfe959c12473659d5f.jpg
-  alt: Chapel of the Château d'Hanneucourt, photograph 2 from the Patrice Besse listing
+- src: /photos/chapelle-hanneucourt-gargenville/6.jpg
+  alt: A glimpse of the panelled interior and checkerboard floor through the door
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/35649/zoom/165395d545295efb64a27a9281278d4a.jpg
-  alt: Chapel of the Château d'Hanneucourt, photograph 3 from the Patrice Besse listing
+- src: /photos/chapelle-hanneucourt-gargenville/2.jpg
+  alt: The traceried side window, with broken panes
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/35649/zoom/b364d8c982a2d2edd96b1e7f4f0e0710.jpg
-  alt: Chapel of the Château d'Hanneucourt, photograph 4 from the Patrice Besse listing
+- src: /photos/chapelle-hanneucourt-gargenville/4.jpg
+  alt: The weathered bell lantern
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/35649/zoom/c2f9ebdb120cb688e9ea9956eb85e746.jpg
-  alt: Chapel of the Château d'Hanneucourt, photograph 5 from the Patrice Besse listing
+- src: /photos/chapelle-hanneucourt-gargenville/5.jpg
+  alt: The quatrefoil rose over the door
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/35649/zoom/842f0cc02ec50bfa191c9e8d5b71ab35.jpg
-  alt: Chapel of the Château d'Hanneucourt, photograph 6 from the Patrice Besse listing
+- src: /photos/chapelle-hanneucourt-gargenville/3.jpg
+  alt: The side annex, with render fallen from its cornice
   credit: 'Photo: Patrice Besse'
 sections:
 - title: Sacred status

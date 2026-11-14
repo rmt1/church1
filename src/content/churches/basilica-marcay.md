@@ -17,23 +17,23 @@ verdict: Light use
 verdictReason: Inscrit in full, sacristy included, by order of 4 January 2011. The nave must stay as it is; the agent notes it can now receive a range of projects.
 difficulty: 1
 photos:
-- src: https://medias4b.patrice-besse.com/photo-acquerir/27566/zoom/d7b06870b6ffb9d24df72725d196e36a.jpg
-  alt: Basilica of Saint Benoît-Joseph Labre, Marçay, photograph 1 from the Patrice Besse listing
+- src: /photos/basilica-marcay/1.jpg
+  alt: The basilica from the south, in its garden
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/27566/zoom/b38063c1b90000e2f78c64c266695dd5.jpg
-  alt: Basilica of Saint Benoît-Joseph Labre, Marçay, photograph 2 from the Patrice Besse listing
+- src: /photos/basilica-marcay/2.jpg
+  alt: The unfinished west front
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/27566/zoom/c072562e40fbdafc463a994061ef9179.jpg
-  alt: Basilica of Saint Benoît-Joseph Labre, Marçay, photograph 3 from the Patrice Besse listing
+- src: /photos/basilica-marcay/3.jpg
+  alt: The nave looking west to the organ
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/27566/zoom/85c1abfd5f3ee540dbc000546c01c081.jpg
-  alt: Basilica of Saint Benoît-Joseph Labre, Marçay, photograph 4 from the Patrice Besse listing
+- src: /photos/basilica-marcay/4.jpg
+  alt: The nave looking east to the choir windows, with tables of books
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/27566/zoom/1de61aae9a90c96e118274c37619859e.jpg
-  alt: Basilica of Saint Benoît-Joseph Labre, Marçay, photograph 5 from the Patrice Besse listing
+- src: /photos/basilica-marcay/6.jpg
+  alt: The crossing and side chapels
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/27566/zoom/fbd86c3ddcd4247ce64883bac965290b.jpg
-  alt: Basilica of Saint Benoît-Joseph Labre, Marçay, photograph 6 from the Patrice Besse listing
+- src: /photos/basilica-marcay/5.jpg
+  alt: A carved capital in the nave
   credit: 'Photo: Patrice Besse'
 sections:
 - title: Sacred status

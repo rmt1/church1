@@ -6,7 +6,7 @@ const d = church.data;
 <a class="tile" href={`/shortlist/${church.id}/`}>
   <div class="frame">
     {d.photos[0] ? (
-      <img src={d.photos[0].src} alt={d.photos[0].alt} loading="lazy" />
+      <img src={d.photos[0].src} alt={d.photos[0].alt} loading="lazy" style={d.photos[0].focus ? `object-position: ${d.photos[0].focus}` : undefined} />
     ) : (
       <span class="numeral" aria-hidden="true">{d.century ?? ''}</span>
     )}

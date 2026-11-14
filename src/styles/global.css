@@ -257,3 +257,8 @@ html:not(.tabs-on) .tabs { display: none; }
 .thumb { padding: 0; border: 2px solid transparent; background: none; cursor: pointer; display: block; }
 .thumb img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
 .thumb[aria-pressed='true'] { border-color: var(--ink); }
+
+.country-head { margin: 0 0 1.5rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--ink); display: flex; justify-content: space-between; align-items: baseline; }
+.country-head span { font-family: var(--sans); font-size: 0.8rem; color: var(--ink-soft); }
+.country + .country { margin-top: 4rem; }
+.hero.has-photo { background-image: linear-gradient(rgba(11, 37, 69, 0.55), rgba(11, 37, 69, 0.7)), var(--hero); }

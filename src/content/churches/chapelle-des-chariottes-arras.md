@@ -17,23 +17,23 @@ verdict: Preserve as found
 verdictReason: Classé monument historique since 27 May 1921. Any restoration needs prior authorisation from the regional culture office and a qualified heritage architect.
 difficulty: 3
 photos:
-- src: https://medias4b.patrice-besse.com/photo-acquerir/33531/zoom/bc706a1c0bf2946d28a291ba512a7776.jpg
-  alt: Chapelle des Chariottes, photograph 1 from the Patrice Besse listing
+- src: /photos/chapelle-des-chariottes-arras/1.jpg
+  alt: The stone front and side of the chapel from the street
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/33531/zoom/7a8cda6cf7e373a0ef72fbfc8a08882f.jpg
-  alt: Chapelle des Chariottes, photograph 2 from the Patrice Besse listing
+- src: /photos/chapelle-des-chariottes-arras/4.jpg
+  alt: The west front, with the Virgin and Child over the door
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/33531/zoom/59ac21dcf0967ff296e766b96dfa63b7.jpg
-  alt: Chapelle des Chariottes, photograph 3 from the Patrice Besse listing
+- src: /photos/chapelle-des-chariottes-arras/3.jpg
+  alt: The brick and stone side wall, with one opening boarded up
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/33531/zoom/53bdd3629b7d9c982b750fb52d865950.jpg
-  alt: Chapelle des Chariottes, photograph 4 from the Patrice Besse listing
+- src: /photos/chapelle-des-chariottes-arras/2.jpg
+  alt: The apse and its slate roof from the lane
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/33531/zoom/8591f7e755895f08dc9844ee439dcf7f.jpg
-  alt: Chapelle des Chariottes, photograph 5 from the Patrice Besse listing
+- src: /photos/chapelle-des-chariottes-arras/5.jpg
+  alt: An Ionic capital on the front
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/33531/zoom/5754bcc345ea37bf4e4600ec99abbbc8.jpg
-  alt: Chapelle des Chariottes, photograph 6 from the Patrice Besse listing
+- src: /photos/chapelle-des-chariottes-arras/6.jpg
+  alt: A wrought-iron door handle and carved oak
   credit: 'Photo: Patrice Besse'
 sections:
 - title: Sacred status

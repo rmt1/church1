@@ -13,6 +13,7 @@ A shortlist of old churches a private person could buy and keep standing, with t
 | The about page | `src/pages/about.md` |
 | The home page | `src/pages/index.astro` |
 | A church | one file per church in `src/content/churches/` |
+| A church's photos | `public/photos/<church-file-name>/` |
 | Colours and type | `src/styles/global.css` |
 | Site name and menu | `src/layouts/Base.astro` |
 

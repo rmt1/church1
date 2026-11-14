@@ -17,23 +17,23 @@ verdict: Convertible
 verdictReason: The listing states the temple is neither inscrit nor classé and that a change of use can be considered after general renovation and drainage works. The fittings have no legal protection.
 difficulty: 2
 photos:
-- src: https://medias4b.patrice-besse.com/photo-acquerir/36532/zoom/6a5bb382f38eb_354518_retouches_4.jpg
-  alt: Protestant temple of Crèvecœur-le-Grand, photograph 1 from the Patrice Besse listing
+- src: /photos/temple-crevecoeur-le-grand/3.jpg
+  alt: The brick front with its rose window and stone portal
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/36532/zoom/6a5bb49be5354_354518_retouches.jpg
-  alt: Protestant temple of Crèvecœur-le-Grand, photograph 2 from the Patrice Besse listing
+- src: /photos/temple-crevecoeur-le-grand/6.jpg
+  alt: The interior looking to the door and the rose
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/36532/zoom/6a5bb37eece94_354518_retouches_2.jpg
-  alt: Protestant temple of Crèvecœur-le-Grand, photograph 3 from the Patrice Besse listing
+- src: /photos/temple-crevecoeur-le-grand/1.jpg
+  alt: Three painted windows above a damp-stained wall
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/36532/zoom/6a5bb37d782b0_354518_retouches_19.jpg
-  alt: Protestant temple of Crèvecœur-le-Grand, photograph 4 from the Patrice Besse listing
+- src: /photos/temple-crevecoeur-le-grand/5.jpg
+  alt: The apse, with the pulpit and a painted verse
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/36532/zoom/6a5bb385380d7_354518_retouches_5.jpg
-  alt: Protestant temple of Crèvecœur-le-Grand, photograph 5 from the Patrice Besse listing
+- src: /photos/temple-crevecoeur-le-grand/4.jpg
+  alt: The stone portal and turquoise doors
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/36532/zoom/747655_img_20260715_160232619.jpg
-  alt: Protestant temple of Crèvecœur-le-Grand, photograph 6 from the Patrice Besse listing
+- src: /photos/temple-crevecoeur-le-grand/2.jpg
+  alt: The laurel-lined path to the door
   credit: 'Photo: Patrice Besse'
 sections:
 - title: Sacred status

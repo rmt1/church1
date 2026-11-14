@@ -17,23 +17,23 @@ verdict: Convertible
 verdictReason: The buildings, cloister and adjoining land are inscrit (7 June 2013). The agent proposes housing or a senior residence in the wings. The chapel choir and the arcades are the parts to keep untouched.
 difficulty: 5
 photos:
-- src: https://medias4b.patrice-besse.com/photo-acquerir/33246/zoom/9bcba905e6f601852a5fab7f3c49629a.jpg
-  alt: Convent of the Annonciades Célestes, photograph 1 from the Patrice Besse listing
+- src: /photos/annonciades-celestes-saint-amour/1.jpg
+  alt: The vaulted cloister gallery, with flaking plaster and debris on the floor
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/33246/zoom/df809a270496a3926b6011f1e61a7417.jpg
-  alt: Convent of the Annonciades Célestes, photograph 2 from the Patrice Besse listing
+- src: /photos/annonciades-celestes-saint-amour/3.jpg
+  alt: The arcaded range and the town of Saint-Amour seen from an upper window
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/33246/zoom/f383a0008e3a13440818a835af8d8507.jpg
-  alt: Convent of the Annonciades Célestes, photograph 3 from the Patrice Besse listing
+- src: /photos/annonciades-celestes-saint-amour/4.jpg
+  alt: The surviving chapel choir, with rib vaults, dado panelling and peeling paint
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/33246/zoom/5430f17c3ea639a910ea2d6acc7d1a64.jpg
-  alt: Convent of the Annonciades Célestes, photograph 4 from the Patrice Besse listing
+- src: /photos/annonciades-celestes-saint-amour/5.jpg
+  alt: The court front, three storeys over a seven-arch arcade
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/33246/zoom/e89da1009dc4c97f098d029d3014439f.jpg
-  alt: Convent of the Annonciades Célestes, photograph 5 from the Patrice Besse listing
+- src: /photos/annonciades-celestes-saint-amour/2.jpg
+  alt: The outer wall of one range, stone exposed, with ivy
   credit: 'Photo: Patrice Besse'
-- src: https://medias4b.patrice-besse.com/photo-acquerir/33246/zoom/e318be9b0ca6891134eec54ca315491e.jpg
-  alt: Convent of the Annonciades Célestes, photograph 6 from the Patrice Besse listing
+- src: /photos/annonciades-celestes-saint-amour/6.jpg
+  alt: A former classroom with a failing ceiling
   credit: 'Photo: Patrice Besse'
 sections:
 - title: Sacred status
