@@ -4,11 +4,14 @@ import { getCollection, render } from 'astro:content';
 import { ageText } from '../../lib/age';
 
 export async function getStaticPaths() {
-  const all = await getCollection('churches');
-  return all.map((church) => ({ params: { id: church.id }, props: { church } }));
+  const all = (await getCollection('churches')).sort((a, b) => a.data.country.localeCompare(b.data.country) || a.data.difficulty - b.data.difficulty);
+  return all.map((church, i) => ({
+    params: { id: church.id },
+    props: { church, prev: all[(i - 1 + all.length) % all.length], next: all[(i + 1) % all.length], ids: all.map((c) => c.id) },
+  }));
 }
 
-const { church } = Astro.props;
+const { church, prev, next, ids } = Astro.props;
 const d = church.data;
 const { Content } = await render(church);
 const age = ageText(d.built, d.builtNote, d.builtRound);
@@ -287,6 +290,22 @@ const tabs = [
     </div>
   </div>
 
+  <nav class="ring" aria-label="More churches">
+    <div class="wrap">
+      <a href={`/shortlist/${prev.id}/`}>&#9756; {prev.data.name}</a>
+      <a class="ring-mid" id="ring-random" href="/shortlist/" data-ids={ids.join(',')}>&#10016; Take me to a church at random &#10016;</a>
+      <a href={`/shortlist/${next.id}/`}>{next.data.name} &#9758;</a>
+    </div>
+  </nav>
+
+  <script>
+    const rr = document.getElementById('ring-random');
+    if (rr) {
+      const ids = (rr.dataset.ids || '').split(',').filter((x) => !location.pathname.includes(x));
+      const base = rr.getAttribute('href');
+      if (ids.length) rr.setAttribute('href', base + ids[Math.floor(Math.random() * ids.length)] + '/');
+    }
+  </script>
   <script>
     // Tabs: one panel at a time, without leaving the page. With no JavaScript every panel shows.
     const tabs = [...document.querySelectorAll<HTMLButtonElement>('[role="tab"]')];

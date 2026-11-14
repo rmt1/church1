@@ -262,3 +262,224 @@ html:not(.tabs-on) .tabs { display: none; }
 .country-head span { font-family: var(--sans); font-size: 0.8rem; color: var(--ink-soft); }
 .country + .country { margin-top: 4rem; }
 .hero.has-photo { background-image: linear-gradient(rgba(11, 37, 69, 0.55), rgba(11, 37, 69, 0.7)), var(--hero); }
+
+
+/* =====================================================================
+   Medieval manuscript, with a little 1997.
+   Vellum ground, lapis and vermilion, gold leaf, an uncial for headings.
+   ===================================================================== */
+:root {
+  --paper: #f5ecd6;
+  --panel: #ecdfc0;
+  --ink: #2a1c12;
+  --ink-soft: #6b543f;
+  --navy: #1e3f8f;      /* lapis */
+  --gilt: #c39a1c;      /* gold leaf */
+  --ruby: #a9291f;      /* vermilion */
+  --moss: #3f6a3c;
+  --rule: #cfbb8f;
+
+  --serif: 'EB Garamond', 'Iowan Old Style', Georgia, serif;
+  --sans: 'EB Garamond', Georgia, serif;
+  --uncial: 'Uncial Antiqua', 'EB Garamond', serif;
+  --black: 'Pirata One', 'Uncial Antiqua', serif;
+}
+
+body {
+  font-size: 1.28rem;
+  line-height: 1.55;
+  background-color: var(--paper);
+  background-image:
+    radial-gradient(60rem 40rem at 12% 8%, rgba(255, 250, 235, 0.75), transparent 60%),
+    radial-gradient(50rem 38rem at 92% 30%, rgba(196, 160, 90, 0.16), transparent 62%),
+    radial-gradient(46rem 36rem at 30% 95%, rgba(170, 130, 70, 0.14), transparent 60%);
+  background-attachment: fixed;
+}
+
+a { color: var(--navy); text-decoration-thickness: 1.5px; }
+a:visited { color: #5a2c82; }
+a:hover { color: var(--ruby); }
+a:focus-visible, button:focus-visible, select:focus-visible { outline: 3px solid var(--gilt); outline-offset: 3px; }
+
+h1, h2, h3 { font-family: var(--uncial); letter-spacing: 0; line-height: 1.2; color: var(--ink); }
+h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); }
+h2 { font-size: clamp(1.35rem, 2.6vw, 1.8rem); }
+h3 { font-size: 1.15rem; }
+.prose h2::before, .panel-tab > h2::before { content: '\2767\00a0'; color: var(--ruby); font-family: var(--serif); }
+
+/* labels: small caps in the text face, no tracked capitals */
+.label, .site-nav a, .button, th, .crumbs, .tile .meta, .filters label, .panel dt, .site-foot h2, .figures dt,
+.tabs [role='tab'], .fold > summary, .flag {
+  font-family: var(--serif);
+  font-variant-caps: small-caps;
+  text-transform: none;
+  letter-spacing: 0.04em;
+  font-size: 1.02rem;
+  font-weight: 500;
+}
+.tile .price, .tile .sub, .section-head a, .thirds a, .filters select, .filters .count, .notice, .key, .credit,
+.gallery figcaption, .panel .small, .site-foot p, .site-foot ul, .prose table, .ledger, .story .when, .gallery .lead .hint {
+  font-family: var(--serif);
+}
+.prose table, .ledger { font-size: 1.02rem; }
+.ledger td:last-child { font-size: 0.92rem; letter-spacing: 0; font-style: italic; }
+.tile .sub, .key, .credit, .gallery figcaption, .panel .small { font-size: 0.95rem; }
+.story .when { font-size: 1rem; color: var(--ruby); }
+th { color: var(--ink-soft); border-bottom: 3px double var(--ink); }
+td { border-bottom-color: var(--rule); }
+
+/* ---------- header: a banner of lapis diaper-work over the page ---------- */
+.site-head { background: var(--paper); border-bottom: 3px double var(--ink); }
+.site-head::before {
+  content: '';
+  display: block;
+  height: 14px;
+  background-color: var(--navy);
+  background-image:
+    radial-gradient(circle at 50% 50%, var(--gilt) 0 2px, transparent 2.5px),
+    linear-gradient(45deg, transparent 46%, rgba(195, 154, 28, 0.55) 46% 54%, transparent 54%),
+    linear-gradient(-45deg, transparent 46%, rgba(195, 154, 28, 0.55) 46% 54%, transparent 54%);
+  background-size: 14px 14px;
+}
+.site-head .wrap { padding-block: 0.7rem; }
+.site-name { font-family: var(--black); font-size: 2.1rem; color: var(--ruby); letter-spacing: 0.01em; }
+.site-name:visited, .site-name:hover { color: var(--ruby); }
+.site-nav a { color: var(--ink); padding-block: 0.3rem; border-bottom: 2px solid transparent; }
+.site-nav a:visited { color: var(--ink); }
+.site-nav a:hover, .site-nav a[aria-current='page'] { border-bottom-color: var(--ruby); color: var(--ruby); }
+
+/* the ticker: one moving thing on the page */
+.ticker { background: var(--ink); color: #f3e3b3; overflow: hidden; border-bottom: 2px solid var(--gilt); font-variant-caps: small-caps; letter-spacing: 0.05em; font-size: 0.98rem; }
+.ticker-run { display: inline-flex; white-space: nowrap; padding-block: 0.3rem; }
+.ticker-run span::before { content: '\2720'; color: var(--gilt); margin-inline: 1.4rem; }
+@media (prefers-reduced-motion: no-preference) {
+  .ticker-run { animation: ticker 48s linear infinite; }
+  .ticker:hover .ticker-run { animation-play-state: paused; }
+}
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* ---------- buttons: bevelled, like 1997, in vermilion and gold ---------- */
+.button {
+  background: var(--ruby);
+  color: #fff6dc;
+  border: 3px outset #e2bd4a;
+  padding: 0.7rem 1.4rem;
+  font-size: 1.12rem;
+  box-shadow: 2px 3px 0 rgba(42, 28, 18, 0.35);
+}
+.button:visited { color: #fff6dc; }
+.button:hover { background: var(--navy); border-color: #e2bd4a; color: #fff6dc; }
+.button:active { border-style: inset; box-shadow: none; transform: translate(2px, 3px); }
+.button.ghost { background: var(--paper); color: var(--ink); }
+.button.ghost:visited { color: var(--ink); }
+.button.ghost:hover { background: var(--navy); color: #fff6dc; }
+.button.on-dark { background: var(--ruby); color: #fff6dc; border-color: #e2bd4a; }
+.button.on-dark.ghost { background: rgba(245, 236, 214, 0.92); color: var(--ink); }
+.button.on-dark:hover { background: var(--navy); border-color: #e2bd4a; color: #fff6dc; }
+.prose a.button, .prose a.button:hover { color: #fff6dc; }
+
+/* ---------- home ---------- */
+.hero { position: relative; background-color: var(--navy); }
+.hero.has-photo { background-image: linear-gradient(rgba(22, 40, 96, 0.62), rgba(30, 20, 12, 0.72)), var(--hero); }
+.hero h1 { font-family: var(--black); font-size: clamp(3.2rem, 9vw, 6.4rem); color: #fbe9b0; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.45); line-height: 1; margin-bottom: 1.2rem; }
+.hero h1::before { content: '\2766'; display: block; font-family: var(--serif); font-size: 0.32em; color: var(--gilt); margin-bottom: 0.6rem; }
+.hero p { color: #f6ecd2; font-size: 1.4rem; }
+.hero .wrap { padding-block: clamp(4rem, 11vw, 8rem) clamp(4.5rem, 12vw, 9rem); }
+/* battlements along the foot of the hero */
+.hero::after {
+  content: '';
+  position: absolute; left: 0; right: 0; bottom: -1px; height: 22px;
+  background: repeating-linear-gradient(90deg, var(--paper) 0 26px, transparent 26px 52px);
+}
+.section + .section { border-top: 3px double var(--rule); }
+.thirds p { color: var(--ink-soft); font-size: 1.12rem; }
+.thirds h3 { font-size: 1.25rem; }
+.pull p { font-style: italic; }
+.pull p::before { content: '\201C'; font-family: var(--black); color: var(--ruby); font-size: 1.6em; line-height: 0; vertical-align: -0.25em; margin-right: 0.1em; }
+
+/* illuminated initial on prose pages and church summaries */
+.prose > p:first-of-type::first-letter, .lot-body > .standfirst::first-letter {
+  font-family: var(--black);
+  float: left;
+  font-size: 3.5em;
+  line-height: 0.82;
+  padding: 0.1em 0.14em 0.04em;
+  margin: 0.08em 0.14em 0 0;
+  color: #fbe9b0;
+  background: var(--navy);
+  border: 3px solid var(--gilt);
+  box-shadow: 0 0 0 1px var(--ink);
+}
+.prose .standfirst, .standfirst { font-size: 1.45rem; }
+
+/* ---------- tiles: miniatures under a round arch ---------- */
+.tiles { gap: 3.2rem 2.4rem; }
+.tile .frame {
+  border-radius: 50% 50% 0 0 / 30% 30% 0 0;
+  border: 3px solid var(--ink);
+  box-shadow: 0 0 0 4px var(--gilt), 0 0 0 5px var(--ink), 5px 9px 0 5px rgba(42, 28, 18, 0.14);
+  background: var(--panel);
+  margin: 5px;
+}
+.tile h3 { font-size: 1.22rem; line-height: 1.25; margin-bottom: 0.25rem; color: var(--ink); }
+.tile:hover h3 { color: var(--ruby); text-decoration: none; }
+.tile .meta { color: var(--ruby); margin-top: 1.1rem; }
+.tile .where { font-size: 1.08rem; font-style: italic; }
+.tile .price { font-size: 1.15rem; font-weight: 600; }
+.flag { background: var(--gilt); color: var(--ink); top: auto; bottom: 0.6rem; left: 0.6rem; border: 1px solid var(--ink); }
+.country-head { border-bottom: 3px double var(--ink); }
+.country-head::before { content: '\2720\00a0'; color: var(--ruby); font-family: var(--serif); }
+.country-head { display: flex; gap: 0.3rem; }
+.country-head span { margin-left: auto; font-size: 1rem; font-family: var(--serif); font-style: italic; }
+.filters { border-block: 3px double var(--rule); }
+.filters select { font-size: 1.05rem; border: 2px solid var(--ink); background: #fbf5e4; border-radius: 0; }
+
+/* ---------- profile ---------- */
+.gallery .lead { border: 3px solid var(--ink); box-shadow: 0 0 0 4px var(--gilt), 0 0 0 5px var(--ink); margin: 5px; width: calc(100% - 10px); }
+.gallery .lead img { background: #1d140d; }
+.thumb { border: 2px solid var(--rule); }
+.thumb[aria-pressed='true'] { border-color: var(--ruby); box-shadow: 0 0 0 2px var(--gilt); }
+.panel { border: 3px double var(--ink); background: rgba(251, 245, 228, 0.8); box-shadow: 5px 7px 0 rgba(42, 28, 18, 0.12); }
+.panel dd.price { font-family: var(--uncial); font-size: 1.7rem; color: var(--ruby); }
+.pips { color: var(--ruby); }
+.tabs { background: var(--paper); border-bottom: 3px double var(--ink); }
+.tabs [role='tab'] { font-size: 1.1rem; padding: 0.8rem 0 0.7rem; border-bottom: 3px solid transparent; }
+.tabs [role='tab'][aria-selected='true'] { color: var(--ruby); border-bottom-color: var(--ruby); }
+.fold > summary { font-size: 1.08rem; }
+.fold > summary::after { color: var(--ruby); font-family: var(--uncial); }
+.figures { border-block: 3px double var(--ink); }
+.figures dd { font-family: var(--uncial); font-size: 1.2rem; }
+.notice { border-left: 4px solid var(--ruby); background: var(--panel); font-size: 1.05rem; }
+.mark-checked { color: var(--moss); }
+.story { border-top: 3px double var(--ink); }
+
+/* the ring of churches: previous, random, next */
+.ring { border-block: 3px double var(--ink); background: var(--panel); margin-top: 1rem; }
+.ring .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.5rem 2rem; padding-block: 1rem; font-size: 1.08rem; }
+.ring a { text-decoration: none; color: var(--ink); }
+.ring a:hover { color: var(--ruby); text-decoration: underline; }
+.ring-mid { font-family: var(--uncial); font-size: 0.98rem; color: var(--ruby) !important; }
+
+/* ---------- footer ---------- */
+.site-foot {
+  color: #e9ddbb;
+  background-color: var(--navy);
+  background-image:
+    radial-gradient(circle at 50% 50%, rgba(195, 154, 28, 0.5) 0 1.5px, transparent 2px),
+    linear-gradient(45deg, transparent 48%, rgba(195, 154, 28, 0.16) 48% 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(195, 154, 28, 0.16) 48% 52%, transparent 52%);
+  background-size: 28px 28px;
+  border-top: 4px solid var(--gilt);
+}
+@media (min-width: 48rem) { .site-foot .wrap { grid-template-columns: 1.4fr 1fr; } .foot-fun { grid-column: 1 / -1; } }
+.site-foot .site-name, .site-foot .site-name:visited { color: #fbe9b0; }
+.site-foot p { font-size: 1.02rem; }
+.site-foot h2 { color: #e2bd4a; font-family: var(--serif); }
+.site-foot a, .site-foot a:visited { color: #fff6dc; }
+.site-foot ul { font-size: 1.05rem; }
+.foot-fun { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 2.5rem; border-top: 1px solid rgba(226, 189, 74, 0.5); padding-top: 1.5rem; }
+.counter { display: flex; align-items: center; gap: 0.8rem; margin: 0; font-variant-caps: small-caps; letter-spacing: 0.04em; }
+.odometer { display: inline-flex; gap: 2px; padding: 3px; background: #0d0a07; border: 2px inset #8a8170; }
+.odometer b { font-family: 'Courier New', monospace; font-weight: 700; font-size: 1.15rem; color: #7cff6b; background: #151515; padding: 0.05rem 0.32rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; }
+.badges span { font-family: var(--uncial); font-size: 0.68rem; line-height: 1.1; color: var(--ink); background: linear-gradient(#f7e9b8, #d9b64a); border: 2px outset #f3dc8c; padding: 0.35rem 0.6rem; }
