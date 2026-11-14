@@ -190,7 +190,7 @@ upkeep:
   low: 2500
   high: 5000
   covers: Insurance, heating, the clock, gutters cleared twice a year and a yearly roof and tower check.
-estimateNote: This is the best kept of the eight in the photographs. Nothing urgent shows. The costs are the ordinary ones of a stone tower and a slate roof.
+estimateNote: This is the best kept of the seven in the photographs. Nothing urgent shows. The costs are the ordinary ones of a stone tower and a slate roof.
 grantNote: Scotland's Churches Trust gives small grants. Category B buildings rarely get national repair money.
 seen:
 - The slates are even and unbroken on the slopes in view. The ridge is straight.

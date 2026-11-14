@@ -15,7 +15,7 @@ seller: Church of Scotland General Trustees
 moneyGoes: To the Kirk. The General Trustees hold the title for the congregation, and sale proceeds go back to the Church of Scotland for its remaining congregations and buildings.
 heritageClass: Category B
 verdict: Light use
-verdictReason: Category B, in a village, with an interior of 1893 and no earlier fittings. A hall, studio or gallery fits without a change of use. The best EPC rating of the eight, at C.
+verdictReason: Category B, in a village, with an interior of 1893 and no earlier fittings. A hall, studio or gallery fits without a change of use. The best EPC rating of the seven, at C.
 difficulty: 2
 photos:
 - src: /photos/kirkmichael-church/1.jpg
@@ -181,4 +181,4 @@ seen:
 ---
 Seventy thousand pounds for a kirk in a Perthshire village with a river at the bottom of the churchyard. The inside was painted not long ago and the heaters work.
 
-It needs a tap and a drain. Get those priced, look at the flood map, and this is the easiest of the eight to put back into weekly use.
+It needs a tap and a drain. Get those priced, look at the flood map, and this is the easiest of the seven to put back into weekly use.
