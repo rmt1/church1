@@ -16,7 +16,7 @@ const churches = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/churches' }),
   schema: z.object({
     name: z.string(),
-    century: z.string(), // roman numerals, e.g. "XIV"
+    century: z.string().optional(), // roman numerals, e.g. "XIV"; leave out if unknown
     place: z.string(),
     region: z.string(),
     country: z.enum(['France', 'England', 'Scotland', 'Wales', 'Italy', 'Ireland']),

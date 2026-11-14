@@ -4,7 +4,7 @@ title: Why save them
 description: The case for heritage custodianship. You buy the building, fix the roof and keep the door open.
 ---
 
-Old churches are for sale all over Europe, and most of them cost less than a parking space in San Francisco. A chapel in Brittany has been listed at 100,000 euros. Parish kirks in Scotland start around 40,000 pounds. They are cheap because they are a liability. The roof leaks, the congregation is eleven people, and whoever holds the deed, whether a village of 200, a diocese or a family, would like someone else to pay for the gutters.
+Old churches are for sale all over Europe, and most of them cost less than a parking space in San Francisco. A chapel near Sancerre is listed at 30,000 euros. A Protestant temple in Picardy, pulpit and painted glass included, is 90,000. They are cheap because they are a liability. The roof leaks, the congregation is eleven people, and whoever holds the deed, whether a village of 200, a diocese or a family, would like someone else to pay for the gutters.
 
 I think more people should.
 

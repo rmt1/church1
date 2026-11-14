@@ -18,7 +18,7 @@ A shortlist of old churches a private person could buy and keep standing, with t
 
 ## Adding a church
 
-1. Copy `src/content/churches/specimen.md` to a new file named after the church, e.g. `chapelle-saint-roch-morbihan.md`. The file name becomes the web address.
+1. Copy `templates/church-template.md` into `src/content/churches/` under a new name, e.g. `chapelle-saint-roch-morbihan.md`. The file name becomes the web address.
 2. Fill in the fields at the top. Delete the `specimen: true` line.
 3. Mark every fact as `listing` (the agent says so), `checked` (confirmed against a public record, with a `source` link) or `unknown` (a question for the agent).
 4. Put photos in `public/photos/<church-file-name>/` and list them under `photos:` with a credit. Only use photos you have permission for.

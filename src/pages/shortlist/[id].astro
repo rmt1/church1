@@ -31,7 +31,7 @@ const marks = { listing: 'From the listing', checked: 'Checked by us', unknown: 
           <img src={d.photos[0].src} alt={d.photos[0].alt} />
         ) : (
           <div style="text-align:center">
-            <span class="numeral" aria-hidden="true">{d.century}</span>
+            <span class="numeral" aria-hidden="true">{d.century ?? ''}</span>
             <p class="hint">Photographs to come</p>
           </div>
         )}
@@ -51,7 +51,7 @@ const marks = { listing: 'From the listing', checked: 'Checked by us', unknown: 
 
     <div class="lot">
       <div class="lot-body">
-        <p class="label" style="color: var(--ink-soft); margin-bottom: 0.6rem">{d.century} century</p>
+        {d.century && <p class="label" style="color: var(--ink-soft); margin-bottom: 0.6rem">{d.century} century</p>}
         <h1>{d.name}</h1>
         <p class="where">{d.place}, {d.region}, {d.country}</p>
         <p class="standfirst">{d.summary}</p>

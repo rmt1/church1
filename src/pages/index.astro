@@ -4,7 +4,7 @@ import Tile from '../components/Tile.astro';
 import { getCollection } from 'astro:content';
 
 const all = await getCollection('churches');
-const featured = all.slice(0, 3);
+const featured = ['chapel-near-sancerre', 'temple-crevecoeur-le-grand', 'chapelle-des-chariottes-arras'].map((id) => all.find((c) => c.id === id)).filter(Boolean);
 ---
 
 <Base>
