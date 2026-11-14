@@ -21,6 +21,7 @@ const churches = defineCollection({
     region: z.string(),
     country: z.enum(['France', 'England', 'Scotland', 'Wales', 'Italy', 'Ireland']),
     price: z.string(),
+    currency: z.enum(['€', '£']).default('€'),
     agent: z.string(),
     listingUrl: z.string().url().optional(),
     lastChecked: z.coerce.date(),

@@ -30,7 +30,7 @@ When a parish church closes, the Church Commissioners decide whether it is sold 
 
 An English church bought from the Commissioners therefore does pay the Church of England. The routes that do not are resales of churches already in private hands, estate and private chapels, and gifts to a trust such as the Friends of Friendless Churches. Nonconformist chapels (Methodist, Baptist, Welsh Calvinist) are sold by their own denominations.
 
-Scotland is the biggest sale in Europe right now. The Church of Scotland expects to dispose of 350 to 400 buildings, about 30% of its churches, and lists them on its own website from around 40,000 pounds. The proceeds go back to the Kirk.
+Scotland is the biggest sale in Europe right now. The Church of Scotland expects to dispose of 350 to 400 buildings, about 30% of its churches, and lists them on its own website from 20,000 pounds. The proceeds go back to the Kirk.
 
 ## Italy
 

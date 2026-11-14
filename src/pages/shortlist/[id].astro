@@ -12,7 +12,7 @@ const d = church.data;
 const { Content } = await render(church);
 const checked = d.lastChecked.toLocaleDateString('en-GB', { timeZone: 'UTC', day: 'numeric', month: 'long', year: 'numeric' });
 
-const eur = (n: number) => '€' + n.toLocaleString('en-GB');
+const eur = (n: number) => d.currency + n.toLocaleString('en-GB');
 const range = (lo: number, hi: number) => (hi === 0 ? 'Nothing' : lo === hi ? eur(lo) : `${eur(lo)} to ${eur(hi)}`);
 const phases = ['Now', 'Next', 'Later'] as const;
 const phaseText = { Now: 'Now: safe and dry', Next: 'Next: fabric and glass', Later: 'Later: interior and services' };
@@ -182,7 +182,7 @@ const tabs = [
           <p class="key">
             These are our rough estimates and not quotes. Nobody from this site has been inside the
             building. We measured from the listing, looked at its photographs, applied published
-            French rates for 2025 and 2026, and raised them for scaffolding, height and heritage
+            {d.country === 'France' ? 'French' : d.country === 'Scotland' ? 'Scottish' : 'local'} rates for 2025 and 2026, and raised them for scaffolding, height and heritage
             rules. Figures are for works only, before architect's fees of 10 to 15% and VAT. Rot,
             structural movement and asbestos do not show in a photograph.
             <a href="/before-you-buy/#how-we-estimate">How we estimate</a>.
