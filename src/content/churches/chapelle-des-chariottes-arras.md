@@ -1,7 +1,7 @@
 ---
 name: Chapelle des Chariottes
 century: XVIII
-place: Arras
+place: 11 rue des Chariottes, Arras
 region: Pas-de-Calais, Hauts-de-France
 country: France
 price: €532,000
@@ -10,7 +10,7 @@ listingUrl: https://www.patrice-besse.com/annonces/edifices-religieux-a-vendre-a
 lastChecked: 2026-11-14
 status: for sale
 summary: A convent chapel of 1769 to 1775 in the centre of Arras, five minutes from the Place des Héros, classé since 1921. Five-bay nave, marble floor, carved stalls, wrought-iron grilles and a gilded high altar.
-seller: Probably the City of Arras
+seller: The City of Arras, by two public records
 moneyGoes: The State heritage record lists the chapel as the property of the commune. If the town is the seller, the price goes to Arras and not to the Church. The listing does not name the owner, so confirm with the agent.
 heritageClass: Classé
 verdict: Preserve as found
@@ -59,6 +59,10 @@ sections:
     source: https://pop.culture.gouv.fr/notice/merimee/PA00107965
 - title: Condition
   items:
+  - label: Overall
+    value: Recorded as needing maintenance by the religious heritage observatory. No date is given for that assessment.
+    status: checked
+    source: https://recensement.patrimoine-religieux.fr/eglises_edifices/62-Pas-de-Calais/62041-Arras/185401-ChapelledesChariottes
   - label: History of repair
     value: Shelled twice in the First World War and rebuilt in part to the original design by the architects Fleury and Gagey.
     status: listing
@@ -113,6 +117,7 @@ sections:
     value: Lille 45 km, Paris 160 km.
     status: listing
 faults:
+- A public heritage record notes that the chapel needs maintenance.
 - The original stained glass is gone.
 - Part of the marble floor is missing.
 - Roof and services are not described.
@@ -127,25 +132,31 @@ story:
 - when: '1339'
   what: Jean Chariot and his wife Emmelet Huquedieu found a small hospital in Arras, at the corner of what are now the rue Méaulens and the rue des Chariottes.
 - when: '1556'
-  what: Twelve Franciscan sisters arrive from Saint-Pol-sur-Ternoise to run it. The town calls them the Chariottes, after the founder.
+  what: Twelve grey sisters, Franciscans from Saint-Pol-sur-Ternoise, arrive to run it. The town calls them the Chariottes, after the founder. Part of their work is lodging poor women.
 - when: '1767'
-  what: The sisters buy the Hôtel de Montmorency next door, on the corner of the rue de Jérusalem, to enlarge the convent.
+  what: The sisters get leave to buy the Hôtel de Montmorency, on the corner of the rue de Jérusalem, and sell their old buildings.
 - when: 1769 to 1775
   what: They build the chapel to the designs of Louis Posteau, the architect and sculptor behind the 18th-century lower town. The facade carries the date MDCCLXXV.
-- when: 1790s
-  what: The Revolution drives the sisters out.
+- when: '1787'
+  what: The chapel narrowly escapes a fire.
+- when: '1790'
+  what: There are 22 sisters in the convent. The Revolution disperses them.
 - when: '1815'
   what: The sisters return.
 - when: 1914 to 1918
-  what: Arras sits on the front line. The chapel is shelled twice, then rebuilt in part to the original design by the architects Fleury and Gagey.
+  what: Arras sits on the front line. The chapel is shelled twice.
 - when: 27 May 1921
   what: The chapel is classé as a monument historique.
+- when: '1923'
+  what: The chapel is rebuilt, in part to the original design, by the architects Fleury and Gagey.
 - when: Today
-  what: The State heritage record lists the chapel as the property of the commune of Arras and gives its use as a museum. Verlaine, who knew Arras, called it a "charmante chapelle".
-storyNote: We have not found what became of the chapel between the Revolution and 1815, when the sisters left for good, or when the town acquired it.
+  what: The State heritage record and the religious heritage observatory both list the owner as the town of Arras, with the use given as museum. The observatory notes that the convent buildings are much as they were in 1789, that Franciscan sisters run a retirement home there, and that the chapel needs maintenance. Verlaine, who knew Arras, called it a "charmante chapelle".
+storyNote: We have not found what became of the chapel between 1790 and 1815, or when the town acquired it. One source gives 1927 for the classification; the State record says 27 May 1921.
 storySources:
 - title: 'Dans les rues d''Arras: Le Couvent des Chariottes'
   url: https://danslesruesdarras.fr/2020/08/24/le-couvent-des-chariottes/
+- title: 'Observatoire du Patrimoine Religieux: Chapelle des Chariottes'
+  url: https://recensement.patrimoine-religieux.fr/eglises_edifices/62-Pas-de-Calais/62041-Arras/185401-ChapelledesChariottes
 - title: Mérimée notice PA00107965, French Ministry of Culture
   url: https://pop.culture.gouv.fr/notice/merimee/PA00107965
 - title: 'Wikipedia (French): Chapelle des Chariottes'
