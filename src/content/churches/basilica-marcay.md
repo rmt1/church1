@@ -11,7 +11,7 @@ lastChecked: 2026-11-14
 status: for sale
 summary: A pilgrimage church begun in 1884, closed in 1962, sold by the diocese in 1976 and left to rot until 2009. Now inscrit in full and restored from roof frame to wiring, with a 19th-century organ, a Carrara marble altar and a garden of 5,000 square metres.
 seller: Private owner
-moneyGoes: The Diocese of Poitiers sold this church in 1976. It has been private property for fifty years and has had three private owners. The press names the present one as a Paris bookseller who bought it in 2012. Nothing goes to the Church.
+moneyGoes: The Diocese of Poitiers sold this church in 1976. It has been private property for fifty years, and the State heritage record lists it as privately owned. The press names the present owner as a Paris bookseller who bought it in 2012. Nothing goes to the Church.
 heritageClass: Inscrit
 verdict: Light use
 verdictReason: Inscrit in full, sacristy included, by order of 4 January 2011. The nave must stay as it is; the agent notes it can now receive a range of projects.
@@ -48,11 +48,16 @@ sections:
 - title: Heritage status
   items:
   - label: Protection
-    value: Inscrit in full, sacristy included, by order of 4 January 2011.
-    status: listing
+    value: Inscrit in full, sacristy included, by order of 4 January 2011 (plot C 620). Confirmed in the State heritage record, which lists the building as private property.
+    status: checked
+    source: https://pop.culture.gouv.fr/notice/merimee/PA86000043
   - label: Who approves works
     value: Building permit with the agreement of the regional culture office (DRAC).
     status: unknown
+  - label: Protected object
+    value: A painted wooden statue of Saint Benoît-Joseph Labre is separately inscrit (19 April 2021). It cannot leave the building without authorisation.
+    status: checked
+    source: https://pop.culture.gouv.fr/notice/merimee/PA86000043
 - title: Condition
   items:
   - label: Roof, frame and joinery
@@ -126,9 +131,11 @@ story:
 - when: '1856'
   what: François Joseph Joanneau arrives as parish priest of Marçay, a village south of Poitiers. He wants a pilgrimage centre to rival Lourdes.
 - when: '1884'
-  what: Building starts on a church dedicated to Benoît-Joseph Labre, the beggar-pilgrim born at Amettes in 1748, who died in Rome in 1783 and was canonised in 1881. The architects are Jean-Baptiste Perlat and Alcide Boutaud, the diocesan architect.
-- when: About 1899
-  what: The decoration is finished. Joanneau dies, the money stops, and the bell tower is never built. The west front stays as a bare wall waiting for it.
+  what: Building starts on a church dedicated to Benoît-Joseph Labre, the beggar-pilgrim born at Amettes in 1748, who died in Rome in 1783 and was canonised in 1881. The plans are by the architect Jean-Baptiste Perlat, who is replaced by Alcide Boutaud, the diocesan architect.
+- when: '1895'
+  what: The nave and the side cloisters are finished. The choir windows by the glass painter Georges Lavergne are in place, and the altar is designed and made by Georges Rouzeau.
+- when: '1899'
+  what: Joanneau dies and the work stops for good. The bell tower is never built, and the west front stays as a bare wall waiting for it.
 - when: To 1952
   what: Pilgrimages come in numbers. The saint's relics are kept in the church.
 - when: '1962'
@@ -147,10 +154,14 @@ story:
   what: Jean-Denis Touzot, a Paris bookseller, buys it. Restoration starts that autumn under the heritage architect Bernard Ruel, with parts of the transept and nave close to collapse.
 - when: April 2016
   what: The basilica reopens to visitors as a centre devoted to the book. Two bells are hung the same year.
+- when: 19 April 2021
+  what: A painted wooden statue of the saint, made in the last quarter of the 19th century, is inscrit as a protected object.
 - when: 2017 to 2023
   what: The refurbishment is completed in 2017, the outside stairs in 2019, and an organ is installed in spring 2023.
 storyNote: 'The listing does not name the village. We identified the building from the details it gives: the title of basilica, the wax effigy of the saint, the architect and the date of the heritage order. The relics are now in the parish church.'
 storySources:
+- title: Mérimée notice PA86000043, French Ministry of Culture
+  url: https://pop.culture.gouv.fr/notice/merimee/PA86000043
 - title: 'Les Amis de saint Benoît Labre: the basilica at Marçay'
   url: https://www.amis-benoit-labre.net/labre_basiliquemarcay.php
 - title: La basilique de Marçay, the owner's site
