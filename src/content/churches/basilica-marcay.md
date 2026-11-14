@@ -1,0 +1,169 @@
+---
+name: Basilica of Saint Benoît-Joseph Labre
+century: XIX
+place: Marçay
+region: Vienne, Nouvelle-Aquitaine
+country: France
+price: €950,000
+agent: Patrice Besse
+listingUrl: https://www.patrice-besse.com/annonces/edifice-religieux-a-vendre-a-15-min-de-Poitiers--pb856306
+lastChecked: 2026-11-14
+status: for sale
+summary: A pilgrimage church begun in 1884, closed in 1962, sold by the diocese in 1976 and left to rot until 2009. Now inscrit in full and restored from roof frame to wiring, with a 19th-century organ, a Carrara marble altar and a garden of 5,000 square metres.
+seller: Private owner
+moneyGoes: The Diocese of Poitiers sold this church in 1976. It has been private property for fifty years and has had three private owners. The press names the present one as a Paris bookseller who bought it in 2012. Nothing goes to the Church.
+heritageClass: Inscrit
+verdict: Light use
+verdictReason: Inscrit in full, sacristy included, by order of 4 January 2011. The nave must stay as it is; the agent notes it can now receive a range of projects.
+difficulty: 1
+photos:
+- src: https://medias4b.patrice-besse.com/photo-acquerir/27566/zoom/d7b06870b6ffb9d24df72725d196e36a.jpg
+  alt: Basilica of Saint Benoît-Joseph Labre, Marçay, photograph 1 from the Patrice Besse listing
+  credit: 'Photo: Patrice Besse'
+- src: https://medias4b.patrice-besse.com/photo-acquerir/27566/zoom/b38063c1b90000e2f78c64c266695dd5.jpg
+  alt: Basilica of Saint Benoît-Joseph Labre, Marçay, photograph 2 from the Patrice Besse listing
+  credit: 'Photo: Patrice Besse'
+- src: https://medias4b.patrice-besse.com/photo-acquerir/27566/zoom/c072562e40fbdafc463a994061ef9179.jpg
+  alt: Basilica of Saint Benoît-Joseph Labre, Marçay, photograph 3 from the Patrice Besse listing
+  credit: 'Photo: Patrice Besse'
+- src: https://medias4b.patrice-besse.com/photo-acquerir/27566/zoom/85c1abfd5f3ee540dbc000546c01c081.jpg
+  alt: Basilica of Saint Benoît-Joseph Labre, Marçay, photograph 4 from the Patrice Besse listing
+  credit: 'Photo: Patrice Besse'
+- src: https://medias4b.patrice-besse.com/photo-acquerir/27566/zoom/1de61aae9a90c96e118274c37619859e.jpg
+  alt: Basilica of Saint Benoît-Joseph Labre, Marçay, photograph 5 from the Patrice Besse listing
+  credit: 'Photo: Patrice Besse'
+- src: https://medias4b.patrice-besse.com/photo-acquerir/27566/zoom/fbd86c3ddcd4247ce64883bac965290b.jpg
+  alt: Basilica of Saint Benoît-Joseph Labre, Marçay, photograph 6 from the Patrice Besse listing
+  credit: 'Photo: Patrice Besse'
+sections:
+- title: Sacred status
+  items:
+  - label: Consecration
+    value: Removed from worship in 1976, after the last services in 1962.
+    status: checked
+    source: https://www.amis-benoit-labre.net/labre_basiliquemarcay.php
+  - label: Relic display
+    value: A 19th-century wax effigy of the saint lies in a case under the altar stone. The relics themselves moved to the parish church. Whether the effigy stays is not stated.
+    status: unknown
+- title: Heritage status
+  items:
+  - label: Protection
+    value: Inscrit in full, sacristy included, by order of 4 January 2011.
+    status: listing
+  - label: Who approves works
+    value: Building permit with the agreement of the regional culture office (DRAC).
+    status: unknown
+- title: Condition
+  items:
+  - label: Roof, frame and joinery
+    value: Fully renovated.
+    status: listing
+  - label: Electrics
+    value: New installation throughout, with an internet connection and a lightning conductor.
+    status: listing
+  - label: Structure
+    value: Rendered limestone, Latin-cross plan with a single nave, rib vaults. Porch tower by the architect Alcide Boutaud with an unfinished facade.
+    status: listing
+  - label: Glass
+    value: Three windows by Georges Claudius Lavergne on the life of the saint, now with protective glazing outside.
+    status: listing
+  - label: Heating
+    value: Side galleries closed with double glazing and fitted with radiators.
+    status: listing
+- title: What comes with it
+  items:
+  - label: Floor area
+    value: 610 square metres on a plot of 5,123.
+    status: listing
+  - label: Organ
+    value: By Jan Arnold Clérinx, 19th century, fully restored and included in the sale.
+    status: listing
+  - label: Altar
+    value: Carrara marble, restored, with paintings on a gold ground.
+    status: listing
+  - label: Living space
+    value: Fitted out in the former sacristy, opening onto the garden.
+    status: listing
+  - label: Garden
+    value: Grassed, with mature trees and an avenue of plane trees at the entrance.
+    status: listing
+- title: The dead
+  items:
+  - label: Burials
+    value: None mentioned.
+    status: unknown
+- title: Work and money
+  items:
+  - label: Cost to make safe and dry
+    value: None expected. The agent describes the building as entirely renovated.
+    status: listing
+  - label: Yearly upkeep
+    value: Not stated. Budget for organ tuning, insurance and heating a nave of this size.
+    status: unknown
+- title: Getting there
+  items:
+  - label: Train
+    value: Poitiers TGV station is 15 minutes away; Paris in 1 hour 10, Bordeaux in 1 hour.
+    status: listing
+  - label: Airport
+    value: Poitiers airport has flights to London and Manchester, per the listing.
+    status: listing
+  - label: Road
+    value: Marçay is about 15 km south of Poitiers.
+    status: checked
+    source: https://www.patrimoine-environnement.fr/reconversion-de-la-basilique-de-marcay-vienne/
+faults:
+- The price reflects a finished restoration.
+- The west facade was never completed.
+- Running costs for a heated church of 610 square metres are not stated.
+contacts:
+- role: Selling agent
+  name: Patrice Besse, Paris (reference 856306)
+  url: https://www.patrice-besse.com
+- role: Heritage officer
+  name: The departmental heritage architect (UDAP) for the département
+story:
+- when: '1856'
+  what: François Joseph Joanneau arrives as parish priest of Marçay, a village south of Poitiers. He wants a pilgrimage centre to rival Lourdes.
+- when: '1884'
+  what: Building starts on a church dedicated to Benoît-Joseph Labre, the beggar-pilgrim born at Amettes in 1748, who died in Rome in 1783 and was canonised in 1881. The architects are Jean-Baptiste Perlat and Alcide Boutaud, the diocesan architect.
+- when: About 1899
+  what: The decoration is finished. Joanneau dies, the money stops, and the bell tower is never built. The west front stays as a bare wall waiting for it.
+- when: To 1952
+  what: Pilgrimages come in numbers. The saint's relics are kept in the church.
+- when: '1962'
+  what: The last services. Weddings and first communions were still being held that year.
+- when: '1976'
+  what: The church is formally removed from worship and its furnishings are sent to other churches and convents. The Diocese of Poitiers sells the building to a businessman, who uses it for storage.
+- when: '1999'
+  what: A storm tears open the roof. Ivy covers the walls and a tree grows in the nave.
+- when: '2002'
+  what: The owner applies to demolish it and sell the stone. The permit is refused.
+- when: '2009'
+  what: Pascal Piot buys the ruin and starts clearing it with people from the village.
+- when: 4 January 2011
+  what: The whole building is inscrit as a monument historique.
+- when: '2012'
+  what: Jean-Denis Touzot, a Paris bookseller, buys it. Restoration starts that autumn under the heritage architect Bernard Ruel, with parts of the transept and nave close to collapse.
+- when: April 2016
+  what: The basilica reopens to visitors as a centre devoted to the book. Two bells are hung the same year.
+- when: 2017 to 2023
+  what: The refurbishment is completed in 2017, the outside stairs in 2019, and an organ is installed in spring 2023.
+storyNote: 'The listing does not name the village. We identified the building from the details it gives: the title of basilica, the wax effigy of the saint, the architect and the date of the heritage order. The relics are now in the parish church.'
+storySources:
+- title: 'Les Amis de saint Benoît Labre: the basilica at Marçay'
+  url: https://www.amis-benoit-labre.net/labre_basiliquemarcay.php
+- title: La basilique de Marçay, the owner's site
+  url: https://basiliquedemarcay.com/accueil/
+- title: 'Wikipedia (French): Marçay (Vienne)'
+  url: https://fr.wikipedia.org/wiki/Mar%C3%A7ay_(Vienne)
+- title: Patrimoine-Environnement on the conversion, 2014
+  url: https://www.patrimoine-environnement.fr/reconversion-de-la-basilique-de-marcay-vienne/
+- title: Caractères, October 2018
+  url: https://www.caracterres.fr/la-basilique-de-marcay-se-livre
+- title: Patrice Besse listing 856306
+  url: https://www.patrice-besse.com/annonces/edifice-religieux-a-vendre-a-15-min-de-Poitiers--pb856306
+---
+Somebody has already done the custodian's work here. In 2002 this church was a roofless shell with a tree in the nave and an owner who wanted to sell the stone. The roof frame, the roofs and the joinery are new, the wiring is new, the organ plays, and the glass has protective glazing outside.
+
+You are paying for a finished restoration of a church of 610 square metres with its organ and half a hectare of garden. The price is the cost of not spending fifteen years on scaffolding. Take it if you want a church you can open for a concert next spring.

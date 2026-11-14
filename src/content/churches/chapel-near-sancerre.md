@@ -111,8 +111,12 @@ contacts:
   url: https://www.patrice-besse.com
 - role: Heritage officer
   name: The departmental heritage architect (UDAP) for the département
+story: []
+storyNote: 'We have no history for this chapel yet. The listing does not name the village, the dedication or the date, and we could not identify the building from what it does say: a wine village on the Loire lateral canal near Sancerre, with a small marina and houses of the 11th to 16th centuries. One question to the agent would open it up.'
+storySources:
+- title: Patrice Besse listing 716301
+  url: https://www.patrice-besse.com/edifices-religieux-a-vendre/centre-val-de-loire/edifice-religieux-a-vendre-a-cote-de-sancerre-en-france/
 ---
-
 Thirty thousand euros buys eleven metres of height over thirty square metres of floor, in a wine village with a station five minutes away. The roof frame is sound and the water and electricity are already in.
 
 The agent imagines a two-level loft. We would leave the volume alone, take up the cement, and find out who built it and when. Ask what protection applies before you draw anything.

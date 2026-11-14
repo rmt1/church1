@@ -70,6 +70,13 @@ sections:
       - label: Train
         value: 25 minutes by car from a TGV station, then 1 hour 40 to Paris.
         status: checked
+story:
+  - when: "1791"
+    what: Sold as national property to a local family.
+storyNote: What we have not been able to find out.
+storySources:
+  - title: Name of the source
+    url: https://example.org
 faults:
   - North roof slope leaks. This comes first.
   - Rotten wall plate at the north-east corner.

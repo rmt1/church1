@@ -56,6 +56,23 @@ const marks = { listing: 'From the listing', checked: 'Checked by us', unknown: 
         <p class="where">{d.place}, {d.region}, {d.country}</p>
         <p class="standfirst">{d.summary}</p>
 
+        <h2>The story</h2>
+        {d.story.length > 0 && (
+          <ol class="story">
+            {d.story.map((e) => (
+              <li><span class="when">{e.when}</span><span>{e.what}</span></li>
+            ))}
+          </ol>
+        )}
+        {d.storyNote && <p class="story-note">{d.storyNote}</p>}
+        {d.storySources.length > 0 && (
+          <p class="key" style="margin-top: 1rem">
+            Sources: {d.storySources.map((r, i) => (
+              <>{i > 0 && '; '}<a href={r.url} rel="noopener">{r.title}</a></>
+            ))}
+          </p>
+        )}
+
         <h2>Our verdict</h2>
         <Content />
 

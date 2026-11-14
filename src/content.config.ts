@@ -37,6 +37,9 @@ const churches = defineCollection({
       .array(z.object({ src: z.string(), alt: z.string(), credit: z.string() }))
       .default([]),
     sections: z.array(z.object({ title: z.string(), items: z.array(fact) })).default([]),
+    story: z.array(z.object({ when: z.string(), what: z.string() })).default([]),
+    storyNote: z.string().optional(),
+    storySources: z.array(z.object({ title: z.string(), url: z.string().url() })).default([]),
     faults: z.array(z.string()).default([]),
     costs: z
       .array(z.object({ label: z.string(), amount: z.string(), basis: z.string() }))

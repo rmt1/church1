@@ -112,8 +112,18 @@ contacts:
   url: https://www.patrice-besse.com
 - role: Heritage officer
   name: The departmental heritage architect (UDAP) for the département
+story:
+- when: '1880'
+  what: The date painted on the six windows, which are signed by Georges Roussel.
+- when: '1884'
+  what: The temple is built for the Protestant community of Crèvecœur-le-Grand, in the neo-Gothic manner, with a verse from Genesis cut over the door.
+- when: Date unknown
+  what: The congregation gives up the building and it is deconsecrated. The pulpit, the altar and the painted verses stay where they are.
+storyNote: This is all we have, and all of it comes from the listing. We found no published history of this temple. The listing credits the decision to build to Napoleon III, who lost his throne in 1870, fourteen years before the stated date of construction. Either the decision long preceded the building or one of the dates is wrong. The Oise departmental archives and the Société de l'histoire du protestantisme français are the places to ask.
+storySources:
+- title: Patrice Besse listing 354518
+  url: https://www.patrice-besse.com/annonces/edifices-religieux-a-vendre-Dans-le-departement-de-l-Oise--pb354518
 ---
-
 A complete Protestant interior for the price of a car. The pulpit with its double stair is still there, the painted verses are still on the walls, and six windows of painted glass are signed by Georges Roussel.
 
 Nothing here is protected, which is the danger. The next owner can keep every board of it or strip it for a kitchen. Buy it and keep it. Ask the agent why the glass is dated four years before the building.

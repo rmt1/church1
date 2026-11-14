@@ -10,8 +10,8 @@ listingUrl: https://www.patrice-besse.com/annonces/edifices-religieux-a-vendre-a
 lastChecked: 2026-11-14
 status: for sale
 summary: A convent chapel of 1769 to 1775 in the centre of Arras, five minutes from the Place des Héros, classé since 1921. Five-bay nave, marble floor, carved stalls, wrought-iron grilles and a gilded high altar.
-seller: Not stated
-moneyGoes: The listing does not name the owner. The chapel served a community of Franciscan sisters; ask the agent whether the seller is the order, the diocese or a later private owner.
+seller: Probably the City of Arras
+moneyGoes: The State heritage record lists the chapel as the property of the commune. If the town is the seller, the price goes to Arras and not to the Church. The listing does not name the owner, so confirm with the agent.
 heritageClass: Classé
 verdict: Preserve as found
 verdictReason: Classé monument historique since 27 May 1921. Any restoration needs prior authorisation from the regional culture office and a qualified heritage architect.
@@ -47,11 +47,16 @@ sections:
 - title: Heritage status
   items:
   - label: Protection
-    value: Classé monument historique, 27 May 1921.
-    status: listing
+    value: Classé monument historique by order of 27 May 1921. Confirmed in the State heritage record.
+    status: checked
+    source: https://pop.culture.gouv.fr/notice/merimee/PA00107965
   - label: Who approves works
     value: The regional culture office (DRAC), before any restoration.
     status: unknown
+  - label: Recorded owner
+    value: The commune of Arras, with the use given as museum.
+    status: checked
+    source: https://pop.culture.gouv.fr/notice/merimee/PA00107965
 - title: Condition
   items:
   - label: History of repair
@@ -118,8 +123,36 @@ contacts:
   url: https://www.patrice-besse.com
 - role: Heritage officer
   name: The departmental heritage architect (UDAP) for the département
+story:
+- when: '1339'
+  what: Jean Chariot and his wife Emmelet Huquedieu found a small hospital in Arras, at the corner of what are now the rue Méaulens and the rue des Chariottes.
+- when: '1556'
+  what: Twelve Franciscan sisters arrive from Saint-Pol-sur-Ternoise to run it. The town calls them the Chariottes, after the founder.
+- when: '1767'
+  what: The sisters buy the Hôtel de Montmorency next door, on the corner of the rue de Jérusalem, to enlarge the convent.
+- when: 1769 to 1775
+  what: They build the chapel to the designs of Louis Posteau, the architect and sculptor behind the 18th-century lower town. The facade carries the date MDCCLXXV.
+- when: 1790s
+  what: The Revolution drives the sisters out.
+- when: '1815'
+  what: The sisters return.
+- when: 1914 to 1918
+  what: Arras sits on the front line. The chapel is shelled twice, then rebuilt in part to the original design by the architects Fleury and Gagey.
+- when: 27 May 1921
+  what: The chapel is classé as a monument historique.
+- when: Today
+  what: The State heritage record lists the chapel as the property of the commune of Arras and gives its use as a museum. Verlaine, who knew Arras, called it a "charmante chapelle".
+storyNote: We have not found what became of the chapel between the Revolution and 1815, when the sisters left for good, or when the town acquired it.
+storySources:
+- title: 'Dans les rues d''Arras: Le Couvent des Chariottes'
+  url: https://danslesruesdarras.fr/2020/08/24/le-couvent-des-chariottes/
+- title: Mérimée notice PA00107965, French Ministry of Culture
+  url: https://pop.culture.gouv.fr/notice/merimee/PA00107965
+- title: 'Wikipedia (French): Chapelle des Chariottes'
+  url: https://fr.wikipedia.org/wiki/Chapelle_des_Chariottes
+- title: Patrice Besse listing 199325
+  url: https://www.patrice-besse.com/annonces/edifices-religieux-a-vendre-a-1-h-de-Paris-en-centre-ville-d-Arras--pb199325
 ---
-
 Louis Posteau built this for Franciscan nuns between 1769 and 1775, with a front borrowed from the Gesù in Rome. It was shelled twice in the First World War and rebuilt. The shrapnel scars are still in the stone.
 
 Inside, the nuns' wrought-iron grilles, the carved stalls and the gilded altar are in place. The agent suggests a family home or a head office. It is a classé monument fifty minutes from Paris by train, and it should stay a chapel.

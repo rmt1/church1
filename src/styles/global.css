@@ -212,3 +212,10 @@ th { color: var(--ink-soft); border-bottom-color: var(--ink); white-space: nowra
 .site-foot a:hover { text-decoration: underline; color: var(--paper); }
 .prose a.button, .prose a.button:hover { color: var(--paper); }
 .gallery .lead:not(:has(img)) { aspect-ratio: 3 / 1; min-height: 13rem; }
+
+/* the story: a dated sequence */
+.story { list-style: none; padding: 0; margin: 0 0 1.5rem; border-top: 1px solid var(--ink); }
+.story li { display: grid; grid-template-columns: 9.5rem minmax(0, 1fr); gap: 0 1.5rem; padding: 0.85rem 0; margin: 0; border-bottom: 1px solid var(--rule); }
+.story .when { font-family: var(--sans); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em; padding-top: 0.3rem; }
+@media (max-width: 36rem) { .story li { grid-template-columns: 1fr; } .story .when { padding: 0 0 0.2rem; } }
+.story-note { color: var(--ink-soft); font-style: italic; }
