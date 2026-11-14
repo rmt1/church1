@@ -1,0 +1,67 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const all = await getCollection('churches');
+const order = ['France', 'Scotland', 'England', 'Wales', 'Italy', 'Ireland'];
+const groups = order
+  .map((country) => ({ country, items: all.filter((c) => c.data.country === country) }))
+  .filter((g) => g.items.length > 0);
+const real = all.filter((c) => !c.data.specimen);
+---
+
+<Base title="The shortlist" description="Old churches for sale that we have read, checked and scored.">
+  <div class="prose">
+    <h1>The shortlist</h1>
+    <p class="standfirst">
+      Churches a private person could buy and keep standing. Each one has been read, checked against
+      the public heritage record, and scored for difficulty from 1 (a weekend project) to 5 (a
+      twenty-year vocation).
+    </p>
+    {real.length === 0 && (
+      <p class="empty">
+        The first churches are being checked now. Until they are published, the specimen below shows
+        what a profile contains.
+      </p>
+    )}
+  </div>
+
+  {groups.map((g) => (
+    <section>
+      <h2 class="country-head">{g.country}</h2>
+      <ul class="register">
+        {g.items.map((c) => (
+          <li>
+            <a class="entry" href={`/shortlist/${c.id}/`}>
+              <div class="mini" aria-hidden="true">
+                <div class="lancet">
+                  {c.data.photos[0] ? (
+                    <img src={c.data.photos[0].src} alt="" loading="lazy" />
+                  ) : (
+                    <span class="numeral">{c.data.century}</span>
+                  )}
+                </div>
+              </div>
+              <div>
+                <h3>
+                  {c.data.name}
+                  {c.data.specimen && <span class="stamp">Specimen</span>}
+                  {c.data.status === 'saved' && <span class="stamp">Saved</span>}
+                  {c.data.status === 'under offer' && <span class="stamp">Under offer</span>}
+                </h3>
+                <p class="where">{c.data.place}, {c.data.region}</p>
+                <p class="gist">{c.data.summary}</p>
+                <ul class="facts-line">
+                  <li><b>{c.data.price}</b></li>
+                  <li>{c.data.heritageClass}</li>
+                  <li>{c.data.verdict}</li>
+                  <li>Difficulty {c.data.difficulty} of 5</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</Base>

@@ -1,0 +1,218 @@
+/* Limewash, lead, and two colours of glass. */
+:root {
+  --lime: #ecede7;
+  --lime-deep: #dfe0d8;
+  --lead: #262b31;
+  --lead-soft: #5a616a;
+  --cobalt: #1d3c8c;
+  --ruby: #9a1b2f;
+  --rule: #b9bab1;
+
+  --display: 'IM Fell Double Pica', 'Iowan Old Style', Georgia, serif;
+  --body: 'Spectral', 'Iowan Old Style', Georgia, serif;
+
+  --measure: 36rem;
+  --gutter: clamp(1rem, 4vw, 3rem);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --lime: #1b1f24;
+    --lime-deep: #242930;
+    --lead: #e6e6df;
+    --lead-soft: #a5aab1;
+    --cobalt: #8fa8ee;
+    --ruby: #e2798a;
+    --rule: #454b53;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 112.5%; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--lime);
+  color: var(--lead);
+  font-family: var(--body);
+  font-weight: 400;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: var(--cobalt); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--cobalt); outline-offset: 3px; }
+
+h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.1; margin: 0; }
+h1 { font-size: clamp(2.6rem, 8vw, 5rem); letter-spacing: -0.01em; }
+h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); margin-top: 3rem; margin-bottom: 0.75rem; }
+h3 { font-size: 1.35rem; margin-top: 2.25rem; margin-bottom: 0.5rem; }
+p { margin: 0 0 1.1rem; }
+ul, ol { padding-left: 1.2rem; margin: 0 0 1.1rem; }
+li { margin-bottom: 0.4rem; }
+blockquote { margin: 1.5rem 0; padding-left: 1rem; border-left: 3px solid var(--cobalt); }
+
+/* ---------- frame ---------- */
+
+.site-head, .site-foot, main { padding-inline: var(--gutter); }
+
+.site-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 2rem;
+  padding-block: 1.25rem;
+  border-bottom: 1px solid var(--rule);
+}
+.site-name { font-family: var(--display); font-size: 1.5rem; color: var(--lead); text-decoration: none; }
+.site-nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.4rem; font-size: 0.95rem; }
+.site-nav a { color: var(--lead); text-decoration: none; padding-block: 0.3rem; }
+.site-nav a:hover, .site-nav a[aria-current='page'] { color: var(--cobalt); text-decoration: underline; }
+
+main { padding-block: clamp(2rem, 6vw, 4.5rem); max-width: 72rem; margin-inline: auto; }
+
+.site-foot {
+  border-top: 1px solid var(--rule);
+  padding-block: 2rem 3rem;
+  font-size: 0.9rem;
+  color: var(--lead-soft);
+}
+.site-foot p { max-width: var(--measure); }
+
+/* ---------- prose pages ---------- */
+
+.prose { max-width: var(--measure); }
+.prose > h1 { margin-bottom: 2rem; }
+.prose .standfirst { font-size: 1.25rem; line-height: 1.45; }
+
+/* tables are wider than the text column and scroll on a phone */
+.prose table, .ledger {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  margin: 1.5rem 0 2rem;
+}
+.prose table { display: block; overflow-x: auto; width: min(100vw - 2 * var(--gutter), 60rem); }
+th, td { text-align: left; vertical-align: top; padding: 0.6rem 1rem 0.6rem 0; border-bottom: 1px solid var(--rule); }
+th { font-weight: 600; border-bottom: 2px solid var(--lead); white-space: nowrap; }
+.prose td { min-width: 9rem; }
+
+/* ---------- the lancet: every church sits in a pointed arch ---------- */
+
+.lancet {
+  aspect-ratio: 3 / 4;
+  background: var(--cobalt);
+  color: #f3f1e7;
+  clip-path: url(#lancet);
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.lancet img { width: 100%; height: 100%; object-fit: cover; }
+.lancet .numeral { font-family: var(--display); font-size: 4.5rem; padding-top: 3rem; }
+
+/* ---------- home ---------- */
+
+.hero { display: grid; gap: 2rem 4rem; align-items: start; }
+@media (min-width: 52rem) { .hero { grid-template-columns: minmax(0, 1fr) 300px; } }
+.hero h1 { margin-bottom: 1.5rem; }
+.hero .lancet-col { justify-self: center; width: min(300px, 70vw); }
+.hero .lancet .numeral { font-size: 1.5rem; line-height: 1.3; text-align: center; padding: 6rem 2rem 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; margin-top: 1.75rem; }
+.button {
+  display: inline-block;
+  background: var(--cobalt);
+  color: var(--lime);
+  padding: 0.7rem 1.2rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+.button:hover { background: var(--lead); }
+.plain-link { padding-block: 0.7rem; }
+
+.ways { display: grid; gap: 2rem 3rem; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rule); }
+@media (min-width: 46rem) { .ways { grid-template-columns: repeat(3, 1fr); } }
+.ways h2 { margin-top: 0; font-size: 1.5rem; }
+.ways p { font-size: 0.95rem; }
+
+/* ---------- shortlist ---------- */
+
+.country-head { border-bottom: 2px solid var(--lead); padding-bottom: 0.4rem; }
+.register { list-style: none; padding: 0; margin: 0; }
+.register > li { margin: 0; border-bottom: 1px solid var(--rule); }
+.entry {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr);
+  gap: 1.25rem;
+  padding-block: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+.entry .mini { width: 90px; }
+.entry .mini .numeral { font-size: 1.5rem; padding-top: 1.2rem; }
+.entry h3 { margin: 0 0 0.2rem; color: var(--cobalt); }
+.entry:hover h3 { text-decoration: underline; }
+.entry .where { color: var(--lead-soft); margin: 0 0 0.6rem; }
+.entry .gist { margin: 0 0 0.6rem; max-width: var(--measure); }
+.facts-line { display: flex; flex-wrap: wrap; gap: 0.2rem 1.5rem; font-size: 0.88rem; margin: 0; padding: 0; list-style: none; }
+.facts-line li { margin: 0; }
+.facts-line b { font-weight: 600; }
+
+.stamp {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.1rem 0.5rem;
+  border: 1.5px solid var(--ruby);
+  color: var(--ruby);
+  transform: rotate(-2deg);
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.empty { max-width: var(--measure); padding: 2rem 0; }
+
+/* ---------- church profile ---------- */
+
+.profile-top { display: grid; gap: 2rem 4rem; align-items: start; }
+@media (min-width: 52rem) { .profile-top { grid-template-columns: minmax(0, 1fr) 300px; } }
+.profile-top h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); margin-bottom: 0.5rem; }
+.profile-top .where { font-size: 1.2rem; color: var(--lead-soft); }
+.profile-top .lancet-col { justify-self: center; width: min(300px, 70vw); }
+
+.notice { border: 1.5px solid var(--ruby); color: var(--ruby); padding: 0.75rem 1rem; max-width: var(--measure); margin-bottom: 2rem; }
+
+.glance { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: 1rem 2rem; margin: 2rem 0; padding: 1.25rem 0; border-block: 2px solid var(--lead); }
+.glance dt { font-size: 0.82rem; color: var(--lead-soft); }
+.glance dd { margin: 0; font-family: var(--display); font-size: 1.3rem; line-height: 1.2; }
+
+.pips { letter-spacing: 0.15em; color: var(--cobalt); }
+.pips .off { color: var(--rule); }
+
+.profile-body { max-width: 48rem; }
+.ledger td:first-child { width: 11rem; font-weight: 600; }
+.ledger td:last-child { width: 6.5rem; white-space: nowrap; font-size: 0.8rem; }
+.mark-listing { color: var(--lead-soft); }
+.mark-checked { color: var(--cobalt); font-weight: 600; }
+.mark-unknown { color: var(--ruby); font-weight: 600; }
+@media (max-width: 34rem) {
+  .ledger, .ledger tbody, .ledger tr, .ledger td { display: block; width: auto !important; }
+  .ledger td { border: 0; padding: 0; }
+  .ledger tr { border-bottom: 1px solid var(--rule); padding-block: 0.6rem; }
+}
+
+.photo-row { display: flex; gap: 1rem; overflow-x: auto; padding-bottom: 0.5rem; margin: 2rem 0; }
+.photo-row figure { margin: 0; flex: 0 0 min(80vw, 30rem); }
+.photo-row img { width: 100%; height: 20rem; object-fit: cover; display: block; }
+.photo-row figcaption { font-size: 0.8rem; color: var(--lead-soft); margin-top: 0.3rem; }
+
+.key { font-size: 0.85rem; color: var(--lead-soft); max-width: var(--measure); }
+
+@media (prefers-reduced-motion: no-preference) {
+  a, .button { transition: color 0.15s, background-color 0.15s; }
+}
