@@ -1016,3 +1016,11 @@ main > .section > .wrap > .site-nav { display: flex; flex-wrap: wrap; gap: 0.6re
   .music[aria-pressed='true'] .music-bars i:nth-child(3) { animation-delay: 0.4s; }
 }
 @keyframes bars { from { height: 20%; } to { height: 100%; } }
+
+/* the home picture: a church cut like a copperplate, in neon */
+.shrine { width: min(24rem, 78vw); }
+.plate { display: block; width: 100%; height: auto; filter: drop-shadow(0 0 5px rgba(231, 255, 10, 0.55)) drop-shadow(0 14px 30px rgba(0, 0, 0, 0.5)); }
+.plate .ground { fill: #0a0c0a; }
+.plate .ink, .plate pattern path { stroke: #e7ff0a; }
+.plate .cut { fill: #0a0c0a; stroke: none; }
+@media (max-width: 52rem) { .hero .shrine { width: min(15rem, 62vw); } }
