@@ -962,3 +962,8 @@ dialog.zoom img { display: block; max-width: 96vw; max-height: 92vh; width: auto
 .tiles.reel > li { flex: 0 0 min(19rem, 78vw); scroll-snap-align: start; }
 .counter .odometer b { color: #e7ff0a; }
 .hero h1.glow { -webkit-text-stroke: 1.5px #10130c; paint-order: stroke fill; }
+
+/* stone wall ground; the scroll never runs out */
+html { background: #6f6c66 var(--stone) center top / 2200px auto repeat; }
+@media (prefers-reduced-motion: no-preference) { .ticker-run { animation-duration: 240s; } }
+.ticker-run { min-width: max-content; }

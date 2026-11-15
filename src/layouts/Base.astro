@@ -64,7 +64,7 @@ const nav = [
     </header>
     <div class="ticker" aria-hidden="true">
       <div class="ticker-run">
-        {[0, 1].map(() => news.map((n) => <span>{n}</span>))}
+        {Array.from({ length: 12 }).map(() => news.map((n) => <span>{n}</span>))}
       </div>
     </div>
     <div class="bunting" aria-hidden="true"></div>
