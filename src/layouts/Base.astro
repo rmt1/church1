@@ -7,7 +7,9 @@ interface Props {
   description?: string;
 }
 
-const site = "A Church of One's Own";
+const site = 'Save a Church';
+// Page views come from GoatCounter. Put the site code here (the part before .goatcounter.com) to switch the counter on.
+const goatcounter = '';
 const { title, description = 'A shortlist of old churches a private person could buy and keep standing, with the due diligence done.' } = Astro.props;
 const path = Astro.url.pathname;
 
@@ -88,9 +90,9 @@ const nav = [
           </ul>
         </div>
         <div class="foot-fun">
-          <p class="counter" aria-label={`${count} churches on the shortlist`}>
-            <span class="counter-label">Churches on the shortlist</span>
-            <span class="odometer" aria-hidden="true">{digits.map((n) => <b>{n}</b>)}</span>
+          <p class="counter" id="views" data-gc={goatcounter} aria-live="off">
+            <span class="counter-label">Page views</span>
+            <span class="odometer">{'------'.split('').map((n) => <b>{n}</b>)}</span>
           </p>
           <p class="badges" aria-hidden="true">
             <span>Best viewed by candlelight</span>
@@ -101,5 +103,21 @@ const nav = [
       </div>
     </footer>
     </div>
+    {goatcounter && <script is:inline data-goatcounter={`https://${goatcounter}.goatcounter.com/count`} async src="https://gc.zgo.at/count.js"></script>}
+    <script is:inline>
+      (function () {
+        var el = document.getElementById('views');
+        var code = el && el.dataset.gc;
+        if (!code) return;
+        fetch('https://' + code + '.goatcounter.com/counter/TOTAL.json')
+          .then(function (r) { return r.json(); })
+          .then(function (d) {
+            var n = String(d.count || '').replace(/\D/g, '');
+            if (!n) return;
+            el.querySelector('.odometer').innerHTML = n.padStart(6, '0').split('').map(function (c) { return '<b>' + c + '</b>'; }).join('');
+          })
+          .catch(function () {});
+      })();
+    </script>
   </body>
 </html>

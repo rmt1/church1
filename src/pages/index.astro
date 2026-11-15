@@ -4,21 +4,51 @@ import Tile from '../components/Tile.astro';
 import { getCollection } from 'astro:content';
 
 const all = await getCollection('churches');
-const featured = ['chapel-near-sancerre', 'minto-church', 'chapelle-des-chariottes-arras'].map((id) => all.find((c) => c.id === id)).filter(Boolean);
+const featured = ['basilica-marcay', 'kirkmichael-church', 'chapelle-du-carmel-niort', 'chapel-near-sancerre', 'badia-di-montescalari', 'minto-church', 'chapelle-des-chariottes-arras', 'pieve-santo-stefano-monteaguzzo', 'bourtie-kirk', 'chapelle-hanneucourt-gargenville', 'holy-trinity-tunstead', 'santa-maria-del-rivo', 'st-george-south-moor'].map((id) => all.find((c) => c.id === id)).filter(Boolean);
 ---
 
 <Base>
-  <section class="hero has-photo" style="--hero: url(/photos/chapelle-des-chariottes-arras/1.jpg)">
-    <div class="wrap">
-      <div class="niche" aria-hidden="true"><div class="canopy"></div><div class="window"></div></div>
-      <h1>A church of one's own</h1>
-      <p>
-        Old churches are for sale all over Europe, and most of them cost less than a parking space in
-        San Francisco. Somebody has to pay for the gutters. I think more people should.
-      </p>
-      <div class="actions">
-        <a class="button on-dark" href="/shortlist/">See the shortlist</a>
-        <a class="button on-dark ghost" href="/why/">Read the argument</a>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <h1 class="glow">Save a church</h1>
+        <p>
+          A shortlist of old churches for sale across Europe, from £20,000 to €2,000,000. We have
+          done the due diligence on each one: read the listing, checked the heritage rules, priced
+          the repairs and scored the restoration from 1 (easy) to 5 (hard).
+        </p>
+        <div class="actions">
+          <a class="button on-dark" href="/shortlist/">See the shortlist</a>
+          <a class="button on-dark ghost" href="/why/">Read the argument</a>
+        </div>
+      </div>
+      <div class="niche" aria-hidden="true">
+        <div class="canopy"></div>
+        <div class="window">
+          <svg class="neon-church" viewBox="0 0 300 410" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <g class="n-cy" stroke-width="2">
+              <path d="M20 392h260M34 392V300M266 392V300M34 300l42-34M266 300l-42-34" />
+              <path d="M52 392v-62a10 10 0 0 1 20 0v62M228 392v-62a10 10 0 0 1 20 0v62" />
+              <path d="M150 40v-26M140 24h20" />
+            </g>
+            <g class="n-ye" stroke-width="4">
+              <path d="M76 392V188l22-74 22 74v204" />
+              <path d="M224 392V188l-22-74-22 74v204" />
+              <path d="M98 114V92M90 100h16M202 114V92M194 100h16" />
+              <path d="M120 250l30-150 30 150" />
+              <path d="M150 100V40" />
+              <path d="M126 392v-66q24-44 48 0v66" />
+              <path d="M150 300v92" />
+              <path d="M88 392v-50q10-18 20 0v50M192 392v-50q10-18 20 0v50" />
+              <path d="M88 236v-30q10-18 20 0v30zM192 236v-30q10-18 20 0v30z" />
+            </g>
+            <g class="n-ma" stroke-width="3">
+              <circle cx="150" cy="232" r="30" />
+              <circle cx="150" cy="232" r="9" />
+              <path d="M150 202v21M150 241v21M120 232h21M159 232h21M129 211l15 15M156 238l15 15M171 211l-15 15M144 238l-15 15" />
+            </g>
+          </svg>
+        </div>
       </div>
     </div>
   </section>
@@ -29,48 +59,9 @@ const featured = ['chapel-near-sancerre', 'minto-church', 'chapelle-des-chariott
         <h2>Churches you could buy</h2>
         <a href="/shortlist/">View all</a>
       </div>
-      <ul class="tiles">
+      <ul class="tiles reel">
         {featured.map((c) => <li><Tile church={c} /></li>)}
       </ul>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap pull">
-      <p>
-        You buy the building, you fix the roof, you keep the door open, and when you die it is still
-        standing. I call this heritage custodianship.
-      </p>
-      <a class="button ghost" href="/why/">Why save them</a>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap thirds">
-      <div>
-        <h3>The due diligence, done</h3>
-        <p>
-          We read the listings, check the heritage status, and write down what is wrong with each
-          building and what it will cost to put right.
-        </p>
-        <a href="/before-you-buy/">Before you buy</a>
-      </div>
-      <div>
-        <h3>Who is selling</h3>
-        <p>
-          In France the Church has not owned its old parish churches since 1905. Every profile names
-          the seller and says where the money goes.
-        </p>
-        <a href="/who-owns-the-churches/">Who owns the churches</a>
-      </div>
-      <div>
-        <h3>No spare chapel money?</h3>
-        <p>
-          Give to the people who rescue the churches nobody else will take. Membership costs less
-          than dinner.
-        </p>
-        <a href="/donate/">Support the rescuers</a>
-      </div>
     </div>
   </section>
 </Base>
