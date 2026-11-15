@@ -1256,3 +1256,16 @@ dialog.zoom::backdrop { background: rgba(255, 255, 255, 0.9); }
 .prose h2::before, .panel-tab > h2::before { display: none; }
 .panel .price { text-shadow: none !important; -webkit-text-stroke: 0 !important; }
 .country-head::before, .country-head > *::before { display: none; }
+
+/* the title: black letters with a light behind them */
+.hero .hero-text h1, .hero h1.glow { text-shadow: 0 0 6px #e7ff0a, 0 0 18px #e7ff0a, 0 0 42px #e7ff0a, 0 0 90px rgba(231, 255, 10, 0.9), 0 0 140px rgba(255, 47, 154, 0.35); }
+@media (prefers-reduced-motion: no-preference) {
+  .hero .hero-text h1, .hero h1.glow { animation: halo 7s ease-in-out infinite; }
+}
+@keyframes halo {
+  0%, 100% { text-shadow: 0 0 4px #e7ff0a, 0 0 12px #e7ff0a, 0 0 26px rgba(231, 255, 10, 0.8), 0 0 50px rgba(231, 255, 10, 0.4), 0 0 80px rgba(255, 47, 154, 0); }
+  8% { text-shadow: 0 0 2px rgba(231, 255, 10, 0.5), 0 0 6px rgba(231, 255, 10, 0.3), 0 0 10px rgba(231, 255, 10, 0), 0 0 20px rgba(231, 255, 10, 0), 0 0 40px rgba(255, 47, 154, 0); }
+  10% { text-shadow: 0 0 6px #e7ff0a, 0 0 18px #e7ff0a, 0 0 40px #e7ff0a, 0 0 80px rgba(231, 255, 10, 0.8), 0 0 120px rgba(255, 47, 154, 0.2); }
+  12% { text-shadow: 0 0 3px rgba(231, 255, 10, 0.7), 0 0 8px rgba(231, 255, 10, 0.4), 0 0 14px rgba(231, 255, 10, 0.1), 0 0 30px rgba(231, 255, 10, 0), 0 0 60px rgba(255, 47, 154, 0); }
+  16%, 70% { text-shadow: 0 0 8px #e7ff0a, 0 0 22px #e7ff0a, 0 0 52px #e7ff0a, 0 0 110px #e7ff0a, 0 0 170px rgba(255, 47, 154, 0.45); }
+}
