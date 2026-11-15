@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
 import { ageText } from '../../lib/age';
+import sharp from 'sharp';
 
 export async function getStaticPaths() {
   const all = (await getCollection('churches')).sort((a, b) => a.data.country.localeCompare(b.data.country) || a.data.difficulty - b.data.difficulty);
@@ -14,6 +15,9 @@ export async function getStaticPaths() {
 const { church, prev, next, ids } = Astro.props;
 const d = church.data;
 const { Content } = await render(church);
+const tall = await Promise.all(d.photos.map(async (p) => {
+  try { const m = await sharp('public' + p.src).metadata(); return (m.height ?? 0) > (m.width ?? 0) * 1.05; } catch { return false; }
+}));
 const age = ageText(d.built, d.builtNote, d.builtRound);
 const checked = d.lastChecked.toLocaleDateString('en-GB', { timeZone: 'UTC', day: 'numeric', month: 'long', year: 'numeric' });
 
@@ -56,7 +60,7 @@ const tabs = [
     <div class="gallery">
       <div class="lead" id="lead-frame" style={d.photos[0] ? `--img: url(${d.photos[0].src})` : undefined}>
         {d.photos[0] ? (
-          <img id="lead-photo" src={d.photos[0].src} alt={d.photos[0].alt} />
+          <><img id="lead-photo" src={d.photos[0].src} alt={d.photos[0].alt} /><img id="lead-photo-2" alt="" hidden /></>
         ) : (
           <div style="text-align:center">
             <span class="numeral" aria-hidden="true"></span>
@@ -67,7 +71,7 @@ const tabs = [
       {d.photos.length > 1 && (
         <div class="strip">
           {d.photos.map((p, i) => (
-            <button type="button" class="thumb" style={`--img: url(${p.src})`} data-src={p.src} data-alt={p.alt} aria-label={`Show photograph ${i + 1}`} aria-pressed={i === 0 ? 'true' : 'false'}>
+            <button type="button" class:list={['thumb', tall[i] && 'tall']} style={`--img: url(${p.src})`} data-src={p.src} data-alt={p.alt} aria-label={`Show photograph ${i + 1}`} aria-pressed={i === 0 ? 'true' : 'false'}>
               <img src={p.src} alt="" loading="lazy" />
             </button>
           ))}
@@ -342,26 +346,43 @@ const tabs = [
     });
     window.addEventListener('hashchange', () => select(fromHash()));
 
-    // Gallery: click a small photo to show it large.
+    // Gallery: click a small photo to show it large. Upright photos show two abreast.
+    const frame = document.getElementById('lead-frame');
     const lead = document.getElementById('lead-photo') as HTMLImageElement | null;
+    const lead2 = document.getElementById('lead-photo-2') as HTMLImageElement | null;
     const thumbs = [...document.querySelectorAll<HTMLButtonElement>('.thumb')];
-    thumbs.forEach((b) =>
-      b.addEventListener('click', () => {
-        if (!lead) return;
-        lead.src = b.dataset.src!;
-        document.getElementById('lead-frame')?.style.setProperty('--img', `url(${b.dataset.src})`);
-        lead.alt = b.dataset.alt!;
-        thumbs.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
-      }),
-    );
-      const zoom = document.getElementById('zoom') as HTMLDialogElement | null;
-    if (lead && zoom) {
-      lead.addEventListener('click', () => {
-        const big = zoom.querySelector('img')!;
-        big.src = lead.src;
-        big.alt = lead.alt;
-        zoom.showModal();
-      });
+    const isTall = (b: HTMLButtonElement) => b.classList.contains('tall');
+    function show(b: HTMLButtonElement) {
+      if (!lead || !lead2 || !frame) return;
+      let mate: HTMLButtonElement | undefined;
+      if (isTall(b)) {
+        const i = thumbs.indexOf(b);
+        const after = thumbs.slice(i + 1).find(isTall);
+        const before = thumbs.slice(0, i).reverse().find(isTall);
+        mate = after ?? before;
+      }
+      const pair = mate ? (thumbs.indexOf(mate) < thumbs.indexOf(b) ? [mate, b] : [b, mate]) : [b];
+      lead.src = pair[0].dataset.src!;
+      lead.alt = pair[0].dataset.alt!;
+      lead2.hidden = pair.length < 2;
+      if (pair[1]) { lead2.src = pair[1].dataset.src!; lead2.alt = pair[1].dataset.alt!; }
+      frame.classList.toggle('pair', pair.length === 2);
+      frame.classList.toggle('upright', isTall(b) && pair.length === 1);
+      frame.style.setProperty('--img', `url(${b.dataset.src})`);
+      thumbs.forEach((x) => x.setAttribute('aria-pressed', String(pair.includes(x))));
+    }
+    thumbs.forEach((b) => b.addEventListener('click', () => show(b)));
+    if (thumbs[0] && isTall(thumbs[0])) show(thumbs[0]);
+    const zoom = document.getElementById('zoom') as HTMLDialogElement | null;
+    if (zoom) {
+      for (const im of [lead, lead2]) {
+        im?.addEventListener('click', () => {
+          const big = zoom.querySelector('img')!;
+          big.src = im.src;
+          big.alt = im.alt;
+          zoom.showModal();
+        });
+      }
       zoom.addEventListener('click', () => zoom.close());
     }
   </script>
