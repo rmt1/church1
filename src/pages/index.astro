@@ -4,14 +4,14 @@ import Tile from '../components/Tile.astro';
 import { getCollection } from 'astro:content';
 
 const all = await getCollection('churches');
-const featured = ['basilica-marcay', 'kirkmichael-church', 'chapelle-du-carmel-niort', 'chapel-near-sancerre', 'badia-di-montescalari', 'minto-church', 'chapelle-des-chariottes-arras', 'pieve-santo-stefano-monteaguzzo', 'bourtie-kirk', 'chapelle-hanneucourt-gargenville', 'holy-trinity-tunstead', 'santa-maria-del-rivo', 'st-george-south-moor'].map((id) => all.find((c) => c.id === id)).filter(Boolean);
+const featured = ['basilica-marcay', 'kirkmichael-church', 'chapelle-du-carmel-niort', 'badia-di-montescalari', 'minto-church', 'chapelle-des-chariottes-arras', 'pieve-santo-stefano-monteaguzzo', 'bourtie-kirk', 'chapelle-hanneucourt-gargenville', 'holy-trinity-tunstead', 'santa-maria-del-rivo', 'st-george-south-moor'].map((id) => all.find((c) => c.id === id)).filter(Boolean);
 ---
 
 <Base>
   <section class="hero">
     <div class="wrap hero-grid">
       <div class="hero-text">
-        <h1 class="glow">Save a church</h1>
+        <h1 class="glow">Save A Church</h1>
         <p>
           A shortlist of old churches for sale across Europe, from £20,000 to €2,000,000. We have
           done the due diligence on each one: read the listing, checked the heritage rules, priced
@@ -56,10 +56,10 @@ const featured = ['basilica-marcay', 'kirkmichael-church', 'chapelle-du-carmel-n
   <section class="section">
     <div class="wrap">
       <div class="section-head">
-        <h2>Churches you could buy</h2>
+        <h2>Churches you could save</h2>
         <a href="/shortlist/">View all</a>
       </div>
-      <ul class="tiles reel">
+      <ul class="tiles">
         {featured.map((c) => <li><Tile church={c} /></li>)}
       </ul>
     </div>
