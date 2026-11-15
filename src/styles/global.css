@@ -1055,3 +1055,25 @@ main > .section > .wrap > .site-nav { display: flex; flex-wrap: wrap; gap: 0.6re
 .tiles > li { display: flex; }
 .tiles > li > .tile { width: 100%; }
 .see-all { text-align: center; margin: 2.5rem 0 0; }
+
+/* menu sits under the summary on the home page */
+.hero .hero-text .site-nav { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.6rem; max-width: 40rem; }
+.hero .hero-text .site-nav a { padding: 0.6rem 1rem; }
+
+/* SAVE ME! as a comic-book sale sticker */
+.tile { position: relative; }
+.save-me { position: relative; z-index: 2; align-self: flex-end; display: grid; place-items: center; width: 6.6rem; aspect-ratio: 1; margin: -4.4rem 0.2rem -2.2rem 0; padding: 0; background: #0b0b0b; clip-path: polygon(50.0% 0.0%, 58.7% 12.0%, 71.7% 5.0%, 74.3% 19.5%, 89.1% 18.8%, 85.1% 33.1%, 98.7% 38.9%, 89.0% 50.0%, 98.7% 61.1%, 85.1% 66.9%, 89.1% 81.2%, 74.3% 80.5%, 71.7% 95.0%, 58.7% 88.0%, 50.0% 100.0%, 41.3% 88.0%, 28.3% 95.0%, 25.7% 80.5%, 10.9% 81.2%, 14.9% 66.9%, 1.3% 61.1%, 11.0% 50.0%, 1.3% 38.9%, 14.9% 33.1%, 10.9% 18.8%, 25.7% 19.5%, 28.3% 5.0%, 41.3% 12.0%); filter: drop-shadow(5px 6px 0 rgba(0, 0, 0, 0.85)); transform: rotate(-12deg); }
+.save-me::before { content: ''; position: absolute; inset: 5px; clip-path: polygon(50.0% 0.0%, 58.7% 12.0%, 71.7% 5.0%, 74.3% 19.5%, 89.1% 18.8%, 85.1% 33.1%, 98.7% 38.9%, 89.0% 50.0%, 98.7% 61.1%, 85.1% 66.9%, 89.1% 81.2%, 74.3% 80.5%, 71.7% 95.0%, 58.7% 88.0%, 50.0% 100.0%, 41.3% 88.0%, 28.3% 95.0%, 25.7% 80.5%, 10.9% 81.2%, 14.9% 66.9%, 1.3% 61.1%, 11.0% 50.0%, 1.3% 38.9%, 14.9% 33.1%, 10.9% 18.8%, 25.7% 19.5%, 28.3% 5.0%, 41.3% 12.0%); background: radial-gradient(circle, #fff 1.6px, transparent 2px) 0 0 / 8px 8px, #ff2f9a; }
+.save-me b { position: relative; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', 'Arial Black', sans-serif; font-style: italic; font-weight: 900; font-size: 1.32rem; line-height: 0.95; letter-spacing: 0.02em; text-align: center; color: #fff200; -webkit-text-stroke: 1.2px #0b0b0b; paint-order: stroke fill; text-shadow: 2px 2px 0 #0b0b0b; }
+.tile:hover .save-me { background: #0b0b0b; }
+.tile:hover .save-me::before { background: radial-gradient(circle, #ff2f9a 1.6px, transparent 2px) 0 0 / 8px 8px, #fff200; }
+.tile:hover .save-me b { color: #ff2f9a; }
+@media (prefers-reduced-motion: no-preference) {
+  .save-me { transition: transform 0.18s cubic-bezier(0.3, 1.8, 0.5, 1); }
+  .tile:hover .save-me { transform: rotate(6deg) scale(1.18); }
+}
+.tile .sub { margin-bottom: 0; }
+.button.pop, .prose a.button.pop { clip-path: none; background: radial-gradient(circle, #fff 1.6px, transparent 2px) 0 0 / 8px 8px, #ff2f9a; color: #fff200; border: 3px solid #0b0b0b; box-shadow: 6px 6px 0 #0b0b0b; filter: none; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', 'Arial Black', sans-serif; font-style: italic; font-size: 1.3rem; letter-spacing: 0.04em; -webkit-text-stroke: 1px #0b0b0b; paint-order: stroke fill; text-shadow: 2px 2px 0 #0b0b0b; transform: rotate(-2deg); }
+.button.pop:hover { background: radial-gradient(circle, #ff2f9a 1.6px, transparent 2px) 0 0 / 8px 8px, #fff200; color: #ff2f9a; transform: rotate(1deg) scale(1.04); }
+.save-me { width: 7.6rem; margin: -5rem -0.4rem -2.6rem 0; }
+.save-me b { font-size: 1.55rem; }

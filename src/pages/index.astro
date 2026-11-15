@@ -20,10 +20,7 @@ const featured = ['basilica-marcay', 'kirkmichael-church', 'chapelle-du-carmel-n
           done the due diligence on each one: read the listing, checked the heritage rules, priced
           the repairs and scored the restoration from 1 (easy) to 5 (hard).
         </p>
-        <div class="actions">
-          <a class="button on-dark" href="/shortlist/">See the shortlist</a>
-          <a class="button on-dark ghost" href="/why/">Read the argument</a>
-        </div>
+        <Nav />
       </div>
       <div class="shrine"><Engraving /></div>
     </div>
@@ -33,7 +30,6 @@ const featured = ['basilica-marcay', 'kirkmichael-church', 'chapelle-du-carmel-n
 
   <section class="section">
     <div class="wrap">
-      <Nav />
       <ul class="tiles">
         {featured.map((c) => <li><Tile church={c} /></li>)}
       </ul>
