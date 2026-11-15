@@ -18,6 +18,7 @@ const { Content } = await render(church);
 const tall = await Promise.all(d.photos.map(async (p) => {
   try { const m = await sharp('public' + p.src).metadata(); return (m.height ?? 0) > (m.width ?? 0) * 1.05; } catch { return false; }
 }));
+const small = (src: string) => src.replace(/\/(\d+)\.jpg$/, '/t/$1.webp');
 const age = ageText(d.built, d.builtNote, d.builtRound);
 const checked = d.lastChecked.toLocaleDateString('en-GB', { timeZone: 'UTC', day: 'numeric', month: 'long', year: 'numeric' });
 
@@ -58,7 +59,7 @@ const tabs = [
     )}
 
     <div class="gallery">
-      <div class="lead" id="lead-frame" style={d.photos[0] ? `--img: url(${d.photos[0].src})` : undefined}>
+      <div class="lead" id="lead-frame" style={d.photos[0] ? `--img: url(${small(d.photos[0].src)})` : undefined}>
         {d.photos[0] ? (
           <><img id="lead-photo" src={d.photos[0].src} alt={d.photos[0].alt} /><img id="lead-photo-2" alt="" hidden /></>
         ) : (
@@ -71,8 +72,8 @@ const tabs = [
       {d.photos.length > 1 && (
         <div class="strip">
           {d.photos.map((p, i) => (
-            <button type="button" class:list={['thumb', tall[i] && 'tall']} style={`--img: url(${p.src})`} data-src={p.src} data-alt={p.alt} aria-label={`Show photograph ${i + 1}`} aria-pressed={i === 0 ? 'true' : 'false'}>
-              <img src={p.src} alt="" loading="lazy" />
+            <button type="button" class:list={['thumb', tall[i] && 'tall']} style={`--img: url(${small(p.src)})`} data-src={p.src} data-small={small(p.src)} data-alt={p.alt} aria-label={`Show photograph ${i + 1}`} aria-pressed={i === 0 ? 'true' : 'false'}>
+              <img src={small(p.src)} alt="" loading="lazy" decoding="async" />
             </button>
           ))}
         </div>
@@ -368,7 +369,7 @@ const tabs = [
       if (pair[1]) { lead2.src = pair[1].dataset.src!; lead2.alt = pair[1].dataset.alt!; }
       frame.classList.toggle('pair', pair.length === 2);
       frame.classList.toggle('upright', isTall(b) && pair.length === 1);
-      frame.style.setProperty('--img', `url(${b.dataset.src})`);
+      frame.style.setProperty('--img', `url(${b.dataset.small})`);
       thumbs.forEach((x) => x.setAttribute('aria-pressed', String(pair.includes(x))));
     }
     thumbs.forEach((b) => b.addEventListener('click', () => show(b)));

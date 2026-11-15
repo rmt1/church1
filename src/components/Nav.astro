@@ -1,0 +1,16 @@
+---
+export const nav = [
+  { href: '/shortlist/', label: 'The shortlist' },
+  { href: '/why/', label: 'Why save them' },
+  { href: '/who-owns-the-churches/', label: 'Who owns them' },
+  { href: '/before-you-buy/', label: 'Before you buy' },
+  { href: '/donate/', label: 'Donate' },
+  { href: '/about/', label: 'About' },
+];
+const path = Astro.url.pathname;
+---
+<nav class="site-nav" aria-label="Main">
+  {nav.map((n) => (
+    <a href={n.href} aria-current={path.startsWith(n.href) ? 'page' : undefined}>{n.label}</a>
+  ))}
+</nav>

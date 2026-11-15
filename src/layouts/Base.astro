@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
 import { getCollection } from 'astro:content';
+import Ticker from '../components/Ticker.astro';
+import Nav from '../components/Nav.astro';
 
 interface Props {
   title?: string;
@@ -37,7 +39,7 @@ const nav = [
 ---
 
 <!doctype html>
-<html lang="en" style="--stone: url(/bg/stone.jpg)">
+<html lang="en" style="--stone: url(/bg/stone.webp)">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -52,21 +54,17 @@ const nav = [
   </head>
   <body>
     <div class="sheet">
-    <header class="site-head">
-      <div class="wrap">
-        <a class="site-name" href="/"><svg class="crest" viewBox="0 0 40 46" aria-hidden="true"><path d="M2 2h36v22c0 11-8 17-18 20C10 41 2 35 2 24z" fill="#d0122d" stroke="#23170f" stroke-width="2.5"/><path d="M2 2h36v8H2z" fill="#f2c21a" stroke="#23170f" stroke-width="2.5"/><path d="M13 34V22l7-7 7 7v12z" fill="#fff6dc" stroke="#23170f" stroke-width="2"/><path d="M20 6v7M17 9h6" stroke="#23170f" stroke-width="2"/><path d="M18 34v-6a2 2 0 0 1 4 0v6z" fill="#1c3fa8" stroke="#23170f" stroke-width="1.5"/></svg>{site}</a>
-        <nav class="site-nav" aria-label="Main">
-          {nav.map((n) => (
-            <a href={n.href} aria-current={path.startsWith(n.href) ? 'page' : undefined}>{n.label}</a>
-          ))}
-        </nav>
-      </div>
-    </header>
-    <div class="ticker" aria-hidden="true">
-      <div class="ticker-run">
-        {Array.from({ length: 12 }).map(() => news.map((n) => <span>{n}</span>))}
-      </div>
-    </div>
+    {path !== '/' && (
+      <>
+        <header class="site-head">
+          <div class="wrap">
+            <a class="site-name" href="/"><svg class="crest" viewBox="0 0 40 46" aria-hidden="true"><path d="M2 2h36v22c0 11-8 17-18 20C10 41 2 35 2 24z" fill="#d0122d" stroke="#23170f" stroke-width="2.5"/><path d="M2 2h36v8H2z" fill="#f2c21a" stroke="#23170f" stroke-width="2.5"/><path d="M13 34V22l7-7 7 7v12z" fill="#fff6dc" stroke="#23170f" stroke-width="2"/><path d="M20 6v7M17 9h6" stroke="#23170f" stroke-width="2"/><path d="M18 34v-6a2 2 0 0 1 4 0v6z" fill="#1c3fa8" stroke="#23170f" stroke-width="1.5"/></svg>{site}</a>
+            <Nav />
+          </div>
+        </header>
+        <Ticker />
+      </>
+    )}
     <div class="bunting" aria-hidden="true"></div>
 
     <main>

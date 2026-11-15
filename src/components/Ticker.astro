@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+const churches = (await getCollection('churches')).filter((c) => !c.data.specimen && c.data.status !== 'saved');
+const count = churches.length;
+const countries = new Set(churches.map((c) => c.data.country)).size;
+const years = churches.map((c) => c.data.built).filter(Boolean) as number[];
+const oldest = years.length ? new Date().getFullYear() - Math.min(...years) : 0;
+const news = [
+  `${count} churches seeking a keeper`,
+  `${countries} countries`,
+  oldest ? `The oldest has stood for ${oldest} years` : '',
+  'Best viewed by candlelight',
+].filter(Boolean);
+---
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-run">
+    {Array.from({ length: 12 }).map(() => news.map((n) => <span>{n}</span>))}
+  </div>
+</div>

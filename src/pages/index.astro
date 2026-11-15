@@ -1,6 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
 import Tile from '../components/Tile.astro';
+import Ticker from '../components/Ticker.astro';
+import Nav from '../components/Nav.astro';
 import { getCollection } from 'astro:content';
 
 const all = await getCollection('churches');
@@ -22,39 +24,72 @@ const featured = ['basilica-marcay', 'kirkmichael-church', 'chapelle-du-carmel-n
           <a class="button on-dark ghost" href="/why/">Read the argument</a>
         </div>
       </div>
-      <div class="niche" aria-hidden="true">
-        <div class="canopy"></div>
-        <div class="window">
-          <svg class="neon-church" viewBox="0 0 300 410" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <g class="n-cy" stroke-width="2">
-              <path d="M20 392h260M34 392V300M266 392V300M34 300l42-34M266 300l-42-34" />
-              <path d="M52 392v-62a10 10 0 0 1 20 0v62M228 392v-62a10 10 0 0 1 20 0v62" />
-              <path d="M150 40v-26M140 24h20" />
+      <div class="shrine" aria-hidden="true">
+        <svg viewBox="0 0 360 580" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <defs>
+            <clipPath id="lancet"><path d="M96 560V250C96 170 140 110 180 64C220 110 264 170 264 250V560Z" /></clipPath>
+
+          </defs>
+          <path class="glass" d="M96 560V250C96 170 140 110 180 64C220 110 264 170 264 250V560Z" />
+          <g clip-path="url(#lancet)">
+            <path class="n-cy" stroke-width="1.2" d="M112 560V252C112 186 148 134 180 98C212 134 248 186 248 252V560" />
+            <g class="n-ma" stroke-width="1.6">
+              <path d="M180 150V236M137 193H223M158 171L202 215M202 171L158 215" />
+              <circle cx="180" cy="193" r="24" />
+              <circle cx="180" cy="193" r="7" />
             </g>
-            <g class="n-ye" stroke-width="4">
-              <path d="M76 392V188l22-74 22 74v204" />
-              <path d="M224 392V188l-22-74-22 74v204" />
-              <path d="M98 114V92M90 100h16M202 114V92M194 100h16" />
-              <path d="M120 250l30-150 30 150" />
-              <path d="M150 100V40" />
-              <path d="M126 392v-66q24-44 48 0v66" />
-              <path d="M150 300v92" />
-              <path d="M88 392v-50q10-18 20 0v50M192 392v-50q10-18 20 0v50" />
-              <path d="M88 236v-30q10-18 20 0v30zM192 236v-30q10-18 20 0v30z" />
+            <g transform="translate(87 313) scale(0.62)">
+              <g class="n-cy" stroke-width="2.4">
+                <path d="M20 392h260M34 392V300M266 392V300M34 300l42-34M266 300l-42-34" />
+                <path d="M52 392v-62a10 10 0 0 1 20 0v62M228 392v-62a10 10 0 0 1 20 0v62" />
+                <path d="M150 40v-26M140 24h20" />
+              </g>
+              <g class="n-ye" stroke-width="4">
+                <path d="M76 392V188l22-74 22 74v204" />
+                <path d="M224 392V188l-22-74-22 74v204" />
+                <path d="M98 114V92M90 100h16M202 114V92M194 100h16" />
+                <path d="M120 250l30-150 30 150" />
+                <path d="M150 100V40" />
+                <path d="M126 392v-66q24-44 48 0v66" />
+                <path d="M150 300v92" />
+                <path d="M88 392v-50q10-18 20 0v50M192 392v-50q10-18 20 0v50" />
+                <path d="M88 236v-30q10-18 20 0v30zM192 236v-30q10-18 20 0v30z" />
+              </g>
+              <g class="n-ma" stroke-width="3">
+                <circle cx="150" cy="232" r="24" />
+                <path d="M150 208v48M126 232h48" />
+              </g>
             </g>
-            <g class="n-ma" stroke-width="3">
-              <circle cx="150" cy="232" r="30" />
-              <circle cx="150" cy="232" r="9" />
-              <path d="M150 202v21M150 241v21M120 232h21M159 232h21M129 211l15 15M156 238l15 15M171 211l-15 15M144 238l-15 15" />
+          </g>
+          <path class="edge" stroke-width="2.5" d="M96 560V250C96 170 140 110 180 64C220 110 264 170 264 250V560Z" />
+          <path class="edge" stroke-width="1" opacity="0.7" d="M82 560V248C82 160 132 96 180 44C228 96 278 160 278 248V560" />
+          <path class="edge" stroke-width="1.5" d="M14 560H346" />
+          <g class="orn">            
+              <path d="M92 214C70 190 52 150 50 96C62 140 84 170 112 186C100 188 94 198 92 214Z" />
+              <path d="M84 266C58 254 36 226 28 184C42 216 62 236 88 244Z" />
+              <path d="M60 250C62 360 65 470 68 560H52C55 470 58 360 60 250Z" />
+              <path d="M54 420C36 412 22 392 18 362C28 384 42 396 57 400Z" />
+              <path d="M56 500C42 496 30 482 26 460C34 474 44 482 58 486Z" />
+              <path d="M180 0C182 26 186 44 198 62C190 56 185 52 180 44Z" />
             </g>
-          </svg>
-        </div>
+          <g class="orn" transform="translate(360 0) scale(-1 1)">            
+              <path d="M92 214C70 190 52 150 50 96C62 140 84 170 112 186C100 188 94 198 92 214Z" />
+              <path d="M84 266C58 254 36 226 28 184C42 216 62 236 88 244Z" />
+              <path d="M60 250C62 360 65 470 68 560H52C55 470 58 360 60 250Z" />
+              <path d="M54 420C36 412 22 392 18 362C28 384 42 396 57 400Z" />
+              <path d="M56 500C42 496 30 482 26 460C34 474 44 482 58 486Z" />
+              <path d="M180 0C182 26 186 44 198 62C190 56 185 52 180 44Z" />
+            </g>
+        </svg>
       </div>
     </div>
   </section>
 
+  <Ticker />
+
   <section class="section">
     <div class="wrap">
+      <Nav />
       <div class="section-head">
         <h2>Churches you could save</h2>
         <a href="/shortlist/">View all</a>
