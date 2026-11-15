@@ -1269,3 +1269,9 @@ dialog.zoom::backdrop { background: rgba(255, 255, 255, 0.9); }
   12% { text-shadow: 0 0 3px rgba(231, 255, 10, 0.7), 0 0 8px rgba(231, 255, 10, 0.4), 0 0 14px rgba(231, 255, 10, 0.1), 0 0 30px rgba(231, 255, 10, 0), 0 0 60px rgba(255, 47, 154, 0); }
   16%, 70% { text-shadow: 0 0 8px #e7ff0a, 0 0 22px #e7ff0a, 0 0 52px #e7ff0a, 0 0 110px #e7ff0a, 0 0 170px rgba(255, 47, 154, 0.45); }
 }
+
+/* listing button: plain pink so the words read; capitals on names and anything you can press */
+.button.pop, .prose a.button.pop, .button.pop:hover { background: #ff2f9a; }
+.button.pop:hover { background: #fff200; color: #ff2f9a; }
+.site-nav a, .tabs [role='tab'], .button, .ring a, .music, .tile h3, .lot-body h1, .section-head a, .filters label, .crumbs a { text-transform: capitalize; }
+.button.pop { text-transform: uppercase; }
