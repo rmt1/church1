@@ -1077,3 +1077,66 @@ main > .section > .wrap > .site-nav { display: flex; flex-wrap: wrap; gap: 0.6re
 .button.pop:hover { background: radial-gradient(circle, #ff2f9a 1.6px, transparent 2px) 0 0 / 8px 8px, #fff200; color: #ff2f9a; transform: rotate(1deg) scale(1.04); }
 .save-me { width: 7.6rem; margin: -5rem -0.4rem -2.6rem 0; }
 .save-me b { font-size: 1.55rem; }
+
+/* ================= flat trial: one dark ground, no boxes, glow in two places ================= */
+html { background: #0a0c0a; }
+body { background: none; }
+.sheet { background: none; }
+main > .wrap, main > .section > .wrap { background: none; border: 0; box-shadow: none; }
+main > .wrap::before, main > .wrap::after, main > .section > .wrap::before, main > .section > .wrap::after { display: none; }
+h1, .site-name, .country-head, .section-head h2 { -webkit-text-stroke: 0; }
+.site-name, .site-foot .site-name { text-shadow: none; letter-spacing: 0.06em; }
+.hero h1.glow { -webkit-text-stroke: 0; text-shadow: 0 0 8px rgba(231, 255, 10, 0.75), 0 0 34px rgba(231, 255, 10, 0.45); }
+.hero .hero-text p { background: none; border: 0; padding: 0; font-size: 1.4rem; line-height: 1.5; color: var(--ink); max-width: 34rem; }
+
+/* menu as plain links */
+.site-nav a, .site-nav a:visited, .hero .hero-text .site-nav a { background: none; border: 0; clip-path: none; padding: 0.2rem 0; color: var(--ink); font-size: 0.82rem; letter-spacing: 0.14em; border-bottom: 1px solid transparent; }
+.site-nav a:hover, .site-nav a[aria-current='page'] { background: none; color: var(--pink); border-color: var(--pink); }
+.site-nav, .hero .hero-text .site-nav { gap: 0.5rem 1.8rem; }
+.hero .hero-text .site-nav { margin-top: 2.2rem; padding-top: 1.2rem; border-top: 1px solid var(--rule); max-width: 34rem; }
+.site-head { background: none; border-bottom: 1px solid var(--rule); box-shadow: none; }
+
+/* the scroll, thinner */
+.ticker { background: none; border-block: 1px solid var(--rule); font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); }
+.ticker-run { padding-block: 0.55rem; }
+.ticker-run span::before { color: var(--pink); margin-inline: 1.6rem; }
+
+/* photographs carry the colour */
+.tile .frame { border: 0; box-shadow: none; margin: 0; background: #131613; }
+.tile .meta { color: var(--ink-soft); letter-spacing: 0.04em; }
+.tile:hover h3 { color: var(--pink); }
+.gallery .lead { border: 0; box-shadow: none; margin: 0; width: 100%; }
+.thumb { border: 1px solid transparent; }
+.thumb[aria-pressed='true'] { border-color: var(--pink); box-shadow: none; }
+.country::before { filter: none; opacity: 0.9; }
+.country .tiles { border-top: 1px solid var(--rule); }
+.country-head span { color: var(--ink-soft); }
+
+/* buttons: crisp, no glow */
+.button, .button.on-dark { filter: none; }
+.button.ghost, .button.on-dark.ghost { background: none; box-shadow: inset 0 0 0 1px var(--pink); }
+.music { background: #0a0c0a; }
+.filters select { background: #0a0c0a; border-width: 1px; }
+.prose > p:first-of-type::first-letter, .lot-body > .standfirst::first-letter { box-shadow: none; }
+
+/* footer */
+.site-foot { background: none; border: 0; border-top: 1px solid var(--rule); box-shadow: none; }
+.site-foot .wrap { background: none; border: 0; box-shadow: none; }
+.badges span { background: none; color: var(--ink-soft); border: 1px solid var(--rule); box-shadow: none; }
+
+/* the plate floats on the ground */
+.plate { filter: none; }
+.plate .ground { fill: #0a0c0a; }
+.hero .wrap.hero-grid { padding-block: clamp(3.5rem, 8vw, 6.5rem) clamp(3rem, 6vw, 5rem); }
+
+/* flat trial: profile parts */
+.panel { background: #101310; border: 1px solid var(--rule); border-radius: 0; box-shadow: none; padding: 1.6rem 1.5rem; }
+.panel::before, .panel::after { display: none; }
+.panel dt, .panel .label { color: var(--ink-soft); }
+.button.pop, .prose a.button.pop { font-size: 1.05rem; padding: 0.8rem 1rem; text-align: center; display: block; box-shadow: 5px 5px 0 #000; transform: rotate(-1.5deg); }
+.tabs { border-bottom: 1px solid var(--rule); gap: 1.6rem; }
+.tabs [role='tab'] { background: none; border: 0; border-bottom: 2px solid transparent; clip-path: none; box-shadow: none; padding: 0.5rem 0; color: var(--ink-soft); font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; margin: 0 0 -1px; }
+.tabs [role='tab'][aria-selected='true'] { background: none; color: var(--pink); border-bottom-color: var(--pink); }
+.tabs [role='tab']:hover { color: var(--ink); background: none; }
+.ring { background: none; border: 0; border-top: 1px solid var(--rule); box-shadow: none; }
+.ring a { font-size: 0.82rem; letter-spacing: 0.12em; }
