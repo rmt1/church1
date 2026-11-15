@@ -54,7 +54,7 @@ const tabs = [
     )}
 
     <div class="gallery">
-      <div class="lead">
+      <div class="lead" id="lead-frame" style={d.photos[0] ? `--img: url(${d.photos[0].src})` : undefined}>
         {d.photos[0] ? (
           <img id="lead-photo" src={d.photos[0].src} alt={d.photos[0].alt} />
         ) : (
@@ -67,13 +67,14 @@ const tabs = [
       {d.photos.length > 1 && (
         <div class="strip">
           {d.photos.map((p, i) => (
-            <button type="button" class="thumb" data-src={p.src} data-alt={p.alt} aria-label={`Show photograph ${i + 1}`} aria-pressed={i === 0 ? 'true' : 'false'}>
+            <button type="button" class="thumb" style={`--img: url(${p.src})`} data-src={p.src} data-alt={p.alt} aria-label={`Show photograph ${i + 1}`} aria-pressed={i === 0 ? 'true' : 'false'}>
               <img src={p.src} alt="" loading="lazy" />
             </button>
           ))}
         </div>
       )}
-      {d.photos[0] && <p class="credit">{d.photos[0].credit}</p>}
+      {d.photos[0] && <p class="credit">{d.photos[0].credit}. Click the large photograph to see it full size.</p>}
+      <dialog class="zoom" id="zoom"><img alt="" /></dialog>
     </div>
 
     <div class="lot">
@@ -348,9 +349,20 @@ const tabs = [
       b.addEventListener('click', () => {
         if (!lead) return;
         lead.src = b.dataset.src!;
+        document.getElementById('lead-frame')?.style.setProperty('--img', `url(${b.dataset.src})`);
         lead.alt = b.dataset.alt!;
         thumbs.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
       }),
     );
+      const zoom = document.getElementById('zoom') as HTMLDialogElement | null;
+    if (lead && zoom) {
+      lead.addEventListener('click', () => {
+        const big = zoom.querySelector('img')!;
+        big.src = lead.src;
+        big.alt = lead.alt;
+        zoom.showModal();
+      });
+      zoom.addEventListener('click', () => zoom.close());
+    }
   </script>
 </Base>

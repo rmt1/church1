@@ -6,9 +6,9 @@ const age = ageText(d.built, d.builtNote, d.builtRound);
 ---
 
 <a class="tile" href={`/shortlist/${church.id}/`}>
-  <div class="frame">
+  <div class="frame" style={d.photos[0] ? `--img: url(${d.photos[0].src})` : undefined}>
     {d.photos[0] ? (
-      <img src={d.photos[0].src} alt={d.photos[0].alt} loading="lazy" style={d.photos[0].focus ? `object-position: ${d.photos[0].focus}` : undefined} />
+      <img src={d.photos[0].src} alt={d.photos[0].alt} loading="lazy" />
     ) : (
       <span class="numeral" aria-hidden="true"></span>
     )}
