@@ -1024,3 +1024,25 @@ main > .section > .wrap > .site-nav { display: flex; flex-wrap: wrap; gap: 0.6re
 .plate .ink, .plate pattern path { stroke: #e7ff0a; }
 .plate .cut { fill: #0a0c0a; stroke: none; }
 @media (max-width: 52rem) { .hero .shrine { width: min(15rem, 62vw); } }
+
+/* the church in three colours; its lights come on one by one */
+.plate { filter: drop-shadow(0 14px 30px rgba(0, 0, 0, 0.5)); }
+.plate .ink { filter: drop-shadow(0 0 3px rgba(231, 255, 10, 0.45)); }
+.plate .cool, .plate #h-sky path { stroke: #4fdcf2; }
+.plate .cool { opacity: 0.8; }
+.plate .lamp { fill: #ff4fc0; stroke: none; opacity: 0.9; filter: drop-shadow(0 0 6px rgba(255, 60, 190, 0.95)); }
+.plate .lamp-line { stroke: #ff7ad1; opacity: 1; filter: drop-shadow(0 0 5px rgba(255, 60, 190, 0.95)); }
+.plate pattern#h-cross path { stroke: #e7ff0a; }
+@media (prefers-reduced-motion: no-preference) {
+  .plate .lamp, .plate .lamp-line { animation: lit 26s var(--d, 0s) infinite backwards; }
+}
+@keyframes lit {
+  0% { opacity: 0; }
+  1.2% { opacity: 0.55; }
+  2% { opacity: 0.15; }
+  3% { opacity: 0.7; }
+  3.6% { opacity: 0.4; }
+  6% { opacity: 0.9; }
+  78% { opacity: 0.9; }
+  88%, 100% { opacity: 0; }
+}
