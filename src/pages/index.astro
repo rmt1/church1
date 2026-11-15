@@ -34,13 +34,10 @@ const featured = ['basilica-marcay', 'kirkmichael-church', 'chapelle-du-carmel-n
   <section class="section">
     <div class="wrap">
       <Nav />
-      <div class="section-head">
-        <h2>Churches you could save</h2>
-        <a href="/shortlist/">View all</a>
-      </div>
       <ul class="tiles">
         {featured.map((c) => <li><Tile church={c} /></li>)}
       </ul>
+      <p class="see-all"><a class="button ghost" href="/shortlist/">See all {all.length} churches</a></p>
     </div>
   </section>
 </Base>
