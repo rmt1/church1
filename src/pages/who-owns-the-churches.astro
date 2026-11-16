@@ -10,12 +10,12 @@ const countries = [
     name: 'France',
     stamp: '1789',
     under: 'Revolution',
-    sells: 'Families, religious orders, dioceses and villages',
+    sells: 'Families and villages',
     money: 'A private seller or the commune',
     text: [
-      'France took its Churches from the Church twice. In 1789 the National Assembly seized every abbey, priory and chapel in the country and auctioned them to farmers, lawyers and speculators. Thousands have been in private hands ever since.',
-      'Then in 1905 the State took the parish Churches too. About 40,000 of them now belong to their village, and the State keeps 87 cathedrals. The priest holds the services and the mayor pays for the roof.',
-      'So when a French Church comes up for sale, the seller is a family, a religious order, a diocese, or a village that can no longer afford it.',
+      'France took its Churches from the Church twice. In 1789 the National Assembly seized every religious building in the country to pay off the debts of the State, and auctioned thousands of them to farmers, lawyers and speculators. They have been in private hands ever since.',
+      'Then in 1905 the Republic separated Church and State and stopped paying for religion, and the State took the parish Churches too. About 40,000 of them now belong to their village, and the State manages 87 cathedrals.',
+      'When a French Church comes up for sale, the seller is usually a family, or a village that can no longer afford it.',
     ],
   },
   {
@@ -25,8 +25,8 @@ const countries = [
     sells: 'The Church Commissioners, or a private owner selling on',
     money: 'Two thirds to the diocese, one third to other closed churches',
     text: [
-      'Henry VIII dissolved the monasteries between 1536 and 1541 and sold them to the gentry. It is why England is full of country houses called Something Abbey.',
-      'The parish Churches stayed with the Church of England and it owns them still. About 20 close every year, and the Church Commissioners decide whether each one is sold, handed to a trust or pulled down. Methodists and Baptists built their own chapels and sell their own.',
+      'Henry VIII dissolved the monasteries between 1536 and 1541 and sold them to private buyers. He had broken with Rome, and he wanted their land and their money.',
+      'The parish Churches stayed with the Church of England, which still owns them. About 20 close every year. The Church Commissioners decide whether each one is sold, handed to a trust or pulled down.',
     ],
   },
   {
@@ -36,8 +36,8 @@ const countries = [
     sells: 'The Church of Scotland, direct',
     money: 'Back to the Kirk',
     text: [
-      'Scotland is the largest sale of Churches in Europe today. The Church of Scotland still owns its kirks and has decided it cannot keep them all.',
-      'It plans to part with 350 to 400 buildings, about 30% of what it has, and lists them on its own website from 20,000 pounds.',
+      'Scotland is the largest sale of Churches in Europe today. The Church of Scotland still owns its kirks (a kirk is a Scottish Church) and has decided it cannot keep them all.',
+      'It plans to part with 350 to 400 buildings, about 30% of what it has, and lists them on its own website from £20,000.',
     ],
   },
   {
@@ -47,8 +47,9 @@ const countries = [
     sells: 'Private owners. The State, by public tender',
     money: 'A private seller or the State',
     text: [
-      'Napoleon closed the religious orders, and the new Kingdom of Italy did it again in 1866 and 1867. The State kept some of the Churches and the Interior Ministry holds them to this day. The convents were sold. They are farms and villas now, and many still have their Church attached.',
-      'Italy also has the family chapel, built by a noble house on its own land. It never belonged to the Church at all and passes with the estate. When a bishop closes a Church he decrees it fit for “profane but not sordid use”.',
+      'Napoleon closed the religious orders in 1810, and the new Kingdom of Italy did it again in 1866 and 1867. The State kept some of the Churches, and the Interior Ministry holds those to this day.',
+      'The convents were auctioned from 1867 to pay the debts of the new kingdom. Many of them are farms and villas now, and many still have their Church attached.',
+      'Italy also has many family chapels, built by noble houses on their own land. These never belonged to the Church at all and pass with the estate.',
     ],
   },
   {
@@ -58,8 +59,8 @@ const countries = [
     sells: 'The Church of Ireland, religious orders, private owners',
     money: 'Church of Ireland sales: 80% for the parish, 20% to a fabric fund',
     text: [
-      'The medieval Churches of Ireland went to the Protestant Church of Ireland at the Reformation. Gladstone disestablished it in 1869, and its Churches passed to a trustee, the Representative Church Body, which sells them when a parish closes.',
-      'Catholic Churches belong to the dioceses and almost never come up. Presbyterians owned their own, and those were sold when the congregation died out. Convents are sold by their orders when the last sisters leave.',
+      'The medieval Churches of Ireland went to the Protestant Church of Ireland at the Reformation, in the 1530s. Gladstone disestablished it in 1869, and its Churches passed to a trustee, the Representative Church Body, which sells them when a parish closes.',
+      'Catholic Churches belong to the dioceses and almost never come up for sale. Presbyterians own their own, and these are sold when a congregation dies out.',
     ],
   },
   {
@@ -69,8 +70,8 @@ const countries = [
     sells: 'Private owners and companies',
     money: 'The private seller',
     text: [
-      'Portugal emptied its monasteries in a single stroke. In 1834 the government abolished the religious orders and took everything they owned. The buildings were auctioned and became farms and country houses.',
-      'The monastery Church usually stayed with the parish. At Junqueira the Church still holds services, and the monastery beside it belongs to a sugar company.',
+      'Most Churches in Portugal still belong to the Catholic Church, through its parishes and dioceses.',
+      'The monasteries went another way. In 1834 the government abolished the religious orders and took everything they owned. The monasteries and convents were auctioned and became farms and country houses, and their Churches usually passed to the parish.',
     ],
   },
   {
@@ -81,7 +82,6 @@ const countries = [
     money: 'The parish or the private seller',
     text: [
       'The communist state confiscated the property of the Churches from 25 February 1948. A law of 2012 gave the buildings back. Parishes own their Churches again, and a parish in trouble can sell one.',
-      'St Wenceslas at Roudníky was sold in 2013 when its parish went bankrupt. The couple who bought it are selling it on.',
     ],
   },
 ];
@@ -94,10 +94,9 @@ const countries = [
     </header>
     <div class="owners">
       <p class="owners-lede">
-        For most of their history these buildings belonged to the Church. Over the last five
-        hundred years kings, revolutions and governments have taken them, sold them and sometimes
-        given them back. In most of Europe today the Church no longer owns its old Churches. This
-        is how each country got here.
+        For most of their history these buildings belonged to the Church. But over the last 500
+        years kings, revolutions and governments have taken them, sold them and occasionally given
+        them back. In most of Europe today, the Church no longer owns its old Churches.
       </p>
       <div class="owners-list">
         {countries.map((c, i) => (
