@@ -21,7 +21,7 @@ const churches = defineCollection({
     builtRound: z.number().int().default(10), // rough ages round to this many years
     place: z.string(),
     region: z.string(),
-    country: z.enum(['France', 'England', 'Scotland', 'Wales', 'Italy', 'Ireland']),
+    country: z.enum(['France', 'England', 'Scotland', 'Wales', 'Italy', 'Ireland', 'Czech Republic', 'Portugal']),
     lat: z.number().optional(), // town-level position for the map, not the exact building
     lng: z.number().optional(),
     price: z.string(),
