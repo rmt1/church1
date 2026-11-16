@@ -13,6 +13,8 @@ description: How Europe's churches changed hands, country by country, and who is
 | Scotland | Church of Scotland General Trustees | The Kirk, directly | To the Kirk's congregations and fabric funds |
 | Italy | Dioceses and parishes, the State (Fondo Edifici di Culto), municipalities, private families | Private owners; the State by public tender | Mostly to private sellers or the State |
 | Ireland | Representative Church Body (Church of Ireland); Catholic dioceses | The RCB; private owners on resale | RCB sales: 80% held for the parish, 20% to a church fabric fund |
+| Portugal | Parishes and dioceses | Private owners and companies holding former monasteries | To the private seller |
+| Czech Republic | Parishes and dioceses | Parishes; private owners on resale | To the parish or the private seller |
 
 ## France
 
@@ -42,6 +44,18 @@ Italy also has a class of building that never belonged to the Church at all: the
 
 The medieval churches of Ireland went to the Protestant Church of Ireland at the Reformation. Gladstone disestablished it by the Irish Church Act of 1869. Churches in use were vested in a new trustee, the Representative Church Body, which still sells them when parishes close. Many ruined medieval churches are in the care of the State or the county council as national monuments and are not for sale. Catholic churches, mostly built after 1829, belong to diocesan trusts and rarely reach the market.
 
+Presbyterians and other dissenters owned their own churches, and those were sold when the congregation died out. The Presbyterian church at Portlaw on the shortlist closed in 1931 and now passes with the minister's house. Convents belong to their orders and come up for sale as the last sisters leave.
+
+## Portugal
+
+Portugal emptied its monasteries in one stroke. In 1834 the liberal government abolished the religious orders and took their property into the national estate. The buildings were auctioned, and many became farms and country houses. Some houses had gone earlier: the Pope dissolved São Simão da Junqueira in 1770 and it was sold as a manor.
+
+The monastery church usually stayed with the parish. That is the pattern at Junqueira, where the church still holds services and the monastic range beside it belongs to a sugar company.
+
+## Czech Republic
+
+The communist state confiscated church property from 25 February 1948. A law of 2012 returned real estate to the churches and set compensation for what could not be returned. Parishes hold their churches again, and a parish in difficulty can sell one. St Wenceslas at Roudníky was sold in 2013 when the parish of Trmice went insolvent, and its private owners are now selling it on.
+
 ## Sources
 
 - [Vie-publique on the 1905 law and places of worship](https://www.vie-publique.fr/eclairage/20205-laicite-le-regime-de-separation-entre-letat-et-les-cultes)
@@ -50,5 +64,7 @@ The medieval churches of Ireland went to the Protestant Church of Ireland at the
 - [Church Times, May 2026, on Church of Scotland disposals](https://www.churchtimes.co.uk/articles/2026/22-may/news/uk/outdated-parish-system-hampering-change-in-church-of-scotland-report-finds)
 - [Church of Ireland, RCB property presentation 2023](https://ireland.anglican.org/cmsfiles/pdf/Resources/ParishResources/HotTopics/RCB-Property-2023.pdf)
 - [History Ireland on disestablishment](https://historyireland.com/disestablishment-in-the-nick-of-time/)
+- [Parques de Sintra on the 1834 decree abolishing the religious orders](https://dpedroiv.parquesdesintra.pt/en/chronology/1834/june/31/decree-abolishing-religious-orders/126)
+- [Czech Constitutional Court on the 2012 church restitution law](https://www.usoud.cz/en/decisions/2013-05-29-pl-us-10-13-church-restitution-ii)
 - [University of Milan journal on the Fondo Edifici di Culto](https://riviste.unimi.it/index.php/statoechiese/article/view/15276/14084)
 - [Crux on the Italian guidelines for deconsecrated churches](https://cruxnow.com/church-in-europe/2020/02/what-to-do-with-a-deconsecrated-church-better-a-library-than-a-nightclub/)
