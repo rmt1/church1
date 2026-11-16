@@ -4,6 +4,9 @@ title: Can't buy one?
 description: Give to the charities that rescue churches nobody else will take, starting with the Friends of Friendless Churches.
 ---
 
+<div class="split">
+<div>
+
 <p class="standfirst">Give to the Friends of Friendless Churches. They take the churches nobody else will.</p>
 
 The Friends of Friendless Churches have been at it since 1957. They look after 71 churches and chapels, 36 in England and 35 in Wales, that were closed and facing demolition, decay or conversion. They repair them and reopen them for anyone to visit.
@@ -11,6 +14,13 @@ The Friends of Friendless Churches have been at it since 1957. They look after 7
 In Wales they get 90,000 pounds a year from Cadw and 60,000 from the Church in Wales. In England they get no regular funding and run on memberships, donations and legacies.
 
 <p><a class="button" href="https://friendsoffriendlesschurches.org.uk">Give to the Friends of Friendless Churches</a></p>
+
+</div>
+<figure>
+<img src="/photos/friends/mundon.jpg" alt="A small church with a timber-framed tower and red tiled roof among trees" />
+<figcaption>St Mary's, Mundon, Essex, in the care of the Friends. Photo: <a href="https://commons.wikimedia.org/wiki/File:St_Mary%27s,_Mundon,_Essex.jpg">morleyra</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via Wikimedia Commons.</figcaption>
+</figure>
+</div>
 
 ## Others doing the same work
 

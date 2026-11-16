@@ -1339,3 +1339,12 @@ dialog.zoom::backdrop { background: rgba(255, 255, 255, 0.9); }
 .atlas-card, .atlas-card:visited { max-width: 30rem; }
 .atlas-section { padding-top: clamp(3rem, 6vw, 5rem); }
 .atlas-side .atlas-lede { margin: 0 0 3.2rem; }
+
+/* donate: summary beside a photograph */
+.prose .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr); gap: clamp(2rem, 5vw, 4rem); align-items: start; max-width: none; }
+.prose .split figure { margin: 0; }
+.prose .split img { display: block; width: 100%; height: auto; border: 1.5px solid var(--ink); border-radius: 50% 50% 0 0 / 22% 22% 0 0; }
+.prose .split figcaption { font-size: 0.85rem; color: var(--ink-soft); margin-top: 0.6rem; }
+@media (max-width: 52rem) { .prose .split { grid-template-columns: 1fr; } }
+.prose .split { width: min(68rem, calc(100vw - 4rem)); }
+.prose .split > div { max-width: 34rem; }
