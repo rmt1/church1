@@ -1329,3 +1329,15 @@ dialog.zoom::backdrop { background: rgba(255, 255, 255, 0.9); }
 .atlas-card:hover .atlas-go { background: #ff2f9a; }
 .hero .hero-text .site-nav { margin-top: 2rem; }
 .site-nav a, .hero .hero-text .site-nav a { text-transform: capitalize; }
+
+/* spacing: title beside the plate, one row of buttons under both; summary top, card bottom */
+.hero .wrap.hero-grid { row-gap: clamp(2.5rem, 5vw, 4rem); padding-bottom: clamp(2.5rem, 5vw, 4rem); }
+.hero .hero-grid > .site-nav { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0.8rem; margin: 0; }
+.hero .hero-grid > .site-nav a { text-align: center; padding: 0.55rem 0.4rem 0.65rem; font-size: 1.25rem; white-space: nowrap; }
+@media (max-width: 64rem) { .hero .hero-grid > .site-nav { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 34rem) { .hero .hero-grid > .site-nav { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.atlas { align-items: stretch; }
+.atlas-side { display: flex; flex-direction: column; justify-content: space-between; gap: 2.5rem; padding-block: 0.4rem; }
+.atlas-lede { margin: 0; font-size: 1.6rem; max-width: 32rem; }
+.atlas-card, .atlas-card:visited { max-width: 32rem; }
+.atlas-section { padding-top: clamp(3rem, 6vw, 5rem); }
