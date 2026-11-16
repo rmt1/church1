@@ -41,6 +41,8 @@ const pins = churches
       price: c.data.price,
       age: ageText(c.data.built, c.data.builtNote, c.data.builtRound),
       sym,
+      img: c.data.photos[0] ? c.data.photos[0].src.replace(/\/(\d+)\.jpg$/, '/t/$1.webp') : '',
+      difficulty: c.data.difficulty,
     };
   })
   .sort((a, b) => a.y - b.y);
@@ -68,7 +70,7 @@ const pins = churches
       <rect class="rule" x="3" y="3" width={W - 6} height={H - 6} stroke-width="2" />
       <rect class="rule" x="8" y="8" width={W - 16} height={H - 16} stroke-width="0.7" />
       {pins.map((p, i) => (
-        <a class="pin" href={`/shortlist/${p.id}/`} data-name={p.name} data-place={p.place} data-price={p.price} data-age={p.age} aria-label={`${p.name}, ${p.place}, ${p.price}`}>
+        <a class="pin" href={`/shortlist/${p.id}/`} data-name={p.name} data-place={p.place} data-price={p.price} data-age={p.age} data-img={p.img} data-difficulty={p.difficulty} aria-label={`${p.name}, ${p.place}, ${p.price}`}>
           <circle class="hit" cx={p.x} cy={p.y} r="11" />
           <circle class="halo" cx={p.x} cy={p.y} r="9" style={`--d: ${(i % 7) * 0.45}s`} />
           <circle class="dot" cx={p.x} cy={p.y} r="4.6" />
@@ -77,13 +79,21 @@ const pins = churches
     </svg>
   </div>
   <div class="atlas-side">
-    <h2>Where they are</h2>
-    <p>{pins.length} churches across four countries. Each light is a church. Point at one to see it and press it to open its page.</p>
+    <p class="atlas-lede">
+      A shortlist of old churches for sale across Europe, from £20,000 to €2,000,000. We have
+      done the due diligence on each one: read the listing, checked the heritage rules, priced
+      the repairs and scored the restoration from 1 (easy) to 5 (hard).
+    </p>
     <a class="atlas-card" id="atlas-card" href="/shortlist/">
-      <span class="atlas-meta" data-f="age">Positions are to the nearest town</span>
-      <span class="atlas-name" data-f="name">Pick a church</span>
-      <span class="atlas-place" data-f="place">from Orkney to Sicily</span>
-      <span class="atlas-price" data-f="price"></span>
+      <span class="atlas-photo"><img alt="" /></span>
+      <span class="atlas-text">
+        <span class="atlas-meta" data-f="age"></span>
+        <span class="atlas-name" data-f="name">Pick a light on the map</span>
+        <span class="atlas-place" data-f="place"></span>
+        <span class="atlas-price" data-f="price"></span>
+        <span class="atlas-meta" data-f="difficulty"></span>
+        <span class="atlas-go">See This Church</span>
+      </span>
     </a>
   </div>
 </div>
@@ -92,19 +102,26 @@ const pins = churches
   const card = document.getElementById('atlas-card') as HTMLAnchorElement | null;
   if (card) {
     const set = (k: string, v: string) => { const el = card.querySelector(`[data-f="${k}"]`); if (el) el.textContent = v; };
-    document.querySelectorAll<SVGAElement>('.atlas .pin').forEach((pin) => {
-      const show = () => {
-        set('name', pin.dataset.name || '');
-        set('place', pin.dataset.place || '');
-        set('price', pin.dataset.price || '');
-        set('age', pin.dataset.age || '');
-        card.href = pin.getAttribute('href') || '/shortlist/';
-        card.classList.add('on');
-        document.querySelectorAll('.atlas .pin.on').forEach((p) => p.classList.remove('on'));
-        pin.classList.add('on');
-      };
-      pin.addEventListener('pointerenter', show);
-      pin.addEventListener('focus', show);
+    const img = card.querySelector('img') as HTMLImageElement;
+    const pins = [...document.querySelectorAll<SVGAElement>('.atlas .pin')];
+    const show = (pin: SVGAElement) => {
+      set('name', pin.dataset.name || '');
+      set('place', pin.dataset.place || '');
+      set('price', pin.dataset.price || '');
+      set('age', pin.dataset.age || '');
+      set('difficulty', pin.dataset.difficulty ? `Difficulty ${pin.dataset.difficulty} of 5` : '');
+      if (pin.dataset.img) img.src = pin.dataset.img;
+      card.href = pin.getAttribute('href') || '/shortlist/';
+      card.classList.add('on');
+      pins.forEach((p) => p.classList.toggle('on', p === pin));
+    };
+    pins.forEach((pin) => {
+      pin.addEventListener('pointerenter', (e) => { if ((e as PointerEvent).pointerType === 'mouse') show(pin); });
+      pin.addEventListener('focus', () => show(pin));
+      // pressing a light loads the church beside the map; the card opens its page
+      pin.addEventListener('click', (e) => { e.preventDefault(); show(pin); });
     });
+    const first = pins.find((p) => (p.getAttribute('href') || '').includes('basilica-marcay')) || pins[0];
+    if (first) show(first);
   }
 </script>
