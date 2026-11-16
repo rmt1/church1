@@ -22,8 +22,6 @@ The Friends of Friendless Churches have been at it since 1957. They look after 7
 
 ## Others that take churches on
 
-These charities do what the Friends do: they take ownership of a closed church, repair it and keep it open.
-
 | Where | Charity | What it holds |
 | --- | --- | --- |
 | England | [Churches Conservation Trust](https://www.visitchurches.org.uk) | Founded in 1969; over 350 closed Anglican churches |
