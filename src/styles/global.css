@@ -1385,3 +1385,12 @@ dialog.zoom::backdrop { background: rgba(255, 255, 255, 0.9); }
   .owner-stamp b { font-size: 1.8rem; }
   .owner-body { padding-left: 0.8rem; }
 }
+
+/* who owns them: colour on the stamps and the buttons */
+.owner-stamp { background: #ff2f9a; }
+.owner:nth-child(3n + 2) .owner-stamp { background: #4fdcf2; }
+.owner:nth-child(3n) .owner-stamp { background: var(--hi); }
+.owner[open] .owner-stamp, .owner summary:hover .owner-stamp { background: #fff; }
+.owner-body .button.ghost, .owner-body .button.ghost:visited { background: #4fdcf2; color: var(--ink); border-color: var(--ink); box-shadow: 3px 3px 0 var(--ink); }
+.owner-body .button.ghost:hover, .owner-body .button.ghost:active { background: var(--hi); }
+.owners-lede { max-width: 42rem; }
