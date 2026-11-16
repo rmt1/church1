@@ -12,8 +12,6 @@ Beauty is receding from daily life. The forces of modernity dismiss religion, ha
 
 An amazing and scalable bonus of saving historical buildings is that the investment contributes to demand for the skills that make those buildings possible. Such excellent tradesmen in masonry, carpentry, glass and more are disappearing, but putting them to work on repairs builds demand and training for more. If you want even more good buildings, you cannot get them without the people.
 
-Many people in tech have made, or are about to make, large sums of capital. I want to make a petition for more philanthropy towards historical buildings, specifically Churches. Every year, dozens of historical Churches fall into disrepair around Europe. Hundreds of these deconsecrated buildings are up for sale. You could save one for low six figures. A very wealthy person could save a lot of them.
-
 I don't believe you need to be Christian to recognise the value in saving these buildings. You just have to respect history. These Churches should not become financial assets. Not yoga studios, not backdrops for light shows, not a rental opportunity. We should allow them to remain as sacred spaces. The preservation of our history is enough.
 
 People will say, "Oh, but these are money drains! They will just need continuous repair, and you'll have nobody to sell them to!" Consider perhaps that in this you will find the whole point.
