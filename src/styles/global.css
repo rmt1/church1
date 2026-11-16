@@ -1349,3 +1349,39 @@ dialog.zoom::backdrop { background: rgba(255, 255, 255, 0.9); }
 .prose .split { width: min(68rem, calc(100vw - 4rem)); }
 .prose .split > div { max-width: 34rem; }
 .prose > .split ~ p:first-of-type::first-letter { float: none; font: inherit; background: none; border: 0; padding: 0; margin: 0; color: inherit; line-height: inherit; }
+
+/* who owns them: a ledger of countries, each stamped with the year it happened */
+.owners { padding-block: 1rem clamp(3rem, 7vw, 5rem); }
+.owners-lede { font-size: 1.5rem; line-height: 1.4; max-width: 38rem; margin: 0 0 2.6rem; }
+.owners-list { border-top: 1.5px solid var(--ink); }
+.owner { border-bottom: 1.5px solid var(--ink); }
+.owner summary { display: grid; grid-template-columns: 8.5rem minmax(9rem, 1fr) minmax(0, 1.5fr) minmax(0, 1.5fr) 2.2rem; gap: 1.6rem; align-items: center; padding: 1.3rem 0.8rem; list-style: none; cursor: var(--sword) 2 2, pointer; }
+.owner summary::-webkit-details-marker { display: none; }
+.owner summary:hover, .owner[open] summary { background: var(--hi); }
+.owner summary:focus-visible { outline: 2px solid var(--ink); outline-offset: -4px; }
+.owner-stamp { display: grid; justify-items: center; padding: 0.35rem 0.5rem 0.45rem; border: 2px solid var(--ink); background: #fff; transform: rotate(-4deg); box-shadow: 3px 3px 0 var(--ink); }
+.owner:nth-child(even) .owner-stamp { transform: rotate(3deg); }
+.owner-stamp b { font-family: var(--title); font-weight: 400; font-size: 2.3rem; line-height: 1; letter-spacing: 0.03em; }
+.owner-stamp i { font-style: normal; font-size: 0.78rem; line-height: 1.2; text-align: center; }
+.owner-name { font-family: var(--black); font-size: clamp(1.8rem, 3vw, 2.5rem); line-height: 1; }
+.owner-fact { font-size: 1rem; line-height: 1.35; }
+.owner-fact i { display: block; font-style: normal; font-size: 0.8rem; color: var(--ink-soft); margin-bottom: 0.15rem; }
+.owner[open] .owner-fact i, .owner summary:hover .owner-fact i { color: var(--ink); }
+.owner-toggle { justify-self: end; width: 1.6rem; height: 1.6rem; position: relative; }
+.owner-toggle::before, .owner-toggle::after { content: ''; position: absolute; left: 0; right: 0; top: 50%; height: 2px; background: var(--ink); }
+.owner-toggle::after { transform: rotate(90deg); }
+.owner[open] .owner-toggle::after { display: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .owner-stamp { transition: transform 0.18s cubic-bezier(0.3, 1.8, 0.5, 1); }
+  .owner summary:hover .owner-stamp, .owner[open] .owner-stamp { transform: rotate(0deg) scale(1.08); }
+}
+.owner-body { padding: 1.6rem 0.8rem 2.2rem calc(8.5rem + 2.4rem); max-width: 60rem; }
+.owner-body p { margin: 0 0 1rem; max-width: 38rem; font-size: 1.2rem; line-height: 1.55; }
+.owner-body .button { margin-top: 0.6rem; }
+@media (max-width: 60rem) {
+  .owner summary { grid-template-columns: 6.5rem 1fr 2rem; row-gap: 0.8rem; }
+  .owner-fact { grid-column: 2 / 3; }
+  .owner-toggle { grid-column: 3; grid-row: 1; }
+  .owner-stamp b { font-size: 1.8rem; }
+  .owner-body { padding-left: 0.8rem; }
+}

@@ -1,0 +1,121 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const all = (await getCollection('churches')).filter((c) => !c.data.specimen && c.data.status !== 'saved');
+const count = (country: string) => all.filter((c) => c.data.country === country).length;
+
+const countries = [
+  {
+    name: 'France',
+    stamp: '1789',
+    under: 'Revolution',
+    sells: 'Private owners, religious orders, dioceses, the odd village',
+    money: 'A private seller or the commune',
+    text: [
+      'France took its churches from the Church twice. In 1789 the National Assembly seized the lot and auctioned abbeys, priories and chapels to farmers, lawyers and speculators. Thousands have been private ever since.',
+      'Then the law of 1905 gave every parish church built before that year, about 40,000 of them, to the commune. The State kept 87 cathedrals. The priest uses the building and the mayor pays for the roof.',
+      'So a French church for sale is a chapel that went private in the Revolution, a convent sold by its order, a twentieth-century church sold by a diocese, or a parish church the village has given up on.',
+    ],
+  },
+  {
+    name: 'England',
+    stamp: '1536',
+    under: 'Henry VIII',
+    sells: 'The Church Commissioners, or a private owner selling on',
+    money: 'Two thirds to the diocese, one third to other closed churches',
+    text: [
+      'Henry VIII sold the monasteries to the gentry between 1536 and 1541. That is why England is full of country houses called Something Abbey. The parish churches stayed with the Church of England.',
+      'About 20 close a year and the Church Commissioners decide what happens to each. Buy one from them and you are paying the Church of England. Buy a chapel already in private hands, or a Methodist or Baptist one, and the Church of England sees none of it.',
+    ],
+  },
+  {
+    name: 'Scotland',
+    stamp: '400',
+    under: 'kirks to go',
+    sells: 'The Church of Scotland, direct',
+    money: 'Back to the Kirk',
+    text: [
+      'The Church of Scotland is running the biggest church sale in Europe. It plans to shed 350 to 400 buildings, about 30% of what it has, and lists them on its own website from 20,000 pounds.',
+      'You buy direct from the Kirk and the money goes to its remaining congregations.',
+    ],
+  },
+  {
+    name: 'Italy',
+    stamp: '1866',
+    under: 'Confiscation',
+    sells: 'Private owners. The State, by public tender',
+    money: 'A private seller or the State',
+    text: [
+      'Napoleon shut the religious orders and unified Italy did it again in 1866 and 1867. The State kept some of the churches and the Interior Ministry still holds them. The convents were sold. They are farms and villas now, many with a deconsecrated church attached.',
+      'Italy also has the family chapel, built on a noble estate. It never belonged to the Church and passes with the land. When a bishop closes a church he decrees it fit for "profane but not sordid use".',
+    ],
+  },
+  {
+    name: 'Ireland',
+    stamp: '1869',
+    under: 'Disestablished',
+    sells: 'The Church of Ireland, religious orders, private owners',
+    money: 'Church of Ireland sales: 80% for the parish, 20% to a fabric fund',
+    text: [
+      'The medieval churches went to the Protestant Church of Ireland at the Reformation. Gladstone disestablished it in 1869 and the churches passed to a trustee, the Representative Church Body, which sells them when a parish closes.',
+      'Catholic churches belong to the dioceses and almost never come up. Presbyterians owned their own, and those went when the congregation died. Convents are sold by their orders when the last sisters leave.',
+    ],
+  },
+  {
+    name: 'Portugal',
+    stamp: '1834',
+    under: 'Orders abolished',
+    sells: 'Private owners and companies',
+    money: 'The private seller',
+    text: [
+      'Portugal emptied its monasteries in one stroke. In 1834 the liberal government abolished the religious orders and took everything they owned. The buildings were auctioned and became farms and country houses.',
+      'The monastery church usually stayed with the parish. At Junqueira the church still holds services and the monastery beside it belongs to a sugar company.',
+    ],
+  },
+  {
+    name: 'Czech Republic',
+    stamp: '1948',
+    under: 'Communists',
+    sells: 'Parishes, and private owners selling on',
+    money: 'The parish or the private seller',
+    text: [
+      'The communist state confiscated church property from 25 February 1948. A law of 2012 gave the buildings back. Parishes hold their churches again, and a parish in trouble can sell one.',
+      'St Wenceslas at Roudníky was sold in 2013 when its parish went bankrupt. The couple who bought it are now selling it on.',
+    ],
+  },
+];
+---
+
+<Base title="Who owns them" description="Who owns Europe's old churches, country by country, and where your money goes if you buy one.">
+  <div class="wrap">
+    <header class="page-head">
+      <h1>Who owns them</h1>
+    </header>
+    <div class="owners">
+      <p class="owners-lede">
+        People ask why they should hand money to the Church. Mostly you would not be. Across Europe
+        the Church lost the deeds to its old buildings between 1536 and 1948. Pick a country.
+      </p>
+      <div class="owners-list">
+        {countries.map((c, i) => (
+          <details class="owner" name="owners" open={i === 0}>
+            <summary>
+              <span class="owner-stamp"><b>{c.stamp}</b><i>{c.under}</i></span>
+              <span class="owner-name">{c.name}</span>
+              <span class="owner-fact"><i>Who sells</i>{c.sells}</span>
+              <span class="owner-fact"><i>Where the money goes</i>{c.money}</span>
+              <span class="owner-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="owner-body">
+              {c.text.map((p) => <p>{p}</p>)}
+              {count(c.name) > 0 && (
+                <a class="button ghost" href="/shortlist/">{count(c.name)} For Sale In {c.name}</a>
+              )}
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </div>
+</Base>
