@@ -19,3 +19,15 @@ Then there are the dead. Families gave these buildings to their villages and ask
 You do not have to be religious to do this, and you are not handing money to the Church. In France the Catholic Church has not owned its old parish churches since 1905. Many of the chapels and priories on the market were sold off by the Revolution and have been private property for two centuries. [Who owns the churches](/who-owns-the-churches/) explains who owns what, country by country, and every church on [the shortlist](/shortlist/) names the seller.
 
 This site is a shortlist. I have read the listings, checked the heritage status, and written down what is wrong with each building and what it will cost to put right. Pick one. If you cannot buy a church, [give to the people who rescue them](/donate/).
+
+## About this site
+
+I bought a fourteenth-century church in [place] in [year].
+
+I expected a building. I got a history course with no end date. You pull one thread, a name cut into the floor, a blocked doorway, a date on a bell, and three centuries come out. I have learned more about [country] from this one church than from any book: who the families were, who paid for the chancel, how the building passed from the parish to the State and out again, and how long Church and State fought over who would pay for the roof. Owning a church is a history project you can walk around inside.
+
+People are buried there. They gave the church to their village and asked to lie in it. I feel bound to keep the stones over them in good order, and to recut the ones that are wearing away. It feels like a calling, and I recommend it.
+
+I started this site because I said so on Twitter and a stranger answered that they would adopt a church if someone showed them which ones could be saved. Here they are.
+
+[Name, one line of biography, contact.]
