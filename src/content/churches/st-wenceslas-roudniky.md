@@ -21,16 +21,37 @@ verdict: Light use
 verdictReason: The stone altar and the wall painting beside it are strictly protected and the outside must keep its historic look. The owners have held services and concerts here, and that is the use the building suits. The agent talks of loft living with a mezzanine in the nave. It would need the heritage office to agree.
 difficulty: 2
 photos:
-- src: /photos/st-wenceslas-roudniky/3.jpg
-  alt: The church and the old school beside it, from the road
-  credit: 'Photo: SchiDD, CC BY-SA 4.0, Wikimedia Commons, 2016'
 - src: /photos/st-wenceslas-roudniky/1.jpg
-  alt: 'The church from the east: a Gothic chancel with two traceried windows and stepped buttresses, a tiled roof, the tower behind and graves in front'
-  credit: 'Photo: SchiDD, CC BY-SA 4.0, Wikimedia Commons, 2016'
+  alt: 'The church from the south-east among the graves: Gothic chancel, tiled roof and the tower with its slated spire'
+  credit: 'Photo: Tomáš Zajkaš, Keller Williams'
 - src: /photos/st-wenceslas-roudniky/2.jpg
-  alt: The tower with its slated spire and four dormers, seen over the cemetery wall
-  credit: 'Photo: SchiDD, CC BY-SA 4.0, Wikimedia Commons, 2016'
+  alt: 'The church from the air with Lake Milada behind it'
+  credit: 'Photo: Tomáš Zajkaš, Keller Williams'
+- src: /photos/st-wenceslas-roudniky/3.jpg
+  alt: 'The nave looking east over the pews to the chancel arch and the stone altar'
+  credit: 'Photo: Tomáš Zajkaš, Keller Williams'
 - src: /photos/st-wenceslas-roudniky/4.jpg
+  alt: 'The carved stone altar of 1607 under the rib vault of the chancel'
+  credit: 'Photo: Tomáš Zajkaš, Keller Williams'
+- src: /photos/st-wenceslas-roudniky/5.jpg
+  alt: 'The altar, the stone font and cracks in the chancel plaster'
+  credit: 'Photo: Tomáš Zajkaš, Keller Williams'
+- src: /photos/st-wenceslas-roudniky/6.jpg
+  alt: 'The organ gallery at the west end, with plaster missing from the ceiling above it'
+  credit: 'Photo: Tomáš Zajkaš, Keller Williams'
+- src: /photos/st-wenceslas-roudniky/7.jpg
+  alt: 'The organ of 1882 on the gallery'
+  credit: 'Photo: Tomáš Zajkaš, Keller Williams'
+- src: /photos/st-wenceslas-roudniky/8.jpg
+  alt: 'The entrance under the tower, with iron gates and a carved grave slab'
+  credit: 'Photo: Tomáš Zajkaš, Keller Williams'
+- src: /photos/st-wenceslas-roudniky/9.jpg
+  alt: 'The west face of the tower and the door, with a crack in the render above it'
+  credit: 'Photo: Tomáš Zajkaš, Keller Williams'
+- src: /photos/st-wenceslas-roudniky/10.jpg
+  alt: 'The small stone mortuary in the cemetery'
+  credit: 'Photo: Tomáš Zajkaš, Keller Williams'
+- src: /photos/st-wenceslas-roudniky/11.jpg
   alt: A painted altar wing of the late 15th century showing the martyrdoms of two saints
   credit: 'One of the altar wings painted for this church around 1480, now in a museum collection. Public domain, Wikimedia Commons'
 sections:
@@ -205,7 +226,7 @@ upkeep:
 estimateNote: Figures are in euros at about 25 crowns to the euro, and they are my estimates from photographs, not quotes. The roofs have had recent work, so the money is in plaster, cracks and services.
 grantNote: The owners say part of the costs can be met from Czech heritage grant programmes. Ask the agent which ones they used.
 seen:
-- These notes come from the agent's 32 photographs, uploaded in November 2022. The pictures shown here are older and from Wikimedia Commons.
+- These notes come from the agent's 32 photographs, uploaded in November 2022.
 - The nave roof is even red clay tile and the spire slate is complete, from the drone views.
 - A crack runs up the render of the west tower face above the door.
 - Cracks cross the plaster of the chancel walls beside the altar.
