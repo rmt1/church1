@@ -6,9 +6,9 @@ description: Give to the charities that rescue churches nobody else will take, s
 
 <p class="standfirst">Give to the Friends of Friendless Churches. They take the churches nobody else will.</p>
 
-On 3 July 1957 a Welsh journalist and former MP called Ivor Bulmer-Thomas booked Committee Room 13 of the House of Commons and founded a charity with the best name in England. T. S. Eliot, John Betjeman and the painter John Piper were among the founders. Bulmer-Thomas had fallen out with the Archbishop of Canterbury, who wanted preservation money spent only on churches still in use. He thought an old and beautiful church did its job simply by standing there.
+The Friends of Friendless Churches have been at it since 1957. They look after 71 churches and chapels, 36 in England and 35 in Wales, that were closed and facing demolition, decay or conversion. They repair them and reopen them for anyone to visit.
 
-For fifteen years the Friends campaigned and paid for repairs. In 1972 they changed their constitution so they could own buildings outright, and the first thing they took on was a lone church tower at Lightcliffe in Yorkshire. Today they care for more than 70 churches and chapels across England and Wales, from thirteenth-century stone cells to Victorian oddities, with a staff of about five. They mend the roof, unlock the door and leave the building as they found it. Membership costs less than dinner.
+In Wales they get 90,000 pounds a year from Cadw and 60,000 from the Church in Wales. In England they get no regular funding and run on memberships, donations and legacies.
 
 <p><a class="button" href="https://friendsoffriendlesschurches.org.uk">Give to the Friends of Friendless Churches</a></p>
 

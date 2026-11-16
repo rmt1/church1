@@ -5,11 +5,12 @@ const count = churches.length;
 const countries = new Set(churches.map((c) => c.data.country)).size;
 const years = churches.map((c) => c.data.built).filter(Boolean) as number[];
 const oldest = years.length ? new Date().getFullYear() - Math.min(...years) : 0;
+const youngest = years.length ? new Date().getFullYear() - Math.max(...years) : 0;
 const news = [
   `${count} churches seeking a keeper`,
   `${countries} countries`,
   oldest ? `The oldest has stood for ${oldest} years` : '',
-  'Best viewed by candlelight',
+  youngest ? `The youngest has stood for ${youngest} years` : '',
 ].filter(Boolean);
 ---
 <div class="ticker" aria-hidden="true">
