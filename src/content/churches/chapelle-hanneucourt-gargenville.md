@@ -4,6 +4,8 @@ built: 1727
 place: Gargenville
 region: Yvelines, Île-de-France
 country: France
+lat: 48.99
+lng: 1.81
 price: €230,000
 agent: Patrice Besse
 listingUrl: https://www.patrice-besse.com/annonces/edifices-religieux-a-vendre-au-coeur-du-Parc-naturel-regional-du-Vexin-francais--pb992238

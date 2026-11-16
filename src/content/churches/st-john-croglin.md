@@ -4,6 +4,8 @@ built: 1878
 place: Croglin, Eden Valley
 region: Cumbria
 country: England
+lat: 54.82
+lng: -2.66
 price: Guide £100,000, cash
 currency: £
 agent: PFK

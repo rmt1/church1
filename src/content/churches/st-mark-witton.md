@@ -4,6 +4,8 @@ built: 1838
 place: Buncer Lane, Witton, Blackburn
 region: Lancashire
 country: England
+lat: 53.75
+lng: -2.51
 price: Offers invited
 currency: £
 agent: Proctors

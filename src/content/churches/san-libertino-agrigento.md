@@ -5,6 +5,8 @@ builtNote: '~'
 place: Old town, Agrigento
 region: Agrigento, Sicily
 country: Italy
+lat: 37.31
+lng: 13.58
 price: €32,000
 currency: €
 agent: Studio Atenea

@@ -4,6 +4,8 @@ built: 1832
 place: Kingskettle, by Cupar
 region: Fife
 country: Scotland
+lat: 56.26
+lng: -3.12
 price: Offers over £125,000
 currency: £
 agent: Church of Scotland

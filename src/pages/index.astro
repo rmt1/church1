@@ -4,6 +4,7 @@ import Tile from '../components/Tile.astro';
 import Ticker from '../components/Ticker.astro';
 import Nav from '../components/Nav.astro';
 import Engraving from '../components/Engraving.astro';
+import ChurchMap from '../components/ChurchMap.astro';
 import { getCollection } from 'astro:content';
 
 const all = await getCollection('churches');
@@ -27,6 +28,10 @@ const featured = ['basilica-marcay', 'kirkmichael-church', 'chapelle-du-carmel-n
   </section>
 
   <Ticker />
+
+  <section class="section atlas-section">
+    <div class="wrap"><ChurchMap /></div>
+  </section>
 
   <section class="section">
     <div class="wrap">

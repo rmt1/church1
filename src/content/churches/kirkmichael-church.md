@@ -4,6 +4,8 @@ built: 1791
 place: Kirkmichael, by Blairgowrie
 region: Perth and Kinross
 country: Scotland
+lat: 56.73
+lng: -3.5
 price: Offers over £70,000
 currency: £
 agent: Church of Scotland

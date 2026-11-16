@@ -4,6 +4,8 @@ built: 1868
 place: 159 rue de Strasbourg, Niort
 region: Deux-Sèvres, Nouvelle-Aquitaine
 country: France
+lat: 46.33
+lng: -0.46
 price: €190,000
 agent: Espaces Atypiques
 listingUrl: https://www.espaces-atypiques.com/ventes/79000-niort-ancien-lieu-de-culte-au-coeur-de-niort-eads427/

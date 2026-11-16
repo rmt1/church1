@@ -4,6 +4,8 @@ built: 1831
 place: Minto, by Hawick
 region: Scottish Borders
 country: Scotland
+lat: 55.47
+lng: -2.68
 price: Offers over £75,000
 currency: £
 agent: Church of Scotland

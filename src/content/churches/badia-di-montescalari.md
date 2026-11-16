@@ -5,6 +5,8 @@ builtNote: at least
 place: Monte Scalari, between Greve in Chianti and Figline Valdarno
 region: Florence, Tuscany
 country: Italy
+lat: 43.66
+lng: 11.41
 price: €2,000,000
 currency: €
 agent: Romolini Immobiliare

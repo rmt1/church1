@@ -1,0 +1,110 @@
+---
+// An engraved map of where the churches are. Coastlines come from Natural Earth (public domain) via world-atlas.
+import { getCollection } from 'astro:content';
+import { geoMercator, geoPath } from 'd3-geo';
+import { feature } from 'topojson-client';
+import atlas from 'world-atlas/countries-50m.json';
+import { ageText } from '../lib/age';
+
+const churches = (await getCollection('churches')).filter(
+  (c) => !c.data.specimen && c.data.status !== 'saved' && c.data.lat !== undefined && c.data.lng !== undefined,
+);
+
+const W = 560;
+const box = { type: 'MultiPoint', coordinates: [[-11.5, 35.6], [19.5, 35.6], [19.5, 60.4], [-11.5, 60.4]] } as any;
+const projection = geoMercator().fitWidth(W, box);
+const [[, y0], [, y1]] = geoPath(projection).bounds(box);
+const H = Math.ceil(y1 - y0);
+projection.clipExtent([[0, 0], [W, H]]);
+const path = geoPath(projection).digits(1);
+const land = (feature(atlas as any, (atlas as any).objects.countries) as any).features
+  .map((f: any) => path(f))
+  .filter(Boolean) as string[];
+
+const labels = [
+  { text: 'Scotland', at: [-9.2, 57.6] },
+  { text: 'England', at: [2.6, 53.9] },
+  { text: 'France', at: [-6.6, 46.0] },
+  { text: 'Italy', at: [9.6, 40.3] },
+].map((l) => ({ ...l, xy: projection(l.at as [number, number])! }));
+
+const pins = churches
+  .map((c) => {
+    const [x, y] = projection([c.data.lng!, c.data.lat!])!;
+    const sym = c.data.currency;
+    return {
+      id: c.id,
+      x: Math.round(x * 10) / 10,
+      y: Math.round(y * 10) / 10,
+      name: c.data.name,
+      place: `${c.data.place}, ${c.data.country}`,
+      price: c.data.price,
+      age: ageText(c.data.built, c.data.builtNote, c.data.builtRound),
+      sym,
+    };
+  })
+  .sort((a, b) => a.y - b.y);
+---
+
+<div class="atlas">
+  <div class="atlas-map">
+    <svg viewBox={`0 0 ${W} ${H}`} role="group" aria-label={`Map of the ${pins.length} churches`}>
+      <defs>
+        <pattern id="sea" width="10" height="5" patternUnits="userSpaceOnUse"><path d="M0 2.5H10" stroke-width="0.45" /></pattern>
+        <clipPath id="sheet"><rect x="8" y="8" width={W - 16} height={H - 16} /></clipPath>
+      </defs>
+      <rect class="paper" x="0" y="0" width={W} height={H} />
+      <g clip-path="url(#sheet)">
+        <rect x="0" y="0" width={W} height={H} fill="url(#sea)" opacity="0.55" />
+        <g class="land">{land.map((d) => <path d={d} />)}</g>
+        <g class="names">{labels.map((l) => <text x={l.xy[0]} y={l.xy[1]}>{l.text}</text>)}</g>
+        <g class="rose" transform={`translate(58 ${Math.round(H * 0.5)})`}>
+          <circle r="26" /><circle r="19" />
+          <path d="M0 -34L5 -5L34 0L5 5L0 34L-5 5L-34 0L-5 -5Z" />
+          <path class="fill" d="M0 -34L5 -5L0 0ZM34 0L5 5L0 0ZM0 34L-5 5L0 0ZM-34 0L-5 -5L0 0Z" />
+          <text y="-38">N</text>
+        </g>
+      </g>
+      <rect class="rule" x="3" y="3" width={W - 6} height={H - 6} stroke-width="2" />
+      <rect class="rule" x="8" y="8" width={W - 16} height={H - 16} stroke-width="0.7" />
+      {pins.map((p, i) => (
+        <a class="pin" href={`/shortlist/${p.id}/`} data-name={p.name} data-place={p.place} data-price={p.price} data-age={p.age} aria-label={`${p.name}, ${p.place}, ${p.price}`}>
+          <circle class="hit" cx={p.x} cy={p.y} r="11" />
+          <circle class="halo" cx={p.x} cy={p.y} r="9" style={`--d: ${(i % 7) * 0.45}s`} />
+          <circle class="dot" cx={p.x} cy={p.y} r="4.6" />
+        </a>
+      ))}
+    </svg>
+  </div>
+  <div class="atlas-side">
+    <h2>Where they are</h2>
+    <p>{pins.length} churches across four countries. Each light is a church. Point at one to see it and press it to open its page.</p>
+    <a class="atlas-card" id="atlas-card" href="/shortlist/">
+      <span class="atlas-meta" data-f="age">Positions are to the nearest town</span>
+      <span class="atlas-name" data-f="name">Pick a church</span>
+      <span class="atlas-place" data-f="place">from Orkney to Sicily</span>
+      <span class="atlas-price" data-f="price"></span>
+    </a>
+  </div>
+</div>
+
+<script>
+  const card = document.getElementById('atlas-card') as HTMLAnchorElement | null;
+  if (card) {
+    const set = (k: string, v: string) => { const el = card.querySelector(`[data-f="${k}"]`); if (el) el.textContent = v; };
+    document.querySelectorAll<SVGAElement>('.atlas .pin').forEach((pin) => {
+      const show = () => {
+        set('name', pin.dataset.name || '');
+        set('place', pin.dataset.place || '');
+        set('price', pin.dataset.price || '');
+        set('age', pin.dataset.age || '');
+        card.href = pin.getAttribute('href') || '/shortlist/';
+        card.classList.add('on');
+        document.querySelectorAll('.atlas .pin.on').forEach((p) => p.classList.remove('on'));
+        pin.classList.add('on');
+      };
+      pin.addEventListener('pointerenter', show);
+      pin.addEventListener('focus', show);
+    });
+  }
+</script>

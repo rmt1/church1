@@ -4,6 +4,8 @@ built: 1862
 place: 115 Victoria Street, Stromness
 region: Orkney
 country: Scotland
+lat: 58.96
+lng: -3.3
 price: Offers over £75,000
 currency: £
 agent: Church of Scotland

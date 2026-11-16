@@ -4,6 +4,8 @@ built: 1775
 place: 11 rue des Chariottes, Arras
 region: Pas-de-Calais, Hauts-de-France
 country: France
+lat: 50.29
+lng: 2.78
 price: €532,000
 agent: Patrice Besse
 listingUrl: https://www.patrice-besse.com/annonces/edifices-religieux-a-vendre-a-1-h-de-Paris-en-centre-ville-d-Arras--pb199325

@@ -4,6 +4,8 @@ built: 1806
 place: Kirkton of Bourtie, by Inverurie
 region: Aberdeenshire
 country: Scotland
+lat: 57.32
+lng: -2.35
 price: Offers over £45,000
 currency: £
 agent: Church of Scotland

@@ -4,6 +4,8 @@ built: 1840
 place: Newchurch Road, Stacksteads, Bacup
 region: Rossendale, Lancashire
 country: England
+lat: 53.69
+lng: -2.24
 price: Offers around £95,000
 currency: £
 agent: MBRE

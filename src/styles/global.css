@@ -1275,3 +1275,40 @@ dialog.zoom::backdrop { background: rgba(255, 255, 255, 0.9); }
 .button.pop:hover { background: #fff200; color: #ff2f9a; }
 .site-nav a, .tabs [role='tab'], .button, .ring a, .music, .tile h3, .lot-body h1, .section-head a, .filters label, .crumbs a { text-transform: capitalize; }
 .button.pop { text-transform: uppercase; }
+
+/* the map: cut like the church plate, each church a light */
+.atlas { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr); gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+.atlas-map { max-width: 34rem; width: 100%; }
+.atlas-map svg { display: block; width: 100%; height: auto; overflow: visible; }
+.atlas .paper { fill: #fff; }
+.atlas #sea path { stroke: #111210; }
+.atlas .land path { fill: #fff; stroke: #111210; stroke-width: 0.8; stroke-linejoin: round; }
+.atlas .rule { fill: none; stroke: #111210; }
+.atlas .names text { font-family: var(--black); font-size: 17px; fill: #111210; text-anchor: middle; stroke: #fff; stroke-width: 5px; paint-order: stroke fill; letter-spacing: 0.04em; }
+.atlas .rose circle, .atlas .rose path { fill: #fff; stroke: #111210; stroke-width: 0.8; }
+.atlas .rose .fill { fill: #111210; }
+.atlas .rose text { font-family: var(--black); font-size: 13px; text-anchor: middle; fill: #111210; stroke: #fff; stroke-width: 4px; paint-order: stroke fill; }
+.atlas .pin .hit { fill: transparent; }
+.atlas .pin .dot { fill: #ff2f9a; stroke: #111210; stroke-width: 1.3; }
+.atlas .pin .halo { fill: #ff2f9a; opacity: 0.28; transform-box: fill-box; transform-origin: center; }
+.atlas .pin:hover .dot, .atlas .pin:focus .dot, .atlas .pin.on .dot { fill: #e7ff0a; r: 6.5px; }
+.atlas .pin:hover .halo, .atlas .pin.on .halo { fill: #e7ff0a; opacity: 0.7; }
+.atlas a.pin:hover { background: none; }
+.atlas .pin:focus { outline: none; }
+.atlas .pin:focus-visible .dot { stroke-width: 2.6; }
+@media (prefers-reduced-motion: no-preference) {
+  .atlas .pin .halo { animation: beacon 3.2s var(--d, 0s) ease-out infinite; }
+}
+@keyframes beacon { 0% { transform: scale(0.5); opacity: 0.55; } 70%, 100% { transform: scale(1.7); opacity: 0; } }
+.atlas-side h2 { font-size: clamp(2.2rem, 4vw, 3.2rem); margin: 0 0 0.8rem; }
+.atlas-side p { max-width: 26rem; margin: 0 0 1.6rem; }
+.atlas-card, .atlas-card:visited { display: grid; gap: 0.15rem; max-width: 26rem; padding: 1.1rem 1.2rem 1.2rem; border: 1.5px solid var(--ink); text-decoration: none; color: var(--ink); background: #fff; min-height: 8.6rem; align-content: start; }
+.atlas-card:hover, .atlas-card.on { background: var(--hi); }
+.atlas-meta { font-size: 0.9rem; color: var(--ink-soft); }
+.atlas-card.on .atlas-meta, .atlas-card:hover .atlas-meta { color: var(--ink); }
+.atlas-name { font-family: var(--black); font-size: 1.8rem; line-height: 1.05; }
+.atlas-place { font-style: italic; }
+.atlas-price { font-family: var(--black); font-size: 1.3rem; margin-top: 0.3rem; }
+.atlas-section { padding-bottom: 0; }
+@media (max-width: 52rem) { .atlas { grid-template-columns: 1fr; } }
+.atlas .pin .halo { pointer-events: none; }

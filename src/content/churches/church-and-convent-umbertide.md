@@ -5,6 +5,8 @@ builtNote: '~'
 place: Near Umbertide
 region: Perugia, Umbria
 country: Italy
+lat: 43.31
+lng: 12.33
 price: €550,000
 currency: €
 agent: Casa Tuscany

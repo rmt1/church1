@@ -4,6 +4,8 @@ built: 1884
 place: Crèvecœur-le-Grand
 region: Oise, Hauts-de-France
 country: France
+lat: 49.61
+lng: 2.08
 price: €90,000
 agent: Patrice Besse
 listingUrl: https://www.patrice-besse.com/annonces/edifices-religieux-a-vendre-Dans-le-departement-de-l-Oise--pb354518

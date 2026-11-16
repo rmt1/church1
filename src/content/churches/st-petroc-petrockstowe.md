@@ -5,6 +5,8 @@ builtNote: tower ~
 place: Petrockstowe, near Okehampton
 region: North Devon
 country: England
+lat: 50.86
+lng: -4.11
 price: Offers invited
 currency: £
 agent: Bond Oxborough Phillips

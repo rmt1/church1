@@ -4,6 +4,8 @@ built: 1855
 place: Burrington, near Ludlow
 region: Herefordshire
 country: England
+lat: 52.35
+lng: -2.82
 price: Offers around £160,000
 currency: £
 agent: McCartneys

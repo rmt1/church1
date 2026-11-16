@@ -5,6 +5,8 @@ builtNote: at least
 place: Monteaguzzo, above Cesena
 region: Forlì-Cesena, Emilia-Romagna
 country: Italy
+lat: 44.08
+lng: 12.2
 price: €135,000
 currency: €
 agent: ACASA

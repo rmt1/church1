@@ -6,6 +6,8 @@ builtRound: 100
 place: A wine village near Sancerre
 region: Cher, Centre-Val de Loire
 country: France
+lat: 47.33
+lng: 2.87
 price: €30,000
 agent: Patrice Besse
 listingUrl: https://www.patrice-besse.com/edifices-religieux-a-vendre/centre-val-de-loire/edifice-religieux-a-vendre-a-cote-de-sancerre-en-france/

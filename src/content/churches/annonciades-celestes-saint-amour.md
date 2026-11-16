@@ -4,6 +4,8 @@ built: 1621
 place: Saint-Amour
 region: Jura, Bourgogne-Franche-Comté
 country: France
+lat: 46.44
+lng: 5.35
 price: €180,000
 agent: Patrice Besse
 listingUrl: https://www.patrice-besse.com/annonces/ismh-au-coeur-du-Jura--pb363625

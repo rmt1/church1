@@ -4,6 +4,8 @@ built: 1884
 place: Marçay
 region: Vienne, Nouvelle-Aquitaine
 country: France
+lat: 46.47
+lng: 0.22
 price: €950,000
 agent: Patrice Besse
 listingUrl: https://www.patrice-besse.com/annonces/edifice-religieux-a-vendre-a-15-min-de-Poitiers--pb856306

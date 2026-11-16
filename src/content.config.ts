@@ -22,6 +22,8 @@ const churches = defineCollection({
     place: z.string(),
     region: z.string(),
     country: z.enum(['France', 'England', 'Scotland', 'Wales', 'Italy', 'Ireland']),
+    lat: z.number().optional(), // town-level position for the map, not the exact building
+    lng: z.number().optional(),
     price: z.string(),
     currency: z.enum(['€', '£']).default('€'),
     agent: z.string(),

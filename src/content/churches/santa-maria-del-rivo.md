@@ -4,6 +4,8 @@ built: 1799
 place: Santa Maria del Rivo, Ponte dell'Olio
 region: Piacenza, Emilia-Romagna
 country: Italy
+lat: 44.87
+lng: 9.64
 price: €55,000
 currency: €
 agent: Immobiliare 7 Valli

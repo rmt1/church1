@@ -4,6 +4,8 @@ built: 1680
 place: Tongue, by Lairg
 region: Sutherland, Highland
 country: Scotland
+lat: 58.48
+lng: -4.42
 price: Offers over £20,000
 currency: £
 agent: Church of Scotland

@@ -5,6 +5,8 @@ builtNote: '~'
 place: Church Square, Inveraray
 region: Argyll and Bute
 country: Scotland
+lat: 56.23
+lng: -5.07
 price: Offers over £195,000
 currency: £
 agent: Church of Scotland

@@ -4,6 +4,8 @@ built: 1897
 place: South Moor, Stanley
 region: County Durham
 country: England
+lat: 54.86
+lng: -1.7
 price: £95,000
 currency: £
 agent: Sanderson Weatherall

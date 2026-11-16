@@ -5,6 +5,8 @@ builtNote: '~'
 place: Church Hill, Honiton
 region: East Devon
 country: England
+lat: 50.8
+lng: -3.19
 price: Guide £100,000
 currency: £
 agent: Stags
