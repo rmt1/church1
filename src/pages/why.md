@@ -1,33 +1,41 @@
 ---
 layout: ../layouts/Page.astro
 title: Why save them
-description: The case for heritage custodianship. You buy the building, fix the roof and keep the door open.
+description: A petition for more philanthropy towards historical buildings, specifically Churches.
 ---
 
-Old churches are for sale all over Europe, and most of them cost less than a parking space in San Francisco. A chapel near Sancerre is listed at 30,000 euros. A Protestant temple in Picardy, pulpit and painted glass included, is 90,000. They are cheap because they are a liability. The roof leaks, the congregation is eleven people, and whoever holds the deed, whether a village of 200, a diocese or a family, would like someone else to pay for the gutters.
+Many people in tech have made, or are about to make, large sums of capital. I want to make a petition for more philanthropy towards historical buildings, specifically Churches.
 
-I think more people should.
+Every year, dozens of historical Churches fall into disrepair around Europe. Hundreds of these deconsecrated buildings are up for sale.
 
-People tell me you will never make money on a church. Correct. You will have nobody to sell it to. Also correct. You buy the building, you fix the roof, you keep the door open, and when you die it is still standing. I call this heritage custodianship. Vandals burn churches down and everybody is upset for a week. Custodianship is the same story run backwards, and it takes thirty years.
+I don't believe you need to be Christian to recognise the value in saving these buildings. You just have to respect history. It is a travesty to see these buildings, that were the cradle of communities and our civilisation, fall into disrepair or even get demolished.
 
-Why bother? Look at how we already behave. We fly across the world to stand in front of old stones. We queue for the Pantheon, which has a roof today because in 609 somebody turned Jupiter's temple into a church and kept using it. The Parthenon had no such luck. It became a gunpowder store and blew up in 1687. Buildings survive when somebody takes them on. Most of the Greek and Roman temples are gone, and we wish they weren't.
+These Churches should not become financial assets. Not yoga studios, not backdrops for light shows, not a rental opportunity. We should allow them to remain as sacred spaces. The preservation of our history is enough.
 
-A village church is eight hundred years of work by people who could not read. Stonecutters, glaziers, bell founders, carpenters. I want my great-grandchildren to know that stained glass was a thing people made, and to see some that is still in its window.
+When you take on these sorts of projects, people will say, "Oh, but these are money drains! They will just need continuous repair, and you'll have nobody to sell them to!" Consider perhaps that in this you will find the whole point.
 
-Then there are the dead. Families gave these buildings to their villages and asked to be buried in them. Their names are on the floor. Keeping the roof on is the least we owe them.
+You could save a Church for low six figures. A very wealthy person could save a lot of them. I have taken on one, and it has been one of the most beautiful and meaningful projects of my life.
 
-You do not have to be religious to do this, and you are not handing money to the Church. In France the Catholic Church has not owned its old parish churches since 1905. Many of the chapels and priories on the market were sold off by the Revolution and have been private property for two centuries. [Who owns the churches](/who-owns-the-churches/) explains who owns what, country by country, and every church on [the shortlist](/shortlist/) names the seller.
+An amazing and scalable bonus of saving historical buildings is that the investment contributes to demand for the skills that make those buildings possible. Such excellent tradesmen in masonry, carpentry, glass and more are disappearing, but putting them to work on repairs builds demand and training for more. If you want even more good buildings, you cannot get them without the people. And this helps.
 
-This site is a shortlist. I have read the listings, checked the heritage status, and written down what is wrong with each building and what it will cost to put right. Pick one. If you cannot buy a church, [give to the people who rescue them](/donate/).
+## The past left us messages
 
-## About this site
+For hundreds of years, Churches were the cradle of society. They were how new life, rich or poor, was welcomed into the community. Every pair of lovers stood before an altar and made a promise not just to each other, but in front of God. Deaths were mourned, war was mourned. In their most desperate moments, people fled to their Church and prayed with all their might for a better outcome. Churches are where people come and seek hope. And the walls of even the lowliest Churches are still full of that energy to me: the human striving, the hopes and the prayers, the love, beauty, but also sadness of life.
 
-I bought a fourteenth-century church in [place] in [year].
+It is a trait I acquired from my mother, to walk into every Church I come across. With or without her, I have visited hundreds (if not thousands!) of European Churches. In our three years together, vacation destinations have served as the backdrop for a Church tour for Erik and me, often visiting several in a day.
 
-I expected a building. I got a history course with no end date. You pull one thread, a name cut into the floor, a blocked doorway, a date on a bell, and three centuries come out. I have learned more about [country] from this one church than from any book: who the families were, who paid for the chancel, how the building passed from the parish to the State and out again, and how long Church and State fought over who would pay for the roof. Owning a church is a history project you can walk around inside.
+It was, in fact, a fated Church ceiling that brought us together: a Jesuit fresco in Rome, at Sant'Ignazio, that caused Erik and me to meet in the Eternal City, redirecting both our lives in ways that still feel implausibly good. We could see it in the frescoes, these appeals to something so glorious and yet so missing in modern life. Faith, not just in a higher power but also in what we as humans could achieve. The past left us messages to show what humans are capable of.
 
-People are buried there. They gave the church to their village and asked to lie in it. I feel bound to keep the stones over them in good order, and to recut the ones that are wearing away. It feels like a calling, and I recommend it.
+If you go and stand in such Churches intentionally and quieten your mind, you can feel all this energy, ever-present, like an atmospheric residue. Sometimes it suffocates and overwhelms, sometimes it enlightens and inspires, but it is always there waiting for us to notice it. And for these reasons, for every tear shed at the altar, every lover who committed to their partner, for every child's life that was mourned, I come into that building with respect for all those who stood there before me.
 
-I started this site because I said so on Twitter and a stranger answered that they would adopt a church if someone showed them which ones could be saved. Here they are.
+## The Collégiale de Thil
 
-[Name, one line of biography, contact.]
+When Erik asked me to marry him, I had dreamed for several years of rescuing Churches. When the Collégiale de Thil came up for sale, I presented it to Erik, suggesting that here was a Church, so perfectly medieval and rural, that might be right for us to acquire. It made no sense for us to get married somewhere temporary and transient. We would marry in a building that would become wholly ours and part of our shared legacy.
+
+Beauty is receding from daily life. The forces of modernity dismiss religion, having never read religious texts, and the buildings that once held entire civilizations together are sold to developers who see square footage where we see centuries. I'm a writer, and I realize the fallacy in complaining about the death of the arts and sacred spaces. We must turn that passion into real action. Acquiring the Collégiale is one of our attempts to do so.
+
+The future needs buildings like this to survive, and it needs people willing to fight for them. We want nothing more than to strengthen the Collégiale in her original splendour. We dream of stained glass, of a new roof, of planting flowers across the grass. I dream of picnics with my yet-to-be-born children, of concerts and recitals, and of other friends and couples sharing vows there.
+
+## Take one on
+
+[The shortlist](/shortlist/) is where to start. If you cannot buy a Church, [give to the people who rescue them](/donate/).
