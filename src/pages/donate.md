@@ -11,29 +11,23 @@ description: Give to the charities that rescue churches nobody else will take, s
 
 The Friends of Friendless Churches have been at it since 1957. They look after 71 churches and chapels, 36 in England and 35 in Wales, that were closed and facing demolition, decay or conversion. They repair them and reopen them for anyone to visit.
 
-In Wales they get 90,000 pounds a year from Cadw and 60,000 from the Church in Wales. In England they get no regular funding and run on memberships, donations and legacies.
-
 <p><a class="button" href="https://friendsoffriendlesschurches.org.uk">Give to the Friends of Friendless Churches</a></p>
 
 </div>
 <figure>
-<img src="/photos/friends/mundon.jpg" alt="A small church with a timber-framed tower and red tiled roof among trees" />
-<figcaption>St Mary's, Mundon, Essex, in the care of the Friends. Photo: <a href="https://commons.wikimedia.org/wiki/File:St_Mary%27s,_Mundon,_Essex.jpg">morleyra</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via Wikimedia Commons.</figcaption>
+<img src="/photos/friends/llanfaglan.jpg" alt="A small stone church with a bellcote behind a dry-stone wall, beside two wind-bent trees" />
+<figcaption>St Baglan's, Llanfaglan, Gwynedd, in the care of the Friends. Photo: Alex Ramsey for the National Churches Trust, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Llanfaglan,_St_Baglan_(35064426963).jpg">Wikimedia Commons</a>.</figcaption>
 </figure>
 </div>
 
-## Others doing the same work
+## Others that take churches on
 
-| Where | Charity | What it does |
+These charities do what the Friends do: they take ownership of a closed church, repair it and keep it open.
+
+| Where | Charity | What it holds |
 | --- | --- | --- |
-| England | [Churches Conservation Trust](https://www.visitchurches.org.uk) | Founded in 1969 as the Redundant Churches Fund; over 350 closed Anglican churches in its care |
-| UK | [National Churches Trust](https://www.nationalchurchestrust.org) | Repair grants for churches still in use |
-| Scotland | Historic Churches Scotland; Scotland's Churches Trust | Takes closed churches into care; records contents before the Kirk's sales |
-| Wales | Addoldai Cymru | Rescues Welsh nonconformist chapels |
-| France | [Fondation du Patrimoine](https://www.fondation-patrimoine.org) | National campaign for village churches |
-| France | Sauvegarde de l'Art Français | Grants for rural churches |
-| France | Observatoire du Patrimoine Religieux | Counts and campaigns; estimates 500 churches gravely threatened |
-| Netherlands | Stichting Oude Groninger Kerken | Owns and opens medieval churches in Groningen |
-| Italy | FAI (Fondo Ambiente Italiano) | Italy's National Trust; restores abbeys and chapels |
-| Europe | [Future for Religious Heritage](https://www.frh-europe.org) | Brussels network; a directory of who does this in each country |
-| United States | Partners for Sacred Places | Grants and advice for historic American congregations |
+| England | [Churches Conservation Trust](https://www.visitchurches.org.uk) | Founded in 1969; over 350 closed Anglican churches |
+| Scotland | [Historic Churches Scotland](https://www.historicchurches.scot) | Takes churches at risk into its care |
+| Wales | [Addoldai Cymru](http://www.welshchapels.org) | Owns eight chapels |
+| Netherlands | [Stichting Oude Groninger Kerken](https://www.groningerkerken.nl/en/home/about-us) | Since 1969 buys, restores and opens churches in Groningen |
+| Netherlands | [Stichting Alde Fryske Tsjerken](https://www.aldefrysketsjerken.nl/) | Owns 51 churches in Friesland |

@@ -1348,3 +1348,4 @@ dialog.zoom::backdrop { background: rgba(255, 255, 255, 0.9); }
 @media (max-width: 52rem) { .prose .split { grid-template-columns: 1fr; } }
 .prose .split { width: min(68rem, calc(100vw - 4rem)); }
 .prose .split > div { max-width: 34rem; }
+.prose > .split ~ p:first-of-type::first-letter { float: none; font: inherit; background: none; border: 0; padding: 0; margin: 0; color: inherit; line-height: inherit; }
