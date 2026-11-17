@@ -1461,3 +1461,23 @@ html { background: var(--paper); }
 @keyframes pin-pop { 0% { transform: scale(0.6); } 55% { transform: scale(4.4); } 100% { transform: scale(2.7); } }
 @keyframes card-pop { 0% { transform: scale(0.96) rotate(-0.6deg); } 60% { transform: scale(1.02) rotate(0.3deg); } 100% { transform: none; } }
 @keyframes photo-in { from { transform: scale(1.25); opacity: 0.2; } to { transform: none; opacity: 1; } }
+
+/* ================= quicker, richer engraving: ornate glass, sun and sky ================= */
+.plate .skyglow { fill: #bfe9f7; opacity: 0.55; }
+.plate .sun circle { fill: #ffd23f; stroke: var(--ink); stroke-width: 1.4; }
+.plate .sun .ring { fill: none; }
+.plate .sun .rays { stroke: var(--ink); transform-origin: 352px 58px; }
+.plate .sun { opacity: 1; }
+.plate.run .lite { animation: k-lite 0.7s var(--d, 0s) both; }
+.plate.run .sg { animation: k-on 0.8s var(--d, 0s) both; }
+.plate.run .lamp-line { animation: k-on 0.8s var(--d, 0s) both; }
+.plate.run .hole, .plate.run .crack { animation: k-off 0.7s var(--d, 0s) both; }
+.plate.run .hand-m { animation: k-spin 5s linear 3.8s infinite; }
+.plate.run .hand-h { animation: k-spin 60s linear 3.8s infinite; }
+.plate.run .skyglow { animation: k-sky 3s 0.6s both; }
+.plate.run .sun { animation: k-sun 2.6s 0.8s cubic-bezier(0.2, 0.9, 0.3, 1) both; }
+.plate.run .sun .rays { animation: k-spin 40s linear infinite; }
+.plate.out .lite, .plate.out .sg, .plate.out .lamp-line, .plate.out .skyglow, .plate.out .sun { opacity: 0; transition: opacity 1.8s; }
+.plate.out .hole, .plate.out .crack { opacity: 1; transition: opacity 1.8s; }
+@keyframes k-sky { from { opacity: 0; } to { opacity: 0.55; } }
+@keyframes k-sun { from { opacity: 0; transform: translateY(46px); } to { opacity: 1; transform: none; } }
