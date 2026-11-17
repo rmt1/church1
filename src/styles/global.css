@@ -1527,3 +1527,14 @@ html { background: var(--paper); }
 @keyframes p-door { from { opacity: 0; } to { opacity: 0.55; } }
 @keyframes p-clock { from { opacity: 0; } to { opacity: 0.35; } }
 @keyframes p-glass { from { opacity: 0; } to { opacity: 0.92; } }
+
+/* photographic plate: many-coloured glass */
+.photo-plate .p-glass { opacity: 1; }
+.photo-plate .p-bloom { filter: blur(6px) saturate(1.5) brightness(1.25); }
+@keyframes p-glass { from { opacity: 0; } to { opacity: 1; } }
+
+.photo-plate .p-lights .p-door { fill: #ffd27a; opacity: 0.38; }
+@keyframes p-door { from { opacity: 0; } to { opacity: 0.38; } }
+.photo-plate .p-bloom ellipse { opacity: 0.6; }
+.photo-plate .p-bloom { filter: blur(0.9cqw) saturate(1.5) brightness(1.2); }
+.photo-plate { container-type: inline-size; }
