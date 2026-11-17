@@ -109,7 +109,6 @@ contacts:
 - role: Heritage officer
   name: The departmental heritage architect (UDAP) for the département
 story: []
-storyNote: 'There is no written history for this chapel yet. The photographs show a blocked window of two trefoil-headed lights, a medieval form, so the building is older than the listing lets on. The listing does not name the village, the dedication or the date, and the building could not be identified from what it does say: a wine village on the Loire lateral canal near Sancerre, with a small marina and houses of the 11th to 16th centuries. The estimate here is about 1300, give or take a century, on the evidence of that window alone: twin trefoil-headed lights are work of the 13th and 14th centuries. A neighbouring canal village, Saint-Thibault-sur-Loire, has a boatmen''s chapel of the 12th century, so stone chapels of that age are normal on this stretch of the river. One question to the agent would settle it.'
 storySources:
 - title: Patrice Besse listing 716301
   url: https://www.patrice-besse.com/edifices-religieux-a-vendre/centre-val-de-loire/edifice-religieux-a-vendre-a-cote-de-sancerre-en-france/

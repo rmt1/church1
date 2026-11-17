@@ -112,7 +112,6 @@ contacts:
 - role: Heritage authority
   name: Soprintendenza Archeologia, Belle Arti e Paesaggio dell'Umbria
 story: []
-storyNote: This church could not be identified. The agent gives a century, the two valleys and distances to four places, and no name. From those it stands in the hills west of Umbertide towards the Tuscan border. The diocese of Città di Castello or of Gubbio will know which suppressed parish this was. Until someone asks, there is no history to print.
 storySources:
 - title: Casa Tuscany listing, reference V3187AB
   url: https://www.casatuscany.com/properties/v3187ab-umbria-perugia-umbertide-ancient-historic-church-convent-restoration-restore-land-olives/

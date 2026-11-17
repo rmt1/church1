@@ -129,7 +129,6 @@ story:
   what: An owner began converting the rectory, raised the attic to make another floor, rebuilt the roof and some of the floors, and then stopped.
 - when: April 2026
   what: The listing was last updated, at €55,000.
-storyNote: This is everything found so far. The date comes from the agent, who cites the parish archive. The search turned up no published history of the church, no name for a builder or painter, and no date for the deconsecration. The diocese of Piacenza-Bobbio and the parish at Ponte dell'Olio are the places to ask.
 storySources:
 - title: Immobiliare 7 Valli listing, reference 410PO
   url: https://www.immobiliare.it/annunci/118329495/

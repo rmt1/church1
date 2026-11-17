@@ -151,7 +151,6 @@ story:
   what: A painted wooden statue of the saint, made in the last quarter of the 19th century, is inscrit as a protected object.
 - when: 2017 to 2023
   what: The refurbishment is completed in 2017, the outside stairs in 2019, and an organ is installed in spring 2023.
-storyNote: 'The listing does not name the village. The building was identified from the details it gives: the title of basilica, the wax effigy of the saint, the architect and the date of the heritage order. The relics are now in the parish church.'
 storySources:
 - title: Mérimée notice PA86000043, French Ministry of Culture
   url: https://pop.culture.gouv.fr/notice/merimee/PA86000043

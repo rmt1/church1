@@ -122,7 +122,7 @@ story:
   what: The church was entered in the FAI's Places of the Heart campaign as a former cine-theatre, privately owned, with a plan to reopen it as one.
 - when: '2026'
   what: For sale through Studio Atenea at €32,000, the price reduced.
-storyNote: The advert never names the building. It is identified here as San Libertino for three reasons. It is the only protected building the regional register lists in Via delle Mura, and that entry carries a permission to sell. The FAI describes San Libertino as a church turned cinema with a block added round its entrance, and the agent's photographs show a stage inside and a later curved block on the street. The size and the single hall fit. That is strong and it is still an inference. Ask the agent to confirm.
+storyNote: The advert never names the building. It is identified here as San Libertino for three reasons. It is the only protected building the regional register lists in Via delle Mura, and that entry carries a permission to sell. The FAI describes San Libertino as a church turned cinema with a block added round its entrance, and the agent's photographs show a stage inside and a later curved block on the street. The size and the single hall fit. The agent can confirm it.
 storySources:
 - title: Studio Atenea listing
   url: https://www.studioatenea-agrigento.it/centro-storico-via-delle-mura-chiesa-sconsacrata-ideale-attivita-cultural.htm

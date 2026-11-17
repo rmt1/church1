@@ -147,7 +147,6 @@ story:
   what: The church was shut.
 - when: '2026'
   what: For sale at offers around £160,000, on the Heritage at Risk register at the highest priority.
-storyNote: The Bringewood connection is an addition from standard histories of the iron trade. The listing says only that the slabs were probably made at the Knight family's foundry. Richard Knight's grandson, Richard Payne Knight, built Downton Castle with the money. Check these points before quoting them.
 storySources:
 - title: Historic England, church, list entry 1081799
   url: https://historicengland.org.uk/listing/the-list/list-entry/1081799

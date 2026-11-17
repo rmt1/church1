@@ -128,7 +128,6 @@ story:
   what: 'The château is restored and converted for a private owner by the heritage architect Pierre Bortolussi: facades, roof frame, and new slate on the orangery, the central block and the east wing.'
 - when: Today
   what: The outbuildings are being converted, and the chapel is offered for sale on its own.
-storyNote: The search has not yet turned up the chapel's dedication, the date it was last used for a service, or who has owned the estate since the 19th century. The State record lists the estate as part private and part communal.
 storySources:
 - title: Mérimée notice PA00087442, French Ministry of Culture
   url: https://pop.culture.gouv.fr/notice/merimee/PA00087442

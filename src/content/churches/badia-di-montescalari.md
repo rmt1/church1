@@ -143,7 +143,6 @@ story:
   what: German troops destroyed the bell tower. Its bell chamber had been the one part of the abbey never altered. Only the foundations are left.
 - when: '2026'
   what: For sale through Romolini at €2,000,000, with two farmhouses and about 100 hectares.
-storyNote: The advert does not say who has owned the abbey since 1776 or who lives there now. Some rooms in the photographs are furnished and in use.
 storySources:
 - title: Romolini Immobiliare listing, reference 2916
   url: https://www.romolini.com/en/2916

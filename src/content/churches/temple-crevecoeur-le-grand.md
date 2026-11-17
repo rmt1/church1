@@ -112,7 +112,6 @@ story:
   what: The temple is built for the Protestant community of Crèvecœur-le-Grand, in the neo-Gothic manner, with a verse from Genesis cut over the door.
 - when: Date unknown
   what: The congregation gives up the building and it is deconsecrated. The pulpit, the altar and the painted verses stay where they are.
-storyNote: This is everything found so far, and all of it comes from the listing. The search turned up no published history of this temple. The listing credits the decision to build to Napoleon III, who lost his throne in 1870, fourteen years before the stated date of construction. Either the decision long preceded the building or one of the dates is wrong. The Oise departmental archives and the Société de l'histoire du protestantisme français are the places to ask.
 storySources:
 - title: Patrice Besse listing 354518
   url: https://www.patrice-besse.com/annonces/edifices-religieux-a-vendre-Dans-le-departement-de-l-Oise--pb354518

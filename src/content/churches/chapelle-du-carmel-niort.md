@@ -72,7 +72,6 @@ story:
   what: It is relisted at 220,000 euros. The local paper notes it has stood empty for fifteen years.
 - when: '2026'
   what: Espaces Atypiques lists it at 190,000 euros.
-storyNote: The search has not yet turned up the architect of the 1868 church, who bought the convent in 2010, or whether the chapel has any heritage protection. A page on the local history wiki, Wiki-Niort, is devoted to the chapel and would not open.
 storySources:
 - title: 'Paroisse de Niort: the Carmel of Niort'
   url: https://eglise-niort.net/Carmel-de-Niort-sous-le-vocable-du

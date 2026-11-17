@@ -129,7 +129,6 @@ story:
   what: Listed Category B.
 - when: '2026'
   what: Offered for sale at offers over £70,000 with a strip of riverbank.
-storyNote: The listing record is short and so is this history. No record has yet been found of the church that stood here before 1791, and no date for the last service.
 storySources:
 - title: Historic Environment Scotland, LB11515
   url: https://portal.historicenvironment.scot/designation/LB11515

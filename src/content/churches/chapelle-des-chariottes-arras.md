@@ -143,7 +143,6 @@ story:
   what: The chapel is rebuilt, in part to the original design, by the architects Fleury and Gagey.
 - when: Today
   what: The State heritage record and the religious heritage observatory both list the owner as the town of Arras, with the use given as museum. The observatory notes that the convent buildings are much as they were in 1789, that Franciscan sisters run a retirement home there, and that the chapel needs maintenance. Verlaine, who knew Arras, called it a "charmante chapelle".
-storyNote: 'The search has not yet turned up what became of the chapel between 1790 and 1815, or when the town acquired it. The printed histories of Arras should say: Héricourt and Godin, Les rues d''Arras (1856); Le Gentil, Le vieil Arras; and the 1846 Notices historiques sur les établissements de bienfaisance. One source gives 1927 for the classification; the State record says 27 May 1921.'
 storySources:
 - title: 'Dans les rues d''Arras: Le Couvent des Chariottes'
   url: https://danslesruesdarras.fr/2020/08/24/le-couvent-des-chariottes/

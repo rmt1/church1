@@ -132,7 +132,6 @@ story:
   what: The whole monastery is inscrit as a monument historique, including the ground of the cloister court and the sites of the demolished church, chapel and cloister wings. The State record notes that the orchard may hide remains of the chapel and wells.
 - when: Today
   what: The State record lists three of the five plots as communal and two as private. The convent's papers are in the Jura departmental archives, series 42 H.
-storyNote: The search has not yet turned up who bought the convent in 1790, which school occupied it and when it closed, or when the church was demolished. Wikipedia calls it the best preserved of the town's four convents.
 storySources:
 - title: Mérimée notice PA39000119, French Ministry of Culture
   url: https://pop.culture.gouv.fr/notice/merimee/PA39000119
