@@ -114,14 +114,25 @@ const pins = churches
       card.href = pin.getAttribute('href') || '/shortlist/';
       card.classList.add('on');
       pins.forEach((p) => p.classList.toggle('on', p === pin));
+      // bring the chosen light to the front and replay its burst and the card's pop
+      pin.parentNode?.appendChild(pin);
+      for (const el of [pin, card]) { el.classList.remove('pop'); void (el as unknown as HTMLElement).getBoundingClientRect(); el.classList.add('pop'); }
     };
+    // the map tours the shortlist on its own until someone touches it
+    let tour: number | undefined;
+    let at = 0;
+    const stop = () => { if (tour) { clearInterval(tour); tour = undefined; } };
     pins.forEach((pin) => {
-      pin.addEventListener('pointerenter', (e) => { if ((e as PointerEvent).pointerType === 'mouse') show(pin); });
-      pin.addEventListener('focus', () => show(pin));
+      pin.addEventListener('pointerenter', (e) => { if ((e as PointerEvent).pointerType === 'mouse') { stop(); show(pin); } });
+      pin.addEventListener('focus', () => { stop(); show(pin); });
       // pressing a light loads the church beside the map; the card opens its page
-      pin.addEventListener('click', (e) => { e.preventDefault(); show(pin); });
+      pin.addEventListener('click', (e) => { e.preventDefault(); stop(); show(pin); });
     });
     const first = pins.find((p) => (p.getAttribute('href') || '').includes('basilica-marcay')) || pins[0];
-    if (first) show(first);
+    if (first) { show(first); at = pins.indexOf(first); }
+    card.addEventListener('pointerenter', stop);
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      tour = window.setInterval(() => { at = (at + 7) % pins.length; show(pins[at]); }, 4200);
+    }
   }
 </script>

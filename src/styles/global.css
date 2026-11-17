@@ -1410,3 +1410,54 @@ html { background: var(--paper); }
 .hero-strip span { display: block; margin-top: 0.4rem; font-family: var(--black); font-size: 0.98rem; line-height: 1.15; }
 .hero-strip a:hover img { outline: 3px solid var(--hi); outline-offset: 2px; }
 @media (max-width: 52rem) { .hero-strip { gap: 0.5rem; } .hero-strip span { display: none; } }
+
+/* ================= the engraving comes back to life: roof, lights, stained glass, clock ================= */
+.plate .lamp-line { animation: none; }
+.plate .lite { fill: #ffd95a; stroke: none; opacity: 1; }
+.plate .lite.pale { fill: #fff3b0; }
+.plate .sg { stroke: none; opacity: 1; }
+.plate .hole { fill: var(--card); stroke: var(--ink); stroke-width: 0.9; opacity: 0; }
+.plate .crack { stroke: var(--ink); stroke-width: 1.1; opacity: 0; }
+.plate .batten { stroke: var(--ink); stroke-width: 2.3; stroke-dasharray: 1; stroke-dashoffset: 0; }
+.plate .hand { stroke: var(--ink); transform-origin: 0 0; }
+.plate.run .lite { animation: k-lite 1.8s var(--d, 0s) both; }
+.plate.run .sg { animation: k-on 2.6s var(--d, 0s) both; }
+.plate.run .lamp-line { animation: k-on 2.2s var(--d, 0s) both; }
+.plate.run .hole, .plate.run .crack { animation: k-off 2.2s var(--d, 0s) both; }
+.plate.run .batten { animation: k-draw 2.6s var(--d, 0s) both; }
+.plate.run .hand-m { animation: k-spin 5s linear 15.5s infinite; }
+.plate.run .hand-h { animation: k-spin 60s linear 15.5s infinite; }
+.plate.out .lite, .plate.out .sg, .plate.out .lamp-line { opacity: 0; transition: opacity 3s; }
+.plate.out .hole, .plate.out .crack { opacity: 1; transition: opacity 3s; }
+.plate.out .batten { stroke-dashoffset: 1; transition: stroke-dashoffset 3s; }
+@keyframes k-lite { 0% { opacity: 0; } 18% { opacity: 0.9; } 30% { opacity: 0.15; } 46% { opacity: 1; } 60% { opacity: 0.5; } 100% { opacity: 1; } }
+@keyframes k-on { from { opacity: 0; } to { opacity: 1; } }
+@keyframes k-off { from { opacity: 1; } to { opacity: 0; } }
+@keyframes k-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes k-spin { to { transform: rotate(360deg); } }
+
+/* ================= home reel of churches, and a livelier map ================= */
+.hero-reel { overflow: hidden; margin-top: clamp(2rem, 4vw, 3rem); max-width: 40rem; -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%); mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%); }
+.hero-reel .hero-strip { display: flex; gap: 0; width: max-content; max-width: none; margin: 0; padding: 4px 0 0; }
+.hero-reel .hero-strip li { flex: none; width: 9.4rem; padding-right: 0.9rem; box-sizing: border-box; }
+@media (prefers-reduced-motion: no-preference) {
+  .hero-reel .hero-strip { animation: reel 150s linear infinite; }
+  .hero-reel:hover .hero-strip, .hero-reel:focus-within .hero-strip { animation-play-state: paused; }
+}
+@media (prefers-reduced-motion: reduce) { .hero-reel { overflow-x: auto; } }
+@keyframes reel { to { transform: translateX(-50%); } }
+@media (max-width: 52rem) { .hero-reel .hero-strip li { width: 7rem; padding-right: 0.6rem; } .hero-reel .hero-strip span { display: block; font-size: 0.82rem; } }
+
+.atlas .pin .dot { transform-box: fill-box; transform-origin: center; transition: transform 0.45s cubic-bezier(0.3, 1.7, 0.5, 1); }
+.atlas .pin.on .dot { r: 4.6px; transform: scale(2.7); stroke-width: 0.7; }
+.atlas .pin.on .halo { fill: #e7ff0a; opacity: 0.75; }
+@media (prefers-reduced-motion: no-preference) {
+  .atlas .pin.on .halo { animation: beacon-on 1.7s ease-out infinite; }
+  .atlas .pin.pop .dot { animation: pin-pop 0.9s cubic-bezier(0.3, 1.6, 0.5, 1); }
+  .atlas-card.pop { animation: card-pop 0.6s cubic-bezier(0.3, 1.4, 0.5, 1); }
+  .atlas-card.pop .atlas-photo img { animation: photo-in 0.7s ease-out; }
+}
+@keyframes beacon-on { 0% { transform: scale(1); opacity: 0.8; } 100% { transform: scale(6.5); opacity: 0; } }
+@keyframes pin-pop { 0% { transform: scale(0.6); } 55% { transform: scale(4.4); } 100% { transform: scale(2.7); } }
+@keyframes card-pop { 0% { transform: scale(0.96) rotate(-0.6deg); } 60% { transform: scale(1.02) rotate(0.3deg); } 100% { transform: none; } }
+@keyframes photo-in { from { transform: scale(1.25); opacity: 0.2; } to { transform: none; opacity: 1; } }
