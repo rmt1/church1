@@ -1481,3 +1481,16 @@ html { background: var(--paper); }
 .plate.out .hole, .plate.out .crack { opacity: 1; transition: opacity 1.8s; }
 @keyframes k-sky { from { opacity: 0; } to { opacity: 0.55; } }
 @keyframes k-sun { from { opacity: 0; transform: translateY(46px); } to { opacity: 1; transform: none; } }
+
+/* engraving: slower build, sky and sun after the windows, the cross flashes last, short hold */
+.plate.run .lite { animation: k-lite 1.1s var(--d, 0s) both; }
+.plate.run .sg { animation: k-on 1.2s var(--d, 0s) both; }
+.plate.run .hole, .plate.run .crack { animation: k-off 0.9s var(--d, 0s) both; }
+.plate.run .hand-m { animation: k-spin 5s linear 8.6s infinite; }
+.plate.run .hand-h { animation: k-spin 60s linear 8.6s infinite; }
+.plate.run .skyglow { animation: k-sky 2s 8.8s both; }
+.plate.run .sun { animation: k-sun 2s 9s cubic-bezier(0.2, 0.9, 0.3, 1) both; }
+.plate.run .lamp-line.cross { animation: k-flash 1.6s var(--d, 0s) both; }
+.plate.out .lite, .plate.out .sg, .plate.out .lamp-line, .plate.out .skyglow, .plate.out .sun { transition: opacity 1.5s; }
+.plate.out .hole, .plate.out .crack { transition: opacity 1.5s; }
+@keyframes k-flash { 0% { opacity: 0; } 14% { opacity: 1; } 28% { opacity: 0.1; } 44% { opacity: 1; } 58% { opacity: 0.15; } 76%, 100% { opacity: 1; } }
