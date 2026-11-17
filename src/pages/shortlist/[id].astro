@@ -5,7 +5,9 @@ import { ageText } from '../../lib/age';
 import sharp from 'sharp';
 
 export async function getStaticPaths() {
-  const all = (await getCollection('churches')).sort((a, b) => a.data.country.localeCompare(b.data.country) || a.data.difficulty - b.data.difficulty);
+  const ORDER = ['France', 'England', 'Scotland', 'Italy', 'Ireland', 'Portugal', 'Czech Republic', 'Wales'];
+  const rank = (c: string) => (ORDER.indexOf(c) + 1) || 99;
+  const all = (await getCollection('churches')).sort((a, b) => rank(a.data.country) - rank(b.data.country) || a.data.difficulty - b.data.difficulty);
   return all.map((church, i) => ({
     params: { id: church.id },
     props: { church, prev: all[(i - 1 + all.length) % all.length], next: all[(i + 1) % all.length], ids: all.map((c) => c.id) },

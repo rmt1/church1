@@ -4,7 +4,9 @@ import Tile from '../../components/Tile.astro';
 import { getCollection } from 'astro:content';
 
 const all = (await getCollection('churches')).sort((a, b) => a.data.difficulty - b.data.difficulty);
-const countries = [...new Set(all.map((c) => c.data.country))].sort();
+const ORDER = ['France', 'England', 'Scotland', 'Italy', 'Ireland', 'Portugal', 'Czech Republic', 'Wales'];
+const rank = (c: string) => (ORDER.indexOf(c) + 1) || 99;
+const countries = [...new Set(all.map((c) => c.data.country))].sort((a, b) => rank(a) - rank(b));
 const real = all.filter((c) => !c.data.specimen);
 ---
 
