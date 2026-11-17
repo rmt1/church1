@@ -12,7 +12,7 @@ agent: Church of Scotland
 listingUrl: https://www.churchofscotland.org.uk/about-us/departments/property-and-church-buildings/properties-for-sale/properties/churches-and-halls/bourtie-kirk-bourtie-inverurie-ab51-0hn
 lastChecked: 2026-11-14
 status: for sale
-summary: A country kirk of 1806 that has kept its pulpit, its gallery and its sash windows. People have worshipped on the site since at least 1199 and there is a Pictish stone built into the south wall. It has electricity and nothing else.
+summary: "A country kirk of 1806 near Inverurie in Aberdeenshire that has kept its pulpit, its gallery and its sash windows. People have worshipped on this site since at least 1199, and a Pictish carved stone is built into the south wall."
 seller: Church of Scotland General Trustees
 moneyGoes: To the Kirk. The General Trustees hold the title for the congregation, and sale proceeds go back to the Church of Scotland for its remaining congregations and buildings.
 heritageClass: Category A
@@ -109,12 +109,9 @@ sections:
     value: Offers go in writing through a Scottish solicitor. Register your interest through a solicitor so you are told if a closing date is set. The sellers say they are not bound to accept the highest offer.
     status: listing
 faults:
-- No water supply and no drainage. You cannot fit a toilet without a private supply and a treatment plant.
-- EPC rating G. The only heat is electric radiant heaters.
-- Paint is flaking from the ceiling over the gallery.
-- Only the building is sold. The churchyard around it is not.
-- The brochure gives no condition report for the roof.
-- Category A. Every pew is part of what is protected.
+- "No water supply or drainage, so a toilet needs a private supply and a treatment plant."
+- "The only heating is electric radiant heaters."
+- "The churchyard is not part of the sale."
 contacts:
 - role: Seller
   name: Church of Scotland Law Department, properties@churchofscotland.org.uk, 0131 240 2263
@@ -204,6 +201,7 @@ seen:
 - A storage heater sits by the pulpit and radiant heaters hang over the pews.
 - The gallery stair is worn at the treads.
 ---
-Forty-five thousand pounds for a kirk nobody has altered since 1806. It has a Pictish stone in the wall and a pulpit with a canopy. It has no tap.
 
-Buy it if you want to own a room and keep it as it is. Open it a few days a year. Fix the ceiling, watch the roof, and leave the pews where they are.
+Nobody has altered this kirk since it was built. The pulpit still has its canopy, the pews are in place, and the room is small and looks dry. It is protected at Category A, the highest grade in Scotland, and the pews are part of what is protected.
+
+It suits someone who wants to keep a room as it is and open it a few days a year. The ceiling over the gallery needs repainting. The kirk has electricity, and water can be brought in.

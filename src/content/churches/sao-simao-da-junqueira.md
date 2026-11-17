@@ -12,7 +12,7 @@ agent: RAR, the owner. No agent is named.
 listingUrl: https://ominho.pt/este-mosteiro-em-vila-do-conde-esta-a-venda-por-7-milhoes/
 lastChecked: 2026-11-16
 status: for sale
-summary: A monastery of Augustinian canons first recorded in 1084 and rebuilt from 1687, with a cloister, a box garden, an aqueduct and 47 hectares. It has been empty for more than fifty years. The church beside it is the parish church and is still in use.
+summary: "A monastery of Augustinian canons near Vila do Conde in northern Portugal, first recorded in 1084 and rebuilt from 1687. It has a cloister, a box garden, an aqueduct and 47 hectares."
 seller: RAR, Refinarias de Açúcar Reunidas, a Porto sugar company. It planned a 70 million euro hotel and golf scheme here and gave up after eleven years.
 moneyGoes: To RAR, a private company.
 heritageClass: Monumento de Interesse Público
@@ -97,12 +97,10 @@ sections:
     status: checked
     source: https://caxinastv.wordpress.com/2026/08/11/mosteiro-em-vila-do-conde-esta-a-venda-por-7-milhoes-de-euros/
 faults:
-- Seven million euros buys the land and the ruin. The repairs come on top.
-- Empty for more than fifty years, with no published survey and no floor area.
-- The church is the parish's. You would own a monastery with a working church attached to it.
-- No agent, no brochure, no plan of what is included.
-- The last owner spent eleven years on a hotel scheme and walked away.
-- Classified monument. Every change goes through the state heritage body.
+- "The price covers the land and the buildings. The restoration comes on top and has not been costed."
+- "Empty for more than fifty years, with no published survey or floor area."
+- "There is no agent or brochure. The seller is the company that owns it."
+- "As a classified monument, changes go through the state heritage body."
 contacts:
 - role: Seller
   name: RAR, Refinarias de Açúcar Reunidas, Porto
@@ -181,6 +179,7 @@ seen:
 - The parterre garden is walled and looks onto pasture and woodland.
 - No photograph of the rooms inside the monastery is available.
 ---
-Seven million euros, 47 hectares, and nine centuries of canons, commendatory abbots and gentry. The sugar company that owns it wanted a golf course. It did not get one, and now it wants out.
 
-This is the hardest building on the list and the most expensive. The church is not yours and never will be. What you would be saving is the cloister, the garden and the long house the monks rebuilt in 1687. Do not go near it without a survey.
+The long house the canons rebuilt in 1687 still stands with its cloister and garden. The church beside it is the parish church. It is still in use and is not known to be part of the sale.
+
+The monastery has been empty for more than fifty years and is a classified monument. It is the highest-priced building on the shortlist, and it would suit a foundation or a buyer with a use in mind for the whole estate. A survey is the first step.

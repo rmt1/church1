@@ -12,7 +12,7 @@ agent: Church of Scotland
 listingUrl: https://www.churchofscotland.org.uk/about-us/departments/property-and-church-buildings/properties-for-sale/properties/churches-and-halls/kirkmichael-church-kirkmichael-blairgowrie-ph10-7nt
 lastChecked: 2026-11-14
 status: for sale
-summary: A harled village kirk of 1791 on the bank of the River Ardle in Strathardle, with a pine gallery of 1893. The sale includes a strip of riverbank. It has electricity and no water.
+summary: "A village kirk of 1791 on the bank of the River Ardle in Perthshire, with a pine gallery of 1893. The sale includes a strip of riverbank."
 seller: Church of Scotland General Trustees
 moneyGoes: To the Kirk. The General Trustees hold the title for the congregation, and sale proceeds go back to the Church of Scotland for its remaining congregations and buildings.
 heritageClass: Category B
@@ -105,11 +105,9 @@ sections:
     value: Offers go in writing through a Scottish solicitor. Register your interest through a solicitor so you are told if a closing date is set. The sellers say they are not bound to accept the highest offer.
     status: listing
 faults:
-- No water supply. The brochure says nothing about drainage.
-- The building stands a few metres above the River Ardle and you would own part of the bank. Check the flood map and who maintains the bank.
-- The war memorials may leave with the sellers.
-- The photograph on the brochure cover shows a stone building with gabled windows that does not match the church in the other photographs. Ask what it is.
-- The brochure gives no roof condition.
+- "No water supply, and nothing stated about drainage."
+- "The building stands a few metres above the river, so the flood map is worth checking."
+- "The war memorials may leave with the sellers."
 contacts:
 - role: Seller
   name: Church of Scotland Law Department, properties@churchofscotland.org.uk, 0131 240 2263
@@ -181,6 +179,7 @@ seen:
 - Two windows either side of the pulpit hold coloured glass.
 - From the air the river runs directly below the churchyard wall, with trees on the bank.
 ---
-Seventy thousand pounds for a kirk in a Perthshire village with a river at the bottom of the churchyard. The inside was painted not long ago and the heaters work.
 
-It needs a tap and a drain. Get those priced, look at the flood map, and this is the easiest of the seven to put back into weekly use.
+The inside was painted not long ago, it is carpeted, and the heaters work. It was in use until recently.
+
+It needs a water supply and a drain. With those in, this is one of the easiest churches on the shortlist to put back into weekly use.

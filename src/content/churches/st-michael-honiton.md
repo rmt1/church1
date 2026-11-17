@@ -13,7 +13,7 @@ agent: Stags
 listingUrl: https://www.churchofengland.org/closed-churches/honiton-st-michael-diocese-exeter
 lastChecked: 2026-11-14
 status: for sale
-summary: The old parish church of Honiton, paid for about 1480 by Peter Courtenay, Bishop of Exeter, and enlarged by a merchant and his wife. A fire in 1911 left the walls and tower, and the inside was rebuilt in a year. It has been on the Heritage at Risk register, in poor condition, with no agreed future.
+summary: "The old parish church of Honiton in Devon, on Church Hill. Peter Courtenay, Bishop of Exeter, paid for it in about 1480. A fire in 1911 left the walls and the tower, and the inside was rebuilt within a year."
 seller: Church Commissioners for England, with the diocese
 moneyGoes: To the Church of England. The sale runs under the Mission and Pastoral Measure 2011. The proceeds are shared between the diocese and the Church Commissioners, and part of the Commissioners' share funds the Churches Conservation Trust.
 heritageClass: Grade II*
@@ -117,13 +117,10 @@ sections:
     value: The Commissioners write covenants into the sale that limit the building to the use they approved. Expect several months between an accepted offer and completion.
     status: listing
 faults:
-- On the Heritage at Risk register in poor condition.
-- Valley gutters block and the roof leaks.
-- Ironwork is rusting inside the arcade capitals, which splits stone.
-- No working electricity or heating when the diocese last reported.
-- The vendor can take the glass, the font, the pulpit and the memorials.
-- You buy a path round the walls and no parking. The last stretch is on foot.
-- A tender closed in July 2025 without a sale. Ask why.
+- "On the Heritage at Risk register, in poor condition."
+- "The valley gutters block and the roof leaks."
+- "Ironwork is rusting inside the arcade capitals."
+- "No working electricity or heating when the diocese last reported."
 contacts:
 - role: Selling agent
   name: Stags
@@ -224,6 +221,7 @@ seen:
 - Screens, choir stalls, pulpit and the east window glass are still in place in the photographs.
 - The floor is boarded in the nave and tiled in black and white towards the chancel.
 ---
-One hundred thousand pounds for a bishop's church of 1480 with a physician to Elizabeth I buried in it. It burned in 1911 and was back in use in a year. Nobody has managed that kind of speed since 2012.
 
-The Church wants a community use and the Earl of Devon has backed one. If you have the money and no wish to live in it, buy it with a local trust and give Honiton its church back.
+Thomas Marwood, physician to Elizabeth I, is buried here under a black marble tomb. The guide price is £100,000.
+
+The Church wants a community use and the Earl of Devon has backed one. It would suit a buyer working with a local trust to give Honiton its old church back. The roof and gutters come first, then power and heating.

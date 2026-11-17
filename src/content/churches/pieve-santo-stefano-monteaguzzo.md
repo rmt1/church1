@@ -13,7 +13,7 @@ agent: ACASA
 listingUrl: https://www.acasa.info/dettaglio/Vendita_Complesso_Misto_Cesena_via_garampa_in_monteaguzzo_150/859544
 lastChecked: 2026-11-14
 status: for sale
-summary: A parish church first recorded in 1055, on a ridge at 400 metres between the Savio and Pisciatello valleys, with a rectory of 1940 built against it. The nave has a painted vault. The apse vault has fallen in. The hill emptied after the war and the church was left.
+summary: "A parish church first recorded in 1055, on a ridge at 400 metres above Cesena in Emilia-Romagna. The nave has a painted vault, and a rectory of 1940 is built against it."
 seller: Not stated. Probably the Church.
 moneyGoes: The listing does not name the owner. The parish used the rectory for youth summer stays from 1988, and in July 2026 Il Resto del Carlino reported that the Diocese of Cesena-Sarsina plans to sell several minor churches, Monteaguzzo among them. If that is right, the money goes to the diocese.
 heritageClass: Catalogued, protection not confirmed
@@ -115,12 +115,10 @@ sections:
     value: Not stated.
     status: unknown
 faults:
-- The apse vault has collapsed. The photograph shows broken reed lath, bare roof timbers and rubble stone.
-- The north wall leans. A landslide damaged the church and the village in the 1480s, so ask an engineer about the ground as well as the wall.
-- The floor is concrete.
-- No heating, one bathroom, and nothing said about water, drains or power.
-- The diocese has not confirmed the sale in public, and a village nearby has petitioned against the sale of its own church.
-- The photographs carry the agent's watermark and show no room inside the rectory.
+- "The apse vault has collapsed."
+- "The north wall leans. An engineer should look at the ground as well as the wall."
+- "The floor is concrete."
+- "No heating, and nothing stated about water, drains or power."
 contacts:
 - role: Selling agent
   name: ACASA Cesena, Geom. Andrea Placuzzi, 328 825 5174 (reference 2806)
@@ -220,6 +218,7 @@ seen:
 - In the apse the vault has come down. Reed lath hangs from the edge, the roof joists and boards are exposed, and the back wall is bare rubble with a round-headed niche. Cracks run through the arch in front of it.
 - The tile roofs look continuous from the ground.
 ---
-One hundred and thirty-five thousand euros for a church that was already old when the Malatesta took the hill. It comes with a 1940 farmhouse, a garden and a view to the sea.
 
-The apse has fallen in and the north wall leans. Get the engineer up there before anything else. If the walls can be tied, this is a house with a painted church attached.
+The church comes with the rectory, a garden and a view to the sea. The hill emptied after the war and the church was left. The price is €135,000.
+
+The first step is an engineer's visit, because the apse vault has fallen and the north wall leans. If the walls can be tied, this is a house with a painted church attached.

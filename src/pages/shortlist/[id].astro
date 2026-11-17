@@ -98,14 +98,7 @@ const tabs = [
         </div>
 
         <section class="panel-tab" role="tabpanel" id="panel-overview" aria-labelledby="tab-overview">
-          <h2>The verdict</h2>
           <Content />
-          {d.faults.length > 0 && (
-            <>
-              <h2>What is wrong with it</h2>
-              <ul>{d.faults.map((f) => <li>{f}</li>)}</ul>
-            </>
-          )}
         </section>
 
         <section class="panel-tab" role="tabpanel" id="panel-story" aria-labelledby="tab-story">
@@ -137,6 +130,12 @@ const tabs = [
             </dl>
           )}
           {d.estimateNote && <p>{d.estimateNote}</p>}
+          {d.faults.length > 0 && (
+            <>
+              <h2>Difficulties</h2>
+              <ul>{d.faults.map((f) => <li>{f}</li>)}</ul>
+            </>
+          )}
 
           {d.seen.length > 0 && (
             <details class="fold">
@@ -291,7 +290,6 @@ const tabs = [
         ) : (
           <span class="button ghost" aria-disabled="true">Listing link to come</span>
         )}
-        <p class="small">Sold through {d.agent}. Last checked {checked}. This site takes no commission.</p>
       </aside>
     </div>
   </div>

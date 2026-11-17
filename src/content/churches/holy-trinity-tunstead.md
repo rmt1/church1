@@ -12,7 +12,7 @@ agent: MBRE
 listingUrl: https://www.churchofengland.org/closed-churches/tunstead-holy-trinity-diocese-manchester
 lastChecked: 2026-11-14
 status: for sale
-summary: A mill-valley church of 1840 in the Norman style, built for 600 and enlarged to hold 1,000, on a steep bank above the main road through Rossendale. It has a sculpted stone pulpit of 1873 and a large east window. There is no parking.
+summary: "A church of 1840 in the Rossendale valley in Lancashire, built in the Norman style in mill country. It was built for 600 people and enlarged to hold 1,000, and it has a sculpted stone pulpit of 1873 and a large east window."
 seller: Church Commissioners for England, with the diocese
 moneyGoes: To the Church of England. The sale runs under the Mission and Pastoral Measure 2011. The proceeds are shared between the diocese and the Church Commissioners, and part of the Commissioners' share funds the Churches Conservation Trust.
 heritageClass: Grade II
@@ -101,11 +101,9 @@ sections:
     value: The Commissioners write covenants into the sale that limit the building to the use they approved. Expect several months between an accepted offer and completion.
     status: listing
 faults:
-- No parking and a steep bank between the door and the road.
-- The stone is black and plants are growing at the base of the tower.
-- Nothing is published about condition, services or when it closed.
-- The room is cluttered and partly divided by a modern glazed screen.
-- The Church's page gives one agent in the text and another in the link.
+- "No parking, and a steep bank between the door and the road."
+- "The stonework is blackened and plants are growing at the base of the tower."
+- "Nothing is published about condition or services."
 contacts:
 - role: Selling agent
   name: MBRE
@@ -183,6 +181,7 @@ seen:
 - A modern glazed timber screen closes off a side room with tables and toys in it.
 - Hymn books and papers are piled on the choir stalls.
 ---
-Ninety-five thousand pounds for 480 square metres of Norman-style church, with a pulpit carved with Faith, Hope and Charity.
 
-It needs a use that walks to it, because nobody can park. A school, a band room, a climbing wall. Buy it if you live in the valley.
+This is 480 square metres of church on the main road through the valley, with a pulpit carved with the figures of Faith, Hope and Charity. Its planning class already allows education, a museum or a public hall.
+
+It suits a use that people walk to: a school, a band room, a climbing wall. It would be a good fit for someone who lives in the valley.

@@ -12,7 +12,7 @@ agent: Church of Scotland
 listingUrl: https://www.churchofscotland.org.uk/about-us/departments/property-and-church-buildings/properties-for-sale/properties/churches-and-halls/st-andrews-church-tongue-lairg-iv27-4xl
 lastChecked: 2026-11-14
 status: for sale
-summary: A white harled church of 1680 on the north coast of Sutherland, built by the Mackays of Reay over their burial vault. It is the cheapest church on the Kirk's list and the only one on this shortlist with a full condition survey. The village has formed a group to buy it.
+summary: "A white lime-rendered church of 1680 at Tongue on the north coast of Scotland, built by the Mackays of Reay, the local clan chiefs, over their burial vault. It is protected at Category A, the highest grade in Scotland."
 seller: Church of Scotland General Trustees
 moneyGoes: To the Kirk. The General Trustees hold the title for the congregation, and sale proceeds go back to the Church of Scotland for its remaining congregations and buildings.
 heritageClass: Category A
@@ -109,12 +109,10 @@ sections:
     value: Offers go in writing through a Scottish solicitor. Register your interest through a solicitor so you are told if a closing date is set. The sellers say they are not bound to accept the highest offer.
     status: listing
 faults:
-- The village wants it. A steering group formed after a public meeting on 2 August 2025 and intends to buy once its charity is registered.
-- The surveyed repair bill is eleven times the asking price.
-- The slate fixings are failing and the whole roof needs relaying within ten years.
-- There is rot and a live leak under the WC floor.
-- Floor tiles under the hall carpet may contain asbestos. The survey asks for a test.
-- Only the footprint is sold. You own no ground around the walls.
+- "The surveyed repairs come to about £220,000."
+- "The slate fixings are failing and the roof needs relaying within ten years."
+- "There is rot and a leak under the WC floor."
+- "Only the footprint of the building is sold."
 contacts:
 - role: Seller
   name: Church of Scotland Law Department, properties@churchofscotland.org.uk, 0131 240 2263
@@ -195,6 +193,7 @@ seen:
 - The pews are pine and in place. One boxed table pew is upholstered in tartan.
 - The brochure photographs are small. The surveyor saw far more than they show.
 ---
-Twenty thousand pounds for a Category A church of 1680 with a clan chief's vault under the floor. The repair bill is £220,000 and somebody has already paid an architect to write it down.
 
-The village has a group, a survey and a plan. Do not bid against them. If you want this church to stand, give the group money, and buy a different one.
+The asking price is offers over £20,000. A conservation architect has surveyed the church and a quantity surveyor has priced the repairs at about £220,000, so a buyer knows what the work is before starting.
+
+The village has formed a group to buy the church and has a plan for it. A buyer who wants this church to stand might work with the group or support it.

@@ -12,7 +12,7 @@ agent: Sanderson Weatherall
 listingUrl: https://www.churchofengland.org/closed-churches/south-moor-st-george-diocese-durham
 lastChecked: 2026-11-14
 status: for sale
-summary: A pit-village church of 1897 by J W Thompson, in the Durham coalfield. Its oak pews of 1937 are adze-dressed, with a carved mouse in three places, and were paid for by subscription. It has gas, water, power and a drain, and it comes with its burial ground.
+summary: "A church of 1897 in South Moor, a former mining village in County Durham. Its oak pews of 1937 were paid for by subscription and carry a carved mouse in three places. It has gas, water, power and a drain, and it comes with its burial ground."
 seller: Church Commissioners for England, with the diocese
 moneyGoes: To the Church of England. The sale runs under the Mission and Pastoral Measure 2011. The proceeds are shared between the diocese and the Church Commissioners, and part of the Commissioners' share funds the Churches Conservation Trust.
 heritageClass: Grade II
@@ -109,11 +109,9 @@ sections:
     value: The Commissioners write covenants into the sale that limit the building to the use they approved. Expect several months between an accepted offer and completion.
     status: listing
 faults:
-- The pews and the glass are not guaranteed to stay. Get them onto the schedule in writing.
-- You take on a burial ground and a memorial garden that families still visit.
-- No condition survey.
-- The brochure is from March 2024, so it has been on the market for over two years.
-- The asking price is subject to the Commissioners' covenants on use.
+- "The pews and the glass are not guaranteed to stay unless they are written into the sale."
+- "The sale includes a burial ground and a memorial garden that families still visit."
+- "The sale carries the Church Commissioners' covenants on use."
 contacts:
 - role: Selling agent
   name: Sanderson Weatherall
@@ -187,6 +185,7 @@ seen:
 - The pews are in place and a red carpet runs the length of the nave. The organ pipes fill an arch beside the chancel.
 - The roof is boarded and panelled in white between dark ribs.
 ---
-Ninety-five thousand pounds for a miners' church with the gas still connected and oak pews with mice carved on them.
 
-Nothing about it is rare except the pews. It is here because it works: a sound room, a road, a plot for cars. If you buy it, write the pews into the contract first.
+The building looks sound, it is serviced, and it stands on a road with a plot for cars. It has the shortest list of works among the English churches on the shortlist.
+
+It could be in use quickly. The pews are the feature to keep, and it is worth having them written into the contract.

@@ -12,7 +12,7 @@ agent: Sherry FitzGerald John Rohan, with BidX1
 listingUrl: https://www.sherryfitz.ie/buy/house/waterford/portlaw/the-manse-coolfinn-wat260337
 lastChecked: 2026-11-16
 status: for sale
-summary: A battlemented church that closed in 1931 and has stood empty since, sold with the minister's house beside it and 1.75 acres running down to the River Clodiagh. The house is lived in and in good order. The church is under ivy and trees.
+summary: "A Presbyterian church of 1845 at Portlaw in County Waterford, sold with the minister's house beside it and 1.75 acres running down to the River Clodiagh. The church has battlements and a tower."
 seller: A private owner. The manse is in use as a private home.
 moneyGoes: To the private seller.
 heritageClass: National Inventory, Regional
@@ -107,12 +107,10 @@ sections:
     status: checked
     source: https://www.waterford-news.ie/life/waterford-property-characterful-riverside-residence-with-exceptional-potential-in-portlaw_arid-111672.html
 faults:
-- The church has had no congregation since 1931 and no repair that anyone records.
-- Plants are growing out of the tower parapet and trees cover the nave. Expect to find no sound roof.
-- Two auction dates have passed. You do not know why it did not sell.
-- The river is your boundary. Ask about flooding.
-- Nobody says whether the buildings are protected structures.
-- The house is rated BER G.
+- "The church has had no recorded repair since 1931."
+- "Plants grow from the tower parapet and trees cover the nave, so the roof is assumed lost."
+- "The river is the boundary, so flood risk is worth checking."
+- "The house has a BER G energy rating."
 contacts:
 - role: Agent
   name: John Rohan, Sherry FitzGerald John Rohan, Waterford
@@ -204,6 +202,7 @@ seen:
 - The manse roof is slated and even, with two chimneys.
 - Inside, the manse has timber floors, fireplaces and cornices, and is furnished and lived in.
 ---
-You are buying a good house and getting a ruined church with it. The house needs nothing. The church has been shut since 1931.
 
-Most people who bid will want the house and the garden and will leave the church to fall. Buy it for the other reason. A roof and some lime would give Portlaw its tower back.
+The house is lived in and in good order. The church closed in 1931 and has stood empty since, under ivy and trees.
+
+A buyer gets a home straight away and a church to bring back at their own pace. A roof and lime repairs would give Portlaw its tower back.

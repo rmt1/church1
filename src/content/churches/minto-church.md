@@ -12,7 +12,7 @@ agent: Church of Scotland
 listingUrl: https://www.churchofscotland.org.uk/about-us/departments/property-and-church-buildings/properties-for-sale/properties/churches-and-halls/minto-church-minto-hawick-td9-8sg
 lastChecked: 2026-11-14
 status: for sale
-summary: One of two churches known to be by William Henry Playfair, the architect of the National Gallery of Scotland. He built it in 1831 for the 2nd Earl of Minto as part of a planned village. It closed in March 2026.
+summary: "A church of 1831 in the village of Minto in the Scottish Borders. William Henry Playfair, the architect of the National Gallery of Scotland, designed it for the 2nd Earl of Minto as part of a planned village. It is one of two churches known to be his."
 seller: Church of Scotland General Trustees
 moneyGoes: To the Kirk. The General Trustees hold the title for the congregation, and sale proceeds go back to the Church of Scotland for its remaining congregations and buildings.
 heritageClass: Category B
@@ -113,11 +113,9 @@ sections:
     value: Offers go in writing through a Scottish solicitor. Register your interest through a solicitor so you are told if a closing date is set. The sellers say they are not bound to accept the highest offer.
     status: listing
 faults:
-- Drainage is not mentioned and no toilet appears on the plan or in the photographs.
-- The family vault is attached to the building and belongs to someone else. Ask about access rights across your walls.
-- Green growth covers the tower and the north-facing walls.
-- The tower has a parapet gutter and a clock, which both need climbing to.
-- Only the footprint is sold.
+- "Drainage is not mentioned, and no toilet appears on the plan."
+- "Green growth covers the tower and the north-facing walls."
+- "The family vault attached to the building belongs to someone else."
 contacts:
 - role: Seller
   name: Church of Scotland Law Department, properties@churchofscotland.org.uk, 0131 240 2263
@@ -204,6 +202,7 @@ seen:
 - The windows are leaded diamond panes in stone tracery. The chancel window has three figures in colour.
 - The vestry has a carpet, a brick fireplace with an electric stove and a clean ceiling.
 ---
-Seventy-five thousand pounds for a church by the man who built the National Gallery of Scotland. It closed eight months ago and it shows: the paint is clean and the roof is straight.
 
-Buy this one before any of the others. It has water, an organ with a story, and no work that cannot wait for a survey.
+The church closed in March 2026 and is in good order: the paint is clean and the roof is straight. It has a water supply and an organ.
+
+Nothing urgent shows in the photographs. It is one of the simplest churches on the shortlist to take on, and the work can wait for a survey.

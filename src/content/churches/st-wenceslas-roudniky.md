@@ -13,7 +13,7 @@ agent: Tomáš Zajkaš, Keller Williams
 listingUrl: https://makler-teplice.cz/kostel-v-roudnikach/
 lastChecked: 2026-11-16
 status: for sale
-summary: A Gothic village church first recorded in 1352, with a carved stone altar of 1607, a working organ and the village cemetery around it. The coal mine that swallowed the neighbouring villages stopped a few dozen metres short. The price is about 180,000 euros at 25 crowns to the euro.
+summary: "A Gothic village church at Roudníky in northern Bohemia, first recorded in 1352. It has a carved stone altar of 1607, a working organ, and the village cemetery around it."
 seller: A couple from Prague, who bought the church in 2013 when the parish of Trmice went insolvent.
 moneyGoes: To the private owners. They say they no longer have the time or energy to look after it.
 heritageClass: Cultural monument
@@ -125,12 +125,10 @@ sections:
     status: checked
     source: https://www.newstream.cz/reality/kostel-za-cenu-prazskeho-bytu-v-roudnikach-hleda-noveho-majitele-pamatka-se-hrbitovem-i-pribehem
 faults:
-- No water and no drainage. A toilet means bringing services across a cemetery.
-- Cracks in the tower render and the chancel plaster. This is old mining country, so have an engineer say whether they are moving.
-- Plaster has fallen from the ceiling above the organ gallery.
-- The cemetery is yours. The town looks after it only as long as the lease runs.
-- It has been for sale since at least 2022.
-- Energy class G. There is no heating in the photographs.
+- "No water or drainage."
+- "There are cracks in the tower render and the chancel plaster. This is former mining country, so an engineer should check them."
+- "Plaster has fallen from the ceiling above the organ gallery."
+- "No heating appears in the photographs."
 contacts:
 - role: Agent
   name: Tomáš Zajkaš, +420 777 678 729
@@ -236,6 +234,7 @@ seen:
 - The organ stands on a timber gallery at the west end and looks cared for.
 - A small stone mortuary in the cemetery has lost part of its roof covering.
 ---
-Four and a half million crowns buys a church that was already old when the Hussites painted its altar. It has a stone altar from 1607, an organ that plays, and a graveyard the town mows for you.
 
-The mine took Tuchomyšl and stopped at the edge of Roudníky. The church is still here because of a few dozen metres. Buy it, keep the services and the concerts going, and get an engineer to look at the cracks before you sign.
+The price is CZK 4,490,000, about 180,000 euros at 25 crowns to the euro. The roofs have had recent work, the organ plays, and the town maintains the cemetery under a lease.
+
+A coal mine took the neighbouring villages and stopped a few dozen metres from the church. Services and concerts can carry on here. An engineer should look at the cracks in the plaster first.

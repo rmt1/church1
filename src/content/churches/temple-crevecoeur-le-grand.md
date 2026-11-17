@@ -11,7 +11,7 @@ agent: Patrice Besse
 listingUrl: https://www.patrice-besse.com/annonces/edifices-religieux-a-vendre-Dans-le-departement-de-l-Oise--pb354518
 lastChecked: 2026-11-14
 status: for sale
-summary: A neo-Gothic Protestant temple of 1884, in red brick with stone dressings, in the centre of a small Picard town, with its pulpit, altar, painted Bible verses and six painted-glass windows in place, and a walled garden of 720 square metres.
+summary: "A Protestant church of 1884 in the centre of Crèvecœur-le-Grand, a small town in Picardy. It is neo-Gothic, in red brick with stone dressings, with a walled garden of 720 square metres."
 seller: Not stated
 moneyGoes: The listing does not name the owner. A Protestant temple of 1884 would have belonged to its congregation; ask the agent who holds it now.
 heritageClass: Not protected
@@ -96,11 +96,9 @@ sections:
     value: About 1 hour by road from Paris-Charles-de-Gaulle.
     status: listing
 faults:
-- Damp has stained the plaster of the walls and vault, and the paint has failed on the lower walls.
-- Drainage works are required, per the listing.
-- The iron bars across the windows are rusting.
-- The pulpit, glass and painted inscriptions have no legal protection.
-- The glass is dated 1880 and the building 1884; the listing does not explain the gap.
+- "Damp has stained the plaster and the paint has failed on the lower walls."
+- "The listing says drainage works are required."
+- "The iron bars across the windows are rusting."
 contacts:
 - role: Selling agent
   name: Patrice Besse, Paris (reference 354518)
@@ -174,6 +172,7 @@ seen:
 - A stone memorial tablet with a cross and a list of names is fixed to one wall. It belongs to the building.
 - The painted verse over the apse is legible.
 ---
-A complete Protestant interior for the price of a car. The pulpit with its double stair is still there, the painted verses are still on the walls, and six windows of painted glass are signed by Georges Roussel.
 
-Nothing here is protected, which is the danger. The next owner can keep every board of it or strip it for a kitchen. Buy it and keep it. Ask the agent why the glass is dated four years before the building.
+The interior is complete: the pulpit with its double stair, Bible verses painted on the walls, and six windows of painted glass signed by Georges Roussel. The price is €90,000.
+
+The fittings have no legal protection, so their future depends on the buyer. The work is modest: drainage first, then the roof and the damp plaster.

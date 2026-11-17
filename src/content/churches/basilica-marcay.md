@@ -11,7 +11,7 @@ agent: Patrice Besse
 listingUrl: https://www.patrice-besse.com/annonces/edifice-religieux-a-vendre-a-15-min-de-Poitiers--pb856306
 lastChecked: 2026-11-14
 status: for sale
-summary: A pilgrimage church begun in 1884, closed in 1962, sold by the diocese in 1976 and left to rot until 2009. Now inscrit in full and restored from roof frame to wiring, with a 19th-century organ, a Carrara marble altar and a garden of 5,000 square metres.
+summary: "A pilgrimage church begun in 1884 in the village of Marçay, restored from roof frame to wiring. It has a 19th-century organ, a Carrara marble altar and a garden of 5,000 square metres."
 seller: Private owner
 moneyGoes: The Diocese of Poitiers sold this church in 1976. It has been private property for fifty years, and the State heritage record lists it as privately owned. The press names the present owner as a Paris bookseller who bought it in 2012. Nothing goes to the Church.
 heritageClass: Inscrit
@@ -112,9 +112,8 @@ sections:
     status: checked
     source: https://www.patrimoine-environnement.fr/reconversion-de-la-basilique-de-marcay-vienne/
 faults:
-- The price reflects a finished restoration.
-- The west facade was never completed.
-- Running costs for a heated church of 610 square metres are not stated.
+- "The west facade was never completed."
+- "The listing does not state the running costs of a heated church of 610 square metres."
 contacts:
 - role: Selling agent
   name: Patrice Besse, Paris (reference 856306)
@@ -190,6 +189,7 @@ seen:
 - The side chapel altars and their carving are clean and complete.
 - The garden is mown grass with mature trees.
 ---
-Somebody has already done the custodian's work here. In 2002 this church was a roofless shell with a tree in the nave and an owner who wanted to sell the stone. The roof frame, the roofs and the joinery are new, the wiring is new, the organ plays, and the glass has protective glazing outside.
 
-You are paying for a finished restoration of a church of 610 square metres with its organ and half a hectare of garden. The price is the cost of not spending fifteen years on scaffolding. Take it if you want a church you can open for a concert next spring.
+The restoration is already done. In 2002 this was a roofless shell with a tree growing in the nave. Since then the roof frame, the roofs and the joinery have been renewed, the wiring is new, the organ plays, and the stained glass has protective glazing outside.
+
+A buyer takes on a finished church of 610 square metres that could open for a concert next spring. The whole building is protected as a historic monument.

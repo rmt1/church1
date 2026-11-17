@@ -11,7 +11,7 @@ agent: Patrice Besse
 listingUrl: https://www.patrice-besse.com/annonces/edifices-religieux-a-vendre-a-1-h-de-Paris-en-centre-ville-d-Arras--pb199325
 lastChecked: 2026-11-14
 status: for sale
-summary: A convent chapel of 1769 to 1775 in the centre of Arras, five minutes from the Place des Héros, classé since 1921. Five-bay nave, marble floor, carved stalls, wrought-iron grilles and a gilded high altar.
+summary: "An 18th-century convent chapel in the centre of Arras, five minutes from the Place des Héros. It has a five-bay nave, a marble floor, carved stalls, wrought-iron grilles and a gilded high altar, and it has been a protected historic monument since 1921."
 seller: The City of Arras, by two public records
 moneyGoes: The State heritage record lists the chapel as the property of the commune. If the town is the seller, the price goes to Arras and not to the Church. The listing does not name the owner, so confirm with the agent.
 heritageClass: Classé
@@ -111,12 +111,9 @@ sections:
     value: Lille 45 km, Paris 160 km.
     status: listing
 faults:
-- The stone front is black with pollution and has plants growing on it.
-- Shrubs have rooted in the side walls, and one opening is boarded up.
-- A public heritage record notes that the chapel needs maintenance.
-- The original stained glass is gone.
-- Part of the marble floor is missing.
-- No land beyond the building itself.
+- "The stone front is dark with pollution and has plants growing on it."
+- "The original stained glass is gone."
+- "Part of the marble floor is missing."
 contacts:
 - role: Selling agent
   name: Patrice Besse, Paris (reference 199325)
@@ -225,6 +222,7 @@ seen:
 - The oak panelling and stalls look freshly restored. The wrought-iron grilles have their gilding.
 - The stone of the walls below the windows carries grey staining.
 ---
-Louis Posteau built this for Franciscan nuns between 1769 and 1775, with a front borrowed from the Gesù in Rome. It was shelled twice in the First World War and rebuilt. The shrapnel scars are still in the stone.
 
-Inside, the nuns' wrought-iron grilles, the carved stalls and the gilded altar are in place. The agent suggests a family home or a head office. It is a classé monument fifty minutes from Paris by train, and it should stay a chapel.
+The architect Louis Posteau built it for Franciscan nuns between 1769 and 1775, with a front modelled on the church of the Gesù in Rome. It was shelled twice in the First World War and rebuilt, and the shrapnel marks are still in the stone.
+
+Inside, the nuns' grilles, the stalls and the altar are all in place, and the woodwork has been restored. The outside needs cleaning, weeding and repointing. Arras is fifty minutes from Paris by train.

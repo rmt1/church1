@@ -12,7 +12,7 @@ agent: Immobiliare 7 Valli
 listingUrl: https://www.immobiliare.it/annunci/118329495/
 lastChecked: 2026-11-14
 status: for sale
-summary: A hill church of 1799 with its rectory attached, above the Nure valley south of Piacenza. The nave keeps its painted vaults, cornice and door. Someone began turning the rectory into a house, put a new roof on, and stopped years ago with one corner of the church fallen.
+summary: "A hill church of 1799 with its rectory attached, above the Nure valley south of Piacenza. The nave keeps its painted vaults, its cornice and its door."
 seller: Not stated
 moneyGoes: The listing does not say who owns it. An unfinished private building project suggests a private owner. Ask the agent.
 heritageClass: Vincolo (Soprintendenza)
@@ -110,12 +110,10 @@ sections:
     value: Not stated.
     status: unknown
 faults:
-- A corner of the church has collapsed and is held by props and scaffold.
-- The agent's own estimate for the works is €600,000 to €800,000. That is eleven to fifteen times the price.
-- The top storey of the rectory was rebuilt in concrete block. On a protected building, ask for the permits for that work before you offer.
-- The apse paintings are coming off the vault in sheets.
-- No sewer and no gas.
-- The nave is being used as a store for timber, crates and machinery.
+- "One corner of the church has collapsed and is held by props and scaffold."
+- "The apse paintings are coming away from the vault."
+- "The top storey of the rectory was rebuilt in concrete block. The permits for that work are worth asking for."
+- "No sewer and no gas."
 contacts:
 - role: Selling agent
   name: Immobiliare 7 Valli, Piazza Primo Maggio 17, Ponte dell'Olio (reference 410PO)
@@ -189,6 +187,7 @@ seen:
 - In the rectory, floors are stripped to the joists and the new roof timbers rest on scaffold. A stair has lost its treads.
 - The views from the site run over fields and vineyards to a flat plain.
 ---
-Fifty-five thousand euros buys a painted church of 1799 on a hill above the Nure valley. The agent says, in the advert, that it needs €600,000 to €800,000 after that. Credit to an agent who writes that down.
 
-Somebody tried to make a house of it and ran out of money or permission. Find out which. If the papers are in order, the plan is simple: rebuild the corner, save the paintings, live in the rectory and keep the church as a church.
+The price is €55,000. A previous owner began turning the rectory into a house and put a new roof on it. The agent states in the advert that a complete renovation costs €600,000 to €800,000, which gives a buyer a clear figure to plan around.
+
+The plan is to rebuild the fallen corner of the church, save the paintings, live in the rectory and keep the church as a church.

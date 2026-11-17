@@ -13,7 +13,7 @@ agent: Bond Oxborough Phillips
 listingUrl: https://www.churchofengland.org/closed-churches/petrockstowe-st-petroc-diocese-exeter
 lastChecked: 2026-11-14
 status: for sale
-summary: A north Devon village church with a 15th-century tower, a Norman font of about 1170 and a pulpit of 1631, rebuilt round them in 1878. It closed in 2023. The press put the cost of making it watertight at £400,000, and about thirty villagers are trying to turn it into a school of heritage skills.
+summary: "A village church in north Devon with a 15th-century tower, a Norman font of about 1170 and a pulpit of 1631. The rest was rebuilt around them in 1878."
 seller: Church Commissioners for England, with the diocese
 moneyGoes: To the Church of England. The sale runs under the Mission and Pastoral Measure 2011. The proceeds are shared between the diocese and the Church Commissioners, and part of the Commissioners' share funds the Churches Conservation Trust.
 heritageClass: Grade II*
@@ -104,12 +104,10 @@ sections:
     value: The Commissioners write covenants into the sale that limit the building to the use they approved. Expect several months between an accepted offer and completion.
     status: listing
 faults:
-- £400,000 to make it watertight, before anything else.
-- Plaster has fallen from the chancel walls in large areas.
-- No asking price is published.
-- A village group wants it and has applied for a viability grant. A buyer who ignores them will have the parish against them.
-- Residential use is unlikely to get permission.
-- The pub next door is shut too.
+- "Making it watertight is reported to cost about £400,000."
+- "Plaster has fallen from the chancel walls."
+- "No asking price is published, and a village group wants it. A buyer might want to help them."
+- "Residential use is unlikely to get permission."
 contacts:
 - role: Selling agent
   name: Bond Oxborough Phillips
@@ -191,6 +189,7 @@ seen:
 - The reredos, altar rails and east window glass are intact.
 - Hymn books and papers are still on the pews.
 ---
-No price is given and the first bill is £400,000 to keep the rain out. What you get for it is a font of 1170, a tower of the 1400s and a brass with nineteen children on it.
 
-Thirty people in the village are trying to save this church. Do not bid against them. Send them money, or offer to buy it and hand them the keys.
+It closed in 2023. About thirty villagers are working to turn it into a school of heritage skills and have applied for a grant to test the plan. Inside there is also a brass showing nineteen children.
+
+The first job is making it watertight, which the press has put at £400,000. A buyer might want to work with the village group, or support them.

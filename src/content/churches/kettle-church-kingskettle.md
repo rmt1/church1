@@ -12,7 +12,7 @@ agent: Church of Scotland
 listingUrl: https://www.churchofscotland.org.uk/about-us/departments/property-and-church-buildings/properties-for-sale/properties/churches-and-halls/kettle-church-2-4-south-street-kingskettle-ky15-7pl
 lastChecked: 2026-11-14
 status: for sale
-summary: A Tudor Gothic parish church of 1832 by George Angus, with a five-stage clock tower that stands over the Howe of Fife. A ceiling was put in below the galleries, so the room you see is half the height of the room that was built. The hall next door is sold separately at £60,000.
+summary: "A parish church of 1832 in the village of Kingskettle in Fife, designed by the architect George Angus in the Tudor Gothic style. Its five-stage clock tower is the landmark of the village and of the flat country around it."
 seller: Church of Scotland General Trustees
 moneyGoes: To the Kirk. The General Trustees hold the title for the congregation, and sale proceeds go back to the Church of Scotland for its remaining congregations and buildings.
 heritageClass: Category B
@@ -111,12 +111,10 @@ sections:
     value: Offers go in writing through a Scottish solicitor. Register your interest through a solicitor so you are told if a closing date is set. The sellers say they are not bound to accept the highest offer.
     status: listing
 faults:
-- A shrub is growing out of the masonry where the roof meets the tower, and there is more growth at the parapet. Roots open joints.
-- The tower has four pinnacles, a pierced parapet and two clock faces, all at a height that needs a scaffold.
-- Electricity only. No water or drainage is listed.
-- Nobody says what state the galleries and the roof space are in above the lowered ceiling.
-- The hall is a separate sale. Somebody else may buy it and share your yard.
-- The two floor areas in the brochure differ by 37 square metres.
+- "A shrub is growing where the roof meets the tower, with more growth at the parapet."
+- "The tower's pinnacles, parapet and clock faces need a scaffold to reach."
+- "Electricity only. No water or drainage is listed."
+- "The hall next door is a separate sale at £60,000."
 contacts:
 - role: Seller
   name: Church of Scotland Law Department, properties@churchofscotland.org.uk, 0131 240 2263
@@ -199,6 +197,7 @@ seen:
 - The pews are pine and in place. The organ pipes stand behind the pulpit.
 - Two stained-glass panels flank a cross on a dark timber screen.
 ---
-One hundred and twenty-five thousand pounds is the second highest price on this page, and most of it pays for a tower. The tower is the landmark of the village and it has a bush growing out of it.
 
-If you want a church to live in, this is the one on the Scottish list where that is realistic. Get someone up the tower on a rope before you offer.
+The body of the church looks sound and was decorated recently. A ceiling was put in below the galleries, so the full height of the original room is still there above it.
+
+Of the Scottish churches on the shortlist, this is the one where living in it is realistic. The tower is where the work is, and a close inspection of it is the first step.

@@ -13,7 +13,7 @@ agent: Romolini Immobiliare
 listingUrl: https://www.romolini.com/en/2916
 lastChecked: 2026-11-14
 status: for sale
-summary: The Vallombrosan abbey of San Cassiano, founded before 1040 as a pilgrim hospice, with a church consecrated in 1212, two cloisters, a vaulted cellar and 100 hectares of woodland 30 km from Florence. It needs complete renovation. This is the entry for a reader with real money.
+summary: "A medieval abbey in the hills of Chianti, 30 km from Florence. It was founded before 1040 as a hospice for pilgrims, and its church was consecrated in 1212. It comes with two cloisters, a vaulted cellar and 100 hectares of woodland."
 seller: Not stated
 moneyGoes: The abbey was suppressed in 1776 and has been out of monastic hands since. The listing does not name the present owner. Ask the agent.
 heritageClass: Not stated. Assume protected.
@@ -114,13 +114,10 @@ sections:
     value: Florence airport is 48 km, Pisa 98 km.
     status: listing
 faults:
-- The works will cost several times the purchase price. The rough total starts at seven million euros.
-- The bell tower is gone.
-- No heating, and the only water mentioned is a well.
-- Ivy covers whole elevations, and one of the two farmhouses is a roofless ruin.
-- The two floor areas in the advert differ by 1,200 square metres.
-- A hundred hectares of woodland is a forestry business you did not ask for.
-- The advert names no owner and no protection.
+- "The works will cost several times the purchase price. The rough total starts at seven million euros."
+- "The bell tower is gone."
+- "There is no heating, and the only water mentioned is a well."
+- "One of the two farmhouses has lost its roof."
 contacts:
 - role: Selling agent
   name: Romolini Immobiliare, Sansepolcro (reference 2916, "Abbazia Chiantigiana")
@@ -202,6 +199,7 @@ seen:
 - Other rooms are bare stone with tile and beam ceilings. One vaulted passage has cracked and stained plaster, and a wash-house has lost most of its plaster.
 - One farmhouse is a roofless shell under ivy with a solar panel on the ground beside it. The other has its roof.
 ---
-Two million euros for an abbey of 1040 with two cloisters and a hundred hectares, an hour from Florence.
 
-The purchase is the cheap part. Whoever takes this on needs ten million more and ten years. The way to do it is as a house with a church: keep the monks' plan, and rebuild the bell tower the Germans blew up.
+Monks of the Vallombrosan order, a Tuscan branch of the Benedictines, kept this abbey, and their plan is still easy to read: the church, two cloisters, the cellar and the farm buildings around them. The price is €2,000,000.
+
+It needs complete renovation, and it suits a buyer with the means for a long project. It would make a house with its own church, and the bell tower, destroyed by German troops in the Second World War, could be rebuilt.

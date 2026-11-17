@@ -13,7 +13,7 @@ agent: Casa Tuscany
 listingUrl: https://www.casatuscany.com/properties/v3187ab-umbria-perugia-umbertide-ancient-historic-church-convent-restoration-restore-land-olives/
 lastChecked: 2026-11-14
 status: for sale
-summary: A 15th-century parish church with its convent round a courtyard, alone on a hilltop between the upper Tiber and Niccone valleys, with 4 hectares and an olive grove. The agent calls it well preserved. The photographs show roofs down on two ranges and no doors or windows.
+summary: "A 15th-century parish church with its convent around a courtyard, alone on a hilltop near Umbertide in Umbria. It comes with 4 hectares and an olive grove, between the valleys of the upper Tiber and the Niccone."
 seller: Not stated
 moneyGoes: The listing does not say who owns it. Ask the agent.
 heritageClass: None stated
@@ -101,13 +101,10 @@ sections:
     value: An airport within an hour.
     status: listing
 faults:
-- One low wing has lost the middle of its roof, and one range has no roof at all.
-- A crack runs down the full height of one corner of the main block.
-- There are no windows or doors in any opening in the photographs.
-- No photograph shows the inside of the church.
-- The advert does not name the church, the hamlet or the owner.
-- Stacks of salvaged tiles and bricks stand on pallets near the buildings. Ask who took them down and from where.
-- A track of 1.5 km is yours to keep passable.
+- "Two ranges have lost all or part of their roofs."
+- "A crack runs the full height of one corner of the main block."
+- "No doors or windows remain in the openings."
+- "The 1.5 km access track is the owner's to maintain."
 contacts:
 - role: Selling agent
   name: Casa Tuscany, +39 366 3048 914 (reference V3187AB)
@@ -167,6 +164,7 @@ seen:
 - No opening has a window. Several are blocked in brick.
 - Two pallets of stacked tiles and bricks stand in the grass, grown over with moss.
 ---
-Five hundred and fifty thousand euros for a hilltop, four hectares of olives and a medieval church and convent with nobody near. The price is for the position. The buildings are a shell.
 
-"Well-preserved" is the agent's word. Do not rely on it. Budget three times the purchase price and go and find out what the church is called.
+The position is the draw: a hilltop of its own, olives, and a medieval church and convent with no neighbours. The buildings come to 1,150 square metres.
+
+They need full restoration. Roofs are down on two ranges and the openings have no doors or windows, so the budget for works is about three times the purchase price. The advert does not give the name of the church, and the diocese will know it.

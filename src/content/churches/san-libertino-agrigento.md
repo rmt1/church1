@@ -13,7 +13,7 @@ agent: Studio Atenea
 listingUrl: https://www.studioatenea-agrigento.it/centro-storico-via-delle-mura-chiesa-sconsacrata-ideale-attivita-cultural.htm
 lastChecked: 2026-11-14
 status: for sale
-summary: A deconsecrated church of about 180 square metres in the old town of Agrigento, with a timber roof 9 metres up, at €32,000. The advert gives no name. The evidence says it is San Libertino, built after the plague of 1625 on the spot where the city's first bishop is said to have been killed, and a parish cinema from the 1950s.
+summary: "A former church of about 180 square metres in the old town of Agrigento in Sicily, with a timber roof 9 metres up. The evidence identifies it as San Libertino, built after the plague of 1625 on the spot where the city's first bishop is said to have been killed."
 seller: Not stated. A private non-profit body in 2016.
 moneyGoes: The regional register lists San Libertino in 2016 as owned by a private non-profit legal person, the category that covers parishes and confraternities, and records an authorisation to sell dated 9 June 2016. The FAI page describes it as privately owned. Ask the agent who holds it now.
 heritageClass: Protected, decree of 2016
@@ -95,12 +95,10 @@ sections:
     value: Via delle Mura, which takes cars and has parking, close to the cathedral and to Via Atenea.
     status: listing
 faults:
-- Daylight shows through the roof boards.
-- Plaster has come off the walls in sheets and the floor is covered in rubble.
-- The street front is a later block of rough stone built round the old entrance when the church became a cinema. Its windows are broken or blocked.
-- The advert does not name the church. The identification rests on the street, the register and the photographs. Get it confirmed in writing.
-- The altars and the iron gate recorded in the church are gone.
-- It has been for sale, or cleared for sale, since 2016. Ask why nobody has bought it.
+- "Daylight shows through the roof boards."
+- "Plaster has come off the walls and the floor is covered in rubble."
+- "The street front is a later block built when the church became a cinema, and its windows are broken or blocked."
+- "The advert does not name the church, so the identification should be confirmed in writing."
 contacts:
 - role: Selling agent
   name: Studio Atenea, Via Atenea 103, Agrigento, 0922 595016
@@ -175,6 +173,7 @@ seen:
 - Wall plaster is stained to head height and missing in patches. A painted grey dado survives on one side.
 - An iron tie rod crosses the hall under the roof.
 ---
-Thirty-two thousand euros, slightly negotiable, for the church Agrigento built on the spot where its first bishop was stoned. It was a cinema for seventy years and still has the stage.
 
-The Region cleared it for sale in 2016 and nobody has taken it. Fix the roof, clear the floor and show films in it again.
+From the 1950s it was the parish cinema, and it still has the stage. The stone shell is sound. The price is €32,000.
+
+The plan is simple: repair the roof, clear the floor and show films in it again. The Region cleared it for sale in 2016.

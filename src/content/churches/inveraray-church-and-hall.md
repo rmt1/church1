@@ -13,7 +13,7 @@ agent: Church of Scotland
 listingUrl: https://www.churchofscotland.org.uk/about-us/departments/property-and-church-buildings/properties-for-sale/properties/churches-and-halls/inverary-church-and-hall-inveraray-pa32-8tx
 lastChecked: 2026-11-14
 status: for sale
-summary: Robert Mylne designed it around 1800 for the 5th Duke of Argyll as two churches under one roof, one for Gaelic and one for English, back to back with a wall between. It stands on an island in the main street of the planned town. One half is still a church and the other has been a hall since 1957.
+summary: "A church of about 1800 in the middle of Inveraray, the planned town of the Dukes of Argyll on Loch Fyne. Robert Mylne, the architect of Blackfriars Bridge in London, designed it as two churches under one roof, one for services in Gaelic and one for English."
 seller: Church of Scotland General Trustees
 moneyGoes: To the Kirk. The General Trustees hold the title for the congregation, and sale proceeds go back to the Church of Scotland for its remaining congregations and buildings.
 heritageClass: Category A
@@ -111,12 +111,10 @@ sections:
     value: Offers go in writing through a Scottish solicitor. Register your interest through a solicitor so you are told if a closing date is set. The sellers say they are not bound to accept the highest offer.
     status: listing
 faults:
-- Green and black growth covers the stonework of the front from the pediment to the ground.
-- Traffic passes on both sides. Any scaffold needs a road permit and a plan.
-- The central steeple was taken down in 1941 and never rebuilt.
-- EPC rating G for 494 square metres.
-- The organ and the war memorials may leave with the sellers.
-- It is the most expensive church on this page and the largest.
+- "Green and black growth covers the stonework of the front."
+- "Traffic passes on both sides, so scaffolding needs a road permit."
+- "The central steeple was taken down in 1941."
+- "The organ and the war memorials may leave with the sellers."
 contacts:
 - role: Seller
   name: Church of Scotland Law Department, properties@churchofscotland.org.uk, 0131 240 2263
@@ -208,6 +206,7 @@ seen:
 - The hall half has a varnished board floor, painted walls, radiators and a suspended light grid. A modern fitted kitchen opens off it.
 - No ceiling stains show in either half.
 ---
-One hundred and ninety-five thousand pounds for a Category A building by Robert Mylne in the middle of a town that tourists drive to on purpose. You get a church and a hall, both in use until recently.
 
-This is a project for someone who wants to run something: concerts, a market, a museum of the town. Budget as much again for the stonework, and talk to the council before you talk to a solicitor.
+The two halves stand back to back with a wall between them. One is still laid out as a church and the other has been a hall since 1957, and both were in use until recently. It is protected at Category A, the highest grade in Scotland.
+
+Inveraray is a town that visitors travel to, so the building suits someone who wants to run something: concerts, a market, a museum of the town. The inside is usable now, and the stonework outside needs cleaning.

@@ -12,7 +12,7 @@ agent: PFK
 listingUrl: https://www.churchofengland.org/closed-churches/croglin-st-john-diocese-carlisle
 lastChecked: 2026-11-14
 status: for sale
-summary: A red sandstone church of 1878 in a fellside village, on a site used since Norman times. It has been closed since 2012. A village charity held a provisional lease to make it a community hub and could not raise the money, so the diocese put it back on the market.
+summary: "A red sandstone church of 1878 in Croglin, a village under the Pennines in the Eden Valley in Cumbria. The site has been used for worship since Norman times."
 seller: Church Commissioners for England, with the diocese
 moneyGoes: To the Church of England. The sale runs under the Mission and Pastoral Measure 2011. The proceeds are shared between the diocese and the Church Commissioners, and part of the Commissioners' share funds the Churches Conservation Trust.
 heritageClass: Grade II
@@ -118,12 +118,10 @@ sections:
     value: The Commissioners write covenants into the sale that limit the building to the use they approved. Expect several months between an accepted offer and completion.
     status: listing
 faults:
-- Cash buyers only.
-- No foul drain. You pay to connect to the village sewer across the churchyard.
-- Asbestos was found in 2021 and has to come out.
-- The heating has not been switched on since 2012.
-- Graves in your garden stay where they are, with rights for families to visit.
-- The village wanted it for a hub and lost it. Expect feelings.
+- "Cash buyers only."
+- "No foul drain. It needs connecting to the village sewer across the churchyard."
+- "Asbestos found in 2021 needs removing."
+- "The graves in the churchyard stay, with visiting rights for families."
 contacts:
 - role: Selling agent
   name: PFK
@@ -204,6 +202,7 @@ seen:
 - The roof is open timber with arched braces, dark and dry.
 - The east window has coloured glass and the altar is dressed.
 ---
-One hundred thousand pounds, cash, for a sandstone church under the Pennines with a clock, a vampire story and planning advice that says you may live in it.
 
-It is not old and it is not grand. It is dry, pretty and legal to convert, and in England that combination is rare at this price. Be kind to the village.
+The building is tidy and dry, with a clock, and the village has a vampire legend of its own. Planning advice says the church may be converted to a house. The guide price is £100,000, for a cash buyer.
+
+The work is routine: a drain connection, new heating and asbestos removal. A village charity hoped to make it a community hub, so a buyer who keeps the village involved would start well.

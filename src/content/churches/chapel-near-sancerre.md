@@ -13,7 +13,7 @@ agent: Patrice Besse
 listingUrl: https://www.patrice-besse.com/edifices-religieux-a-vendre/centre-val-de-loire/edifice-religieux-a-vendre-a-cote-de-sancerre-en-france/
 lastChecked: 2026-11-14
 status: for sale
-summary: A former chapel of about 30 square metres with 11 metres under the roof frame, on a street of old houses beside the Loire lateral canal. The cheapest religious building on the agency's books.
+summary: "A small former chapel in a wine village near Sancerre, beside the Loire lateral canal. It is about 30 square metres, with 11 metres of height under the roof frame, and a blocked medieval window that dates it to about 1300."
 seller: Not stated
 moneyGoes: The listing does not say who owns it. Ask the agent whether the seller is a private owner or the commune.
 heritageClass: None stated
@@ -99,12 +99,9 @@ sections:
     value: About 180 km from Paris, 160 of them on the A77 motorway.
     status: listing
 faults:
-- The walls are jacketed in cement render, which traps damp.
-- The floor is a modern cement screed.
-- A half-height floor of bare joists has been inserted.
-- The medieval twin window is blocked.
-- No fittings, glass or furnishings survive.
-- No date, dedication or history is given.
+- "Cement render on the walls traps damp and should come off."
+- "The floor is a modern cement screed."
+- "A half-height floor of bare joists has been inserted."
 contacts:
 - role: Selling agent
   name: Patrice Besse, Paris (reference 716301)
@@ -177,6 +174,7 @@ seen:
 - The upper part of one gable has been rebuilt in red brick.
 - Two of the nine photographs are views of the Saint-Satur viaduct and of Sancerre on its hill, so the village is close to both.
 ---
-Thirty thousand euros buys eleven metres of height over thirty square metres of floor, in a wine village with a station five minutes away. The roof frame is sound and the water and electricity are already in.
 
-The agent imagines a two-level loft. Leave the volume alone, take up the cement, and find out who built it and when. Ask what protection applies before you draw anything.
+The roof frame is sound, water and electricity are connected, and the station is five minutes away. The price is €30,000.
+
+The work is modest: take off the cement render so the walls can dry, lift the cement floor, and reopen the medieval twin window. A little research would recover its name and its history.

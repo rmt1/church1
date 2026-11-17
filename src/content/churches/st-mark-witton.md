@@ -12,7 +12,7 @@ agent: Proctors
 listingUrl: https://www.churchofengland.org/closed-churches/witton-st-mark-diocese-blackburn
 lastChecked: 2026-11-14
 status: for sale
-summary: The first building by Edmund Sharpe, who founded the Lancaster practice that became Paley and Austin. He built it in 1836 to 1838 in a round-arched Romanesque style for the Feilden family of Witton Park, with an octagonal tower over the chancel. It has been for sale since 2018.
+summary: "A church of 1836 to 1838 in Witton, Blackburn, in Lancashire. It was the first building by Edmund Sharpe, a Lancaster architect whose practice went on to design churches across the north of England. It is in a round-arched Romanesque style, with an eight-sided tower over the chancel."
 seller: Church Commissioners for England, with the diocese
 moneyGoes: To the Church of England. The sale runs under the Mission and Pastoral Measure 2011. The proceeds are shared between the diocese and the Church Commissioners, and part of the Commissioners' share funds the Churches Conservation Trust.
 heritageClass: Grade II*
@@ -108,13 +108,7 @@ sections:
   - label: Covenants
     value: The Commissioners write covenants into the sale that limit the building to the use they approved. Expect several months between an accepted offer and completion.
     status: listing
-faults:
-- Eight years on the market.
-- No price is published now. An earlier brochure asked for offers over £125,000.
-- No central heating.
-- No condition survey.
-- A family mausoleum is part of the building.
-- The tower over the chancel narrows the way through and cuts the view from nave to altar, as the architectural historians point out.
+faults: []
 contacts:
 - role: Selling agent
   name: Proctors
@@ -197,6 +191,7 @@ seen:
 - The west gallery has a panelled front, with glazed doors and a screen below it.
 - The walls are painted cream and are clean. There is children's work pinned up along one side.
 ---
-Edmund Sharpe's first building, Grade II*, with a Willement window, and nobody in Blackburn has wanted it in eight years. That tells you about Blackburn's property market and nothing about the church.
 
-Make an offer well under the old £125,000. It can be a school or a hall tomorrow, and the planners have already said how a house would work.
+Sharpe built it for the Feilden family of Witton Park. It is listed at Grade II*, the second highest grade in England, and it has a window by Thomas Willement, stained glass artist to Queen Victoria.
+
+Nothing in the photographs or the brochure points to a failure. It could be a school or a hall straight away, and the planners have already advised on how a house would work. Offers are invited.

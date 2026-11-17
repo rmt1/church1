@@ -12,7 +12,7 @@ agent: McCartneys
 listingUrl: https://www.churchofengland.org/closed-churches/burrington-st-george-diocese-hereford
 lastChecked: 2026-11-14
 status: for sale
-summary: A village church on the Herefordshire and Shropshire border with a chancel rebuilt by G F Bodley in 1864. Outside its east wall lie eight cast-iron grave slabs of 1619 to 1754, made for the ironmasters who worked the forges on the Teme. The church has been shut since 2016 and the roof is shedding tiles.
+summary: "A village church on the border of Herefordshire and Shropshire, near Ludlow. Its chancel was rebuilt in 1864 by G F Bodley, a church architect who worked across Victorian England. Outside the east wall lie eight cast-iron grave slabs of 1619 to 1754, made for the ironmasters who worked the forges on the River Teme."
 seller: Church Commissioners for England, with the diocese
 moneyGoes: To the Church of England. The sale runs under the Mission and Pastoral Measure 2011. The proceeds are shared between the diocese and the Church Commissioners, and part of the Commissioners' share funds the Churches Conservation Trust.
 heritageClass: Grade II
@@ -112,12 +112,10 @@ sections:
     value: The Commissioners write covenants into the sale that limit the building to the use they approved. Expect several months between an accepted offer and completion.
     status: listing
 faults:
-- The roof is officially dangerous and the building is taped off.
-- Plaster is coming down inside and a sheet has been hung under the nave ceiling to catch it.
-- Shut for ten years.
-- Nothing is said about water, power or drains.
-- The Church's own page calls it St James in one sentence and St George in the rest.
-- The listed iron slabs sit against the wall you would own. Their care will fall to you in practice.
+- "The roof is officially dangerous and the building is taped off."
+- "Plaster is coming down inside."
+- "Closed since 2016."
+- "Nothing is stated about water, power or drains."
 contacts:
 - role: Selling agent
   name: McCartneys
@@ -204,6 +202,7 @@ seen:
 - Below the sheet the pews, the tiled aisle, the rood screen and the wall tablets are all in place and look dry.
 - The walls outside are coursed sandstone with no obvious cracks.
 ---
-About £160,000 for a Bodley chancel and eight iron gravestones cast for the ironmasters of the Teme valley. The roof is falling off it.
 
-Pay less than they ask and spend the difference on tiles. Put the roof back and this is a dry, small, complete church in good country, with a group of iron slabs outside its east wall that the listing calls unusual.
+It is a small, complete church in good country. Below the roof, everything looks sound in the photographs.
+
+The roof is the job. It is shedding tiles and has been declared dangerous, so it is priced as a full replacement. With the roof back on, this is a dry church with a group of iron grave slabs that the official listing calls unusual.

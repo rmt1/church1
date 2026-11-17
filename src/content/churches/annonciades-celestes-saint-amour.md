@@ -11,7 +11,7 @@ agent: Patrice Besse
 listingUrl: https://www.patrice-besse.com/annonces/ismh-au-coeur-du-Jura--pb363625
 lastChecked: 2026-11-14
 status: for sale
-summary: 'A convent founded in 1621 in the middle of a Jura market town, inscrit since 2013: two 18th-century wings with arcaded galleries around a cloister court, the surviving choir of the chapel, and a walled former orchard. To be rehabilitated entirely.'
+summary: "A convent founded in 1621 in the middle of Saint-Amour, a market town in the Jura. Two 18th-century wings with arcaded galleries stand around a cloister court, with the choir of the old chapel between them and a walled orchard behind."
 seller: Not stated; private, the commune, or both
 moneyGoes: The convent was taken from the Church and sold as national property in 1790. The State record lists two plots as private and three as communal. Ask the agent which plots are in the sale and who owns each.
 heritageClass: Inscrit
@@ -108,12 +108,9 @@ sections:
     value: A39 motorway 3 km away. Bourg-en-Bresse 28 km, Lyon 90 km, Geneva 95 km.
     status: listing
 faults:
-- 'Everything needs work: the listing says the property is to be rehabilitated entirely.'
-- Most of the chapel and the south cloister wing have been demolished.
-- Graffiti in the choir shows the site is being entered.
-- Ceilings are failing in the former classrooms.
-- Render has gone from long stretches of wall.
-- A 1960s prefabricated hall to demolish, with a fibre-cement roof.
+- "The listing says the whole property needs rehabilitating."
+- "Most of the chapel and the south cloister wing were demolished. The choir survives."
+- "A 1960s prefabricated hall needs to come down."
 contacts:
 - role: Selling agent
   name: Patrice Besse, Paris (reference 363625)
@@ -202,6 +199,7 @@ seen:
 - The vaulted refectory and its stone fireplace are intact. The stone staircase is sound.
 - A concrete-block lean-to has been built against one end.
 ---
-A convent founded in 1621 for the price of a studio flat, and every square metre of it needs work. The chapel was mostly pulled down. Its choir survives, 104 square metres under rib vaults, between two wings with seven-arch arcades onto the cloister court.
 
-This is the twenty-year vocation on the list. The roof frame is sound, and that is where the good news stops. Take it on with a trust, an architect and a plan for the thousand square metres that are not chapel.
+What survives is the heart of the convent: the choir of the chapel, 104 square metres under rib vaults, and two wings whose seven-arch arcades open onto the cloister court. The roof frame is sound, and the buildings have been protected as a historic monument since 2013.
+
+It is a large project and a good one for a trust or a group with a long view. The work can be taken in stages: secure the site and overhaul the roofs, conserve the choir and the galleries, and bring the wings back into use as funds allow.

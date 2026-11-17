@@ -12,7 +12,7 @@ agent: Church of Scotland
 listingUrl: https://www.churchofscotland.org.uk/about-us/departments/property-and-church-buildings/properties-for-sale/properties/churches-and-halls/stromness-church-115-victoria-street-isle-of-orkney-kw16-3bu
 lastChecked: 2026-11-14
 status: for sale
-summary: A town church of 1862 in the main street of Stromness, built for 640 people, with a gallery on iron columns and a Binns organ of 1906. A hall of about 1897 is attached. The painter Stanley Cursiter designed its redecoration in 1951.
+summary: "A town church of 1862 in the main street of Stromness in Orkney, built for 640 people. It has a gallery on iron columns, a Binns organ of 1906 and a hall attached. The Orkney painter Stanley Cursiter designed its redecoration in 1951."
 seller: Church of Scotland General Trustees
 moneyGoes: To the Kirk. The General Trustees hold the title for the congregation, and sale proceeds go back to the Church of Scotland for its remaining congregations and buildings.
 heritageClass: Category B
@@ -109,11 +109,10 @@ sections:
     value: Offers go in writing through a Scottish solicitor. Register your interest through a solicitor so you are told if a closing date is set. The sellers say they are not bound to accept the highest offer.
     status: listing
 faults:
-- It is on an island. Every slate, scaffold pole and specialist comes by ferry, and prices follow.
-- The room seats 640. Heating it costs money every time you open it.
-- The sandstone front faces the weather off Hoy Sound and has four pinnacles and a bellcote to keep standing.
-- Victoria Street is narrow. There is no parking in the sale.
-- The organ may leave with the sellers. The brochure does not say.
+- "It is on an island, so materials and specialists come by ferry and cost more."
+- "The sandstone front faces the weather and has four pinnacles and a bellcote to maintain."
+- "No parking is included."
+- "The organ may leave with the sellers."
 contacts:
 - role: Seller
   name: Church of Scotland Law Department, properties@churchofscotland.org.uk, 0131 240 2263
@@ -199,6 +198,7 @@ seen:
 - The hall has a vinyl floor, a fitted kitchen and stacking chairs. There is an accessible toilet with grab rails.
 - The stair hall has a flagstone floor, worn and uneven.
 ---
-Seventy-five thousand pounds buys 428 square metres in the middle of an Orkney town, with an organ, a hall, a kitchen and a view of the ferry.
 
-This one needs a use more than it needs a builder. If you can fill it with music a few weeks a year, it will pay for its own gutters.
+The sale is 428 square metres in the middle of town, with the organ, the hall, a kitchen and a view of the ferry. The inside is in working order and needs nothing before use.
+
+It suits music and events. Filled a few weeks a year, it could pay for its own upkeep.

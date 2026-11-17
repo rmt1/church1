@@ -11,7 +11,7 @@ agent: Espaces Atypiques
 listingUrl: https://www.espaces-atypiques.com/ventes/79000-niort-ancien-lieu-de-culte-au-coeur-de-niort-eads427/
 lastChecked: 2026-11-14
 status: for sale
-summary: The church of the Carmelite convent of Niort, consecrated in 1868 and empty since the nuns left in 2009. A single stone nave 32 metres long under a vault 14 metres high, with its stained glass, its rose window and its gallery. The price has fallen from 250,000 euros in 2023.
+summary: "The church of the Carmelite convent of Niort, consecrated in 1868. It is a single stone nave 32 metres long under a vault 14 metres high, with its stained glass, its rose window and its gallery all in place."
 seller: A property company, according to the press
 moneyGoes: The Carmelites sold their convent after moving out in 2009. In 2023 the local paper reported that the chapel was being sold on behalf of Espace Investissement, a company in La Rochelle. Nothing goes to the Church. Confirm the present owner with the agent.
 heritageClass: None stated
@@ -203,12 +203,9 @@ sections:
     value: Niort is on the TGV line from Paris to La Rochelle.
     status: unknown
 faults:
-- 'The stone floor is green with algae: the building is damp.'
-- Empty for fifteen years, with an overgrown forecourt.
-- The roof is not described or photographed.
-- The high altar has been removed.
-- No heritage protection is stated, so the glass and the gallery have no legal safeguard.
-- The price has been cut twice in three years, which says something about the market for it.
+- "Algae on the stone floor shows the building is damp after fifteen years empty."
+- "The roof is not described or photographed in the listing."
+- "The high altar has been removed."
 contacts:
 - role: Selling agent
   name: Espaces Atypiques, Niort (reference EADS427)
@@ -217,6 +214,6 @@ contacts:
   name: The town hall of Niort, urban planning department
 ---
 
-Three hundred and fifty square metres of dressed stone, a vault fourteen metres up and every window still in its glass, for 190,000 euros. The Carmelites built it in 1868 and prayed in it for 140 years. Since 2009 nobody has.
+Carmelite nuns prayed here for 140 years and left in 2009. The stone interior is in good order and every window still has its glass. The price is €190,000, down from €250,000 in 2023.
 
-It has been on the market for three years and the price has dropped by a quarter. The agents keep suggesting a restaurant or a loft. Open the doors, dry it out and put music in it. Have the roof looked at before you sign anything.
+It would suit concerts: open the doors, dry it out and put music in it. A roof inspection is the first step.

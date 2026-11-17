@@ -11,7 +11,7 @@ agent: Patrice Besse
 listingUrl: https://www.patrice-besse.com/annonces/edifices-religieux-a-vendre-au-coeur-du-Parc-naturel-regional-du-Vexin-francais--pb992238
 lastChecked: 2026-11-14
 status: for sale
-summary: The private chapel of an 18th-century château in the Vexin, 71 square metres, with its black-and-white floor, choir panelling, painted decoration, stained glass and bell. Abandoned for years and in need of full repair.
+summary: "The private chapel of an 18th-century château at Gargenville, 40 km from Paris. It is 71 square metres and keeps its black-and-white floor, choir panelling, painted decoration, stained glass and bell."
 seller: Not stated; private or the commune
 moneyGoes: This chapel was built for the owners of a château in 1727 and never belonged to the Church. The State record lists the estate as part private and part communal. Ask the agent which applies to the chapel.
 heritageClass: Inscrit
@@ -101,12 +101,10 @@ sections:
     value: About 40 km west of Paris by the A13 and A14.
     status: listing
 faults:
-- Broken panes in the side window, which is partly boarded.
-- Plaster is falling from the ceiling.
-- The bell lantern is weathered and has lost its louvres.
-- Render is cracked and has fallen from the annex cornice.
-- No plot size is given, so the amount of ground around the chapel is unclear.
-- The neighbouring château outbuildings are a building site.
+- "Panes are broken in the side window."
+- "Plaster is falling from the ceiling."
+- "The bell lantern has lost its louvres."
+- "The listing gives no plot size."
 contacts:
 - role: Selling agent
   name: Patrice Besse, Paris (reference 992238)
@@ -207,6 +205,7 @@ seen:
 - The painted cornice and ceiling corners, with a gilded monogram, are in fair condition.
 - Chairs, prayer desks, the altar and several statues are still in the chapel.
 ---
-This chapel never belonged to the Church. It was built for the owners of a château, and it is being sold on its own now that the estate is being divided.
 
-The checkerboard floor, the panelling, the painted decoration and the bell are all still there after years of neglect. Forty kilometres from Paris, that is rare. Find out exactly how much ground comes with it and whether the statues stay.
+This chapel was built for the owners of the château and never belonged to the Church. It is being sold on its own now that the estate is being divided. The roof covering and the interior woodwork look sound in the photographs.
+
+The repairs are small in scale: the bell lantern, some broken glass, the render and the ceiling plaster. It is a manageable project close to Paris.
