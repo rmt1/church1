@@ -1538,3 +1538,25 @@ html { background: var(--paper); }
 .photo-plate .p-bloom ellipse { opacity: 0.6; }
 .photo-plate .p-bloom { filter: blur(0.9cqw) saturate(1.5) brightness(1.2); }
 .photo-plate { container-type: inline-size; }
+
+/* photographic plate: stays at dusk, softer door, brighter clock */
+.photo-plate img, .photo-plate.run img, .photo-plate.out img { filter: brightness(0.82) saturate(0.6); animation: none; transition: none; }
+.photo-plate .p-dusk, .photo-plate.run .p-dusk, .photo-plate.out .p-dusk { opacity: 1; animation: none; }
+.photo-plate .p-flare { display: none; }
+.photo-plate .p-bloom .p-doorglow { fill: #ffcf8a; opacity: 0.5; }
+.photo-plate .p-bloom .p-pool { fill: #ffcf8a; opacity: 0.32; }
+.photo-plate .p-bloom .p-clockglow { fill: #ffe9a8; opacity: 0.85; }
+.photo-plate .p-lights .p-door { fill: #ffd79a; opacity: 0.2; }
+.photo-plate .p-lights .p-clock { fill: #fff0b0; opacity: 0.8; mix-blend-mode: overlay; }
+.photo-plate.run .p-bloom .p-doorglow { animation: p-o50 1.4s var(--d, 0s) both; }
+.photo-plate.run .p-bloom .p-pool { animation: p-o32 1.4s var(--d, 0s) both; }
+.photo-plate.run .p-bloom .p-clockglow { animation: p-o85 1.2s var(--d, 0s) both; }
+@keyframes p-o50 { from { opacity: 0; } to { opacity: 0.5; } }
+@keyframes p-o32 { from { opacity: 0; } to { opacity: 0.32; } }
+@keyframes p-o85 { 0% { opacity: 0; } 30% { opacity: 1; } 45% { opacity: 0.3; } 100% { opacity: 0.85; } }
+@keyframes p-door { from { opacity: 0; } to { opacity: 0.2; } }
+@keyframes p-clock { from { opacity: 0; } to { opacity: 0.8; } }
+.photo-plate .p-bloom .p-clockglow { opacity: 0.34; }
+.photo-plate .p-lights .p-clock { fill: #ffe6a0; opacity: 0.4; mix-blend-mode: screen; }
+@keyframes p-o85 { 0% { opacity: 0; } 30% { opacity: 0.5; } 45% { opacity: 0.1; } 100% { opacity: 0.34; } }
+@keyframes p-clock { from { opacity: 0; } to { opacity: 0.4; } }

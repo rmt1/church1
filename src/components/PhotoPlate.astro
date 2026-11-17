@@ -16,8 +16,9 @@
     <path class="p-glass" style="--d: 6.15s" d="M543 815V752Q543 746.8 547.0 744Q551 746.8 551 752V815zM556 815V748Q556 740.9 560.5 737Q565 740.9 565 748V815zM571 815V752Q571 746.8 575.5 744Q580 746.8 580 752V815z" fill="url(#sgp)" />
     <path class="p-lite" style="--d: 6.00s" d="M859 640Q866 614 884 604Q896 612 901 640zM857 776V652Q857 644.2 864.0 640Q871 644.2 871 652V776zM879 776V646Q879 636.9 886.0 632Q893 636.9 893 646V776zM896 775V654Q896 646.2 899.0 642Q902 646.2 902 654V775z" />
     <path class="p-glass" style="--d: 6.90s" d="M859 640Q866 614 884 604Q896 612 901 640zM857 776V652Q857 644.2 864.0 640Q871 644.2 871 652V776zM879 776V646Q879 636.9 886.0 632Q893 636.9 893 646V776zM896 775V654Q896 646.2 899.0 642Q902 646.2 902 654V775z" fill="url(#sgp)" />
-    <path class="p-lite" style="--d: 0.30s" d="M412 852V745Q413 730 426 727Q439 730 440 745V852z" />
-    <ellipse class="p-lite" style="--d: 0.30s" cx="428" cy="872" rx="46" ry="12" />
+    <path class="p-lite p-doorglow" style="--d: 0.30s" d="M412 852V745Q413 730 426 727Q439 730 440 745V852z" />
+    <ellipse class="p-lite p-pool" style="--d: 0.30s" cx="428" cy="872" rx="46" ry="12" />
+    <path class="p-lite p-clockglow" style="--d: 7.90s" d="M276 312L314 350L276 388L238 350z" />
   </svg>
   <svg class="p-lights" viewBox="0 60 1020 919" fill="none">
     <defs>
@@ -54,8 +55,8 @@
         plate.classList.remove('run');
         void plate.getBoundingClientRect();
         plate.classList.add('out');
-        setTimeout(run, 2200);
-      }, 15000);
+        setTimeout(run, 1800);
+      }, 12500);
     }
     run();
   })();
