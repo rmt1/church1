@@ -4,6 +4,7 @@ import Tile from '../components/Tile.astro';
 import Ticker from '../components/Ticker.astro';
 import Nav from '../components/Nav.astro';
 import Engraving from '../components/Engraving.astro';
+import PhotoPlate from '../components/PhotoPlate.astro';
 import ChurchMap from '../components/ChurchMap.astro';
 import { getCollection } from 'astro:content';
 
@@ -33,7 +34,7 @@ const reel = all.filter((c) => !c.data.specimen && c.data.photos[0]).sort((a, b)
           </ul>
         </div>
       </div>
-      <div class="shrine"><Engraving /></div>
+      <div class="shrine"><PhotoPlate /></div>
     </div>
   </section>
 
