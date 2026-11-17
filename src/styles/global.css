@@ -1394,3 +1394,19 @@ dialog.zoom::backdrop { background: rgba(255, 255, 255, 0.9); }
 .owner-body .button.ghost, .owner-body .button.ghost:visited { background: #4fdcf2; color: var(--ink); border-color: var(--ink); box-shadow: 3px 3px 0 var(--ink); }
 .owner-body .button.ghost:hover, .owner-body .button.ghost:active { background: var(--hi); }
 .owners-lede { max-width: 42rem; }
+
+/* ================= old printing paper ground, fuller home hero ================= */
+:root { --paper: #f2ead6; --card: #faf5e6; --pink-lite: #f2ead6; --slate: #f2ead6; --stone-pale: #f2ead6; --panel: #ece3cc; --rule: rgba(17, 18, 16, 0.26); }
+html { background: var(--paper); }
+.site-nav a, .site-nav a:visited, .hero .hero-text .site-nav a, .button.ghost, .button.on-dark.ghost, .button.ghost:visited, .panel, .filters select, dialog.zoom, .badges span, .music, .atlas-card, .atlas-card:visited, .atlas-photo, .owner-stamp, .owner[open] .owner-stamp, .owner summary:hover .owner-stamp { background: var(--card); }
+.button, .button.on-dark, .button:visited, .atlas-go { color: var(--card); }
+.plate .ground, .plate .cut, .atlas .paper, .atlas .land path, .atlas .rose circle, .atlas .rose path { fill: var(--card); }
+.atlas .names text, .atlas .rose text { stroke: var(--card); }
+
+@media (min-width: 52.01rem) { .hero .wrap.hero-grid { grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); align-items: center; } .hero .shrine { width: min(31rem, 100%); justify-self: end; } }
+.hero-strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.9rem; margin: clamp(2rem, 4vw, 3rem) 0 0; padding: 0; list-style: none; max-width: 38rem; }
+.hero-strip a { display: block; text-decoration: none; color: var(--ink); }
+.hero-strip img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border: 1.5px solid var(--ink); border-radius: 50% 50% 0 0 / 30% 30% 0 0; background: var(--card); }
+.hero-strip span { display: block; margin-top: 0.4rem; font-family: var(--black); font-size: 0.98rem; line-height: 1.15; }
+.hero-strip a:hover img { outline: 3px solid var(--hi); outline-offset: 2px; }
+@media (max-width: 52rem) { .hero-strip { gap: 0.5rem; } .hero-strip span { display: none; } }

@@ -17,6 +17,16 @@ const featured = ['basilica-marcay', 'kirkmichael-church', 'chapelle-du-carmel-n
       <div class="hero-text">
         <h1 class="glow">Save A Church</h1>
         <Nav />
+        <ul class="hero-strip">
+          {featured.slice(0, 4).map((c) => (
+            <li>
+              <a href={`/shortlist/${c.id}/`}>
+                <img src={c.data.photos[0].src.replace(/\/(\d+)\.jpg$/, '/t/$1.webp')} alt={c.data.photos[0].alt} />
+                <span>{c.data.name}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
       <div class="shrine"><Engraving /></div>
     </div>
