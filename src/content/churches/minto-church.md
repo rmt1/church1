@@ -206,4 +206,4 @@ seen:
 ---
 Seventy-five thousand pounds for a church by the man who built the National Gallery of Scotland. It closed eight months ago and it shows: the paint is clean and the roof is straight.
 
-I would buy this one before any of the others. It has water, an organ with a story, and no work that cannot wait for a survey.
+Buy this one before any of the others. It has water, an organ with a story, and no work that cannot wait for a survey.

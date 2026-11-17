@@ -16,7 +16,7 @@ seller: A property company, according to the press
 moneyGoes: The Carmelites sold their convent after moving out in 2009. In 2023 the local paper reported that the chapel was being sold on behalf of Espace Investissement, a company in La Rochelle. Nothing goes to the Church. Confirm the present owner with the agent.
 heritageClass: None stated
 verdict: Convertible
-verdictReason: The listing mentions no protection and suggests professional, cultural or residential use, subject to planning permission. We found no entry for the chapel in the State heritage record, which does not prove there is none. Ask the town hall what the local plan allows.
+verdictReason: The listing mentions no protection and suggests professional, cultural or residential use, subject to planning permission. The search turned up no entry for the chapel in the State heritage record, which does not prove there is none. Ask the town hall what the local plan allows.
 difficulty: 2
 photos:
 - src: /photos/chapelle-du-carmel-niort/6.jpg
@@ -72,7 +72,7 @@ story:
   what: It is relisted at 220,000 euros. The local paper notes it has stood empty for fifteen years.
 - when: '2026'
   what: Espaces Atypiques lists it at 190,000 euros.
-storyNote: We have not found the architect of the 1868 church, who bought the convent in 2010, or whether the chapel has any heritage protection. A page on the local history wiki, Wiki-Niort, is devoted to the chapel and would not open for us.
+storyNote: The search has not yet turned up the architect of the 1868 church, who bought the convent in 2010, or whether the chapel has any heritage protection. A page on the local history wiki, Wiki-Niort, is devoted to the chapel and would not open.
 storySources:
 - title: 'Paroisse de Niort: the Carmel of Niort'
   url: https://eglise-niort.net/Carmel-de-Niort-sous-le-vocable-du
@@ -156,7 +156,7 @@ sections:
 - title: Heritage status
   items:
   - label: Protection
-    value: None mentioned in the listing, and none found by us.
+    value: None mentioned in the listing, and none found.
     status: unknown
   - label: Planning
     value: Any new use needs planning permission, per the listing.

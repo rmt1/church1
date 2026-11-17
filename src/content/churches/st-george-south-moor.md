@@ -139,7 +139,7 @@ story:
   what: Listed Grade II. The listing calls the pews "very high quality".
 - when: March 2024
   what: Marketed by Sanderson Weatherall at £95,000.
-storyNote: We have found no published history beyond the listing. The Durham Record Office holds photographs of the church, and the parish registers will give the names of the men who paid for the pews.
+storyNote: No published history has been found beyond the listing. The Durham Record Office holds photographs of the church, and the parish registers will give the names of the men who paid for the pews.
 storySources:
 - title: Historic England, list entry 1260778
   url: https://historicengland.org.uk/listing/the-list/list-entry/1260778

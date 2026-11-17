@@ -43,7 +43,7 @@ sections:
     value: Described as deconsecrated. No date or decree given.
     status: unknown
   - label: Dedication
-    value: San Libertino, first bishop of Agrigento, feast on 3 November. The advert does not name the church. See the story tab for why we say it is this one.
+    value: San Libertino, first bishop of Agrigento, feast on 3 November. The advert does not name the church. See the story tab for why it is identified as this one.
     status: checked
     source: https://fondoambiente.it/luoghi/ex-chiesa-di-san-libertino-cine-teatro-dagli-anni-50-
 - title: Heritage status
@@ -98,7 +98,7 @@ faults:
 - Daylight shows through the roof boards.
 - Plaster has come off the walls in sheets and the floor is covered in rubble.
 - The street front is a later block of rough stone built round the old entrance when the church became a cinema. Its windows are broken or blocked.
-- The advert does not name the church. Our identification rests on the street, the register and the photographs. Get it confirmed in writing.
+- The advert does not name the church. The identification rests on the street, the register and the photographs. Get it confirmed in writing.
 - The altars and the iron gate recorded in the church are gone.
 - It has been for sale, or cleared for sale, since 2016. Ask why nobody has bought it.
 contacts:
@@ -124,7 +124,7 @@ story:
   what: The church was entered in the FAI's Places of the Heart campaign as a former cine-theatre, privately owned, with a plan to reopen it as one.
 - when: '2026'
   what: For sale through Studio Atenea at €32,000, the price reduced.
-storyNote: The advert never names the building. We identify it as San Libertino for three reasons. It is the only protected building the regional register lists in Via delle Mura, and that entry carries a permission to sell. The FAI describes San Libertino as a church turned cinema with a block added round its entrance, and the agent's photographs show a stage inside and a later curved block on the street. The size and the single hall fit. That is strong and it is still our inference. Ask the agent to confirm.
+storyNote: The advert never names the building. It is identified here as San Libertino for three reasons. It is the only protected building the regional register lists in Via delle Mura, and that entry carries a permission to sell. The FAI describes San Libertino as a church turned cinema with a block added round its entrance, and the agent's photographs show a stage inside and a later curved block on the street. The size and the single hall fit. That is strong and it is still an inference. Ask the agent to confirm.
 storySources:
 - title: Studio Atenea listing
   url: https://www.studioatenea-agrigento.it/centro-storico-via-delle-mura-chiesa-sconsacrata-ideale-attivita-cultural.htm

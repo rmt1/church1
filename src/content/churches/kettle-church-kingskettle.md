@@ -181,7 +181,7 @@ works:
   low: 82000
   high: 140000
 - phase: Later
-  item: Conversion to a house is a separate project. At ordinary rates for a listed building it costs more than the purchase several times over. We have not priced it.
+  item: Conversion to a house is a separate project. At ordinary rates for a listed building it costs more than the purchase several times over. It is not priced here.
   basis: assumed
 upkeep:
   low: 3500

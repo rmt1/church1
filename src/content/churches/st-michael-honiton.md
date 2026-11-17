@@ -213,7 +213,7 @@ upkeep:
   low: 5000
   high: 10000
   covers: Insurance, heating and lighting, valley gutters cleared twice a year and a yearly roof and tower inspection.
-estimateNote: 'Two figures here come from the record: the leaks and corrosion are Historic England''s, and the £100,000 for power and heating is the diocese''s from 2019. The rest is our estimate.'
+estimateNote: 'Two figures here come from the record: the leaks and corrosion are Historic England''s, and the £100,000 for power and heating is the diocese''s from 2019. The rest is estimated.'
 grantNote: Grade II* and at risk is the profile that Historic England and the National Lottery Heritage Fund pay for. A community body will do better than a private buyer.
 seen:
 - The walls are dark chert rubble with pale Beer stone at the windows, buttresses and battlements. The battlements are complete on the tower and aisles.

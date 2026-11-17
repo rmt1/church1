@@ -149,7 +149,7 @@ story:
   what: The church was shut.
 - when: '2026'
   what: For sale at offers around £160,000, on the Heritage at Risk register at the highest priority.
-storyNote: The Bringewood connection is our addition from standard histories of the iron trade. The listing says only that the slabs were probably made at the Knight family's foundry. Richard Knight's grandson, Richard Payne Knight, built Downton Castle with the money. Check these points before quoting them.
+storyNote: The Bringewood connection is an addition from standard histories of the iron trade. The listing says only that the slabs were probably made at the Knight family's foundry. Richard Knight's grandson, Richard Payne Knight, built Downton Castle with the money. Check these points before quoting them.
 storySources:
 - title: Historic England, church, list entry 1081799
   url: https://historicengland.org.uk/listing/the-list/list-entry/1081799
@@ -206,4 +206,4 @@ seen:
 ---
 About £160,000 for a Bodley chancel and eight iron gravestones cast for the ironmasters of the Teme valley. The roof is falling off it.
 
-I would pay less than they ask and spend the difference on tiles. Put the roof back and this is a dry, small, complete church in good country, with a group of iron slabs outside its east wall that the listing calls unusual.
+Pay less than they ask and spend the difference on tiles. Put the roof back and this is a dry, small, complete church in good country, with a group of iron slabs outside its east wall that the listing calls unusual.

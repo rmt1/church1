@@ -223,7 +223,7 @@ upkeep:
   low: 1500
   high: 3000
   covers: Insurance, electricity, property tax, organ tuning and a yearly look at the roofs. The town pays for the cemetery.
-estimateNote: Figures are in euros at about 25 crowns to the euro, and they are my estimates from photographs, not quotes. The roofs have had recent work, so the money is in plaster, cracks and services.
+estimateNote: Figures are in euros at about 25 crowns to the euro, and they are estimates from photographs, not quotes. The roofs have had recent work, so the money is in plaster, cracks and services.
 grantNote: The owners say part of the costs can be met from Czech heritage grant programmes. Ask the agent which ones they used.
 seen:
 - These notes come from the agent's 32 photographs, uploaded in November 2022.

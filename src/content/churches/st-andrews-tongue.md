@@ -12,7 +12,7 @@ agent: Church of Scotland
 listingUrl: https://www.churchofscotland.org.uk/about-us/departments/property-and-church-buildings/properties-for-sale/properties/churches-and-halls/st-andrews-church-tongue-lairg-iv27-4xl
 lastChecked: 2026-11-14
 status: for sale
-summary: A white harled church of 1680 on the north coast of Sutherland, built by the Mackays of Reay over their burial vault. It is the cheapest church on the Kirk's list and the only one on ours with a full condition survey. The village has formed a group to buy it.
+summary: A white harled church of 1680 on the north coast of Sutherland, built by the Mackays of Reay over their burial vault. It is the cheapest church on the Kirk's list and the only one on this shortlist with a full condition survey. The village has formed a group to buy it.
 seller: Church of Scotland General Trustees
 moneyGoes: To the Kirk. The General Trustees hold the title for the congregation, and sale proceeds go back to the Church of Scotland for its remaining congregations and buildings.
 heritageClass: Category A
@@ -197,4 +197,4 @@ seen:
 ---
 Twenty thousand pounds for a Category A church of 1680 with a clan chief's vault under the floor. The repair bill is £220,000 and somebody has already paid an architect to write it down.
 
-The village has a group, a survey and a plan. I would not bid against them. If you want this church to stand, give the group money, and buy a different one.
+The village has a group, a survey and a plan. Do not bid against them. If you want this church to stand, give the group money, and buy a different one.

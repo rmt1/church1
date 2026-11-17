@@ -114,7 +114,7 @@ sections:
     value: Florence airport is 48 km, Pisa 98 km.
     status: listing
 faults:
-- The works will cost several times the purchase price. Our rough total starts at seven million euros.
+- The works will cost several times the purchase price. The rough total starts at seven million euros.
 - The bell tower is gone.
 - No heating, and the only water mentioned is a well.
 - Ivy covers whole elevations, and one of the two farmhouses is a roofless ruin.
@@ -190,7 +190,7 @@ upkeep:
   low: 40000
   high: 80000
   covers: Insurance, property tax, a resident caretaker, the access road, roof and gutter maintenance, and managing 89 hectares of woodland.
-estimateNote: At €1,500 to €2,500 a square metre, the usual range for restoring a historic building in Italy, 5,000 square metres comes to between €7.5 and €12.5 million. Our lines add up to about the same.
+estimateNote: At €1,500 to €2,500 a square metre, the usual range for restoring a historic building in Italy, 5,000 square metres comes to between €7.5 and €12.5 million. The lines below add up to about the same.
 grantNote: Owners of protected buildings in Italy can claim tax relief on approved restoration costs, and the culture ministry can contribute. On a project of this size, hire someone whose only job is to find that money.
 seen:
 - From the air the abbey is a closed block of ranges round two courtyards, roofed in terracotta tile. The roofs are on throughout. Ivy has climbed to the eaves on at least two sides.
@@ -204,4 +204,4 @@ seen:
 ---
 Two million euros for an abbey of 1040 with two cloisters and a hundred hectares, an hour from Florence.
 
-The purchase is the cheap part. Whoever takes this on needs ten million more and ten years. I would do it as a house with a church, keep the monks' plan, and rebuild the bell tower the Germans blew up.
+The purchase is the cheap part. Whoever takes this on needs ten million more and ten years. The way to do it is as a house with a church: keep the monks' plan, and rebuild the bell tower the Germans blew up.

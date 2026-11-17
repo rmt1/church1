@@ -180,7 +180,7 @@ upkeep:
   low: 4000
   high: 8000
   covers: Insurance, heating, gutters cleared twice a year, a yearly roof and tower check and the churchyard paths.
-estimateNote: The big number is the one in the press, £400,000, and we have put a range round it. Nobody has published the survey behind it.
+estimateNote: The big number is the one in the press, £400,000, with a range put round it. Nobody has published the survey behind it.
 grantNote: The village has already applied to the Architectural Heritage Fund. Grade II* buildings with a community owner can go to the National Lottery Heritage Fund for the repairs.
 seen:
 - The tower is granite and slate-stone, upright, with all four pinnacles standing.
@@ -193,4 +193,4 @@ seen:
 ---
 No price is given and the first bill is £400,000 to keep the rain out. What you get for it is a font of 1170, a tower of the 1400s and a brass with nineteen children on it.
 
-Thirty people in the village are trying to save this church. I would not bid against them. Send them money, or offer to buy it and hand them the keys.
+Thirty people in the village are trying to save this church. Do not bid against them. Send them money, or offer to buy it and hand them the keys.

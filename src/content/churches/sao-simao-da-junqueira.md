@@ -93,7 +93,7 @@ sections:
     value: No agent or listing is named in the press. Approach RAR.
     status: unknown
   - label: Reported
-    value: Jornal de Notícias broke the story in August 2026. I could not open its article and have relied on two outlets that summarise it.
+    value: Jornal de Notícias broke the story in August 2026. Its article could not be opened, so this profile relies on two outlets that summarise it.
     status: checked
     source: https://caxinastv.wordpress.com/2026/08/11/mosteiro-em-vila-do-conde-esta-a-venda-por-7-milhoes-de-euros/
 faults:
@@ -171,7 +171,7 @@ upkeep:
   low: 30000
   high: 80000
   covers: A guess for security, insurance, and keeping 47 hectares and a box garden in hand. Nobody has published the running costs.
-estimateNote: I have seen no photograph taken inside the building and no survey, so only the first two lines carry a figure. The restoration will run to millions.
+estimateNote: There is no photograph taken inside the building and no survey, so only the first two lines carry a figure. The restoration will run to millions.
 grantNote: Classified monuments in Portugal can apply for state and European heritage funds. None is automatic.
 seen:
 - The only free photographs are from 2017 and 2005. Nothing here shows the buildings as they are in 2026.

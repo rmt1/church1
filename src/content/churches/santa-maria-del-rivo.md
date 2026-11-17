@@ -131,7 +131,7 @@ story:
   what: An owner began converting the rectory, raised the attic to make another floor, rebuilt the roof and some of the floors, and then stopped.
 - when: April 2026
   what: The listing was last updated, at €55,000.
-storyNote: This is all we have. The date comes from the agent, who cites the parish archive. We found no published history of the church, no name for a builder or painter, and no date for the deconsecration. The diocese of Piacenza-Bobbio and the parish at Ponte dell'Olio are the places to ask.
+storyNote: This is everything found so far. The date comes from the agent, who cites the parish archive. The search turned up no published history of the church, no name for a builder or painter, and no date for the deconsecration. The diocese of Piacenza-Bobbio and the parish at Ponte dell'Olio are the places to ask.
 storySources:
 - title: Immobiliare 7 Valli listing, reference 410PO
   url: https://www.immobiliare.it/annunci/118329495/
@@ -175,7 +175,7 @@ upkeep:
   low: 2500
   high: 5000
   covers: Insurance, property tax, gutters, and keeping the bank and the lane clear.
-estimateNote: The agent puts a complete renovation at €600,000 to €800,000. The lines below are our split of that figure across the work the photographs show. The paintings are our own addition.
+estimateNote: The agent puts a complete renovation at €600,000 to €800,000. The lines below split that figure across the work the photographs show. The line for the paintings is an addition to it.
 grantNote: Owners of protected buildings in Italy can claim tax relief on approved restoration costs, and the culture ministry can contribute to them. Ask a commercialista what applies in the year you start.
 seen:
 - The front is a plain gable in brick and stone with patches of old render. The bell tower stands on the left with an open belfry and a small cupola.
@@ -189,6 +189,6 @@ seen:
 - In the rectory, floors are stripped to the joists and the new roof timbers rest on scaffold. A stair has lost its treads.
 - The views from the site run over fields and vineyards to a flat plain.
 ---
-Fifty-five thousand euros buys a painted church of 1799 on a hill above the Nure valley. The agent says, in the advert, that it needs €600,000 to €800,000 after that. I respect an agent who writes that down.
+Fifty-five thousand euros buys a painted church of 1799 on a hill above the Nure valley. The agent says, in the advert, that it needs €600,000 to €800,000 after that. Credit to an agent who writes that down.
 
 Somebody tried to make a house of it and ran out of money or permission. Find out which. If the papers are in order, the plan is simple: rebuild the corner, save the paintings, live in the rectory and keep the church as a church.

@@ -17,7 +17,7 @@ seller: Church Commissioners for England, with the diocese
 moneyGoes: To the Church of England. The sale runs under the Mission and Pastoral Measure 2011. The proceeds are shared between the diocese and the Church Commissioners, and part of the Commissioners' share funds the Churches Conservation Trust.
 heritageClass: Grade II
 verdict: Light use
-verdictReason: Use class F1 already allows education, a museum or a public hall. It is a big plain room on a main road. The agent mentions redevelopment. I would not.
+verdictReason: Use class F1 already allows education, a museum or a public hall. It is a big plain room on a main road. The agent mentions redevelopment. Leave it as it is.
 difficulty: 3
 photos:
 - src: /photos/holy-trinity-tunstead/1.jpg

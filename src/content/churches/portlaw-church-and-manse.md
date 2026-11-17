@@ -193,7 +193,7 @@ upkeep:
   low: 3000
   high: 6000
   covers: Insurance on two buildings, heating oil, gutters and the garden.
-estimateNote: There is no photograph inside the church and none that shows its roof. I have assumed the roof is gone. If the survey finds it standing, take 60,000 to 120,000 euros off.
+estimateNote: There is no photograph inside the church and none that shows its roof. The estimate assumes the roof is gone. If the survey finds it standing, take 60,000 to 120,000 euros off.
 grantNote: Irish councils run the Built Heritage Investment Scheme and the Historic Structures Fund for protected structures. Ask the council's conservation officer.
 seen:
 - From the agent's 27 photographs. Two show the church, both from outside. The rest show the manse.

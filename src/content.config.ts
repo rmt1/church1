@@ -3,8 +3,8 @@ import { glob } from 'astro/loaders';
 
 // Every fact on a profile says where it came from:
 //   listing = the agent's own listing says so
-//   checked = we confirmed it against a public record (give the source link)
-//   unknown = nobody has told us yet; a question for the agent
+//   checked = confirmed against a public record (give the source link)
+//   unknown = not known yet; a question for the agent
 const fact = z.object({
   label: z.string(),
   value: z.string(),
