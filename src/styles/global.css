@@ -1561,15 +1561,15 @@ html { background: var(--paper); }
 @keyframes p-o85 { 0% { opacity: 0; } 30% { opacity: 0.5; } 45% { opacity: 0.1; } 100% { opacity: 0.34; } }
 @keyframes p-clock { from { opacity: 0; } to { opacity: 0.4; } }
 
-/* ================= opening screen: church doors ================= */
+/* ================= opening screen: engraved church doors that open by themselves ================= */
 html.intro-up { overflow: hidden; }
-.intro { position: fixed; inset: 0; z-index: 9000; display: block; width: 100%; height: 100%; margin: 0; padding: 0; border: 0; background: var(--paper); cursor: pointer; overflow: hidden; transform-origin: 50% 58%; -webkit-tap-highlight-color: transparent; }
-.intro:focus-visible { outline: 4px solid var(--ink); outline-offset: -8px; }
-.door-svg { display: block; width: 100%; height: 100%; }
+.intro { position: fixed; inset: 0; z-index: 9000; background: var(--paper); cursor: pointer; overflow: hidden; transform-origin: 50% 56%; -webkit-tap-highlight-color: transparent; }
+.door-svg { display: block; width: 100%; height: 100%; opacity: 0; transition: opacity 0.5s; }
+.intro.ready .door-svg { opacity: 1; }
 .door-leaf { transform-box: view-box; transition: transform 1.5s cubic-bezier(0.6, 0, 0.2, 1); }
 .door-l { transform-origin: 240px 500px; }
 .door-r { transform-origin: 560px 500px; }
-.door-light { opacity: 0.0; transition: opacity 0.5s; }
+.door-light { opacity: 0; transition: opacity 0.5s; }
 .door-gap { opacity: 0.9; }
 .door-ring { transform-box: fill-box; transform-origin: 50% 0; }
 .intro.open { cursor: default; pointer-events: none; transition: transform 1.3s 1.25s cubic-bezier(0.6, 0, 0.9, 0.4), opacity 0.7s 1.85s; transform: scale(7); opacity: 0; }
@@ -1578,17 +1578,13 @@ html.intro-up { overflow: hidden; }
 .intro.open .door-light { opacity: 1; }
 .intro.open .door-gap { opacity: 0; transition: opacity 0.2s; }
 @media (prefers-reduced-motion: no-preference) {
-  .door-svg { animation: door-in 0.9s both; }
-  .door-gap { animation: door-gap 2.2s ease-in-out infinite; }
-  .door-ring { animation: door-knock 3s 1.2s ease-in-out infinite; }
-  .intro:hover .door-l { transform: skewY(1.2deg) scaleX(0.965); }
-  .intro:hover .door-r { transform: skewY(-1.2deg) scaleX(0.965); }
-  .intro:hover .door-light { opacity: 1; }
-  .intro.open .door-ring, .intro.open .door-gap { animation: none; }
+  .door-gap { animation: door-gap 1.4s ease-in-out infinite; }
+  .intro.ready .door-ring { animation: door-knock 1.5s 0.5s ease-in-out both; }
+  .intro.open .door-gap { animation: none; }
 }
-@keyframes door-in { from { opacity: 0; transform: scale(1.08); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .intro.open { transition: opacity 0.3s; transform: none; } }
 @keyframes door-gap { 0%, 100% { opacity: 0.3; stroke-width: 2; } 50% { opacity: 1; stroke-width: 4.5; } }
-@keyframes door-knock { 0%, 12%, 100% { transform: rotate(0); } 3% { transform: rotate(-26deg); } 6% { transform: rotate(0); } 9% { transform: rotate(-16deg); } }
+@keyframes door-knock { 0%, 100% { transform: rotate(0); } 12% { transform: rotate(-30deg); } 24% { transform: rotate(0); } 28% { transform: rotate(-4deg); } 36% { transform: rotate(0); } 52% { transform: rotate(-30deg); } 64% { transform: rotate(0); } 68% { transform: rotate(-4deg); } 76% { transform: rotate(0); } }
 
 /* ================= etched plate: the engraving of a real church, lit window by window ================= */
 .etch-plate { position: relative; aspect-ratio: 1020 / 919; }
