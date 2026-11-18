@@ -1607,3 +1607,58 @@ html.intro-up { overflow: hidden; }
 .etch-plate.run .p-glass { animation: k-on 1.1s var(--d, 0s) both; }
 .etch-plate.out .e-halo, .etch-plate.out .p-bloom, .etch-plate.out .p-lights { opacity: 0; transition: opacity 1.4s; }
 @keyframes e-o90 { 0% { opacity: 0; } 25% { opacity: 1; } 40% { opacity: 0.3; } 100% { opacity: 0.92; } }
+
+/* ================= editorial home: masthead, cycling photograph, ruled facts, the case, the shortlist ================= */
+.hb { --ox: #5e1717; --bronze: #8a7347; --hbrule: rgba(17, 18, 16, 0.26); --display: 'Libre Caslon Display', Georgia, serif; --text: 'Libre Caslon Text', Georgia, serif; --facts: 'Public Sans', system-ui, sans-serif;
+  width: min(78rem, 100% - 3rem); margin: 0 auto; padding-bottom: 5rem; font-family: var(--text); color: var(--ink); }
+.hb a { color: inherit; text-decoration: none; }
+.hb-mast { padding-top: 1.6rem; text-align: center; }
+.hb-word { margin: 0; padding-bottom: 1rem; border-bottom: 1px solid var(--ink); font-family: var(--title); font-weight: 400; text-transform: uppercase; font-size: clamp(2.6rem, 6.4vw, 5rem); line-height: 1; letter-spacing: 0.02em; }
+.hb .site-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem 2.6rem; padding: 0.85rem 0 0.9rem; border-bottom: 1px solid var(--hbrule); }
+.hb .site-nav a, .hb .site-nav a:visited { font-family: var(--facts); font-size: 0.9rem; letter-spacing: 0.02em; text-transform: capitalize; background: none; border: 0; padding: 0; box-shadow: none; color: var(--ink); }
+.hb .site-nav a:hover { color: var(--ox); background: none; }
+.hb-hero { display: grid; grid-template-columns: 7fr 4fr; column-gap: 4.5rem; align-items: end; padding: clamp(2.6rem, 6vw, 5rem) 0 clamp(2rem, 4vw, 3.2rem); }
+.hb-hero h2 { margin: 0; font-family: var(--display); font-weight: 400; font-size: clamp(2.3rem, 5.3vw, 4.9rem); line-height: 1.04; letter-spacing: -0.012em; }
+.hb-hero p { margin: 0 0 0.5rem; font-size: 1.2rem; line-height: 1.55; }
+.hb-show { display: grid; background: #1c1915; }
+.hb-slide { grid-area: 1 / 1; position: relative; opacity: 0; transition: opacity 1.4s ease; pointer-events: none; }
+.hb-slide.on { opacity: 1; pointer-events: auto; }
+.hb-slide img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.hb-cap { position: absolute; left: 0; right: 0; bottom: 0; display: flex; justify-content: space-between; align-items: end; gap: 2rem; padding: 3.5rem 1.6rem 1.2rem; color: #f6efe0; background: linear-gradient(180deg, transparent, rgba(12, 10, 8, 0.72)); font-style: italic; font-size: 1rem; }
+.hb-cap b { display: block; font-family: var(--display); font-style: normal; font-weight: 400; font-size: clamp(1.5rem, 2.6vw, 2.2rem); line-height: 1.1; margin-bottom: 0.15rem; }
+.hb-facts { list-style: none; margin: 3.4rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid var(--ink); border-bottom: 1px solid var(--hbrule); }
+.hb-facts li { padding: 1.3rem 1.3rem 1.25rem; border-left: 1px solid var(--hbrule); font-family: var(--display); font-size: clamp(1.15rem, 1.7vw, 1.55rem); line-height: 1.2; }
+.hb-facts li:first-child { border-left: 0; padding-left: 0; }
+.hb-why { display: grid; grid-template-columns: 5fr 6fr; column-gap: 5.5rem; align-items: center; margin-top: clamp(4rem, 8vw, 7rem); }
+.hb-plate .etch-plate .e-halo { background: radial-gradient(ellipse at 50% 58%, rgba(226, 184, 92, 0.6) 0, rgba(226, 184, 92, 0.32) 32%, transparent 64%); }
+.hb-kicker, .hb-meta { margin: 0 0 1.1rem; font-family: var(--facts); font-size: 0.86rem; letter-spacing: 0.04em; color: var(--ox); }
+.hb-lead { margin: 0; font-family: var(--display); font-size: clamp(1.7rem, 2.9vw, 2.6rem); line-height: 1.16; letter-spacing: -0.006em; max-width: 22em; }
+.hb-why blockquote { margin: 2rem 0 1.9rem; padding: 0 0 0 1.6rem; border-left: 2px solid var(--ox); font-style: italic; font-size: 1.5rem; line-height: 1.4; color: var(--ox); max-width: 24em; }
+.hb-more, .hb a.hb-more { font-family: var(--facts); font-size: 0.92rem; font-weight: 500; color: var(--ox); border-bottom: 1px solid var(--ox); padding-bottom: 3px; text-transform: capitalize; }
+.hb-head { display: flex; justify-content: space-between; align-items: baseline; margin-top: clamp(4.5rem, 9vw, 8rem); padding-bottom: 1rem; border-bottom: 1px solid var(--ink); }
+.hb-head h2 { margin: 0; font-family: var(--display); font-weight: 400; font-size: clamp(2rem, 3.4vw, 2.75rem); line-height: 1.1; }
+.hb-slot { display: grid; padding: 3.4rem 0; border-bottom: 1px solid var(--hbrule); }
+.hb-entry { grid-area: 1 / 1; display: grid; grid-template-columns: 7fr 5fr; column-gap: 4rem; align-items: start; opacity: 0; transition: opacity 1.1s ease; pointer-events: none; }
+.hb-entry.on { opacity: 1; pointer-events: auto; }
+.hb-slot.flip .hb-entry { grid-template-columns: 5fr 7fr; }
+.hb-slot.flip .hb-entry figure { order: 2; }
+.hb-entry figure { margin: 0; background: #1c1915; }
+.hb-entry img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.hb-entry .hb-meta { margin-bottom: 0.6rem; }
+.hb-entry h3 { margin: 0 0 0.35rem; font-family: var(--display); font-weight: 400; font-size: clamp(1.9rem, 3.2vw, 2.75rem); line-height: 1.08; }
+.hb-where { margin: 0 0 1.2rem; font-style: italic; color: var(--ink-soft); }
+.hb-desc { margin: 0 0 1.6rem; font-size: 1.08rem; line-height: 1.6; max-width: 30em; }
+.hb-entry dl { margin: 0; border-top: 1px solid var(--hbrule); font-family: var(--facts); font-size: 0.92rem; }
+.hb-entry dt, .hb-entry dd { margin: 0; padding: 0.6rem 0; border-bottom: 1px solid var(--hbrule); }
+.hb-entry dd { display: flex; justify-content: space-between; align-items: center; gap: 1rem; color: var(--ink-soft); }
+.hb-bar { display: inline-grid; grid-template-columns: repeat(5, 2.1rem); gap: 4px; }
+.hb-bar i { height: 6px; border: 1px solid var(--bronze); }
+.hb-bar i.on { background: var(--ox); border-color: var(--ox); }
+@media (max-width: 52rem) {
+  .hb-hero, .hb-why, .hb-entry, .hb-slot.flip .hb-entry { grid-template-columns: 1fr; row-gap: 1.6rem; }
+  .hb-slot.flip .hb-entry figure { order: 0; }
+  .hb-facts { grid-template-columns: 1fr 1fr; }
+  .hb-facts li { border-left: 0; padding-left: 0; border-top: 1px solid var(--hbrule); }
+  .hb-cap { flex-direction: column; align-items: start; gap: 0.2rem; padding: 2.5rem 1rem 0.9rem; }
+  .hb-head { flex-direction: column; gap: 0.8rem; }
+}

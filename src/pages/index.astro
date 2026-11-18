@@ -1,19 +1,33 @@
 ---
 import Base from '../layouts/Base.astro';
-import Tile from '../components/Tile.astro';
-import Ticker from '../components/Ticker.astro';
 import Nav from '../components/Nav.astro';
-import Engraving from '../components/Engraving.astro';
-import PhotoPlate from '../components/PhotoPlate.astro';
 import EtchPlate from '../components/EtchPlate.astro';
-import ChurchMap from '../components/ChurchMap.astro';
 import { getCollection } from 'astro:content';
+import { ageText } from '../lib/age';
+import whyRaw from './why.md?raw';
+import '@fontsource/libre-caslon-display/400.css';
+import '@fontsource/libre-caslon-text/400.css';
+import '@fontsource/libre-caslon-text/400-italic.css';
+import '@fontsource/public-sans/400.css';
+import '@fontsource/public-sans/500.css';
 
-const all = await getCollection('churches');
-const featured = ['basilica-marcay', 'kirkmichael-church', 'chapelle-du-carmel-niort', 'badia-di-montescalari', 'minto-church', 'chapelle-des-chariottes-arras', 'pieve-santo-stefano-monteaguzzo', 'bourtie-kirk', 'chapelle-hanneucourt-gargenville', 'holy-trinity-tunstead', 'santa-maria-del-rivo', 'st-george-south-moor'].map((id) => all.find((c) => c.id === id)).filter(Boolean);
+const all = (await getCollection('churches')).filter((c) => !c.data.specimen);
+const featured = ['basilica-marcay', 'kirkmichael-church', 'chapelle-du-carmel-niort', 'badia-di-montescalari', 'minto-church', 'chapelle-des-chariottes-arras', 'pieve-santo-stefano-monteaguzzo', 'bourtie-kirk', 'chapelle-hanneucourt-gargenville', 'holy-trinity-tunstead', 'santa-maria-del-rivo', 'st-george-south-moor']
+  .map((id) => all.find((c) => c.id === id)).filter(Boolean);
 const ORDER = ['France', 'England', 'Scotland', 'Italy', 'Ireland', 'Portugal', 'Czech Republic', 'Wales'];
 const rank = (c: string) => (ORDER.indexOf(c) + 1) || 99;
-const reel = all.filter((c) => !c.data.specimen && c.data.photos[0]).sort((a, b) => rank(a.data.country) - rank(b.data.country) || a.data.difficulty - b.data.difficulty);
+const reel = all.filter((c) => c.data.photos[0]).sort((a, b) => rank(a.data.country) - rank(b.data.country) || a.data.difficulty - b.data.difficulty);
+const slots = [0, 1, 2].map((k) => reel.filter((_, i) => i % 3 === k));
+const meta = (d: any) => { const age = ageText(d.built, d.builtNote, d.builtRound); return `${d.country}${age ? `, ${age}` : ''}`; };
+// the same lines the ticker carried
+const years = all.map((c) => c.data.built).filter((y): y is number => typeof y === 'number');
+const oldest = years.length ? new Date().getFullYear() - Math.min(...years) : 0;
+const youngest = years.length ? new Date().getFullYear() - Math.max(...years) : 0;
+const facts = [`${all.length} churches seeking a keeper`, `${new Set(all.map((c) => c.data.country)).size} countries`, 'From £20,000 to €7,000,000', `The oldest has stood for ${oldest} years`, `The youngest has stood for ${youngest} years`];
+// words from Why Save Them, unchanged
+const paras = whyRaw.split('---').slice(2).join('---').trim().split(/\n\s*\n/);
+const whyLead = paras[0];
+const whyQuote = (paras[paras.length - 1].match(/I contend that <em>(.*?)<\/em>/) || [])[1];
 ---
 
 <Base>
@@ -68,40 +82,78 @@ const reel = all.filter((c) => !c.data.specimen && c.data.photos[0]).sort((a, b)
       setTimeout(begin, 2500);
     })();
   </script>
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div class="hero-text">
-        <h1 class="glow">Save A Church</h1>
-        <Nav />
-        <div class="hero-reel">
-          <ul class="hero-strip">
-            {[...reel, ...reel].map((c, i) => (
-              <li aria-hidden={i >= reel.length ? 'true' : undefined}>
-                <a href={`/shortlist/${c.id}/`} tabindex={i >= reel.length ? -1 : undefined}>
-                  <img src={c.data.photos[0].src.replace(/\/(\d+)\.jpg$/, '/t/$1.webp')} alt={c.data.photos[0].alt} loading={i < 6 ? 'eager' : 'lazy'} decoding="async" />
-                  <span>{c.data.name}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+  <div class="hb">
+    <header class="hb-mast">
+      <h1 class="hb-word">Save A Church</h1>
+      <Nav />
+    </header>
+
+    <section class="hb-hero">
+      <h2>A shortlist of old churches for sale across Europe, from £20,000 to €7,000,000.</h2>
+      <p>The due diligence is done on each one: the listing read, the heritage rules checked, the repairs priced and the restoration scored from 1 (easy) to 5 (hard).</p>
+    </section>
+
+    <div class="hb-show" id="hb-show">
+      {featured.map((c: any, i: number) => (
+        <a class={`hb-slide${i === 0 ? ' on' : ''}`} href={`/shortlist/${c.id}/`}>
+          <img src={i === 0 ? c.data.photos[0].src : undefined} data-src={c.data.photos[0].src} alt={c.data.photos[0].alt} />
+          <span class="hb-cap"><span><b>{c.data.name}</b>{c.data.place}, {c.data.region}</span><span>{meta(c.data)}</span></span>
+        </a>
+      ))}
+    </div>
+
+    <ul class="hb-facts">
+      {facts.map((f) => <li>{f}</li>)}
+    </ul>
+
+    <section class="hb-why">
+      <div class="hb-plate"><EtchPlate /></div>
+      <div>
+        <p class="hb-kicker">Why Save Them</p>
+        <p class="hb-lead">{whyLead}</p>
+        {whyQuote && <blockquote>I contend that {whyQuote}</blockquote>}
+        <a class="hb-more" href="/why/">Why Save Them</a>
       </div>
-      <div class="shrine"><EtchPlate /></div>
-    </div>
-  </section>
+    </section>
 
-  <Ticker />
-
-  <section class="section atlas-section">
-    <div class="wrap"><ChurchMap /></div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <ul class="tiles">
-        {featured.map((c) => <li><Tile church={c} /></li>)}
-      </ul>
-      <p class="see-all"><a class="button ghost" href="/shortlist/">See all {all.length} churches</a></p>
-    </div>
-  </section>
+    <section class="hb-list">
+      <div class="hb-head"><h2>The Shortlist</h2><a class="hb-more" href="/shortlist/">See all {all.length} churches</a></div>
+      {slots.map((group, k) => (
+        <div class={`hb-slot${k % 2 ? ' flip' : ''}`} data-slot={k}>
+          {group.map((c, i) => (
+            <a class={`hb-entry${i === 0 ? ' on' : ''}`} href={`/shortlist/${c.id}/`}>
+              <figure><img src={i === 0 ? c.data.photos[0].src : undefined} data-src={c.data.photos[0].src} alt={c.data.photos[0].alt} /></figure>
+              <div>
+                <p class="hb-meta">{meta(c.data)}</p>
+                <h3>{c.data.name}</h3>
+                <p class="hb-where">{c.data.place}, {c.data.region}</p>
+                <p class="hb-desc">{c.data.summary}</p>
+                <dl><dt>{c.data.price}</dt><dd>Difficulty {c.data.difficulty} of 5 <span class="hb-bar">{[1, 2, 3, 4, 5].map((n) => <i class={n <= c.data.difficulty ? 'on' : ''}></i>)}</span></dd></dl>
+              </div>
+            </a>
+          ))}
+        </div>
+      ))}
+    </section>
+  </div>
+  <script is:inline>
+    (function () {
+      var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      function cycle(items, every, delay) {
+        if (items.length < 2 || still) return;
+        var at = 0;
+        function load(el) { var im = el.querySelector('img'); if (im && !im.getAttribute('src')) im.setAttribute('src', im.getAttribute('data-src')); return im; }
+        load(items[1]);
+        setTimeout(function () {
+          setInterval(function () {
+            var next = (at + 1) % items.length, im = load(items[next]);
+            function go() { items[at].classList.remove('on'); items[next].classList.add('on'); at = next; load(items[(at + 1) % items.length]); }
+            if (im && !im.complete) { im.addEventListener('load', go, { once: true }); } else go();
+          }, every);
+        }, delay);
+      }
+      cycle([].slice.call(document.querySelectorAll('#hb-show .hb-slide')), 5200, 0);
+      [].forEach.call(document.querySelectorAll('.hb-slot'), function (slot, k) { cycle([].slice.call(slot.children), 8000, 1500 + k * 2600); });
+    })();
+  </script>
 </Base>
