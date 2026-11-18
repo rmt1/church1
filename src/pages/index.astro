@@ -17,7 +17,9 @@ const featured = ['basilica-marcay', 'kirkmichael-church', 'chapelle-du-carmel-n
 const ORDER = ['France', 'England', 'Scotland', 'Italy', 'Ireland', 'Portugal', 'Czech Republic', 'Wales'];
 const rank = (c: string) => (ORDER.indexOf(c) + 1) || 99;
 const reel = all.filter((c) => c.data.photos[0]).sort((a, b) => rank(a.data.country) - rank(b.data.country) || a.data.difficulty - b.data.difficulty);
-const slots = [0, 1, 2].map((k) => reel.filter((_, i) => i % 3 === k));
+// easiest first: the three on show at the start are the three simplest to take on
+const byEase = [...reel].sort((a, b) => a.data.difficulty - b.data.difficulty || rank(a.data.country) - rank(b.data.country));
+const slots = [0, 1, 2].map((k) => byEase.filter((_, i) => i % 3 === k));
 const meta = (d: any) => { const age = ageText(d.built, d.builtNote, d.builtRound); return `${d.country}${age ? `, ${age}` : ''}`; };
 // the same lines the ticker carried
 const years = all.map((c) => c.data.built).filter((y): y is number => typeof y === 'number');
@@ -89,8 +91,13 @@ const whyQuote = (paras[paras.length - 1].match(/I contend that <em>(.*?)<\/em>/
     </header>
 
     <section class="hb-hero">
-      <h2>A shortlist of old churches for sale across Europe, from £20,000 to €7,000,000.</h2>
-      <p>The due diligence is done on each one: the listing read, the heritage rules checked, the repairs priced and the restoration scored from 1 (easy) to 5 (hard).</p>
+      <div>
+        <h2>A shortlist of old churches for sale across Europe, from £20,000 to €7,000,000.</h2>
+        <p>The due diligence is done on each one: the listing read, the heritage rules checked, the repairs priced and the restoration scored from 1 (easy) to 5 (hard).</p>
+      </div>
+      <ul class="hb-facts">
+        {facts.map((f) => <li>{f}</li>)}
+      </ul>
     </section>
 
     <div class="hb-show" id="hb-show">
@@ -102,17 +109,12 @@ const whyQuote = (paras[paras.length - 1].match(/I contend that <em>(.*?)<\/em>/
       ))}
     </div>
 
-    <ul class="hb-facts">
-      {facts.map((f) => <li>{f}</li>)}
-    </ul>
-
     <section class="hb-why">
       <div class="hb-plate"><EtchPlate /></div>
       <div>
-        <p class="hb-kicker">Why Save Them</p>
+        <p class="hb-kicker">The case for preservation</p>
         <p class="hb-lead">{whyLead}</p>
-        {whyQuote && <blockquote>I contend that {whyQuote}</blockquote>}
-        <a class="hb-more" href="/why/">Why Save Them</a>
+        <a class="hb-more" href="/why/">The case for preservation</a>
       </div>
     </section>
 
@@ -134,6 +136,7 @@ const whyQuote = (paras[paras.length - 1].match(/I contend that <em>(.*?)<\/em>/
           ))}
         </div>
       ))}
+      <p class="hb-all"><a href="/shortlist/">See all {all.length} churches</a></p>
     </section>
   </div>
   <script is:inline>

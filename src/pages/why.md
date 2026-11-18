@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Page.astro
-title: Why save them
+title: The case for preservation
 description: Why old Churches are worth saving, and what stewardship of them means.
 ---
 

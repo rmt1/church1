@@ -1662,3 +1662,14 @@ html.intro-up { overflow: hidden; }
   .hb-cap { flex-direction: column; align-items: start; gap: 0.2rem; padding: 2.5rem 1rem 0.9rem; }
   .hb-head { flex-direction: column; gap: 0.8rem; }
 }
+
+/* editorial home: the five facts stand beside the headline as a ruled column */
+.hb-hero { align-items: end; }
+.hb-hero h2 { margin-bottom: 1.6rem; }
+.hb-hero p { max-width: 36em; margin: 0; }
+.hb-hero .hb-facts { display: block; margin: 0; border-top: 1px solid var(--ink); border-bottom: 0; }
+.hb-hero .hb-facts li { padding: 0.7rem 0 0.72rem; border-left: 0; border-bottom: 1px solid var(--hbrule); font-family: var(--text); font-style: italic; font-size: 1.08rem; line-height: 1.3; }
+.hb-all { margin: 3.2rem 0 0; text-align: center; }
+.hb .hb-all a { display: inline-block; padding: 0.85rem 2.4rem 0.9rem; border: 1px solid var(--ink); font-family: var(--facts); font-size: 0.95rem; font-weight: 500; letter-spacing: 0.02em; text-transform: capitalize; color: var(--ink); }
+.hb .hb-all a:hover { background: var(--ink); color: var(--paper); }
+@media (max-width: 52rem) { .hb-hero .hb-facts { display: block; } .hb-hero .hb-facts li { border-top: 0; } }
