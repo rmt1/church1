@@ -5,6 +5,7 @@ import Ticker from '../components/Ticker.astro';
 import Nav from '../components/Nav.astro';
 import Engraving from '../components/Engraving.astro';
 import PhotoPlate from '../components/PhotoPlate.astro';
+import EtchPlate from '../components/EtchPlate.astro';
 import ChurchMap from '../components/ChurchMap.astro';
 import { getCollection } from 'astro:content';
 
@@ -16,6 +17,38 @@ const reel = all.filter((c) => !c.data.specimen && c.data.photos[0]).sort((a, b)
 ---
 
 <Base>
+  <div class="intro" id="intro" role="dialog" aria-label="Save A Church">
+    <div class="intro-door l"></div>
+    <div class="intro-door r"></div>
+    <div class="intro-in">
+      <p class="intro-burst"><b>Be a hero!</b></p>
+      <p class="intro-title"><span>Save</span> <span>A</span> <span>Church</span></p>
+      <button type="button" class="intro-enter" id="intro-enter">Enter here</button>
+      <p class="intro-note"><span aria-hidden="true">&#9834;</span> With music</p>
+    </div>
+  </div>
+  <script is:inline>
+    (function () {
+      var el = document.getElementById('intro');
+      var seen = false;
+      try { seen = sessionStorage.getItem('entered') === '1'; } catch (e) {}
+      if (seen) { el.remove(); return; }
+      document.documentElement.classList.add('intro-up');
+      var done = false;
+      function enter() {
+        if (done) return; done = true;
+        try { sessionStorage.setItem('entered', '1'); } catch (e) {}
+        var m = document.getElementById('music'), a = document.getElementById('tune');
+        if (m && a && a.paused) m.click();
+        el.classList.add('open');
+        document.documentElement.classList.remove('intro-up');
+        window.dispatchEvent(new Event('intro-done'));
+        setTimeout(function () { el.remove(); }, 1500);
+      }
+      document.getElementById('intro-enter').addEventListener('click', enter);
+      el.addEventListener('keydown', function (e) { if (e.key === 'Escape') enter(); });
+    })();
+  </script>
   <section class="hero">
     <div class="wrap hero-grid">
       <div class="hero-text">
@@ -34,7 +67,7 @@ const reel = all.filter((c) => !c.data.specimen && c.data.photos[0]).sort((a, b)
           </ul>
         </div>
       </div>
-      <div class="shrine"><PhotoPlate /></div>
+      <div class="shrine"><EtchPlate /></div>
     </div>
   </section>
 
