@@ -1697,3 +1697,6 @@ html { background: var(--paper); }
 .hb-why .hb-lead { margin-bottom: 1.9rem; }
 @media (min-width: 64rem) { .hb-end .hb-note { top: 0; transform: rotate(180deg); } }
 @media (max-width: 52rem) { .hb-hero { grid-template-columns: 1fr; row-gap: 1.2rem; } }
+/* the neon glow back on the masthead title */
+.hb-word { text-shadow: 0 0 4px #e7ff0a, 0 0 12px #e7ff0a, 0 0 26px rgba(231, 255, 10, 0.8), 0 0 50px rgba(231, 255, 10, 0.4); padding-top: 0.5rem; }
+@media (prefers-reduced-motion: no-preference) { .hb-word { animation: halo 7s ease-in-out infinite; } }
