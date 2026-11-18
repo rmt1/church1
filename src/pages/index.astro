@@ -91,15 +91,13 @@ const whyQuote = (paras[paras.length - 1].match(/I contend that <em>(.*?)<\/em>/
     </header>
 
     <section class="hb-hero">
-      <div>
-        <h2>A shortlist of old churches for sale across Europe, from £20,000 to €7,000,000.</h2>
-        <p>The due diligence is done on each one: the listing read, the heritage rules checked, the repairs priced and the restoration scored from 1 (easy) to 5 (hard).</p>
-      </div>
-      <ul class="hb-facts">
-        {facts.map((f) => <li>{f}</li>)}
-      </ul>
+      <p class="hb-note">{facts[0]}</p>
+      <h2>A shortlist of old churches for sale across Europe, from £20,000 to €7,000,000.</h2>
+      <p>The due diligence is done on each one: the listing read, the heritage rules checked, the repairs priced and the restoration scored from 1 (easy) to 5 (hard).</p>
     </section>
 
+    <div class="hb-noted">
+      <p class="hb-note">{facts[1]}</p>
     <div class="hb-show" id="hb-show">
       {featured.map((c: any, i: number) => (
         <a class={`hb-slide${i === 0 ? ' on' : ''}`} href={`/shortlist/${c.id}/`}>
@@ -108,8 +106,10 @@ const whyQuote = (paras[paras.length - 1].match(/I contend that <em>(.*?)<\/em>/
         </a>
       ))}
     </div>
+    </div>
 
     <section class="hb-why">
+      <p class="hb-note">{facts[3]}</p>
       <div class="hb-plate"><EtchPlate /></div>
       <div>
         <p class="hb-kicker">The case for preservation</p>
@@ -119,6 +119,7 @@ const whyQuote = (paras[paras.length - 1].match(/I contend that <em>(.*?)<\/em>/
     </section>
 
     <section class="hb-list">
+      <p class="hb-note">{facts[2]}</p>
       <div class="hb-head"><h2>The Shortlist</h2><a class="hb-more" href="/shortlist/">See all {all.length} churches</a></div>
       {slots.map((group, k) => (
         <div class={`hb-slot${k % 2 ? ' flip' : ''}`} data-slot={k}>
@@ -136,7 +137,8 @@ const whyQuote = (paras[paras.length - 1].match(/I contend that <em>(.*?)<\/em>/
           ))}
         </div>
       ))}
-      <p class="hb-all"><a href="/shortlist/">See all {all.length} churches</a></p>
+      <div class="hb-noted hb-end"><p class="hb-note">{facts[4]}</p>
+      <p class="hb-all"><a href="/shortlist/">See all {all.length} churches</a></p></div>
     </section>
   </div>
   <script is:inline>

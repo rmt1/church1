@@ -1673,3 +1673,27 @@ html.intro-up { overflow: hidden; }
 .hb .hb-all a { display: inline-block; padding: 0.85rem 2.4rem 0.9rem; border: 1px solid var(--ink); font-family: var(--facts); font-size: 0.95rem; font-weight: 500; letter-spacing: 0.02em; text-transform: capitalize; color: var(--ink); }
 .hb .hb-all a:hover { background: var(--ink); color: var(--paper); }
 @media (max-width: 52rem) { .hb-hero .hb-facts { display: block; } .hb-hero .hb-facts li { border-top: 0; } }
+
+/* ================= limewash ground ================= */
+:root { --paper: #d9e3e7; --card: #e7eef1; --pink-lite: #d9e3e7; --slate: #d9e3e7; --stone-pale: #d9e3e7; --panel: #cddae0; }
+html { background: var(--paper); }
+/* ================= the five facts as notes in the margin, one to a section ================= */
+.hb-hero { display: grid; grid-template-columns: 7fr 4fr; column-gap: 4.5rem; align-items: end; position: relative; }
+.hb-hero h2 { margin: 0; }
+.hb-hero > p:not(.hb-note) { margin: 0 0 0.5rem; max-width: none; }
+.hb-noted, .hb-why, .hb-list { position: relative; }
+.hb-note { margin: 0 0 0.9rem; font-family: var(--text); font-style: italic; font-size: 0.95rem; line-height: 1.2; color: var(--ox); letter-spacing: 0.01em; }
+.hb-hero .hb-note, .hb-why .hb-note { grid-column: 1 / -1; }
+.hb-end { margin-top: 3.2rem; }
+.hb-end .hb-all { margin-top: 0; }
+@media (max-width: 63.99rem) { .hb-end .hb-note { text-align: center; } }
+@media (min-width: 64rem) {
+  .hb { width: min(78rem, 100% - 11rem); }
+  .hb-note { position: absolute; top: 0.3rem; left: -3.1rem; margin: 0; writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; border-right: 1px solid var(--bronze); padding-right: 0.7rem; }
+  .hb-hero .hb-note { top: auto; bottom: clamp(2rem, 4vw, 3.2rem); }
+  .hb-list > .hb-note { top: clamp(4.5rem, 9vw, 8rem); }
+  .hb-end .hb-note { top: 50%; transform: rotate(180deg) translateY(50%); }
+}
+.hb-why .hb-lead { margin-bottom: 1.9rem; }
+@media (min-width: 64rem) { .hb-end .hb-note { top: 0; transform: rotate(180deg); } }
+@media (max-width: 52rem) { .hb-hero { grid-template-columns: 1fr; row-gap: 1.2rem; } }
