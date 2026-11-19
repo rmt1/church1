@@ -1619,3 +1619,8 @@ html { font-size: clamp(100%, 0.5vw + 0.55rem, 125%); }
 .atlas-card .atlas-price { font-size: clamp(1.2rem, 1.5vw, 1.7rem); }
 @media (max-width: 52rem) { .atlas { grid-template-columns: 1fr; } .atlas-card, .atlas-card:visited { grid-template-columns: minmax(6rem, 0.7fr) 1.3fr; gap: 1rem; padding: 1rem; } }
 .hero .wrap.hero-grid > * { min-width: 0; }
+
+/* phones: a church page must not run wider than the screen (the tab row and thumbnails scroll inside it) */
+@media (max-width: 59.99rem) { .lot { grid-template-columns: minmax(0, 1fr); } }
+.lot > *, .lot-body > * { min-width: 0; }
+.thumbs { max-width: 100%; overflow-x: auto; }

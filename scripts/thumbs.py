@@ -10,10 +10,15 @@ for f in glob.glob('public/photos/*/*.jpg'):
     im = Image.open(f).convert('RGB')
     im.thumbnail((760, 760), Image.LANCZOS)
     im.save(out, 'WEBP', quality=72, method=6)
-# a larger copy of each church's first photograph, for the big tiles: public/photos/<slug>/m/1.webp
-for f in glob.glob('public/photos/*/1.jpg'):
-    d = os.path.dirname(f)
-    out = os.path.join(d, 'm', '1.webp')
+# a larger copy of each church's lead photograph (the first in its profile, whatever its number), for the big tiles
+import re
+for md in glob.glob('src/content/churches/*.md'):
+    m = re.search(r"^photos:\n(?:.*\n)*?.*?src: ['\"]?(/photos/[^'\"\n]+\.jpg)", open(md).read(), re.M)
+    if not m:
+        continue
+    f = 'public' + m.group(1)
+    d, n = os.path.split(f)
+    out = os.path.join(d, 'm', n[:-4] + '.webp')
     if os.path.exists(out) and os.path.getmtime(out) >= os.path.getmtime(f):
         continue
     os.makedirs(os.path.dirname(out), exist_ok=True)

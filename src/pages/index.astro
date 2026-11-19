@@ -26,7 +26,7 @@ const reel = all.filter((c) => !c.data.specimen && c.data.photos[0]).sort((a, b)
             {[...reel, ...reel].map((c, i) => (
               <li aria-hidden={i >= reel.length ? 'true' : undefined}>
                 <a href={`/shortlist/${c.id}/`} tabindex={i >= reel.length ? -1 : undefined}>
-                  <img src={c.data.photos[0].src.replace(/\/(\d+)\.jpg$/, '/t/$1.webp')} alt={c.data.photos[0].alt} loading={i < 6 ? 'eager' : 'lazy'} decoding="async" />
+                  <img src={c.data.photos[0].src.replace(/\/(\d+)\.jpg$/, '/t/$1.webp')} alt={c.data.photos[0].alt} loading="eager" decoding="async" />
                   <span>{c.data.name}</span>
                 </a>
               </li>

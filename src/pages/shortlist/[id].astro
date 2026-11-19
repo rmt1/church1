@@ -80,7 +80,7 @@ const tabs = [
           ))}
         </div>
       )}
-      {d.photos[0] && <p class="credit">{d.photos[0].credit}. Click the large photograph to see it full size.</p>}
+      {d.photos[0] && /CC BY|CC0|Creative Commons/i.test(d.photos[0].credit) && <p class="credit">{d.photos[0].credit}</p>}
       <dialog class="zoom" id="zoom"><img alt="" /></dialog>
     </div>
 
