@@ -1560,3 +1560,15 @@ html { background: var(--paper); }
 .photo-plate .p-lights .p-clock { fill: #ffe6a0; opacity: 0.4; mix-blend-mode: screen; }
 @keyframes p-o85 { 0% { opacity: 0; } 30% { opacity: 0.5; } 45% { opacity: 0.1; } 100% { opacity: 0.34; } }
 @keyframes p-clock { from { opacity: 0; } to { opacity: 0.4; } }
+
+/* ================= full-width layout: the page fills the screen at any size ================= */
+:root { --page: 9999rem; --gutter: clamp(1.1rem, 3.2vw, 4.5rem); }
+.wrap, main > .wrap, main > .section > .wrap, .site-foot .wrap { max-width: none; }
+.tiles { grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); }
+.hero-reel { max-width: none; }
+.atlas { max-width: none; }
+@media (min-width: 52.01rem) { .hero .shrine { width: min(46rem, 100%); } }
+/* reading pages and church profiles stay at a width the eye can follow */
+main > .wrap:has(> .prose), main > .wrap:has(.lot) { max-width: 96rem; }
+.atlas-map { max-width: 46rem; }
+.atlas-side p, .atlas-side .atlas-lede { max-width: 34rem; }
