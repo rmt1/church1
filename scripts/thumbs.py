@@ -10,3 +10,13 @@ for f in glob.glob('public/photos/*/*.jpg'):
     im = Image.open(f).convert('RGB')
     im.thumbnail((760, 760), Image.LANCZOS)
     im.save(out, 'WEBP', quality=72, method=6)
+# a larger copy of each church's first photograph, for the big tiles: public/photos/<slug>/m/1.webp
+for f in glob.glob('public/photos/*/1.jpg'):
+    d = os.path.dirname(f)
+    out = os.path.join(d, 'm', '1.webp')
+    if os.path.exists(out) and os.path.getmtime(out) >= os.path.getmtime(f):
+        continue
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    im = Image.open(f).convert('RGB')
+    im.thumbnail((1200, 1200), Image.LANCZOS)
+    im.save(out, 'WEBP', quality=74, method=6)
