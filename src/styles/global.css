@@ -1639,3 +1639,14 @@ html { font-size: clamp(100%, 0.5vw + 0.55rem, 125%); }
 }
 .hero .hero-text p.hero-say { margin: clamp(1.4rem, 2.6vw, 2.2rem) 0 0; max-width: 40rem; font-size: clamp(1.15rem, 0.5vw + 1rem, 1.45rem); line-height: 1.45; color: var(--ink); background: none; border: 0; padding: 0; }
 .hero .hero-text .hero-say + .site-nav { margin-top: clamp(1.4rem, 2.6vw, 2.2rem); }
+
+/* donate: the Llangua account under the summary */
+.prose .split img { border-radius: 0; }
+.prose .case { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr); gap: clamp(2rem, 5vw, 4rem); align-items: start; width: min(68rem, calc(100vw - 4rem)); max-width: none; margin-top: clamp(2.5rem, 5vw, 4rem); padding-top: clamp(2rem, 4vw, 3rem); border-top: 1.5px solid var(--ink); }
+.prose .case > div:first-child { max-width: 34rem; }
+.prose .case h2 { margin-top: 0; }
+.prose .case-photos { display: grid; gap: 1.2rem; }
+.prose .case figure { margin: 0; }
+.prose .case img { display: block; width: 100%; height: auto; border: 1.5px solid var(--ink); }
+.prose .case figcaption { font-size: 0.95rem; color: var(--ink-soft); margin-top: 0.4rem; }
+@media (max-width: 52rem) { .prose .case { grid-template-columns: 1fr; } }

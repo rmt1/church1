@@ -7,17 +7,36 @@ description: Give to the charities that rescue churches nobody else will take, s
 <div class="split">
 <div>
 
-<p class="standfirst">Give to the Friends of Friendless Churches. They take the churches nobody else will.</p>
+<p class="standfirst">Consider giving to the <a href="https://friendsoffriendlesschurches.org.uk">Friends of Friendless Churches</a>. They take on churches and restore them.</p>
 
-The Friends of Friendless Churches have been at it since 1957. They look after 71 churches and chapels, 36 in England and 35 in Wales, that were closed and facing demolition, decay or conversion. They repair them and reopen them for anyone to visit.
+The Friends were founded in 1957. They look after 71 churches and chapels, 36 in England and 35 in Wales, that had closed and faced demolition, decay or conversion. They repair each one and keep it open for anyone to visit. In England they receive no regular funding. The work is paid for by members, donations and legacies.
+
+We learned about the Friends after posting about churches on social media, and have followed their work since. It is honourable work. They take on the buildings that have no one else, and they repair them with lime, oak and stone.
 
 <p><a class="button" href="https://friendsoffriendlesschurches.org.uk">Give to the Friends of Friendless Churches</a></p>
 
 </div>
 <figure>
-<img src="/photos/friends/llanfaglan.jpg" alt="A small stone church with a bellcote behind a dry-stone wall, beside two wind-bent trees" />
-<figcaption>St Baglan's, Llanfaglan, Gwynedd, in the care of the Friends. Photo: Alex Ramsey for the National Churches Trust, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Llanfaglan,_St_Baglan_(35064426963).jpg">Wikimedia Commons</a>.</figcaption>
+<img src="/photos/friends/llangua.jpg" alt="A small church limewashed pale pink, with a stone-tiled roof and an oak-boarded bellcote, among old gravestones" />
 </figure>
+</div>
+
+<div class="case">
+<div>
+
+## St James's, Llangua, Monmouthshire
+
+The church in the photograph was built after the Norman Conquest as a cell of Lyre Abbey in Normandy and remodelled around 1500. Ivor Bulmer-Thomas found it derelict and restored it in 1954 in memory of his wife, Dilys. He founded the Friends three years later.
+
+It closed in 2020 with the roof close to collapse. The timbers carried 32 tonnes of stone tiles and every truss had fractured. The Friends took the church on. They lifted the roof timbers back into shape, repaired them in oak, reset the tops of the walls, repointed the stonework in lime and limewashed the outside pale pink. The roof now stands two feet higher than when work began.
+
+The repairs took 14 months and cost between £600,000 and £700,000. The church reopened on 20 June 2025 and is open every day.
+
+</div>
+<div class="case-photos">
+<figure><img src="/photos/friends/llangua-before.jpg" alt="The same church before the repairs, in bare grey stone with a sagging roof" loading="lazy" /><figcaption>Before the repairs</figcaption></figure>
+<figure><img src="/photos/friends/llangua-inside.jpg" alt="The inside of the church after the repairs, with limewashed walls, box pews and a ribbed wagon roof" loading="lazy" /><figcaption>Inside, after the repairs</figcaption></figure>
+</div>
 </div>
 
 ## Others that take churches on
