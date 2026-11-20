@@ -96,8 +96,9 @@ sections:
     value: 12 miles south of Bideford and 9 miles north of Okehampton. The church stands back from the road behind a row of cottages and a disused pub.
     status: listing
   - label: Train
-    value: Not stated.
-    status: unknown
+    value: Okehampton, 9 miles away, has trains to Exeter in about 40 minutes.
+    status: checked
+    source: https://www.rome2rio.com/s/Okehampton/Exeter
 - title: How the sale works
   items:
   - label: Covenants

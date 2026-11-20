@@ -100,9 +100,14 @@ sections:
   - label: Road
     value: On the north coast road through Tongue. The postal town is Lairg.
     status: listing
+  - label: Inverness
+    value: About 90 miles, 2 hours by car.
+    status: checked
+    source: https://www.rome2rio.com/s/Skerray/Inverness
   - label: Train
-    value: Not stated in the brochure.
-    status: unknown
+    value: Lairg is the nearest station, on the line to Inverness.
+    status: checked
+    source: https://www.rome2rio.com/s/Skerray/Inverness
 - title: How to offer
   items:
   - label: Process

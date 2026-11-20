@@ -104,9 +104,14 @@ sections:
   - label: Road
     value: In Minto village. Hawick has the nearest shops and services.
     status: listing
+  - label: Edinburgh
+    value: About 46 miles, 1 hour 15 minutes by car.
+    status: checked
+    source: https://www.rome2rio.com/s/Minto-Scotland/Edinburgh
   - label: Train
-    value: Not stated in the brochure.
-    status: unknown
+    value: Tweedbank is the nearest station, on the line to Edinburgh.
+    status: checked
+    source: https://www.rome2rio.com/s/Minto-Scotland/Edinburgh
 - title: How to offer
   items:
   - label: Process

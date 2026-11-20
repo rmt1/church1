@@ -31,6 +31,7 @@ const phaseText = { Now: 'Now: safe and dry', Next: 'Next: fabric and glass', La
 const basisText = { listing: 'From the listing', photos: 'Seen in the photographs', record: 'From a public record', assumed: 'Assumed' };
 const sum = (ws: typeof d.works, k: 'low' | 'high') => ws.reduce((t, w) => t + (w[k] ?? 0), 0);
 const nowWorks = d.works.filter((w) => w.phase === 'Now');
+const laterWorks = d.works.filter((w) => w.phase !== 'Now');
 const hasWorks = d.works.length > 0;
 const marks = { listing: 'From the listing', checked: 'Checked', unknown: 'Unknown' };
 
@@ -43,7 +44,7 @@ const practicalSections = d.sections.filter((s) => !['Condition', 'Heritage stat
 const tabs = [
   { id: 'overview', label: 'Overview' },
   { id: 'story', label: 'The story' },
-  { id: 'repairs', label: 'Repairs and cost' },
+  { id: 'repairs', label: 'Repairs and costs' },
   { id: 'rules', label: 'Rules and seller' },
   { id: 'practical', label: 'Practical' },
 ];
@@ -123,47 +124,8 @@ const tabs = [
         </section>
 
         <section class="panel-tab" role="tabpanel" id="panel-repairs" aria-labelledby="tab-repairs">
-          <h2>What it needs, and what it might cost</h2>
-          {hasWorks && (
-            <dl class="figures">
-              <div><dt>Safe and dry</dt><dd>{range(sum(nowWorks, 'low'), sum(nowWorks, 'high'))}</dd></div>
-              <div><dt>Everything on the list</dt><dd>{range(sum(d.works, 'low'), sum(d.works, 'high'))}</dd></div>
-              {d.upkeep && <div><dt>Each year after that</dt><dd>{range(d.upkeep.low, d.upkeep.high)}</dd></div>}
-            </dl>
-          )}
+          <h2>Repairs and costs</h2>
           {d.estimateNote && <p>{d.estimateNote}</p>}
-          {d.faults.length > 0 && (
-            <>
-              <h2>Difficulties</h2>
-              <ul>{d.faults.map((f) => <li>{f}</li>)}</ul>
-            </>
-          )}
-
-          {hasWorks && (
-            <div class="worklist">
-              <h2>The work, line by line</h2>
-              {phases.map((ph) => {
-                const ws = d.works.filter((w) => w.phase === ph);
-                return ws.length === 0 ? null : (
-                  <table class="ledger works">
-                    <thead>
-                      <tr><th>{phaseText[ph]}</th><th>Rough cost</th><th>Based on</th></tr>
-                    </thead>
-                    <tbody>
-                      {ws.map((w) => (
-                        <tr>
-                          <td>{w.item}</td>
-                          <td>{w.low === undefined ? 'Not costed' : range(w.low, w.high ?? w.low)}</td>
-                          <td class={w.basis === 'assumed' ? 'mark-unknown' : w.basis === 'photos' ? 'mark-checked' : 'mark-listing'}>{basisText[w.basis]}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                );
-              })}
-            </div>
-          )}
-
           {d.seen.length > 0 && (
             <details class="fold">
               <summary>What the photographs show</summary>
@@ -171,24 +133,47 @@ const tabs = [
             </details>
           )}
 
+          {hasWorks && [
+            { key: 'safe', title: 'Safe and dry', note: 'The first work, to stop the building getting worse.', ws: nowWorks, lo: sum(nowWorks, 'low'), hi: sum(nowWorks, 'high') },
+            { key: 'full', title: 'Full restoration', note: nowWorks.length ? 'Everything else on the list. The figure includes the safe and dry work.' : 'Everything on the list.', ws: laterWorks, lo: sum(d.works, 'low'), hi: sum(d.works, 'high') },
+          ].filter((g) => g.ws.length > 0).map((g) => (
+            <div class={`stage stage-${g.key}`}>
+              <div class="stage-head"><h3>{g.title}</h3><b>{range(g.lo, g.hi)}</b></div>
+              <p class="stage-note">{g.note}</p>
+              <ul class="lines">
+                {g.ws.map((w) => (
+                  <li>
+                    <span>{w.item}</span>
+                    <b>{w.low === undefined ? 'Not costed' : range(w.low, w.high ?? w.low)}</b>
+                    <small>{basisText[w.basis]}</small>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+          {d.upkeep && (
+            <div class="stage stage-year">
+              <div class="stage-head"><h3>Annual maintenance</h3><b>{range(d.upkeep.low, d.upkeep.high)}</b></div>
+              <p class="stage-note">{d.upkeep.covers}</p>
+            </div>
+          )}
 
-          {d.upkeep && <p><b>Yearly upkeep, {range(d.upkeep.low, d.upkeep.high)}.</b> {d.upkeep.covers}</p>}
-          {d.grantNote && <p><b>Grants.</b> {d.grantNote}</p>}
+          {d.grantNote && <p class="after-stages"><b>Grants.</b> {d.grantNote}</p>}
+          {d.faults.length > 0 && (
+            <>
+              <h2>Difficulties</h2>
+              <ul>{d.faults.map((f) => <li>{f}</li>)}</ul>
+            </>
+          )}
 
           {repairSections.map((s) => (
             <details class="fold">
               <summary>{s.title}, as the listing describes it</summary>
-              <table class="ledger">
-                <tbody>
-                  {s.items.map((i) => (
-                    <tr>
-                      <td>{i.label}</td>
-                      <td>{i.value}</td>
-                      <td class={`mark-${i.status}`}>{i.source ? <a href={i.source} rel="noopener">{marks[i.status]}</a> : marks[i.status]}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              <ul class="facts">
+                {s.items.map((i) => (
+                  <li><b>{i.label}</b><span>{i.value}</span></li>
+                ))}
+              </ul>
             </details>
           ))}
 
@@ -202,38 +187,22 @@ const tabs = [
           {ruleSections.map((s) => (
             <>
               <h2>{s.title}</h2>
-              <table class="ledger">
-                <tbody>
-                  {s.items.map((i) => (
-                    <tr>
-                      <td>{i.label}</td>
-                      <td>{i.value}</td>
-                      <td class={`mark-${i.status}`}>{i.source ? <a href={i.source} rel="noopener">{marks[i.status]}</a> : marks[i.status]}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              <ul class="facts">
+                {s.items.map((i) => (
+                  <li><b>{i.label}</b><span>{i.source ? <>{i.value} <a class="src" href={i.source} rel="noopener">Source</a></> : i.value}</span></li>
+                ))}
+              </ul>
             </>
           ))}
         </section>
 
         <section class="panel-tab" role="tabpanel" id="panel-practical" aria-labelledby="tab-practical">
-          {practicalSections.map((s) => (
-            <>
-              <h2>{s.title}</h2>
-              <table class="ledger">
-                <tbody>
-                  {s.items.map((i) => (
-                    <tr>
-                      <td>{i.label}</td>
-                      <td>{i.value}</td>
-                      <td class={`mark-${i.status}`}>{i.source ? <a href={i.source} rel="noopener">{marks[i.status]}</a> : marks[i.status]}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </>
-          ))}
+          <h2>Practical</h2>
+          <ul class="facts">
+            {practicalSections.flatMap((s) => s.items).map((i) => (
+              <li><b>{i.label}</b><span>{i.source ? <>{i.value} <a class="src" href={i.source} rel="noopener">Source</a></> : i.value}</span></li>
+            ))}
+          </ul>
           {d.nearby.length > 0 && (
             <>
               <h2>Restored nearby</h2>

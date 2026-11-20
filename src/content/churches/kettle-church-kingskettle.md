@@ -103,8 +103,13 @@ sections:
     value: On South Street in Kingskettle. Cupar, Glenrothes and Kirkcaldy are the nearby towns.
     status: listing
   - label: Train
-    value: Not stated in the brochure.
-    status: unknown
+    value: Ladybank is the nearest station. Edinburgh is about 1 hour by train.
+    status: checked
+    source: https://www.rome2rio.com/s/Kingskettle/Edinburgh
+  - label: Edinburgh
+    value: About 37 miles, 50 minutes by car.
+    status: checked
+    source: https://www.rome2rio.com/s/Kingskettle/Edinburgh
 - title: How to offer
   items:
   - label: Process

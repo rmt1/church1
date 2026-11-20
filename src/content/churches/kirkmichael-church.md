@@ -96,9 +96,14 @@ sections:
   - label: Road
     value: On the A924 in the village. Blairgowrie has the nearest shops and services.
     status: listing
+  - label: Perth
+    value: About 29 miles, 45 minutes by car.
+    status: checked
+    source: https://www.rome2rio.com/s/Kirkmichael-Perth-and-Kinross-Scotland/Perth-Scotland
   - label: Train
-    value: Not stated in the brochure.
-    status: unknown
+    value: Pitlochry is the nearest station.
+    status: checked
+    source: https://www.rome2rio.com/s/Kirkmichael-Perth-and-Kinross-Scotland/Perth-Scotland
 - title: How to offer
   items:
   - label: Process

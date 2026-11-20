@@ -1829,3 +1829,25 @@ a:hover, button:hover, summary:hover, select:hover, .tile:hover, a:hover *, butt
 .fold > summary, .fold[open] > summary, .fold > summary:hover { border: 0; background: none; padding: 0.3rem 0; font-family: inherit; font-weight: 400; font-size: 1.05rem; text-decoration: underline; text-underline-offset: 0.2em; justify-content: flex-start; gap: 0.6rem; }
 .fold > summary:hover { background: var(--hi); }
 .prose .signed, .signed { font-family: var(--black); font-weight: 500; font-size: 1.8rem; margin-top: 1.6rem; }
+
+/* ================= one theme through the tabs: coloured label stamps, like the dates in the story ================= */
+.facts { list-style: none; margin: 1.2rem 0 0; padding: 0; display: grid; gap: 0.4rem; }
+.facts li { display: grid; grid-template-columns: 9.5rem minmax(0, 1fr); gap: 1.2rem; align-items: start; padding: 0.55rem 0; }
+.facts li > b { justify-self: start; padding: 0.15rem 0.6rem 0.25rem; border: 1.5px solid var(--ink); background: #ff2f9a; font-family: var(--black); font-weight: 500; font-size: 1.05rem; line-height: 1.2; transform: rotate(-2deg); box-shadow: 2px 2px 0 var(--ink); }
+.facts li:nth-child(3n + 2) > b { background: #4fdcf2; transform: rotate(1.5deg); }
+.facts li:nth-child(3n) > b { background: var(--hi); transform: rotate(-1deg); }
+.facts .src { font-size: 0.85rem; color: var(--ink-soft); }
+@media (max-width: 40rem) { .facts li { grid-template-columns: 1fr; gap: 0.45rem; } }
+.stage { margin-top: 2.2rem; }
+.stage-head { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1.1rem; }
+.stage-head h3 { margin: 0; padding: 0.2rem 0.8rem 0.35rem; border: 1.5px solid var(--ink); background: #ff2f9a; font-family: var(--black); font-weight: 500; font-size: 1.45rem; line-height: 1.15; transform: rotate(-1.5deg); box-shadow: 3px 3px 0 var(--ink); }
+.stage-full .stage-head h3 { background: #4fdcf2; transform: rotate(1deg); }
+.stage-year .stage-head h3 { background: var(--hi); transform: rotate(-1deg); }
+.stage-head > b { font-family: var(--black); font-weight: 500; font-size: 1.45rem; }
+.stage-note { margin: 0.9rem 0 0; color: var(--ink-soft); }
+.lines { list-style: none; margin: 0.9rem 0 0; padding: 0; display: grid; gap: 0.35rem; }
+.lines li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.15rem 1.5rem; padding: 0.6rem 0.8rem; background: var(--card); }
+.lines li > b { font-family: var(--black); font-weight: 500; white-space: nowrap; }
+.lines li > small { grid-column: 1 / -1; font-size: 0.8rem; color: var(--ink-soft); }
+.after-stages { margin-top: 2rem; }
+@media (max-width: 34rem) { .lines li { grid-template-columns: 1fr; } }

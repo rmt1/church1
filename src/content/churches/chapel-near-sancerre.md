@@ -3,22 +3,22 @@ name: Chapel by the Loire canal
 built: 1300
 builtNote: '~'
 builtRound: 100
-place: A wine village near Sancerre
+place: Ménétréol-sous-Sancerre
 region: Cher, Centre-Val de Loire
 country: France
-lat: 47.33
-lng: 2.87
+lat: 47.317
+lng: 2.867
 price: €30,000
 agent: Patrice Besse
 listingUrl: https://www.patrice-besse.com/edifices-religieux-a-vendre/centre-val-de-loire/edifice-religieux-a-vendre-a-cote-de-sancerre-en-france/
-lastChecked: 2026-11-14
+lastChecked: 2026-11-20
 status: for sale
-summary: "A small former chapel in a wine village near Sancerre, beside the Loire lateral canal. It is about 30 square metres, with 11 metres of height under the roof frame, and a blocked medieval window that dates it to about 1300."
+summary: "A small medieval building in Ménétréol-sous-Sancerre, a wine village on the Loire lateral canal below Sancerre. It is about 30 square metres, with 11 metres of height under the roof frame. The agent sells it as a former chapel. The canton heritage survey records it as a house of the 13th or 14th century."
 seller: Not stated
 moneyGoes: The listing does not say who owns it. Ask the agent whether the seller is a private owner or the commune.
 heritageClass: None stated
 verdict: Convertible
-verdictReason: The listing mentions no protection and proposes a loft on two levels. The village is old, so the building may sit inside a protected perimeter where the State architect rules on exteriors.
+verdictReason: The building itself has no protection and the listing proposes a loft on two levels. The whole village has been a protected site since 28 December 1979, so the State heritage architect is consulted on changes to the outside.
 difficulty: 2
 photos:
 - src: /photos/chapel-near-sancerre/3.jpg
@@ -46,17 +46,24 @@ sections:
   - label: Consecration
     value: Described as a former chapel. No date or decree of deconsecration given.
     status: unknown
-  - label: Date and dedication
-    value: Not given in the listing. The rough date is about 1300, from the blocked window of two trefoil-headed lights, a form used in the 13th and 14th centuries. The village dates from the 11th to 16th centuries.
-    status: unknown
+  - label: Chapel or house
+    value: The listing calls it a former chapel. The canton heritage survey of 2003 to 2004 records the same building, parcels A2 1169 to 1173, as a large house of the 13th or 14th century later turned into a barn. No dedication is known.
+    status: checked
+    source: https://www.sancerre.departement18.fr/menetreol/reperes/index.html
+  - label: Date
+    value: 13th or 14th century, from the twin window with trefoil heads on the street front. The survey notes the window may have been reset from elsewhere.
+    status: checked
+    source: https://www.sancerre.departement18.fr/menetreol/reperes/index.html
 - title: Heritage status
   items:
   - label: Protection
-    value: None mentioned in the listing.
-    status: unknown
-  - label: Protected perimeter
-    value: Not stated. Likely, given the age of the village.
-    status: unknown
+    value: None on the building itself.
+    status: checked
+    source: https://www.sancerre.departement18.fr/menetreol/reperes/index.html
+  - label: Protected site
+    value: The village of Ménétréol-sous-Sancerre has been a registered site (site inscrit) since 28 December 1979.
+    status: checked
+    source: https://www.sancerre.departement18.fr/menetreol/fiches/Village/page.html
 - title: Condition
   items:
   - label: Roof
@@ -92,11 +99,15 @@ sections:
     status: unknown
 - title: Getting there
   items:
+  - label: Sancerre
+    value: 4 km to the north, a few minutes by car.
+    status: checked
+    source: https://www.sancerre.departement18.fr/menetreol/fiches/Village/page.html
   - label: Train
     value: A station 5 minutes away with regular trains to Paris-Bercy.
     status: listing
-  - label: Road
-    value: About 180 km from Paris, 160 of them on the A77 motorway.
+  - label: Paris
+    value: About 180 km by road, 160 of them on the A77 motorway.
     status: listing
 faults:
 - "Cement render on the walls traps damp and should come off."
@@ -107,9 +118,31 @@ contacts:
   name: Patrice Besse, Paris (reference 716301)
   url: https://www.patrice-besse.com
 - role: Heritage officer
-  name: The departmental heritage architect (UDAP) for the département
-story: []
+  name: The departmental heritage architect (UDAP du Cher), Bourges
+story:
+- when: '1136'
+  what: The village is first recorded, as Monasterellum, the little monastery. The abbey of Saint-Satur founded a priory here and set lay brothers to clear the land and plant vines.
+- when: '1145'
+  what: The village is burned in a quarrel between the papacy and the local lords. Soon afterwards Étienne I, count of Sancerre, grants it a charter of freedoms.
+- when: 13th or 14th century
+  what: This building goes up on one of the main streets, with a twin window of trefoil-headed lights on the upper floor.
+- when: '1364'
+  what: The village is pillaged in the war with the English.
+- when: Early 1500s
+  what: Ménétréol has about 600 people. Winegrowers live beside local nobles, lawyers and officers of the count.
+- when: '1562'
+  what: Protestants burn the parish church. Later in the wars of religion those of Sancerre burn the presses and barns of the village.
+- when: '1838'
+  what: The Loire lateral canal opens along the edge of the village.
+- when: '1979'
+  what: The village and its setting become a protected site.
+- when: 2003 to 2004
+  what: The canton heritage survey photographs the building as a barn and records it as a medieval house.
 storySources:
+- title: Patrimoine du canton de Sancerre, Ménétréol-sous-Sancerre, the village
+  url: https://www.sancerre.departement18.fr/menetreol/fiches/Village/page.html
+- title: Patrimoine du canton de Sancerre, Ménétréol-sous-Sancerre, houses and farms recorded
+  url: https://www.sancerre.departement18.fr/menetreol/reperes/index.html
 - title: Patrice Besse listing 716301
   url: https://www.patrice-besse.com/edifices-religieux-a-vendre/centre-val-de-loire/edifice-religieux-a-vendre-a-cote-de-sancerre-en-france/
 works:
@@ -171,9 +204,11 @@ seen:
 - An iron tie anchor is fixed to the street wall, which means the walls have been tied together at some point.
 - One wall has a blocked window of two trefoil-headed lights. That form is medieval, of the 13th or 14th century. Inside there is a small arched niche and a carved stone.
 - The upper part of one gable has been rebuilt in red brick.
-- Two of the nine photographs are views of the Saint-Satur viaduct and of Sancerre on its hill, so the village is close to both.
+- Two of the nine photographs are views of the railway viaduct over the village and of Sancerre on its hill.
 ---
 
-The roof frame is sound, water and electricity are connected, and the station is five minutes away. The price is €30,000.
+The building stands on one of the main streets of Ménétréol-sous-Sancerre, 4 km from Sancerre. The roof frame is sound, water and electricity are connected, and the station is five minutes away. The price is €30,000.
 
-The work is modest: take off the cement render so the walls can dry, lift the cement floor, and reopen the medieval twin window. A little research would recover its name and its history.
+The agent sells it as a former chapel. The canton heritage survey photographed the same front in 2003 and recorded a medieval house, later a barn, with a twin window of the 13th or 14th century. The survey calls it a witness to how the village was built at that date.
+
+The work is modest: take off the cement render so the walls can dry, lift the cement floor, and reopen the twin window.
