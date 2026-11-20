@@ -1872,3 +1872,28 @@ details.stage.stage-safe .stage-head > b, details.stage.stage-full .stage-head >
 .plain li { padding: 0.6rem 0.8rem; background: var(--card); }
 .plain li > b { font-family: var(--black); font-weight: 500; }
 .plain .src { font-size: 0.85rem; color: var(--ink-soft); }
+
+/* ================= audit pass (branch only) ================= */
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+/* names as written: "du", "des", "of" stay lower case */
+.tile h3, .lot-body h1, .give-card strong { text-transform: none; }
+/* one moving thing per screen: the home title flashes, everything else glows steadily */
+.site-head .site-name, header .site-name, h1.neon, h2.neon, h1.neon.blue, h1.neon.gold, h2.neon.blue { animation: none; }
+.hero h1.glow { animation: pinkneon 6s ease-in-out infinite; }
+/* the sticker answers the pointer in place of sitting on every tile */
+@media (hover: hover) { .tile .save-me { opacity: 0; transform: scale(0.6) rotate(-12deg); transition: opacity 0.18s ease-out, transform 0.22s cubic-bezier(0.2, 0.9, 0.3, 1); } .tile:hover .save-me, .tile:focus-visible .save-me { opacity: 1; transform: none; } }
+@media (hover: none) { .tile .save-me { display: none; } }
+/* reading sizes: nothing under 14px, steadier grey */
+:root { --ink-soft: #4f514b; }
+.tile .where, .country .tile .where, .country .tile .meta, .country .tile .place, .tile .place, .tile .meta { font-size: max(0.9rem, 14px); }
+.lines li > small, .facts .src, .plain .src, .give-reel figcaption span { font-size: max(0.85rem, 14px); }
+.hero .hero-text .site-nav a { font-size: clamp(1.15rem, 1.3vw, 1.5rem); padding: 0.35rem 0.95rem 0.45rem; }
+h1, h2, h3, .tile h3 { text-wrap: balance; }
+.tile h3 { line-height: 1.2; }
+/* church page: the name and price share the first screen with the photo */
+.gallery .lead { max-height: min(48vh, 30rem); }
+.gallery .lead img { object-fit: cover; width: 100%; height: 100%; }
+/* phone header on one row */
+@media (max-width: 40rem) { .site-head .site-nav { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; } .site-head .site-nav a { white-space: nowrap; } }
+/* settle, no bounce */
+.give-card { transition-timing-function: cubic-bezier(0.2, 0.9, 0.3, 1); }

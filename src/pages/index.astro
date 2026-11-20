@@ -47,6 +47,7 @@ const reel = all.filter((c) => !c.data.specimen && c.data.photos[0]).sort((a, b)
 
   <section class="section">
     <div class="wrap">
+      <h2 class="sr-only">Churches you could save</h2>
       <ul class="tiles">
         {featured.map((c) => <li><Tile church={c} /></li>)}
       </ul>
