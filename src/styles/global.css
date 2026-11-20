@@ -1861,3 +1861,14 @@ details.stage[open] > summary::after { content: '−'; }
 details.stage > summary:hover { background: var(--hi); }
 details.stage .stage-note { margin: 1rem 0 0; }
 .site-foot .wrap { grid-template-columns: 1fr auto; }
+
+/* rules and practical use the same boxes as repairs */
+details.stage.c0 .stage-head h3 { background: #ff2f9a; transform: rotate(-1.5deg); }
+details.stage.c1 .stage-head h3 { background: #4fdcf2; transform: rotate(1deg); }
+details.stage.c2 .stage-head h3 { background: var(--hi); transform: rotate(-1deg); }
+details.stage .stage-head > b { font-size: 1.2rem; }
+details.stage.stage-safe .stage-head > b, details.stage.stage-full .stage-head > b, details.stage.stage-year .stage-head > b { font-size: 1.45rem; }
+.plain { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: 0.35rem; }
+.plain li { padding: 0.6rem 0.8rem; background: var(--card); }
+.plain li > b { font-family: var(--black); font-weight: 500; }
+.plain .src { font-size: 0.85rem; color: var(--ink-soft); }

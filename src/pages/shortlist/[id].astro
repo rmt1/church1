@@ -41,6 +41,7 @@ const repairSections = inTab(['Condition']);
 const ruleSections = inTab(['Heritage status', 'Sacred status']);
 const practicalSections = d.sections.filter((s) => !['Condition', 'Heritage status', 'Sacred status'].includes(s.title));
 
+const practicalTitle: Record<string, string> = { 'The dead': 'Churchyard and burials' };
 const tabs = [
   { id: 'overview', label: 'Overview' },
   { id: 'story', label: 'The story' },
@@ -171,55 +172,65 @@ const tabs = [
             </details>
           )}
 
+          <p class="how-link"><a class="button how" href="/how-repair-costs-are-estimated/">How repair costs are estimated</a></p>
         </section>
 
         <section class="panel-tab" role="tabpanel" id="panel-rules" aria-labelledby="tab-rules">
-          <h2>The seller</h2>
-          <p><b>{d.seller}.</b> {d.moneyGoes}</p>
-          <h2>What you may do with it</h2>
-          <p><b>{d.verdict}.</b> {d.verdictReason}</p>
-          {ruleSections.map((s) => (
-            <>
-              <h2>{s.title}</h2>
-              <ul class="facts">
+          <h2>Rules and seller</h2>
+          <details class="stage c0">
+            <summary class="stage-head"><h3>The seller</h3><b>{d.seller}</b></summary>
+            <p class="stage-note">{d.moneyGoes}</p>
+          </details>
+          <details class="stage c1">
+            <summary class="stage-head"><h3>What you may do with it</h3><b>{d.verdict}</b></summary>
+            <p class="stage-note">{d.verdictReason}</p>
+          </details>
+          {ruleSections.map((s, k) => (
+            <details class={`stage c${(k + 2) % 3}`}>
+              <summary class="stage-head"><h3>{s.title}</h3>{s.title === 'Heritage status' && <b>{d.heritageClass}</b>}</summary>
+              <ul class="plain">
                 {s.items.map((i) => (
-                  <li><b>{i.label}</b><span>{i.source ? <>{i.value} <a class="src" href={i.source} rel="noopener">Source</a></> : i.value}</span></li>
+                  <li><b>{i.label}.</b> {i.value}{i.source && <> <a class="src" href={i.source} rel="noopener">Source</a></>}</li>
                 ))}
               </ul>
-            </>
+            </details>
           ))}
         </section>
 
         <section class="panel-tab" role="tabpanel" id="panel-practical" aria-labelledby="tab-practical">
           <h2>Practical</h2>
-          <ul class="facts">
-            {practicalSections.flatMap((s) => s.items).map((i) => (
-              <li><b>{i.label}</b><span>{i.source ? <>{i.value} <a class="src" href={i.source} rel="noopener">Source</a></> : i.value}</span></li>
-            ))}
-          </ul>
+          {practicalSections.map((s, k) => (
+            <details class={`stage c${k % 3}`}>
+              <summary class="stage-head"><h3>{practicalTitle[s.title] ?? s.title}</h3></summary>
+              <ul class="plain">
+                {s.items.map((i) => (
+                  <li><b>{i.label}.</b> {i.value}{i.source && <> <a class="src" href={i.source} rel="noopener">Source</a></>}</li>
+                ))}
+              </ul>
+            </details>
+          ))}
           {d.nearby.length > 0 && (
-            <>
-              <h2>Restored nearby</h2>
-              <ul>
+            <details class={`stage c${practicalSections.length % 3}`}>
+              <summary class="stage-head"><h3>Restored nearby</h3></summary>
+              <ul class="plain">
                 {d.nearby.map((n) => (
                   <li><b>{n.url ? <a href={n.url} rel="noopener">{n.name}</a> : n.name}.</b> {n.note}</li>
                 ))}
               </ul>
-            </>
+            </details>
           )}
           {d.contacts.length > 0 && (
-            <>
-              <h2>People to call</h2>
-              <ul>
+            <details class={`stage c${(practicalSections.length + 1) % 3}`}>
+              <summary class="stage-head"><h3>People to call</h3></summary>
+              <ul class="plain">
                 {d.contacts.map((c) => (
-                  <li>{c.role}: {c.url ? <a href={c.url} rel="noopener">{c.name}</a> : c.name}</li>
+                  <li><b>{c.role}.</b> {c.url ? <a href={c.url} rel="noopener">{c.name}</a> : c.name}</li>
                 ))}
               </ul>
-            </>
+            </details>
           )}
         </section>
 
-        <p class="how-link"><a class="button how" href="/how-repair-costs-are-estimated/">How repair costs are estimated</a></p>
       </div>
 
       <aside class="panel" aria-label="Key facts">

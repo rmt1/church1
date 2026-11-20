@@ -18,6 +18,6 @@ A side effect of this valuable stewardship is that the investment creates demand
 
 <p><em>What would it mean for our descendants to grow up in a world with no examples of things like stained glass windows, and no belief that such things are possible?</em></p>
 
-This website stemmed from an X post encouraging more people to think about preserving Churches, after my fiancé and I took on a medieval Church restoration project ourselves. We have experienced the pushback that comes with taking on a building like this: that they are not good financial investments, that they will need continuous repair, and that we will have nobody to sell them to. I contend that <em>in this exact experience of the immeasurable, we found the whole point.</em>
+This website stemmed from <a href="https://x.com/rivatez/status/2119514722894770572" rel="noopener">an X post</a> encouraging more people to think about preserving Churches, after my fiancé and I took on a medieval Church restoration project ourselves. We have experienced the pushback that comes with taking on a building like this: that they are not good financial investments, that they will need continuous repair, and that we will have nobody to sell them to. I contend that <em>in this exact experience of the immeasurable, we found the whole point.</em>
 
 <p class="signed">-RMT</p>
