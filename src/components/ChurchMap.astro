@@ -6,6 +6,7 @@ import { feature } from 'topojson-client';
 import atlas from 'world-atlas/countries-50m.json';
 import { ageText } from '../lib/age';
 
+const yrs = (await getCollection('churches')).filter((c) => !c.data.specimen && c.data.built).map((c) => new Date().getFullYear() - (c.data.built as number));
 const churches = (await getCollection('churches')).filter(
   (c) => !c.data.specimen && c.data.status !== 'saved' && c.data.lat !== undefined && c.data.lng !== undefined,
 );
@@ -79,6 +80,7 @@ const pins = churches
     </svg>
   </div>
   <div class="atlas-side">
+    <p class="atlas-lede">A shortlist of churches for sale across Europe, from £20,000 to €7,000,000 and from {Math.min(...yrs)} to {Math.max(...yrs)} years old. For each listing, we have done comprehensive due diligence, with estimates for repairs, and restorations scored from 1 (easy) to 5 (hard).</p>
     
     <a class="atlas-card" id="atlas-card" href="/shortlist/">
       <span class="atlas-photo"><img alt="" /></span>
