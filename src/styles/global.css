@@ -1819,3 +1819,13 @@ a:hover, button:hover, summary:hover, select:hover, .tile:hover, a:hover *, butt
 .ledger thead th, .ledger thead th:first-child { color: var(--paper) !important; }
 .save-me { width: clamp(6rem, 7vw, 8.4rem); margin-top: clamp(-5.4rem, -4.6vw, -4rem); }
 .save-me b { font-size: clamp(1.2rem, 1.45vw, 1.6rem); }
+
+/* repairs and cost, simpler: cream bands, one accent */
+.figures > div, .figures > div:nth-child(2), .figures > div:nth-child(3) { background: var(--card); transform: none; box-shadow: none; }
+.figures > div:nth-child(2) { background: var(--hi); }
+.ledger thead th, .ledger thead th:first-child { background: none; color: var(--ink-soft) !important; font-family: inherit; font-weight: 400; font-size: 0.85rem; padding-block: 0.2rem; }
+.ledger.works td.mark-checked, .ledger.works td.mark-unknown, .ledger.works td.mark-listing { background: var(--card); color: var(--ink-soft); }
+.worklist .ledger + .ledger { margin-top: 1.2rem; }
+.fold > summary, .fold[open] > summary, .fold > summary:hover { border: 0; background: none; padding: 0.3rem 0; font-family: inherit; font-weight: 400; font-size: 1.05rem; text-decoration: underline; text-underline-offset: 0.2em; justify-content: flex-start; gap: 0.6rem; }
+.fold > summary:hover { background: var(--hi); }
+.prose .signed, .signed { font-family: var(--black); font-weight: 500; font-size: 1.8rem; margin-top: 1.6rem; }

@@ -139,16 +139,9 @@ const tabs = [
             </>
           )}
 
-          {d.seen.length > 0 && (
-            <details class="fold">
-              <summary>What the photographs show</summary>
-              <ul>{d.seen.map((s) => <li>{s}</li>)}</ul>
-            </details>
-          )}
-
           {hasWorks && (
-            <details class="fold" open>
-              <summary>The work, line by line</summary>
+            <div class="worklist">
+              <h2>The work, line by line</h2>
               {phases.map((ph) => {
                 const ws = d.works.filter((w) => w.phase === ph);
                 return ws.length === 0 ? null : (
@@ -168,8 +161,16 @@ const tabs = [
                   </table>
                 );
               })}
+            </div>
+          )}
+
+          {d.seen.length > 0 && (
+            <details class="fold">
+              <summary>What the photographs show</summary>
+              <ul>{d.seen.map((s) => <li>{s}</li>)}</ul>
             </details>
           )}
+
 
           {d.upkeep && <p><b>Yearly upkeep, {range(d.upkeep.low, d.upkeep.high)}.</b> {d.upkeep.covers}</p>}
           {d.grantNote && <p><b>Grants.</b> {d.grantNote}</p>}
