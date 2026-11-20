@@ -161,15 +161,15 @@ const tabs = [
                 {s.items.map((i) => (
                   <li><b>{i.label}</b><span>{i.value}</span></li>
                 ))}
+              </ul>
+            </details>
+          ))}
           {d.seen.length > 0 && (
             <details class="fold">
               <summary>What the photographs show</summary>
               <ul>{d.seen.map((s) => <li>{s}</li>)}</ul>
             </details>
           )}
-              </ul>
-            </details>
-          ))}
 
         </section>
 
