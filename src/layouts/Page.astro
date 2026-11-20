@@ -8,7 +8,7 @@ const { frontmatter } = Astro.props;
   <div class={frontmatter.plate ? 'wrap with-plate' : 'wrap'}>
     <div>
       <header class="page-head">
-        <h1 class={frontmatter.neon ? 'neon' : undefined}>{frontmatter.title}</h1>
+        <h1 class={frontmatter.neon ? `neon ${frontmatter.neon}` : undefined}>{frontmatter.title}</h1>
       </header>
       <article class="prose">
         <slot />

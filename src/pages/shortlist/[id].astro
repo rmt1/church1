@@ -253,14 +253,9 @@ const tabs = [
               </ul>
             </>
           )}
-          <p class="key">
-            "From the listing" means the seller's agent says so. "Checked" means it was confirmed
-            against a public record, linked where possible. "Unknown" is a question to put to the
-            agent before you visit.
-          </p>
         </section>
 
-        <p class="key" style="margin-top: 2.5rem"><a href="/how-repair-costs-are-estimated/">How repair costs are estimated</a></p>
+        <p class="how-link"><a class="button how" href="/how-repair-costs-are-estimated/">How repair costs are estimated</a></p>
       </div>
 
       <aside class="panel" aria-label="Key facts">
@@ -276,7 +271,7 @@ const tabs = [
             <dt>Difficulty</dt>
             <dd>
               <span class="pips" aria-label={`${d.difficulty} of 5`}>
-                {[1, 2, 3, 4, 5].map((n) => <span class={n <= d.difficulty ? '' : 'off'}>&#9670;</span>)}
+                {[1, 2, 3, 4, 5].map((n) => <svg class={n <= d.difficulty ? '' : 'off'} viewBox="0 0 20 24" aria-hidden="true"><path d="M9 0h2v2h2v2h-2v2l5 5v13h-4v-5a2 2 0 0 0-4 0v5H4V11l5-5V4H7V2h2z" /></svg>)}
               </span>
             </dd>
           </div>
