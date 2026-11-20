@@ -8,16 +8,16 @@ description: Why old Churches are worth saving, and what stewardship of them mea
 
 Churches have been in decline in communities across the West for decades. But you don't need to be Christian to recognise the value in saving these buildings. You just have to respect history.
 
-For over a millennium, Churches have been the cradle of society. Every part of human life has been brought into these buildings. And the walls of even the supposedly lowliest Churches are still full of that energy: the human striving, the hopes and prayers, and the love and beauty.
+For over a millennium, Churches have been the cradle of society. Every part of human life has been brought into these buildings.
 
 If you go and stand in Churches intentionally and quieten your mind, I believe you can feel this energy, ever-present, like an atmospheric residue. There is always something in these buildings waiting for us to notice it.
 
-Millions of us travel across the world to see ancient sites, and yet every generation overlooks its most recent relics. But centuries from now our descendants will be glad that we preserved our more recent past, so that they too can push open these doors and step into another century.
+Millions of us travel across the world to see ancient sites, and yet every generation overlooks its most recent relics. But centuries from now our descendants will be glad that we preserved our more recent past, so that they too can push open those doors.
 
-Taking on a historical building is valuable stewardship: repairing what needs to be repaired and keeping it standing for the sole purpose of preservation. A side effect of such stewardship is that the investment creates demand for the skills that make buildings like these possible. Excellent tradesmen are disappearing, but projects like these build demand for more. If we want more good buildings, we need these crafts and skills.
+A side effect of this valuable stewardship is that the investment creates demand for the skills that make buildings like these possible. Excellent tradesmen are disappearing, but projects like these build demand for more. If we want more good buildings, we need these crafts and skills.
 
 <p><em>What would it mean for our descendants to grow up in a world with no examples of things like stained glass windows, and no belief that such things are possible?</em></p>
 
-This website stemmed from a social media post encouraging more people to think about preserving Churches, after my fiancé and I took on a medieval Church restoration project ourselves. We have experienced the pushback that comes with taking on a building like this: that they are not good financial investments, that they will need continuous repair, and that you will have nobody to sell them to. I contend that <em>in this exact experience of the immeasurable, you might find the whole point.</em>
+This website stemmed from an X post encouraging more people to think about preserving Churches, after my fiancé and I took on a medieval Church restoration project ourselves. We have experienced the pushback that comes with taking on a building like this: that they are not good financial investments, that they will need continuous repair, and that we will have nobody to sell them to. I contend that <em>in this exact experience of the immeasurable, we found the whole point.</em>
 
-<p class="signed">RMT</p>
+<p class="signed">-RMT</p>

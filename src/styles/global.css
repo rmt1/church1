@@ -1851,3 +1851,13 @@ a:hover, button:hover, summary:hover, select:hover, .tile:hover, a:hover *, butt
 .lines li > small { grid-column: 1 / -1; font-size: 0.8rem; color: var(--ink-soft); }
 .after-stages { margin-top: 2rem; }
 @media (max-width: 34rem) { .lines li { grid-template-columns: 1fr; } }
+
+/* repairs: the three stages open on a click */
+details.stage { margin-top: 1.5rem; }
+details.stage > summary { list-style: none; cursor: var(--sword-over) 2 2, pointer; padding: 0.9rem 1rem; background: var(--card); border: 1.5px solid var(--ink); }
+details.stage > summary::-webkit-details-marker { display: none; }
+details.stage > summary::after { content: '+'; margin-left: auto; font-family: var(--black); font-size: 1.6rem; line-height: 1; }
+details.stage[open] > summary::after { content: '\\2212'; }
+details.stage > summary:hover { background: var(--hi); }
+details.stage .stage-note { margin: 1rem 0 0; }
+.site-foot .wrap { grid-template-columns: 1fr auto; }

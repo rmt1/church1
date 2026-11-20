@@ -126,19 +126,13 @@ const tabs = [
         <section class="panel-tab" role="tabpanel" id="panel-repairs" aria-labelledby="tab-repairs">
           <h2>Repairs and costs</h2>
           {d.estimateNote && <p>{d.estimateNote}</p>}
-          {d.seen.length > 0 && (
-            <details class="fold">
-              <summary>What the photographs show</summary>
-              <ul>{d.seen.map((s) => <li>{s}</li>)}</ul>
-            </details>
-          )}
 
           {hasWorks && [
             { key: 'safe', title: 'Safe and dry', note: 'The first work, to stop the building getting worse.', ws: nowWorks, lo: sum(nowWorks, 'low'), hi: sum(nowWorks, 'high') },
             { key: 'full', title: 'Full restoration', note: nowWorks.length ? 'Everything else on the list. The figure includes the safe and dry work.' : 'Everything on the list.', ws: laterWorks, lo: sum(d.works, 'low'), hi: sum(d.works, 'high') },
           ].filter((g) => g.ws.length > 0).map((g) => (
-            <div class={`stage stage-${g.key}`}>
-              <div class="stage-head"><h3>{g.title}</h3><b>{range(g.lo, g.hi)}</b></div>
+            <details class={`stage stage-${g.key}`}>
+              <summary class="stage-head"><h3>{g.title}</h3><b>{range(g.lo, g.hi)}</b></summary>
               <p class="stage-note">{g.note}</p>
               <ul class="lines">
                 {g.ws.map((w) => (
@@ -149,22 +143,16 @@ const tabs = [
                   </li>
                 ))}
               </ul>
-            </div>
+            </details>
           ))}
           {d.upkeep && (
-            <div class="stage stage-year">
-              <div class="stage-head"><h3>Annual maintenance</h3><b>{range(d.upkeep.low, d.upkeep.high)}</b></div>
+            <details class="stage stage-year">
+              <summary class="stage-head"><h3>Annual maintenance</h3><b>{range(d.upkeep.low, d.upkeep.high)}</b></summary>
               <p class="stage-note">{d.upkeep.covers}</p>
-            </div>
+            </details>
           )}
 
           {d.grantNote && <p class="after-stages"><b>Grants.</b> {d.grantNote}</p>}
-          {d.faults.length > 0 && (
-            <>
-              <h2>Difficulties</h2>
-              <ul>{d.faults.map((f) => <li>{f}</li>)}</ul>
-            </>
-          )}
 
           {repairSections.map((s) => (
             <details class="fold">
@@ -173,6 +161,12 @@ const tabs = [
                 {s.items.map((i) => (
                   <li><b>{i.label}</b><span>{i.value}</span></li>
                 ))}
+          {d.seen.length > 0 && (
+            <details class="fold">
+              <summary>What the photographs show</summary>
+              <ul>{d.seen.map((s) => <li>{s}</li>)}</ul>
+            </details>
+          )}
               </ul>
             </details>
           ))}
@@ -255,13 +249,6 @@ const tabs = [
     </div>
   </div>
 
-  <nav class="ring" aria-label="More churches">
-    <div class="wrap">
-      <a href={`/shortlist/${prev.id}/`}>&#9756; {prev.data.name}</a>
-      <a class="ring-mid" id="ring-random" href="/shortlist/" data-ids={ids.join(',')}>&#10016; Take me to a church at random &#10016;</a>
-      <a href={`/shortlist/${next.id}/`}>{next.data.name} &#9758;</a>
-    </div>
-  </nav>
 
   <script>
     const rr = document.getElementById('ring-random');

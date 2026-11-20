@@ -76,12 +76,6 @@ const nav = [
         <div>
           <a class="site-name" href="/">{site}</a>
         </div>
-        <div>
-          <h2>Explore</h2>
-          <ul>
-            {nav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
-          </ul>
-        </div>
         <div class="foot-fun">
           <p class="counter" id="views" data-gc={goatcounter} aria-live="off">
             <span class="counter-label">Page views</span>
