@@ -1,6 +1,6 @@
 ---
-// Email sign-up. Stays hidden until `action` is set to the mailing-list provider's form address.
-const action = import.meta.env.PUBLIC_SIGNUP_ACTION ?? '';
+// Email sign-up, sent to the Buttondown list "saveachurch".
+const action = import.meta.env.PUBLIC_SIGNUP_ACTION ?? 'https://buttondown.com/api/emails/embed-subscribe/saveachurch';
 const field = import.meta.env.PUBLIC_SIGNUP_FIELD ?? 'email';
 ---
 {action && (
