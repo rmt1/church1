@@ -1891,3 +1891,8 @@ h1, h2, h3, .tile h3 { text-wrap: balance; }
 @media (max-width: 40rem) { .site-head .site-nav { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; } .site-head .site-nav a { white-space: nowrap; } }
 /* settle, no bounce */
 .give-card { transition-timing-function: cubic-bezier(0.2, 0.9, 0.3, 1); }
+
+/* ================= white ground ================= */
+:root { --paper: #ffffff; --card: #f7f6f1; --pink-lite: #ffffff; --slate: #ffffff; --stone-pale: #ffffff; --panel: #f1f0ea; }
+body { background: #ffffff; }
+.etch-plate img { mix-blend-mode: multiply; }
