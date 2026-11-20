@@ -11,6 +11,7 @@ const field = import.meta.env.PUBLIC_SIGNUP_FIELD ?? 'email';
       <form action={action} method="post" target="_blank">
         <label class="sr-only" for="signup-email">Your email address</label>
         <input id="signup-email" type="email" name={field} placeholder="you@example.com" autocomplete="email" required />
+        <input type="hidden" value="1" name="embed" />
         <button class="button pop" type="submit">Sign me up</button>
       </form>
     </div>
