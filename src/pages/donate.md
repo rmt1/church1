@@ -11,7 +11,7 @@ description: Give to the charities that rescue churches nobody else will take, s
 
 The Friends were founded in 1957. They look after 71 churches and chapels, 36 in England and 35 in Wales, that had closed and faced demolition, decay or conversion. They repair each one and keep it open for anyone to visit. In England they receive no regular funding. The work is paid for by members, donations and legacies.
 
-We learned about the Friends after posting about churches on social media, and have followed their work since. It is honourable work. They take on the buildings that have no one else, and they repair them with lime, oak and stone.
+We learned about the Friends after posting about churches on social media, and have followed their work since.
 
 <p><a class="button" href="https://friendsoffriendlesschurches.org.uk">Give to the Friends of Friendless Churches</a></p>
 
