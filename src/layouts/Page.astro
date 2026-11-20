@@ -1,15 +1,19 @@
 ---
 import Base from './Base.astro';
+import EtchPlate from '../components/EtchPlate.astro';
 const { frontmatter } = Astro.props;
 ---
 
 <Base title={frontmatter.title} description={frontmatter.description}>
-  <div class="wrap">
-    <header class="page-head">
-      <h1>{frontmatter.title}</h1>
-    </header>
-    <article class="prose">
-      <slot />
-    </article>
+  <div class={frontmatter.plate ? 'wrap with-plate' : 'wrap'}>
+    <div>
+      <header class="page-head">
+        <h1 class={frontmatter.neon ? 'neon' : undefined}>{frontmatter.title}</h1>
+      </header>
+      <article class="prose">
+        <slot />
+      </article>
+    </div>
+    {frontmatter.plate && <aside class="page-plate"><EtchPlate /></aside>}
   </div>
 </Base>

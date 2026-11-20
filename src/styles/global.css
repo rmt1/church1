@@ -1703,3 +1703,49 @@ h2.neon.blue { text-shadow: 0 0 5px #4fdcf2, 0 0 16px #4fdcf2, 0 0 38px #4fdcf2,
 @media (max-width: 56rem) { .give-top { grid-template-columns: minmax(0, 1fr); } .give-frames { box-shadow: 5px 5px 0 #ff2f9a; } }
 .give-cards { grid-template-columns: repeat(auto-fit, minmax(min(100%, 13.5rem), 1fr)); gap: 1.5rem; }
 .give-card strong { font-size: 1.5rem; }
+
+/* ================= fewer rules: battlement trim in place of straight lines ================= */
+:root {
+  --trim: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='9' viewBox='0 0 20 9'%3E%3Cpath d='M0 8H5V2H15V8H20' fill='none' stroke='%23111210' stroke-width='1.6'/%3E%3C/svg%3E");
+  --sword-hit: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 14 14' shape-rendering='crispEdges'%3E%3Cpath d='M1 1h2v1h1v1h1v1h1v1h1v1h1v1h1v1h-1v1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1z' fill='%23ff2f9a' stroke='%231b1b1b' stroke-width='.5'/%3E%3Cpath d='M7 10h1v1h1v1h-1v-1h-1zM10 7h1v1h1v1h-1v-1h-1z' fill='%23e7ff0a' stroke='%231b1b1b' stroke-width='.4'/%3E%3Cpath d='M10 10h2v2h-2z' fill='%234fdcf2' stroke='%231b1b1b' stroke-width='.4'/%3E%3Cpath d='M12 12h1v1h-1z' fill='%23e7ff0a' stroke='%231b1b1b' stroke-width='.4'/%3E%3C/svg%3E");
+}
+html:active, html:active * { cursor: var(--sword-hit) 2 2, auto !important; }
+.site-head { border-bottom: 0; }
+.country .tiles { border-top: 0; }
+.filters { border: 0 !important; }
+.tabs { border-bottom: 0; }
+.site-foot, .ring, .owners-list { border-top: 0; background: var(--trim) repeat-x left top / 20px 9px; }
+.site-foot { padding-top: 2.6rem; }
+.owners-list { padding-top: 9px; }
+.owner { border-bottom: 0; background: var(--trim) repeat-x left bottom / 20px 9px; padding-bottom: 9px; }
+.give-others, .prose .case { border-top: 0; }
+.site-foot .foot-fun { border-top: 0; }
+
+/* the shortlist: more churches to a screen */
+.page-head:has(+ .prose + .filters), .wrap > .page-head { padding-top: clamp(1.5rem, 3vw, 2.5rem); }
+.country .tiles { grid-template-columns: repeat(auto-fill, minmax(min(100%, clamp(13rem, 15.5vw, 18rem)), 1fr)); gap: clamp(1.2rem, 1.8vw, 2rem) clamp(1rem, 1.4vw, 1.6rem); }
+.country .tile h3 { font-size: clamp(1.15rem, 1.25vw, 1.5rem); line-height: 1.12; }
+.country .tile .meta, .country .tile .place { font-size: 0.82rem; }
+.country .tile .price { font-size: 1.05rem; }
+.country .tile .burst, .country .tile .sticker { transform: scale(0.72); transform-origin: bottom right; }
+.country { margin-top: clamp(1.5rem, 3vw, 2.5rem); }
+.country-head { margin-bottom: 1rem; }
+
+/* a page with the engraving beside it */
+main > .wrap:has(.prose) { max-width: 96rem; }
+main > .wrap.with-plate { max-width: none; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 5rem); align-items: start; }
+.page-plate { position: sticky; top: 1.5rem; padding-top: clamp(2rem, 5vw, 4rem); }
+.page-plate .etch-plate, .page-plate > * { width: 100%; max-width: 52rem; margin-inline: auto; }
+.with-plate .prose p { font-size: 1.2rem; }
+@media (max-width: 60rem) { main > .wrap.with-plate { grid-template-columns: minmax(0, 1fr); } .page-plate { position: static; order: -1; padding-top: 1rem; } .page-plate > * { max-width: 26rem; } }
+.country .save-me { width: clamp(4.6rem, 5.4vw, 6.2rem); margin: clamp(-3.6rem, -3.4vw, -2.8rem) -0.3rem -1.4rem 0; }
+.country .save-me b { font-size: clamp(0.95rem, 1.05vw, 1.2rem); }
+.country .tile .where { font-size: 0.82rem; }
+.wrap > .page-head:has(~ .filters) h1 { margin-bottom: 0.4rem; }
+.wrap:has(> .filters) > .prose { padding-bottom: 0 !important; }
+.filters { padding-block: 0.8rem !important; margin-bottom: 0.5rem; }
+.wrap:has(> .filters) > .page-head { padding-top: 0.8rem; }
+.wrap:has(> .filters) > .prose { padding: 0 !important; }
+.wrap:has(> .filters) .country:first-of-type { margin-top: 0; padding-top: 0; }
+.wrap:has(> .filters) .country:first-of-type::before { display: none; }
+.country .tiles { padding-top: 0.8rem; }

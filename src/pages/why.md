@@ -1,5 +1,6 @@
 ---
 layout: ../layouts/Page.astro
+plate: true
 title: Why save them
 description: Why old Churches are worth saving, and what stewardship of them means.
 ---
