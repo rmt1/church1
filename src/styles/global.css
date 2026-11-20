@@ -1896,3 +1896,12 @@ h1, h2, h3, .tile h3 { text-wrap: balance; }
 :root { --paper: #ffffff; --card: #f7f6f1; --pink-lite: #ffffff; --slate: #ffffff; --stone-pale: #ffffff; --panel: #f1f0ea; }
 body { background: #ffffff; }
 .etch-plate img { mix-blend-mode: multiply; }
+
+/* ================= email sign-up ================= */
+.signup { padding: clamp(3rem, 7vw, 5rem) 0 clamp(2.5rem, 6vw, 4rem); }
+.signup h2 { font-size: clamp(2rem, 4.2vw, 3.4rem); margin: 0 0 0.6rem; }
+.signup p { font-size: 1.2rem; margin: 0 0 1.6rem; }
+.signup form { display: flex; flex-wrap: wrap; gap: 1rem 1.2rem; align-items: center; }
+.signup input { flex: 1 1 18rem; max-width: 30rem; font: inherit; font-size: 1.25rem; padding: 0.85rem 1rem; border: 1.5px solid var(--ink); background: var(--card); color: var(--ink); box-shadow: 5px 5px 0 var(--ink); }
+.signup input:focus-visible { outline: 3px solid #ff2f9a; outline-offset: 3px; }
+.signup .button.pop { display: inline-block; cursor: var(--sword-over) 2 2, pointer; }
