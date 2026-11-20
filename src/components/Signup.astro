@@ -6,13 +6,12 @@ const field = import.meta.env.PUBLIC_SIGNUP_FIELD ?? 'email';
 {action && (
   <section class="signup" aria-labelledby="signup-h">
     <div class="wrap">
-      <h2 id="signup-h" class="neon">Hear when a church is added</h2>
-      <p>One email each time a church joins the shortlist. Nothing else.</p>
+      <h2 id="signup-h" class="neon">Subscribe for the occasional update</h2>
       <form action={action} method="post" target="_blank">
         <label class="sr-only" for="signup-email">Your email address</label>
         <input id="signup-email" type="email" name={field} placeholder="you@example.com" autocomplete="email" required />
         <input type="hidden" value="1" name="embed" />
-        <button class="button pop" type="submit">Sign me up</button>
+        <button class="button pop" type="submit">Stay updated</button>
       </form>
     </div>
   </section>

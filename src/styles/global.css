@@ -1905,3 +1905,5 @@ body { background: #ffffff; }
 .signup input { flex: 1 1 18rem; max-width: 30rem; font: inherit; font-size: 1.25rem; padding: 0.85rem 1rem; border: 1.5px solid var(--ink); background: var(--card); color: var(--ink); box-shadow: 5px 5px 0 var(--ink); }
 .signup input:focus-visible { outline: 3px solid #ff2f9a; outline-offset: 3px; }
 .signup .button.pop { display: inline-block; cursor: var(--sword-over) 2 2, pointer; }
+
+.signup h2 { margin-bottom: 1.6rem; }
