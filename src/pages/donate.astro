@@ -1,0 +1,85 @@
+---
+import Base from '../layouts/Base.astro';
+
+const slides = [
+  { src: 'llangua', name: "St James's, Llangua, Monmouthshire", alt: 'A small church limewashed pale pink, with a stone-tiled roof and an oak-boarded bellcote, among old gravestones' },
+  { src: 'llangua-inside', name: "St James's, Llangua, Monmouthshire", alt: 'Limewashed walls, box pews and a ribbed wagon roof inside the church' },
+  { src: 'mundon', name: "St Mary's, Mundon, Essex", alt: 'A small church with a timber-framed tower and a red tiled roof, under trees' },
+  { src: 'boveney', name: 'St Mary Magdalene, Boveney, Buckinghamshire', alt: 'A flint and stone church with a weatherboarded tower, seen across long grass at sunrise' },
+  { src: 'boveney-inside', name: 'St Mary Magdalene, Boveney, Buckinghamshire', alt: 'Wooden pews, a tiled aisle and heavy timber framing inside the church' },
+  { src: 'east-hatley', name: 'St Denis, East Hatley, Cambridgeshire', alt: 'A long, low church of pebble and stone with a red tiled roof, in a mown churchyard' },
+  { src: 'brithdir-inside', name: "St Mark's, Brithdir, Gwynedd", alt: 'Terracotta-red walls, carved oak stalls and a lit altar inside the church' },
+];
+
+const others = [
+  { where: 'England', name: 'Churches Conservation Trust', holds: 'Founded in 1969; over 350 closed Anglican churches', href: 'https://www.visitchurches.org.uk' },
+  { where: 'Scotland', name: 'Historic Churches Scotland', holds: 'Takes churches at risk into its care', href: 'https://www.historicchurches.scot' },
+  { where: 'Wales', name: 'Addoldai Cymru', holds: 'Owns eight chapels', href: 'http://www.welshchapels.org' },
+  { where: 'Netherlands', name: 'Stichting Oude Groninger Kerken', holds: 'Since 1969 buys, restores and opens churches in Groningen', href: 'https://www.groningerkerken.nl/en/home/about-us' },
+  { where: 'Netherlands', name: 'Stichting Alde Fryske Tsjerken', holds: 'Owns 51 churches in Friesland', href: 'https://www.aldefrysketsjerken.nl/' },
+];
+---
+
+<Base title="Can't buy one?" description="Give to the charities that rescue churches nobody else will take, starting with the Friends of Friendless Churches.">
+  <div class="wrap give">
+    <header class="page-head">
+      <h1 class="neon">Can't buy one?</h1>
+    </header>
+
+    <div class="give-top">
+      <div class="give-text">
+        <p class="standfirst">Consider giving to the <a href="https://friendsoffriendlesschurches.org.uk">Friends of Friendless Churches</a>. They take on churches and restore them.</p>
+        <p>The Friends were founded in 1957. They look after 71 churches and chapels, 36 in England and 35 in Wales, that had closed and faced demolition, decay or conversion. They repair each one and keep it open for anyone to visit. In England they receive no regular funding. The work is paid for by members, donations and legacies.</p>
+        <p>We learned about the Friends after posting about churches on social media, and have followed their work since.</p>
+        <p class="give-cta"><a class="button pop" href="https://friendsoffriendlesschurches.org.uk">Give to the Friends of Friendless Churches</a></p>
+      </div>
+
+      <figure class="give-reel" data-reel>
+        <div class="give-frames">
+          {slides.map((s, i) => (
+            <img class={i === 0 ? 'on' : undefined} src={`/photos/friends/${s.src}.jpg`} alt={s.alt} data-name={s.name} loading={i === 0 ? 'eager' : 'lazy'} decoding="async" />
+          ))}
+        </div>
+        <figcaption>
+          <b data-reel-name>{slides[0].name}</b>
+          <span>Restoration work done by the charity</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <section class="give-others">
+      <h2 class="neon blue">Others that take churches on</h2>
+      <ul class="give-cards">
+        {others.map((o) => (
+          <li>
+            <a class="give-card" href={o.href}>
+              <span class="give-stamp">{o.where}</span>
+              <strong>{o.name}</strong>
+              <span class="give-holds">{o.holds}</span>
+              <span class="give-go">Visit their site</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </div>
+
+  <script is:inline>
+    (() => {
+      const reel = document.querySelector('[data-reel]');
+      if (!reel) return;
+      const imgs = [...reel.querySelectorAll('img')];
+      const name = reel.querySelector('[data-reel-name]');
+      let at = 0;
+      const show = (n) => {
+        imgs[at].classList.remove('on');
+        at = (n + imgs.length) % imgs.length;
+        imgs[at].loading = 'eager';
+        imgs[at].classList.add('on');
+        name.textContent = imgs[at].dataset.name;
+      };
+      if (!matchMedia('(prefers-reduced-motion: reduce)').matches) setInterval(() => show(at + 1), 3800);
+      reel.addEventListener('click', () => show(at + 1));
+    })();
+  </script>
+</Base>

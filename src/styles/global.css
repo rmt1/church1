@@ -1650,3 +1650,56 @@ html { font-size: clamp(100%, 0.5vw + 0.55rem, 125%); }
 .prose .case img { display: block; width: 100%; height: auto; border: 1.5px solid var(--ink); }
 .prose .case figcaption { font-size: 0.95rem; color: var(--ink-soft); margin-top: 0.4rem; }
 @media (max-width: 52rem) { .prose .case { grid-template-columns: 1fr; } }
+
+/* ================= neon on inner pages; the donate page ================= */
+.site-head .site-name, header .site-name { text-shadow: 0 0 4px #ff2f9a, 0 0 12px #ff2f9a, 0 0 26px rgba(255, 47, 154, 0.9), 0 0 50px rgba(255, 47, 154, 0.5); }
+h1.neon, h2.neon { text-shadow: 0 0 5px #ff2f9a, 0 0 16px #ff2f9a, 0 0 38px #ff2f9a, 0 0 80px rgba(255, 47, 154, 0.9), 0 0 130px rgba(255, 47, 154, 0.55); }
+h2.neon.blue { text-shadow: 0 0 5px #4fdcf2, 0 0 16px #4fdcf2, 0 0 38px #4fdcf2, 0 0 80px rgba(79, 220, 242, 0.9); }
+@media (prefers-reduced-motion: no-preference) {
+  .site-head .site-name, header .site-name { animation: pinkneon-s 6s ease-in-out infinite; }
+  h1.neon { animation: pinkneon 6s ease-in-out infinite; }
+  h2.neon.blue { animation: blueneon 5s ease-in-out 1.5s infinite; }
+}
+@keyframes pinkneon-s {
+  0%, 52%, 84%, 90%, 100% { text-shadow: 0 0 4px #ff2f9a, 0 0 12px #ff2f9a, 0 0 26px rgba(255, 47, 154, 0.9), 0 0 50px rgba(255, 47, 154, 0.5); }
+  70%, 80%, 86% { text-shadow: 0 0 2px rgba(255, 47, 154, 0.35), 0 0 5px rgba(255, 47, 154, 0.15), 0 0 10px rgba(255, 47, 154, 0), 0 0 20px rgba(255, 47, 154, 0); }
+}
+@keyframes blueneon {
+  0%, 55%, 100% { text-shadow: 0 0 5px #4fdcf2, 0 0 16px #4fdcf2, 0 0 38px #4fdcf2, 0 0 80px rgba(79, 220, 242, 0.9); }
+  72%, 82% { text-shadow: 0 0 2px rgba(79, 220, 242, 0.4), 0 0 6px rgba(79, 220, 242, 0.2), 0 0 12px rgba(79, 220, 242, 0), 0 0 30px rgba(79, 220, 242, 0); }
+}
+.give { padding-bottom: clamp(3rem, 7vw, 5rem); }
+.give .page-head h1 { font-size: clamp(3rem, 7vw, 5.6rem); }
+.give-top { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: start; margin-top: clamp(1.5rem, 3vw, 2.5rem); }
+.give-text { max-width: 36rem; }
+.give-text p { font-size: 1.2rem; line-height: 1.55; margin: 0 0 1.1rem; }
+.give-text .standfirst { font-size: 1.55rem; line-height: 1.35; }
+.give-text .standfirst a { text-decoration: underline; text-underline-offset: 0.15em; }
+.give-cta { margin-top: 2.2rem !important; }
+.give-cta .button.pop { display: inline-block; font-size: clamp(1.15rem, 1.6vw, 1.5rem); padding: 1rem 1.4rem; }
+.give-reel { margin: 0; cursor: var(--sword) 2 2, pointer; }
+.give-frames { position: relative; aspect-ratio: 3 / 2; border: 1.5px solid var(--ink); box-shadow: 8px 8px 0 #ff2f9a; overflow: hidden; background: var(--card); }
+.give-frames img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.9s ease; }
+.give-frames img.on { opacity: 1; }
+.give-reel figcaption { margin-top: 1.3rem; display: grid; gap: 0.2rem; }
+.give-reel figcaption b { font-family: var(--black); font-weight: 500; font-size: clamp(1.3rem, 2vw, 1.8rem); line-height: 1.15; }
+.give-reel figcaption span { font-size: 1.1rem; }
+.give-others { margin-top: clamp(4rem, 9vw, 7rem); }
+.give-others h2 { font-size: clamp(2.2rem, 4.6vw, 3.8rem); margin: 0 0 clamp(2rem, 4vw, 3rem); }
+.give-cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); gap: 1.8rem; }
+.give-card, .give-card:visited { position: relative; display: grid; align-content: start; gap: 0.7rem; height: 100%; padding: 2.4rem 1.4rem 1.5rem; background: var(--card); border: 1.5px solid var(--ink); box-shadow: 6px 6px 0 var(--ink); color: var(--ink); text-decoration: none; }
+.give-card strong { font-family: var(--black); font-weight: 500; font-size: 1.7rem; line-height: 1.1; }
+.give-holds { font-size: 1.05rem; line-height: 1.4; }
+.give-stamp { position: absolute; top: -0.9rem; left: 1rem; padding: 0.2rem 0.7rem 0.3rem; border: 2px solid var(--ink); background: #ff2f9a; font-family: var(--title); text-transform: uppercase; letter-spacing: 0.05em; font-size: 1.15rem; transform: rotate(-4deg); box-shadow: 3px 3px 0 var(--ink); }
+.give-cards li:nth-child(3n + 2) .give-stamp { background: #4fdcf2; transform: rotate(3deg); }
+.give-cards li:nth-child(3n) .give-stamp { background: var(--hi); }
+.give-go { justify-self: start; margin-top: 0.5rem; padding: 0.3rem 0.8rem 0.4rem; border: 1.5px solid var(--ink); background: var(--hi); font-family: var(--black); font-size: 1.05rem; }
+.give-card:hover, .give-card:focus-visible { background: var(--hi); }
+.give-card:hover .give-go, .give-card:focus-visible .give-go { background: #ff2f9a; }
+@media (prefers-reduced-motion: no-preference) {
+  .give-card { transition: transform 0.18s cubic-bezier(0.3, 1.8, 0.5, 1); }
+  .give-card:hover { transform: translate(-2px, -3px) rotate(-0.6deg); }
+}
+@media (max-width: 56rem) { .give-top { grid-template-columns: minmax(0, 1fr); } .give-frames { box-shadow: 5px 5px 0 #ff2f9a; } }
+.give-cards { grid-template-columns: repeat(auto-fit, minmax(min(100%, 13.5rem), 1fr)); gap: 1.5rem; }
+.give-card strong { font-size: 1.5rem; }
