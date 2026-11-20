@@ -1624,3 +1624,18 @@ html { font-size: clamp(100%, 0.5vw + 0.55rem, 125%); }
 @media (max-width: 59.99rem) { .lot { grid-template-columns: minmax(0, 1fr); } }
 .lot > *, .lot-body > * { min-width: 0; }
 .thumbs { max-width: 100%; overflow-x: auto; }
+
+/* ================= pink neon behind the title, slowly switching on and off; the statement under it ================= */
+.hero .hero-text h1, .hero h1.glow { text-shadow: 0 0 5px #ff2f9a, 0 0 16px #ff2f9a, 0 0 38px #ff2f9a, 0 0 80px rgba(255, 47, 154, 0.9), 0 0 130px rgba(255, 47, 154, 0.55); }
+@media (prefers-reduced-motion: no-preference) {
+  .hero .hero-text h1, .hero h1.glow { animation: pinkneon 6s ease-in-out infinite; }
+}
+@keyframes pinkneon {
+  0%, 52%, 100% { text-shadow: 0 0 5px #ff2f9a, 0 0 16px #ff2f9a, 0 0 38px #ff2f9a, 0 0 80px rgba(255, 47, 154, 0.9), 0 0 130px rgba(255, 47, 154, 0.55); }
+  70%, 80% { text-shadow: 0 0 2px rgba(255, 47, 154, 0.35), 0 0 6px rgba(255, 47, 154, 0.18), 0 0 12px rgba(255, 47, 154, 0), 0 0 30px rgba(255, 47, 154, 0), 0 0 60px rgba(255, 47, 154, 0); }
+  84% { text-shadow: 0 0 5px #ff2f9a, 0 0 16px #ff2f9a, 0 0 38px #ff2f9a, 0 0 80px rgba(255, 47, 154, 0.9), 0 0 130px rgba(255, 47, 154, 0.55); }
+  86% { text-shadow: 0 0 2px rgba(255, 47, 154, 0.5), 0 0 8px rgba(255, 47, 154, 0.3), 0 0 14px rgba(255, 47, 154, 0), 0 0 30px rgba(255, 47, 154, 0), 0 0 60px rgba(255, 47, 154, 0); }
+  90% { text-shadow: 0 0 5px #ff2f9a, 0 0 16px #ff2f9a, 0 0 38px #ff2f9a, 0 0 80px rgba(255, 47, 154, 0.9), 0 0 130px rgba(255, 47, 154, 0.55); }
+}
+.hero .hero-text p.hero-say { margin: clamp(1.4rem, 2.6vw, 2.2rem) 0 0; max-width: 40rem; font-size: clamp(1.15rem, 0.5vw + 1rem, 1.45rem); line-height: 1.45; color: var(--ink); background: none; border: 0; padding: 0; }
+.hero .hero-text .hero-say + .site-nav { margin-top: clamp(1.4rem, 2.6vw, 2.2rem); }
