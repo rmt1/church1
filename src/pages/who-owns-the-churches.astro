@@ -104,7 +104,7 @@ const countries = [
       </p>
       <div class="owners-list">
         {countries.map((c, i) => (
-          <details class="owner" name="owners" open={i === 0}>
+          <details class="owner" name="owners">
             <summary>
               <span class="owner-stamp"><b>{c.stamp}</b><i>{c.under}</i></span>
               <span class="owner-name">{c.name}</span>
