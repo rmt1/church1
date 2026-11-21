@@ -33,6 +33,8 @@ const sum = (ws: typeof d.works, k: 'low' | 'high') => ws.reduce((t, w) => t + (
 const nowWorks = d.works.filter((w) => w.phase === 'Now');
 const laterWorks = d.works.filter((w) => w.phase !== 'Now');
 const hasWorks = d.works.length > 0;
+// every Creative Commons or public-domain photograph is credited, once per distinct credit
+const ccCredits = [...new Set(d.photos.map((p) => p.credit).filter((c) => /CC BY|CC0|Creative Commons|public domain/i.test(c)))];
 const marks = { listing: 'From the listing', checked: 'Checked', unknown: 'Unknown' };
 
 // which fact tables go under which tab
@@ -82,7 +84,7 @@ const tabs = [
           ))}
         </div>
       )}
-      {d.photos[0] && /CC BY|CC0|Creative Commons/i.test(d.photos[0].credit) && <p class="credit">{d.photos[0].credit}</p>}
+      {ccCredits.length > 0 && <p class="credit">{ccCredits.join('. ')}</p>}
       <dialog class="zoom" id="zoom"><img alt="" /></dialog>
     </div>
 
