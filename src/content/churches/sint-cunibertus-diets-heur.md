@@ -20,6 +20,24 @@ verdict: Light use
 verdictReason: The church is on the Flemish heritage inventory, which is a record and not a protection, but the organ is a protected monument and has to be kept. The agents suggest a home, a bed and breakfast, an office or a place for music. The hall is one room about 9 metres high.
 difficulty: 3
 photos:
+- src: /photos/sint-cunibertus-diets-heur/11.jpg
+  alt: The church from the air, on its hill above the fields
+  credit: 'Photo: Leroi Immobiliën'
+- src: /photos/sint-cunibertus-diets-heur/12.jpg
+  alt: The nave looking to the high altar, with chairs in rows
+  credit: 'Photo: Leroi Immobiliën'
+- src: /photos/sint-cunibertus-diets-heur/15.jpg
+  alt: The altar end from above, with the side altars and statues
+  credit: 'Photo: Leroi Immobiliën'
+- src: /photos/sint-cunibertus-diets-heur/13.jpg
+  alt: The west end, with the organ gallery over the door
+  credit: 'Photo: Leroi Immobiliën'
+- src: /photos/sint-cunibertus-diets-heur/14.jpg
+  alt: The organ on its gallery under the vault
+  credit: 'Photo: Leroi Immobiliën'
+- src: /photos/sint-cunibertus-diets-heur/16.jpg
+  alt: The north wall, with statues on brackets and a crucifix
+  credit: 'Photo: Leroi Immobiliën'
 - src: /photos/sint-cunibertus-diets-heur/1.jpg
   alt: The west tower and door seen from below the church hill
   credit: 'Photo: Sonuwe, CC BY-SA 3.0, via Wikimedia Commons'
@@ -209,22 +227,24 @@ works:
   low: 10000
   high: 45000
 - phase: Later
-  item: Replaster and decorate inside
-  basis: assumed
-  low: 15000
-  high: 45000
+  item: Touch up plaster and paint inside
+  basis: photos
+  low: 5000
+  high: 20000
 upkeep:
   low: 3500
   high: 8000
   covers: Insurance, heating, gutters and roof checks, and a yearly visit from an organ builder.
-estimateNote: 'The only photograph here is of the outside in 2007. The list follows the faults the listing names: electrics, glazing, insulation and heating.'
+estimateNote: 'The agent''s photographs show a church that was in use until February 2026: painted, furnished and dry. The list follows the faults the listing names: electrics, glazing, insulation and heating.'
 grantNote: The organ is a protected monument, and Flanders pays a heritage premium towards approved work on protected items. The church itself is not protected, so no premium should be assumed for the building.
 seen:
-- A brick church on a raised site behind a retaining wall with iron railings.
-- A square west tower set into the front, with round-headed bell openings and a slated spire.
-- A round-headed door in a stone frame, painted red, with a niche above it.
-- The side wall has round-headed windows between shallow buttresses.
-- The brickwork and the roof look even in a photograph of 2007.
+- From the air the slate roof is even and the church stands alone on its hill, with fields behind.
+- Inside, the walls are painted grey-green and white, with no staining in view.
+- The vault is plastered, with painted panels between the ribs.
+- The high altar, two side altars, the statues on their brackets and the stations of the cross are all in place.
+- The organ stands on a timber gallery over the west door, in a dark case with gilded pipe shades.
+- The floor is tiled and the seating is loose chairs.
+- Brass chandeliers hang down the middle of the nave.
 ---
 
 The starting price is the lowest on the shortlist outside Sicily. The cost is in the energy rules, which treat a church of 1850 like a house with a poor label.

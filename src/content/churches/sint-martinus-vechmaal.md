@@ -20,6 +20,24 @@ verdict: Light use
 verdictReason: The listing calls the church protected heritage and the organ a protected monument. Inside is one plastered room under a barrel vault on Corinthian pilasters. It suits a hall, a studio or a workplace more easily than a house divided into floors.
 difficulty: 3
 photos:
+- src: /photos/sint-martinus-vechmaal/11.jpg
+  alt: The tower at the top of the churchyard steps
+  credit: 'Photo: Leroi Immobiliën'
+- src: /photos/sint-martinus-vechmaal/12.jpg
+  alt: The choir, with the high altar between two side altars
+  credit: 'Photo: Leroi Immobiliën'
+- src: /photos/sint-martinus-vechmaal/13.jpg
+  alt: The west end, with the organ on its gallery
+  credit: 'Photo: Leroi Immobiliën'
+- src: /photos/sint-martinus-vechmaal/14.jpg
+  alt: The nave from the organ gallery
+  credit: 'Photo: Leroi Immobiliën'
+- src: /photos/sint-martinus-vechmaal/15.jpg
+  alt: The south side from the churchyard
+  credit: 'Photo: Leroi Immobiliën'
+- src: /photos/sint-martinus-vechmaal/16.jpg
+  alt: The steps and gates from the street
+  credit: 'Photo: Leroi Immobiliën'
 - src: /photos/sint-martinus-vechmaal/1.jpg
   alt: The church on its walled churchyard above the road
   credit: 'Photo: Michielverbeek, CC BY-SA 3.0, via Wikimedia Commons'
@@ -190,10 +208,10 @@ works:
   low: 15000
   high: 50000
 - phase: Later
-  item: Replaster and decorate the vault and pilasters
-  basis: assumed
-  low: 20000
-  high: 60000
+  item: Touch up plaster and paint on the vault and pilasters
+  basis: photos
+  low: 8000
+  high: 30000
 - phase: Later
   item: Clean and tune the organ
   basis: listing
@@ -203,15 +221,16 @@ upkeep:
   low: 4000
   high: 9000
   covers: Insurance, heating, gutters and roof checks, and a yearly visit from an organ builder.
-estimateNote: The listing says the church is to be renovated and gives no detail. The photographs here, from 2007 and 2012, show the outside only.
+estimateNote: The listing says the church is to be renovated and gives no detail. The agent's photographs show the inside painted, furnished and dry.
 grantNote: If the protection is confirmed, Flanders pays a heritage premium towards approved work on protected buildings and on the organ. Check the current rate with the heritage agency.
 seen:
-- A brick church with a square west tower, pale stone bands at the corners and a slated spire.
-- Round-headed windows along the nave above a stone plinth.
-- The church stands on a churchyard held up by a high stone and brick retaining wall above the road.
-- Polished modern headstones fill the terraces below the church.
-- Stone steps and an iron gate lead up beside the tower.
-- The roof and walls look even in photographs of 2007 and 2012.
+- The steps from the street rise between iron gates to the tower door, with graves on both sides.
+- Inside, the walls are painted cream and white, with pilasters and a moulded cornice.
+- The choir holds a high altar and two side altars in dark and white marble, with paintings over them.
+- The organ has a tall dark case and stands on a gallery with a white balustrade over the west door.
+- The floor is black and grey stone. The seating is loose chairs and a few benches.
+- No damp staining shows on the walls or the ceiling in view.
+- Outside, the brickwork and slates look even.
 ---
 
 This is the oldest of the three churches for sale in Heers and the one with a named architect. It is also the one tied most closely to a working churchyard.

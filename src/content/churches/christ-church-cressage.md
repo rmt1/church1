@@ -20,6 +20,27 @@ verdict: Light use
 verdictReason: A single room of 174 square metres with graves on every side, a path for access and two parking spaces up a flight of steps. The agent lists worship, community, arts, music and office uses ahead of housing. The covenants keep the graves open to visitors.
 difficulty: 3
 photos:
+- src: /photos/christ-church-cressage/11.jpg
+  alt: The church from the south-east across the churchyard
+  credit: 'Photo: Bruton Knowles'
+- src: /photos/christ-church-cressage/12.jpg
+  alt: The church and village from the air, with the Shropshire plain beyond
+  credit: 'Photo: Bruton Knowles'
+- src: /photos/christ-church-cressage/14.jpg
+  alt: The nave looking east, with the font, box pews and the east window
+  credit: 'Photo: Bruton Knowles'
+- src: /photos/christ-church-cressage/15.jpg
+  alt: The nave looking west to the organ gallery
+  credit: 'Photo: Bruton Knowles'
+- src: /photos/christ-church-cressage/17.jpg
+  alt: The roof trusses and the chancel from the gallery
+  credit: 'Photo: Bruton Knowles'
+- src: /photos/christ-church-cressage/13.jpg
+  alt: The east end and south side
+  credit: 'Photo: Bruton Knowles'
+- src: /photos/christ-church-cressage/20.jpg
+  alt: The west tower and door
+  credit: 'Photo: Bruton Knowles'
 - src: /photos/christ-church-cressage/1.jpg
   alt: The west tower and blue door at the end of the churchyard path
   credit: 'Photo: Eirian Evans, CC BY-SA 2.0, via Geograph'
@@ -226,14 +247,17 @@ upkeep:
   low: 3000
   high: 6000
   covers: Insurance, electricity, gutters and the tower roof, and the paths.
-estimateNote: No survey is published and the photographs here show only the outside. The stone and the roof line look sound from the road.
+estimateNote: No survey is published. The agent's photographs show the inside furnished and dry, with no staining in view.
 grantNote: None should be assumed for a Grade II church of 1841.
 seen:
-- A narrow tower in three stages with battlements and four heavy corner pinnacles.
-- Pale ashlar walls with a pointed west door painted blue and a two-light window over it.
-- A tarmac path runs straight from the road to the door between mown grass and old headstones.
-- The churchyard is bounded on the road side by a stone wall.
-- The burial ground to the south has recent black headstones with flowers.
+- Pale ashlar walls and a tiled roof that looks even on both slopes, with a tower at the west end.
+- The churchyard is rough grass with old headstones, some leaning.
+- From the air the church sits at the edge of the village, with the Church Grange houses and their car park beside it.
+- Inside, box pews with doors run down both sides of a carpeted aisle.
+- The east window is three lancets of coloured glass, and the side windows are plain leaded glass.
+- The roof is open, with dark timber trusses and a boarded ceiling painted white.
+- The west gallery stands on slim iron columns and holds the organ.
+- The walls are painted cream above dark panelling. One photograph shows a room used for storage.
 ---
 
 The church is small, built in one campaign and sold with its tower and bells. The cost sits in the services: only electricity is confirmed.

@@ -20,6 +20,24 @@ verdict: Convertible
 verdictReason: The agent offers it for a new use and says it needs limited work. One advert calls it protected heritage and another says it is not protected, so the rules on altering it are not settled. The land is zoned as agricultural area of landscape value, which limits what can be added outside.
 difficulty: 2
 photos:
+- src: /photos/klein-gelmen-church/11.jpg
+  alt: The church and its spire from the village street
+  credit: 'Photo: Leroi Immobiliën'
+- src: /photos/klein-gelmen-church/12.jpg
+  alt: 'The nave looking east: bare brick walls, a timber roof and a patterned tile floor'
+  credit: 'Photo: Leroi Immobiliën'
+- src: /photos/klein-gelmen-church/16.jpg
+  alt: The nave from above, with the pews and the pulpit
+  credit: 'Photo: Leroi Immobiliën'
+- src: /photos/klein-gelmen-church/14.jpg
+  alt: The chancel vault and the high altar
+  credit: 'Photo: Leroi Immobiliën'
+- src: /photos/klein-gelmen-church/15.jpg
+  alt: Stained glass in the nave windows
+  credit: 'Photo: Leroi Immobiliën'
+- src: /photos/klein-gelmen-church/13.jpg
+  alt: The nave looking west from the altar
+  credit: 'Photo: Leroi Immobiliën'
 - src: /photos/klein-gelmen-church/1.jpg
   alt: The church from the south, with its tower and slated spire above the churchyard
   credit: 'Photo: Sonuwe, CC BY-SA 3.0, via Wikimedia Commons'
@@ -78,7 +96,7 @@ sections:
     value: 244 square metres on a plot of 281.
     status: listing
   - label: Decoration
-    value: Original decorative elements, not itemised.
+    value: Stained glass in the nave and chancel, a patterned tile floor, a pulpit, pews, altar rails and a high altar, all shown in the photographs. The listing does not say which stay.
     status: listing
   - label: Statue
     value: A seventeenth-century figure of St Roch is recorded in the church. Whether it stays is not stated.
@@ -188,15 +206,16 @@ upkeep:
   low: 3000
   high: 7000
   covers: Insurance, heating, gutters and roof checks.
-estimateNote: The agent says the structure is sound, and the one outside photograph here, from 2007, agrees. The list is mostly services and the energy works the law asks for.
+estimateNote: 'The agent says the structure is sound and the photographs agree: the brickwork, glass, floor and roof timbers look complete. The list is mostly services and the energy works the law asks for.'
 grantNote: None should be assumed. In Flanders heritage premiums are for protected monuments. The listing mentions a regional renovation premium tied to the energy works; check what applies to this building.
 seen:
-- A red brick church with a slate roof and a row of small pointed windows along the nave.
-- A square tower at the west end with paired bell openings and a tall slated spire.
-- A lower chancel at the east end with its own roof.
-- Headstones stand in a churchyard on the south side, behind a clipped hedge.
-- An iron gate between two stone piers opens onto steps up to the church.
-- The roof and brickwork look even in photographs of 2007.
+- Inside, the walls are bare red brick with bands and arches picked out in pale brick.
+- The nave has an open timber roof on dark trusses. The chancel has a plastered rib vault painted white and blue.
+- Every window in view holds stained glass with figures.
+- The floor is patterned tile in black, cream and ochre.
+- The pews, the pulpit with its stair, the high altar and the altar rails are in place.
+- No damp staining shows on the brickwork or the vault.
+- Outside, the brick and the slate roof look even, and the church stands on a paved street.
 ---
 
 Of the three Belgian churches this has the shortest list. It is sound, dry and connected to water and power.
