@@ -10,7 +10,7 @@ import { getCollection } from 'astro:content';
 
 const all = await getCollection('churches');
 const featured = ['basilica-marcay', 'kirkmichael-church', 'chapelle-du-carmel-niort', 'badia-di-montescalari', 'minto-church', 'chapelle-des-chariottes-arras', 'pieve-santo-stefano-monteaguzzo', 'bourtie-kirk', 'chapelle-hanneucourt-gargenville', 'holy-trinity-tunstead', 'santa-maria-del-rivo', 'st-george-south-moor'].map((id) => all.find((c) => c.id === id)).filter(Boolean);
-const ORDER = ['France', 'England', 'Scotland', 'Italy', 'Ireland', 'Portugal', 'Czech Republic', 'Wales', 'Belgium'];
+const ORDER = ['France', 'England', 'Scotland', 'Italy', 'Ireland', 'Portugal', 'Czech Republic', 'Wales', 'Belgium', 'Spain'];
 const rank = (c: string) => (ORDER.indexOf(c) + 1) || 99;
 const yrs = all.filter((c) => !c.data.specimen && c.data.built).map((c) => new Date().getFullYear() - (c.data.built as number));
 const reel = all.filter((c) => !c.data.specimen && c.data.photos[0]).sort((a, b) => rank(a.data.country) - rank(b.data.country) || a.data.difficulty - b.data.difficulty);
